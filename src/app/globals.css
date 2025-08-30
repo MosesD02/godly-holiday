@@ -42,7 +42,8 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --font-satoshi: "Satoshi", sans-serif;
+  --font-sans: var(--font-satoshi), sans-serif;
+  --font-satoshi: var(--font-satoshi), sans-serif;
   --font-marlton: var(--font-marlton), sans-serif;
   --font-luminaire: var(--font-luminaire), sans-serif;
   --font-satoshi: var(--font-satoshi), sans-serif;
@@ -62,7 +63,7 @@
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(93.426% 0.07612 87.487);
+  --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
@@ -88,14 +89,15 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
   .font-marlton,
   .font-luminaire {
     text-box-trim: trim-start;
   }
 
-  .font-marlton {
-    text-box-edge: cap;
+  .font-marlton,
+  .font-luminaire {
+    text-box-edge: text alphabetic;
   }
 }
