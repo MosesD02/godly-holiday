@@ -13,7 +13,6 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import {
@@ -32,24 +31,33 @@ import {
 import { Calendar } from "@/components/ui/calendar";
 
 import { cn } from "@/lib/utils";
+import { CalendarIcon } from "@/components/icons/calendar";
+import { useState } from "react";
+import { CheckIcon } from "lucide-react";
 
 const formSchema = z.object({
-  name: z.string().min(1, {
-    message: "A name is required.",
-  }),
+  name: z
+    .string({
+      message: "A name is required.",
+    })
+    .min(1),
   email: z.email({
     message: "A valid email is required.",
   }),
-  phone: z.string().min(1, {
-    message: "A phone number is required.",
-  }),
+  phone: z
+    .string({
+      message: "A phone number is required.",
+    })
+    .min(1),
   services: z.array(z.string()),
   date: z.date({
     error: "A date is required.",
   }),
-  zipCode: z.number().min(1, {
-    message: "A zip code is required.",
-  }),
+  zipCode: z
+    .number({
+      message: "A zip code is required.",
+    })
+    .min(1),
 });
 
 const inputClasses =
@@ -83,6 +91,8 @@ const services = [
 ];
 
 export function QuoteForm() {
+  const [isChecked, setIsChecked] = useState(false);
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -90,8 +100,7 @@ export function QuoteForm() {
       email: "",
       phone: "",
       services: [],
-      date: new Date(),
-      zipCode: 0,
+      date: new Date(new Date().setDate(new Date().getDate() + 1)),
     },
   });
 
@@ -134,7 +143,6 @@ export function QuoteForm() {
                       className={inputClasses}
                     />
                   </FormControl>
-                  <FormMessage />
                 </FormItem>
               )}
             />
@@ -153,7 +161,7 @@ export function QuoteForm() {
                     type="email"
                     {...field}
                     className={inputClasses}
-                  />
+                  />{" "}
                 </FormItem>
               )}
             />
@@ -172,7 +180,7 @@ export function QuoteForm() {
                     type="tel"
                     {...field}
                     className={inputClasses}
-                  />
+                  />{" "}
                 </FormItem>
               )}
             />
@@ -201,12 +209,16 @@ export function QuoteForm() {
                         />
                       </MultiSelectTrigger>
                     </FormControl>
-                    <MultiSelectContent search={false}>
+                    <MultiSelectContent
+                      search={false}
+                      className="[--popover:#fde4c8]"
+                    >
                       <MultiSelectGroup>
                         {services.map((service) => (
                           <MultiSelectItem
                             key={service.value}
                             value={service.value}
+                            className="text-[#312E2C]"
                           >
                             {service.label}
                           </MultiSelectItem>
@@ -214,7 +226,6 @@ export function QuoteForm() {
                       </MultiSelectGroup>
                     </MultiSelectContent>
                   </MultiSelect>
-                  <FormMessage />
                 </FormItem>
               )}
             />
@@ -244,19 +255,7 @@ export function QuoteForm() {
                           )}
 
                           {/* Calendar Icon */}
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="17"
-                            height="13"
-                            viewBox="0 0 17 13"
-                            fill="none"
-                            className="ms-auto mt-3"
-                          >
-                            <path
-                              d="M16.0181 5.76271e-05H13.9056V1.50006C13.9056 1.64451 13.8755 1.78755 13.8171 1.92101C13.7587 2.05447 13.6732 2.17573 13.5653 2.27788C13.4574 2.38002 13.3293 2.46104 13.1883 2.51632C13.0474 2.57161 12.8963 2.60006 12.7437 2.60006C12.5911 2.60006 12.44 2.57161 12.2991 2.51632C12.1581 2.46104 12.03 2.38002 11.9221 2.27788C11.8142 2.17573 11.7286 2.05447 11.6702 1.92101C11.6119 1.78755 11.5818 1.64451 11.5818 1.50006V5.76271e-05H5.42907V1.50006C5.42907 1.7918 5.30666 2.07158 5.08876 2.27787C4.87086 2.48416 4.57533 2.60006 4.26718 2.60006C3.95903 2.60006 3.6635 2.48416 3.4456 2.27787C3.2277 2.07158 3.10529 1.7918 3.10529 1.50006V5.76271e-05H0.992765C0.867082 -0.00129644 0.742388 0.0212245 0.626059 0.0662886C0.509729 0.111353 0.404126 0.178045 0.315496 0.262421C0.226865 0.346796 0.157007 0.447142 0.110053 0.557523C0.0630984 0.667904 0.0400014 0.786079 0.0421279 0.905058V12.0951C0.0400297 12.2119 0.0622731 12.3281 0.107588 12.4368C0.152902 12.5455 0.2204 12.6448 0.306226 12.7288C0.392052 12.8129 0.494525 12.8801 0.607792 12.9266C0.721059 12.9731 0.842901 12.9981 0.966358 13.0001H16.0181C16.1416 12.9981 16.2634 12.9731 16.3767 12.9266C16.4899 12.8801 16.5924 12.8129 16.6782 12.7288C16.7641 12.6448 16.8316 12.5455 16.8769 12.4368C16.9222 12.3281 16.9444 12.2119 16.9423 12.0951V0.905058C16.9444 0.788177 16.9222 0.672049 16.8769 0.563308C16.8316 0.454567 16.7641 0.355343 16.6782 0.271303C16.5924 0.187263 16.4899 0.120052 16.3767 0.0735115C16.2634 0.0269707 16.1416 0.00201093 16.0181 5.76271e-05ZM4.26718 10.0001H3.21092V9.00006H4.26718V10.0001ZM4.26718 7.50006H3.21092V6.50006H4.26718V7.50006ZM4.26718 5.00006H3.21092V4.00006H4.26718V5.00006ZM7.43597 10.0001H6.37971V9.00006H7.43597V10.0001ZM7.43597 7.50006H6.37971V6.50006H7.43597V7.50006ZM7.43597 5.00006H6.37971V4.00006H7.43597V5.00006ZM10.6048 10.0001H9.5485V9.00006H10.6048V10.0001ZM10.6048 7.50006H9.5485V6.50006H10.6048V7.50006ZM10.6048 5.00006H9.5485V4.00006H10.6048V5.00006ZM13.7736 10.0001H12.7173V9.00006H13.7736V10.0001ZM13.7736 7.50006H12.7173V6.50006H13.7736V7.50006ZM13.7736 5.00006H12.7173V4.00006H13.7736V5.00006Z"
-                              fill="#312E2C"
-                            />
-                          </svg>
+                          <CalendarIcon className="ms-auto mt-3" />
                         </Button>
                       </FormControl>
                     </PopoverTrigger>
@@ -270,7 +269,6 @@ export function QuoteForm() {
                       />
                     </PopoverContent>
                   </Popover>
-                  <FormMessage />
                 </FormItem>
               )}
             />
@@ -295,8 +293,25 @@ export function QuoteForm() {
             />
           </div>
 
-          <div className="flex items-center mt-3">
-            <Button type="submit">Submit</Button>
+          <div className="flex items-center justify-between mt-3">
+            <div className="flex items-center gap-3">
+              <button
+                className="size-[22px] border border-black cursor-pointer flex items-center justify-center"
+                onClick={() => setIsChecked(!isChecked)}
+              >
+                {isChecked && (
+                  <CheckIcon className="size-4 text-black shrink-0" />
+                )}
+              </button>
+              <span
+                className="text-[#312E2C] font-satoshi cursor-pointer text-xl font-medium"
+                onClick={() => setIsChecked(!isChecked)}
+              >
+                I agree to get information text messages from Godly about my
+                estimate and project
+              </span>
+            </div>
+            <Button type="submit">REQUEST A QUOTE</Button>
           </div>
         </form>
       </Form>
