@@ -1,15 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
+import { Header } from "@/components/header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const luminaire = localFont({
+  src: "../fonts/Luminaire.otf",
+  variable: "--font-luminaire",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const marlton = localFont({
+  src: "../fonts/MarltonSans.otf",
+  variable: "--font-marlton",
+  display: "swap",
+});
+
+const satoshi = localFont({
+  src: "../fonts/Satoshi-Variable.woff2",
+  variable: "--font-satoshi",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +34,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`antialiased ${luminaire.variable} ${marlton.variable} ${satoshi.variable} min-h-svh flex flex-col items-center justify-center w-full h-full`}
       >
-        {children}
+        <Header />
+        <main className="flex-1 w-full">{children}</main>
       </body>
     </html>
   );
