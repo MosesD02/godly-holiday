@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased ${luminaire.variable} ${marlton.variable} ${satoshi.variable} min-h-svh flex flex-col items-center justify-center w-full h-full`}
+        className={`antialiased ${luminaire.variable} overflow-x-hidden ${marlton.variable} ${satoshi.variable} min-h-svh flex flex-col items-center justify-center w-full h-full`}
       >
         <Header />
         <main className="flex-1 w-full">{children}</main>

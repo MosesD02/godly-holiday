@@ -101,3 +101,27 @@
     text-box-edge: text alphabetic;
   }
 }
+
+@layer utilities {
+  .min-h-with-header {
+    min-height: calc(100svh - 4.5rem);
+  }
+
+  .max-h-with-header {
+    max-height: calc(100svh - 4.5rem);
+  }
+
+  .bg-paper-14 {
+    background: url(/images/textures/paper-14.jpg) lightgray 50% / cover
+        no-repeat,
+      #f3ca9e;
+    background-blend-mode: screen, normal;
+  }
+
+  .bg-paper-16 {
+    background: url(/images/textures/paper-16.jpg) lightgray 50% / cover
+        no-repeat,
+      #ab8459;
+    background-blend-mode: screen, normal;
+  }
+}
