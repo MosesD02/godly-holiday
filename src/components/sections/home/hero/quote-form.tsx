@@ -200,7 +200,7 @@ export function QuoteForm() {
                       <MultiSelectTrigger
                         className={cn(
                           inputClasses,
-                          "hover:bg-transparent hover:text-[#312E2C] px-0!"
+                          "hover:bg-transparent hover:text-[#312E2C] px-0!",
                         )}
                       >
                         <MultiSelectValue
@@ -245,7 +245,7 @@ export function QuoteForm() {
                           className={cn(
                             inputClasses,
                             "hover:bg-transparent hover:text-[#312E2C] px-0!",
-                            !field.value && "text-muted-foreground"
+                            !field.value && "text-muted-foreground",
                           )}
                         >
                           {field.value ? (

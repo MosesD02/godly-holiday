@@ -112,15 +112,15 @@
   }
 
   .bg-paper-14 {
-    background: url(/images/textures/paper-14.jpg) lightgray 50% / cover
-        no-repeat,
+    background:
+      url(/images/textures/paper-14.jpg) lightgray 50% / cover no-repeat,
       #f3ca9e;
     background-blend-mode: screen, normal;
   }
 
   .bg-paper-16 {
-    background: url(/images/textures/paper-16.jpg) lightgray 50% / cover
-        no-repeat,
+    background:
+      url(/images/textures/paper-16.jpg) lightgray 50% / cover no-repeat,
       #ab8459;
     background-blend-mode: screen, normal;
   }
