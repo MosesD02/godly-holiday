@@ -200,7 +200,7 @@ export function QuoteForm() {
                       <MultiSelectTrigger
                         className={cn(
                           inputClasses,
-                          "hover:bg-transparent hover:text-[#312E2C] px-0!",
+                          "hover:bg-transparent hover:text-[#312E2C] px-0!"
                         )}
                       >
                         <MultiSelectValue
@@ -245,7 +245,7 @@ export function QuoteForm() {
                           className={cn(
                             inputClasses,
                             "hover:bg-transparent hover:text-[#312E2C] px-0!",
-                            !field.value && "text-muted-foreground",
+                            !field.value && "text-muted-foreground"
                           )}
                         >
                           {field.value ? (
@@ -304,7 +304,7 @@ export function QuoteForm() {
                 )}
               </button>
               <span
-                className="text-[#312E2C] font-satoshi cursor-pointer text-xl font-medium"
+                className="text-[#312E2C] font-satoshi cursor-pointer text-xl font-medium select-none"
                 onClick={() => setIsChecked(!isChecked)}
               >
                 I agree to get information text messages from Godly about my

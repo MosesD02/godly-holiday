@@ -6,7 +6,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center relative">
       {/* Background Image - Absolute (only covers hero section) */}
       <img
-        src="/images/home/hero/hero.jpg"
+        src="/images/home/hero/hero.webp"
         alt="Hero"
         className="absolute top-0 left-0 w-full h-screen object-cover z-0"
       />
