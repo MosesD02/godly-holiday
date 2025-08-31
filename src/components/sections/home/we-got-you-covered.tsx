@@ -11,7 +11,7 @@ export function WeGotYouCovered() {
           We&rsquo;ve got you covered <br />
           start to finish.
           <span
-            className="absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-luminaire text-[#FFE7AF] rotate-[-14.351deg] text-[56px] pr-10"
+            className="absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-luminaire text-[#FFE7AF] rotate-[-14.351deg] text-[56px] pr-8 trim-text"
             style={{
               textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
               WebkitTextStrokeWidth: "7px",

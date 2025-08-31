@@ -57,7 +57,9 @@ export function Header() {
               item.isDropdown ? (
                 <div key={item.label} className="relative">
                   <button className="text-[#FDE4C8] font-marlton text-base flex items-center gap-[9px] hover:text-[#FDE4C8]/80 transition-all duration-300 active:text-[#FDE4C8]/60">
-                    <span>{item.label}</span>
+                    <span className="[text-box-trim:trim-both]">
+                      {item.label}
+                    </span>
                     <img
                       src={ArrowDown.src}
                       alt="Arrow Down"
@@ -87,7 +89,7 @@ export function Header() {
                 width={15}
                 height={14}
               />
-              <span>PALM VALLEY</span>
+              <span className="[text-box-trim:trim-both]">PALM VALLEY</span>
               <img
                 src={ArrowDown.src}
                 alt="Arrow Down"
@@ -100,11 +102,11 @@ export function Header() {
               <button className="flex p-3 items-center gap-2.5 hover:cursor-pointer rounded-[6px] border border-[rgba(243,202,158,0.11)] [background:rgba(0,0,0,0.23)] shadow-[0_3px_2px_0_rgba(97,80,62,0.20)_inset,_0_1px_4px_0_rgba(171,132,89,0.03)] hover:[background:rgba(0,0,0,0.15)] transition-all duration-300 active:[background:rgba(0,0,0,0.08)]">
                 <img src={Call.src} alt="Call" width={22} height={22} />
               </button>
-              <div className="font-marlton text-[#F3C99D] [text-box-trim:trim-both] -space-y-1.5">
+              <div className="font-marlton text-[#F3C99D] [text-box-trim:trim-both]">
                 <p className="text-sm">CALL US</p>
                 <a
                   href="tel:+19548525326"
-                  className="text-2xl hover:text-[#F3C99D]/80 transition-all duration-300 active:text-[#F3C99D]/60"
+                  className="text-2xl hover:text-[#F3C99D]/80 transition-all duration-300 active:text-[#F3C99D]/60 [text-box-trim:trim-both]"
                 >
                   954-852-5326
                 </a>

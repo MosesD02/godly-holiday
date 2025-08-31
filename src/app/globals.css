@@ -100,6 +100,10 @@
   .font-luminaire {
     text-box-edge: text alphabetic;
   }
+
+  .trim-text {
+    text-box-trim: trim-both;
+  }
 }
 
 @layer utilities {
@@ -203,4 +207,9 @@
   color: #ffe7c8;
   border-color: #930e0e;
   z-index: 2;
+}
+
+.dashed-border {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='6' ry='6' stroke='%23F3CA9EFF' stroke-width='3' stroke-dasharray='8%2c8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 6px;
 }

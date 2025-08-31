@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { HappyCustomer } from "@/components/sections/home/happy-customer";
 import { Hero } from "@/components/sections/home/hero";
 import { WeGotYouCovered } from "@/components/sections/home/we-got-you-covered";
 
@@ -27,6 +28,7 @@ export default function Home() {
       <div className="relative z-20 w-full">
         <Hero />
         <WeGotYouCovered />
+        <HappyCustomer />
       </div>
     </div>
   );
