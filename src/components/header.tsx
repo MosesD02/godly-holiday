@@ -76,7 +76,7 @@ export function Header() {
                 >
                   {item.label}
                 </Link>
-              )
+              ),
             )}
           </nav>
         </div>
