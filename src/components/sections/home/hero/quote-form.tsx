@@ -34,6 +34,8 @@ import { cn } from "@/lib/utils";
 import { CalendarIcon } from "@/components/icons/calendar";
 import { useState } from "react";
 import { CheckIcon } from "lucide-react";
+import { GodlyButton } from "@/components/ui/godly-button";
+import ArrowRight from "@/assets/arrow-right.svg";
 
 const formSchema = z.object({
   name: z
@@ -293,10 +295,10 @@ export function QuoteForm() {
             />
           </div>
 
-          <div className="flex items-center justify-between mt-3">
+          <div className="flex items-center justify-between mt-8.5">
             <div className="flex items-center gap-3">
               <button
-                className="size-[22px] border border-black cursor-pointer flex items-center justify-center"
+                className="size-[22px] border border-black cursor-pointer shrink-0 flex items-center justify-center"
                 onClick={() => setIsChecked(!isChecked)}
               >
                 {isChecked && (
@@ -311,7 +313,15 @@ export function QuoteForm() {
                 estimate and project
               </span>
             </div>
-            <Button type="submit">REQUEST A QUOTE</Button>
+            <GodlyButton type="submit">
+              <span className="mb-2.5">REQUEST A QUOTE</span>
+              <img
+                src={ArrowRight.src}
+                alt="Arrow Right"
+                width={32}
+                height={33}
+              />
+            </GodlyButton>
           </div>
         </form>
       </Form>
@@ -325,6 +335,20 @@ export function QuoteForm() {
           className="shrink-0"
         />
       </div>
+      <img
+        src="/images/home/hero/hero-lights-left.webp"
+        alt="Hero Lights Left"
+        width={382.851}
+        height={253.958}
+        className="shrink-0 rotate-[-24deg] transform-[scaleX(-1)] aspect-[101/67] absolute -bottom-62 -left-52 -z-10"
+      />
+      <img
+        src="/images/home/hero/hero-lights-right.webp"
+        alt="Hero Lights Right"
+        width={465.548}
+        height={308.814}
+        className="shrink-0 aspect-[101/67] rotate-[22deg] absolute -bottom-32 -right-32 -z-10"
+      />
     </div>
   );
 }

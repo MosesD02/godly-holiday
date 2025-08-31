@@ -4,8 +4,8 @@ import { QuoteForm } from "./hero/quote-form";
 
 export function Hero() {
   return (
-    <section id="hero" className="relative w-full">
-      <div className="max-w-[1400px] w-full px-13.5 mx-auto relative z-10 pt-[calc(100svh-450px)]">
+    <section id="hero" className="relative w-full mb-[229px]">
+      <div className="max-w-[1400px] w-full px-13.5 mx-auto relative z-10 pt-[calc(min(100svh,960px)-450px)]">
         <div className="space-y-[11.65px] mb-8.5">
           <div className="text-[#FDE4C8] font-marlton text-[20.704px] tracking-[2.07px] flex items-center gap-3">
             <div className="-mt-1.5">300+ HAPPY CUSTOMERS</div>

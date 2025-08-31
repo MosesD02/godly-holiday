@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Hero } from "@/components/sections/home/hero";
+import { WeGotYouCovered } from "@/components/sections/home/we-got-you-covered";
 
 export default function Home() {
   return (
@@ -8,12 +9,12 @@ export default function Home() {
       <img
         src="/images/home/hero/hero.webp"
         alt="Hero"
-        className="absolute top-0 left-0 w-full h-screen object-cover z-0"
+        className="absolute top-0 left-0 w-full h-[min(100svh,960px)] object-cover z-0"
       />
 
       {/* Gradient Overlay - Absolute (only covers hero section) */}
       <div
-        className="absolute top-0 left-0 w-full h-screen z-10"
+        className="absolute top-0 left-0 w-full h-[min(100svh,960px)] z-10"
         style={{
           background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #201E1E 79.64%)`,
           backgroundPosition: "center",
@@ -25,6 +26,7 @@ export default function Home() {
       {/* Content */}
       <div className="relative z-20 w-full">
         <Hero />
+        <WeGotYouCovered />
       </div>
     </div>
   );
