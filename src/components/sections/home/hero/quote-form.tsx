@@ -115,7 +115,7 @@ export function QuoteForm() {
   return (
     <div className="bg-paper-14 rounded-[10px] flex flex-col gap-3 text-[#2D2B2B] max-w-[1332px] w-full relative">
       <div className="flex px-12 py-8 justify-between items-center bg-paper-16 rounded-t-[10px] relative z-10">
-        <h2 className="font-marlton text-[64px] tracking-[3.2px] leading-[100%] -mt-6">
+        <h2 className="font-marlton text-[64px] tracking-[3.2px] leading-[100%]">
           LET US CALL YOU!
         </h2>
         <p className="font-satoshi max-w-[367px] text-right text-2xl font-medium">
@@ -314,7 +314,7 @@ export function QuoteForm() {
               </span>
             </div>
             <GodlyButton type="submit">
-              <span className="mb-2.5">REQUEST A QUOTE</span>
+              <span>REQUEST A QUOTE</span>
               <img
                 src={ArrowRight.src}
                 alt="Arrow Right"
