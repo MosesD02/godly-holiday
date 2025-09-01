@@ -130,6 +130,13 @@
     background-blend-mode: screen, normal;
   }
 
+  .bg-paper-16-2 {
+    background: url(/images/textures/paper-16.webp) lightgray -394px 0px / 149.931%
+        100% no-repeat,
+      #fff2e2;
+    background-blend-mode: multiply, normal;
+  }
+
   .bg-paper-8 {
     background: url(/images/textures/paper-8.webp) lightgray 50% / cover
         no-repeat,

@@ -2,6 +2,7 @@
 import { HappyCustomer } from "@/components/sections/home/happy-customer";
 import { Hero } from "@/components/sections/home/hero";
 import { LightInstallation } from "@/components/sections/home/light-installation";
+import { WrapperUp } from "@/components/sections/home/hero/wrapped-up";
 import { WeGotYouCovered } from "@/components/sections/home/we-got-you-covered";
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
         <WeGotYouCovered />
         <HappyCustomer />
         <LightInstallation />
+        <WrapperUp />
       </div>
     </div>
   );
