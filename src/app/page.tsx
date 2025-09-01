@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { HappyCustomer } from "@/components/sections/home/happy-customer";
 import { Hero } from "@/components/sections/home/hero";
+import { LightInstallation } from "@/components/sections/home/light-installation";
 import { WeGotYouCovered } from "@/components/sections/home/we-got-you-covered";
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
         <Hero />
         <WeGotYouCovered />
         <HappyCustomer />
+        <LightInstallation />
       </div>
     </div>
   );

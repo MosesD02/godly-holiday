@@ -202,7 +202,7 @@ export function QuoteForm() {
                       <MultiSelectTrigger
                         className={cn(
                           inputClasses,
-                          "hover:bg-transparent hover:text-[#312E2C] px-0!",
+                          "hover:bg-transparent hover:text-[#312E2C] px-0!"
                         )}
                       >
                         <MultiSelectValue
@@ -247,7 +247,7 @@ export function QuoteForm() {
                           className={cn(
                             inputClasses,
                             "hover:bg-transparent hover:text-[#312E2C] px-0!",
-                            !field.value && "text-muted-foreground",
+                            !field.value && "text-muted-foreground"
                           )}
                         >
                           {field.value ? (
@@ -314,7 +314,7 @@ export function QuoteForm() {
               </span>
             </div>
             <GodlyButton type="submit">
-              <span>REQUEST A QUOTE</span>
+              <span className="h-[30.5px]">REQUEST A QUOTE</span>
               <img
                 src={ArrowRight.src}
                 alt="Arrow Right"
