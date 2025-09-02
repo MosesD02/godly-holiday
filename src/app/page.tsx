@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/home/hero";
 import { LightInstallation } from "@/components/sections/home/light-installation";
 import { WrapperUp } from "@/components/sections/home/hero/wrapped-up";
 import { WeGotYouCovered } from "@/components/sections/home/we-got-you-covered";
+import { LightingUpNights } from "@/components/sections/home/lighting-up-nights";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         <HappyCustomer />
         <LightInstallation />
         <WrapperUp />
+        <LightingUpNights />
       </div>
     </div>
   );
