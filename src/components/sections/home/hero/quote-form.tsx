@@ -64,7 +64,7 @@ const formSchema = z.object({
 });
 
 const inputClasses =
-  "border-none shadow-none p-0 text-2xl md:text-2xl font-marlton placeholder:text-2xl placeholder:md:text-2xl w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none";
+  "border-none shadow-none p-0 text-lg sm:text-xl lg:text-2xl font-marlton placeholder:text-lg placeholder:sm:text-xl placeholder:lg:text-2xl w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none";
 
 const services = [
   {
@@ -114,12 +114,12 @@ export function QuoteForm() {
   }
 
   return (
-    <div className="bg-paper-14 rounded-[10px] flex flex-col gap-3 text-[#2D2B2B] max-w-[1332px] w-full relative">
-      <div className="flex px-12 py-8 justify-between items-center bg-paper-16 rounded-t-[10px] relative z-10">
-        <h2 className="font-marlton text-[64px] tracking-[3.2px] leading-[100%]">
+    <div className="bg-paper-14 rounded-[6px] sm:rounded-[8px] lg:rounded-[10px] flex flex-col gap-2 sm:gap-3 text-[#2D2B2B] max-w-[1332px] w-full relative">
+      <div className="flex flex-col sm:flex-row px-4 sm:px-8 lg:px-12 py-4 sm:py-6 lg:py-8 justify-between items-start sm:items-center bg-paper-16 rounded-t-[6px] sm:rounded-t-[8px] lg:rounded-t-[10px] relative z-10 gap-3 sm:gap-0">
+        <h2 className="font-marlton text-[32px] sm:text-[48px] lg:text-[64px] tracking-[1.6px] sm:tracking-[2.4px] lg:tracking-[3.2px] leading-[100%]">
           LET US CALL YOU!
         </h2>
-        <p className="font-satoshi max-w-[367px] text-right text-2xl font-medium">
+        <p className="font-satoshi max-w-[367px] text-left sm:text-right text-base sm:text-lg lg:text-2xl font-medium">
           Receive a call within 30 minutes during normal business hours.
         </p>
       </div>
@@ -127,15 +127,15 @@ export function QuoteForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="p-8 relative z-10 text-[#312E2C]"
+          className="p-4 sm:p-6 lg:p-8 relative z-10 text-[#312E2C]"
         >
-          <div className="grid grid-cols-12 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-12 gap-4 sm:gap-6 lg:gap-8">
             {/* Name */}
             <FormField
               control={form.control}
               name="name"
               render={({ field }) => (
-                <FormItem className="col-span-4 pb-3 gap-4 border-b border-[#312E2C]">
+                <FormItem className="sm:col-span-4 pb-2 sm:pb-3 gap-3 sm:gap-4 border-b border-[#312E2C]">
                   <FormLabel>Name</FormLabel>
                   <FormControl>
                     <Input
@@ -155,7 +155,7 @@ export function QuoteForm() {
               control={form.control}
               name="email"
               render={({ field }) => (
-                <FormItem className="col-span-4 pb-3 gap-4 border-b border-[#312E2C]">
+                <FormItem className="sm:col-span-4 pb-2 sm:pb-3 gap-3 sm:gap-4 border-b border-[#312E2C]">
                   <FormLabel htmlFor="email">Email</FormLabel>
                   <Input
                     id="email"
@@ -174,7 +174,7 @@ export function QuoteForm() {
               control={form.control}
               name="phone"
               render={({ field }) => (
-                <FormItem className="col-span-4 pb-3 gap-4 border-b border-[#312E2C]">
+                <FormItem className="sm:col-span-4 pb-2 sm:pb-3 gap-3 sm:gap-4 border-b border-[#312E2C]">
                   <FormLabel htmlFor="phone">Phone</FormLabel>
                   <Input
                     id="phone"
@@ -193,7 +193,7 @@ export function QuoteForm() {
               control={form.control}
               name="services"
               render={({ field }) => (
-                <FormItem className="col-span-6 pb-3 gap-4 border-b border-[#312E2C]">
+                <FormItem className="sm:col-span-6 pb-2 sm:pb-3 gap-3 sm:gap-4 border-b border-[#312E2C]">
                   <FormLabel>Services</FormLabel>
                   <MultiSelect
                     onValuesChange={field.onChange}
@@ -238,12 +238,13 @@ export function QuoteForm() {
               control={form.control}
               name="date"
               render={({ field }) => (
-                <FormItem className="col-span-4 pb-3 gap-4 border-b border-[#312E2C]">
+                <FormItem className="sm:col-span-4 pb-2 sm:pb-3 gap-3 sm:gap-4 border-b border-[#312E2C]">
                   <FormLabel>Date</FormLabel>
                   <Popover>
                     <PopoverTrigger asChild>
                       <FormControl>
                         <Button
+                          type="button"
                           variant={"ghost"}
                           className={cn(
                             inputClasses,
@@ -281,7 +282,7 @@ export function QuoteForm() {
               control={form.control}
               name="zipCode"
               render={({ field }) => (
-                <FormItem className="col-span-2 pb-3 gap-4 border-b border-[#312E2C]">
+                <FormItem className="sm:col-span-2 pb-2 sm:pb-3 gap-3 sm:gap-4 border-b border-[#312E2C]">
                   <FormLabel htmlFor="zipCode">Zip Code</FormLabel>
                   <Input
                     id="zipCode"
@@ -296,9 +297,10 @@ export function QuoteForm() {
             />
           </div>
 
-          <div className="flex items-center justify-between mt-8.5">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-6 sm:mt-8.5 gap-4 sm:gap-0">
             <div className="flex items-center gap-3">
               <button
+                type="button"
                 className="size-[22px] border border-black cursor-pointer shrink-0 flex items-center justify-center"
                 onClick={() => setIsChecked(!isChecked)}
               >
@@ -307,7 +309,7 @@ export function QuoteForm() {
                 )}
               </button>
               <span
-                className="text-[#312E2C] font-satoshi cursor-pointer text-xl font-medium select-none"
+                className="text-[#312E2C] font-satoshi cursor-pointer text-base sm:text-lg lg:text-xl font-medium select-none"
                 onClick={() => setIsChecked(!isChecked)}
               >
                 I agree to get information text messages from Godly about my
@@ -327,13 +329,13 @@ export function QuoteForm() {
         </form>
       </Form>
 
-      <div className="absolute flex items-center justify-center -top-[150px] -right-33 w-[354.512px] h-[353.446px] transform-[rotate(-16deg)] z-0">
+      <div className="absolute flex items-center justify-center -top-[75px] sm:-top-[100px] lg:-top-[150px] -right-16 sm:-right-24 lg:-right-33 w-[180px] sm:w-[270px] lg:w-[354.512px] h-[180px] sm:h-[270px] lg:h-[353.446px] rotate-[-16deg] z-0">
         <Image
           src="/images/home/hero/tape.png"
           alt="Tape"
           width={234.158}
           height={266.58}
-          className="shrink-0"
+          className="shrink-0 w-[120px] sm:w-[180px] lg:w-[234.158px] h-auto"
         />
       </div>
       <Image
@@ -341,14 +343,14 @@ export function QuoteForm() {
         alt="Hero Lights Left"
         width={382.851}
         height={253.958}
-        className="shrink-0 rotate-[-24deg] transform-[scaleX(-1)] aspect-[101/67] absolute -bottom-62 -left-52 -z-10"
+        className="shrink-0 rotate-[-24deg] scale-x-[-1] aspect-[101/67] absolute -bottom-16 sm:-bottom-32 lg:-bottom-62 -left-8 sm:-left-26 lg:-left-52 -z-10 w-[150px] sm:w-[250px] lg:w-[382.851px]"
       />
       <Image
         src="/images/home/hero/hero-lights-right.webp"
         alt="Hero Lights Right"
         width={465.548}
         height={308.814}
-        className="shrink-0 aspect-[101/67] rotate-[22deg] absolute -bottom-32 -right-32 -z-10"
+        className="shrink-0 aspect-[101/67] rotate-[22deg] absolute -bottom-8 sm:-bottom-16 lg:-bottom-32 -right-8 sm:-right-16 lg:-right-32 -z-10 w-[180px] sm:w-[300px] lg:w-[465.548px]"
       />
     </div>
   );
