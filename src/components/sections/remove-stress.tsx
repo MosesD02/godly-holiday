@@ -6,21 +6,179 @@ import ArrowRight from "@/assets/arrow-right.svg";
 export function RemoveStress() {
   return (
     <section id="remove-stress">
-      <div className="max-w-[1400px] mx-auto flex flex-col items-center justify-center gap-[64px] pb-[120px]">
-        <h2 className="relative text-[64px] leading-[74px] max-w-fit max-h-fit tracking-[3.2px] font-marlton text-center pt-[144px] pb-[82px] text-transparent">
+      <div className="max-w-[1400px] mx-auto flex flex-col items-center justify-center gap-8 sm:gap-12 lg:gap-[64px] pb-16 sm:pb-20 lg:pb-[120px] px-4 sm:px-6">
+        <h2 className="relative text-[32px] sm:text-[48px] lg:text-[64px] leading-[38px] sm:leading-[56px] lg:leading-[74px] max-w-fit max-h-fit tracking-[1.6px] sm:tracking-[2.4px] lg:tracking-[3.2px] font-marlton text-center pt-16 sm:pt-24 lg:pt-[144px] pb-10 sm:pb-16 lg:pb-[82px] text-transparent">
           REMOVE THE STRESS <br />
           FROM HOLIDAY
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/home/remove-stress/heading.png"
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-contain mt-13.5 pointer-events-none w-[562.72px] h-[206.751px]"
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-contain mt-6.75 sm:mt-10 lg:mt-13.5 pointer-events-none w-[281px] sm:w-[422px] lg:w-[562.72px] h-[103px] sm:h-[155px] lg:h-[206.751px]"
             alt="Heading"
           />
         </h2>
       </div>
 
-      <div className="relative max-h-[576px] paper-bg-1 max-w-[1400px] mx-auto rounded-[10px] text-[#2D2B2B] font-satoshi text-xl font-medium leading-6 px-5 py-6">
-        <div className="rounded-[12px] border-2 border-[#2D2B2B] px-8.5 flex items-end gap-3">
+      <div className="relative paper-bg-1 max-w-[1400px] mx-auto rounded-[10px] text-[#2D2B2B] font-satoshi text-sm sm:text-base lg:text-xl font-medium leading-5 sm:leading-6 px-3 sm:px-5 py-4 sm:py-6">
+        {/* Mobile Layout */}
+        <div className="lg:hidden space-y-4">
+          {/* Handymen Card */}
+          <div className="rounded-[12px] border-2 border-[#2D2B2B] p-4">
+            <h3 className="text-center font-semibold mb-4">Handymen</h3>
+            <div className="space-y-3">
+              <div className="flex items-center justify-between">
+                <span>Free Custom Designs</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.check />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>All Supplies Included</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.cross />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>High Quality Lights</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.cross />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>Fully Warranty</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.cross />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>Maintenance Included</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.cross />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>Removal & Storage Included</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.cross />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Lighting Companies Card */}
+          <div className="rounded-[12px] border-2 border-[#2D2B2B] p-4">
+            <h3 className="text-center font-semibold mb-4">
+              Lighting Companies
+            </h3>
+            <div className="space-y-3">
+              <div className="flex items-center justify-between">
+                <span>Free Custom Designs</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.check />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>All Supplies Included</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.check />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>High Quality Lights</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.cross />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>Fully Warranty</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.cross />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>Maintenance Included</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.cross />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>Removal & Storage Included</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.cross />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Godly Windows Card */}
+          <div
+            style={{
+              boxShadow:
+                "12px 12px 4px 0 rgba(0, 0, 0, 0.25), 8px 8px 20px 0 rgba(109, 109, 109, 0.20) inset",
+            }}
+            className="bg-[#282828] rounded-[12px] p-4"
+          >
+            <div className="text-center mb-4">
+              <Image
+                src={Logo.src}
+                alt="Godly Windows"
+                width={131}
+                height={75}
+                className="aspect-[131/75] mx-auto mb-4"
+              />
+            </div>
+            <div className="space-y-3 text-white">
+              <div className="flex items-center justify-between">
+                <span>Free Custom Designs</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.checkGold />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>All Supplies Included</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.checkGold />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>High Quality Lights</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.checkGold />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>Fully Warranty</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.checkGold />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>Maintenance Included</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.checkGold />
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>Removal & Storage Included</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <Icons.checkGold />
+                </div>
+              </div>
+            </div>
+            <GodlyButton className="max-w-full w-full justify-center mt-6">
+              <span className="h-[20.5px]">REQUEST A QUOTE</span>
+              <Image
+                src={ArrowRight.src}
+                alt="Arrow Right"
+                width={32}
+                height={33}
+              />
+            </GodlyButton>
+          </div>
+        </div>
+
+        {/* Desktop Layout */}
+        <div className="hidden lg:flex rounded-[12px] border-2 border-[#2D2B2B] px-8.5 items-end gap-3 relative pr-[424px]">
           <div className="mt-[64px] py-10 [&_div]:py-5">
             <div>Free Custom Designs</div>
             <div>All Supplies Included</div>
@@ -29,7 +187,7 @@ export function RemoveStress() {
             <div>Maintenance Included</div>
             <div>Removal & Storage Included</div>
           </div>
-          <div className="py-10 max-w-[280px] text-center space-y-8 w-full px-6 [&_div]:p-5 [&_div]:mx-auto [&_div]:max-w-fit [&_div]:size-[64px]">
+          <div className="py-10 flex-1 text-center space-y-8 px-6 [&_div]:p-5 [&_div]:mx-auto [&_div]:max-w-fit [&_div]:size-[64px]">
             <p>Handymen</p>
             <span className="block">
               <div>
@@ -52,7 +210,7 @@ export function RemoveStress() {
               </div>
             </span>
           </div>
-          <div className="py-10 max-w-[280px] text-center space-y-8 w-full px-6 [&_div]:p-5 [&_div]:mx-auto [&_div]:max-w-fit [&_div]:size-[64px]">
+          <div className="py-10 flex-1 text-center space-y-8 px-6 [&_div]:p-5 [&_div]:mx-auto [&_div]:max-w-fit [&_div]:size-[64px]">
             <p>Lighting Companies</p>
             <span className="block">
               <div>
@@ -80,7 +238,7 @@ export function RemoveStress() {
               boxShadow:
                 "12px 12px 4px 0 rgba(0, 0, 0, 0.25), 8px 8px 20px 0 rgba(109, 109, 109, 0.20) inset",
             }}
-            className="max-w-[370px] absolute right-6 top-1/2 -translate-y-1/2 bg-[#282828] rounded-[12px] text-center space-y-10  w-full px-10 py-15 [&_div]:p-5 [&_div]:mx-auto [&_div]:max-w-fit [&_div]:size-[64px]"
+            className="max-w-[370px] absolute right-6 top-1/2 -translate-y-1/2 bg-[#282828] rounded-[12px] text-center space-y-10 w-full px-10 py-15 [&_div]:p-5 [&_div]:mx-auto [&_div]:max-w-fit [&_div]:size-[64px]"
           >
             <Image
               src={Logo.src}
@@ -124,7 +282,7 @@ export function RemoveStress() {
             alt="Flowers"
             width={180}
             height={180}
-            className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 z-10"
+            className="hidden lg:block absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 z-10"
           />
           <div
             className="size-[508.07px] rounded-full absolute left-0 top-0 -translate-x-[400px] -translate-y-[400px]"
