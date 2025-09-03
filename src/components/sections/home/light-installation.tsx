@@ -58,7 +58,7 @@ export function LightInstallation() {
             alt="Commercial"
             width={481.34}
             height={580.705}
-            className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-none h-auto"
+            className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[457px] h-auto"
           />
         </div>
       </div>
@@ -70,7 +70,7 @@ export function LightInstallation() {
             alt="Residential"
             width={481.34}
             height={580.705}
-            className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-none h-auto"
+            className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[457px] h-auto"
           />
         </div>
         <div className="flex flex-col gap-12 sm:gap-16 lg:gap-20 flex-1 max-w-[521px]">
