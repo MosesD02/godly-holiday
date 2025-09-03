@@ -18,7 +18,7 @@ export function LightingUpNights() {
         <span>LIGHTING UP NIGHTS</span> <br />
         <span>SPREADING HOLIDAY JOY</span>
         <img
-          src="/images/home/lighting-up-nights/heading.svg"
+          src="/images/home/lighting-up-nights/heading.png"
           className="absolute top-1/2 -translate-y-9 pointer-events-none"
           alt="Heading"
         />

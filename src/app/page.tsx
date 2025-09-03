@@ -1,10 +1,11 @@
 import { HappyCustomer } from "@/components/sections/home/happy-customer";
 import { Hero } from "@/components/sections/home/hero";
 import { LightInstallation } from "@/components/sections/home/light-installation";
-import { WrapperUp } from "@/components/sections/home/hero/wrapped-up";
+import { WrapperUp } from "@/components/sections/home/wrapped-up";
 import { WeGotYouCovered } from "@/components/sections/home/we-got-you-covered";
 import { LightingUpNights } from "@/components/sections/home/lighting-up-nights";
 import Image from "next/image";
+import { RemoveStress } from "@/components/sections/remove-stress";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
         <LightInstallation />
         <WrapperUp />
         <LightingUpNights />
+        <RemoveStress />
       </div>
     </div>
   );
