@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import Star from "@/assets/star.svg";
 import { QuoteForm } from "./hero/quote-form";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -11,7 +11,7 @@ export function Hero() {
             <div className="trim-text">300+ HAPPY CUSTOMERS</div>
             <div className="flex items-center gap-1">
               {Array.from({ length: 5 }).map((_, index) => (
-                <img
+                <Image
                   key={index}
                   src={Star.src}
                   alt="Star"

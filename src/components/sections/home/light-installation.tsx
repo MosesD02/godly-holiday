@@ -1,8 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { GodlyButton } from "@/components/ui/godly-button";
-import Image from "next/image";
-
 import ArrowRight from "@/assets/arrow-right.svg";
+import Image from "next/image";
 
 export function LightInstallation() {
   return (
@@ -45,8 +44,7 @@ export function LightInstallation() {
           </div>
           <GodlyButton className="max-w-fit">
             <span className="h-[30.5px]">Request a Quote</span>{" "}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={ArrowRight.src}
               alt="Arrow Right"
               width={32}
@@ -105,8 +103,7 @@ export function LightInstallation() {
           </div>
           <GodlyButton className="max-w-fit">
             <span className="h-[30.5px]">Request a Quote</span>{" "}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={ArrowRight.src}
               alt="Arrow Right"
               width={32}

@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface CardProps {
   index: number;
@@ -63,11 +64,12 @@ export function Card({
           imageClass
         )}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={image}
           alt={title}
           className={cn(imageClass, "object-contain")}
+          width={220}
+          height={220}
         />
       </div>
     </div>

@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 
 export function HappyCustomer() {
   return (
@@ -6,10 +6,12 @@ export function HappyCustomer() {
       {/* Card 1: Default → Sparkle hover */}
       <div className="group relative z-10">
         <div className="font-satoshi flex items-center text-white text-2xl trim-text font-[900] text-center bg-[#2D2B2B] shadow-[0_4px_37.6px_0_#1C1C1C] rounded-[6px] py-4 px-3 transition-all duration-300 group-hover:rotate-4 group-hover:bg-[#111010] border-transparent border-3 group-hover:border-dashed group-hover:border-[#F3CA9E]">
-          <img
+          <Image
             src="/images/home/happy-customer/sparkle.svg"
             alt="Sparkle"
             className="size-[40px] rotate-[5deg] transition-transform duration-300 group-hover:rotate-[-115deg]"
+            width={40}
+            height={40}
           />
           <span className="font-satoshi text-[#F3CA9E] font-[900] text-3xl trim-text underline px-3 underline-offset-8">
             300+
@@ -23,10 +25,12 @@ export function HappyCustomer() {
       {/* Card 2: Default → Sparkle hover (same as card 1) */}
       <div className="group relative">
         <div className="font-satoshi flex items-center rotate-[-4deg] text-white text-2xl trim-text font-[900] text-center bg-[#2D2B2B] shadow-[0_4px_37.6px_0_#1C1C1C] rounded-[6px] py-4 px-3 transition-all duration-300 group-hover:rotate-4 group-hover:bg-[#111010] border-transparent border-3 group-hover:border-dashed group-hover:border-[#F3CA9E]">
-          <img
+          <Image
             src="/images/home/happy-customer/bulb.svg"
             alt="Bulb"
             className="size-[40px] rotate-[5deg] transition-transform duration-300 group-hover:rotate-[-115deg]"
+            width={40}
+            height={40}
           />
           <span className="font-satoshi text-[#F3CA9E] font-[900] text-3xl trim-text underline px-3 underline-offset-8">
             300+

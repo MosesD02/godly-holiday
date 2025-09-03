@@ -1,4 +1,5 @@
 import { holidayLightInstallation } from "@/data/holiday-light-installation";
+import Image from "next/image";
 
 export function WeGotYouCovered() {
   return (
@@ -35,11 +36,12 @@ export function WeGotYouCovered() {
           >
             <div className="flex w-full h-full flex-col p-3 gap-1.5 rounded-[4.304px] bg-paper-8">
               <div className="flex flex-col items-center justify-start gap-6 w-full h-full p-6 rounded-[6px] border-2 border-black">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={item.image}
                   alt={item.title}
                   className={`size-[60px] flex-shrink-0`}
+                  width={60}
+                  height={60}
                 />
                 <h3 className="text-[#1C1C1C] text-center text-[26px] font-[900] font-satoshi [text-box-trim:trim-both] [text-box-edge:text_alphabetic] flex-shrink-0">
                   {item.title}

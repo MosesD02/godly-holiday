@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Card } from "../wrapped-up/card";
 import { wrappedUpCards } from "@/data/wrapped-up";
 
@@ -8,12 +9,14 @@ export function WrapperUp() {
       id="wrapped-up"
       className="bg-paper-16-2 flex flex-col items-center justify-center py-[120px] gap-[96px] relative"
     >
-      <img
+      <Image
         src="/images/home/wrapped-up/grid.png"
         alt="Grid"
         className="absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none max-w-[min(calc(100%-240px),1176px)]"
+        width={1176}
+        height={1176}
       />
-      <img
+      <Image
         src="/images/home/wrapped-up/lights.png"
         alt="Lights"
         width={421.576}

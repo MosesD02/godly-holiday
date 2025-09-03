@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
 import Logo from "@/assets/logo.svg";
@@ -7,6 +6,7 @@ import MapLocation from "@/assets/map-location.svg";
 import Call from "@/assets/call.svg";
 import TicketHolder from "@/assets/ticket-holder.svg";
 import Ticket from "@/assets/ticket.svg";
+import Image from "next/image";
 
 type NavItem = {
   label: string;
@@ -44,7 +44,7 @@ export function Header() {
       <div className="max-w-[1400px] md:px-8 w-full flex items-center justify-between">
         <div className="flex items-center gap-21">
           <Link href="/" className="shrink-0">
-            <img
+            <Image
               src={Logo.src}
               alt="Godly Windows"
               width={70}
@@ -60,7 +60,7 @@ export function Header() {
                     <span className="[text-box-trim:trim-both]">
                       {item.label}
                     </span>
-                    <img
+                    <Image
                       src={ArrowDown.src}
                       alt="Arrow Down"
                       width={14}
@@ -76,21 +76,21 @@ export function Header() {
                 >
                   {item.label}
                 </Link>
-              ),
+              )
             )}
           </nav>
         </div>
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-3">
             <button className="inline-flex items-center gap-2 py-[5px] font-marlton text-sm underline text-[#F3C99D] hover:text-[#F3C99D]/80 transition-all duration-300 active:text-[#F3C99D]/60">
-              <img
+              <Image
                 src={MapLocation.src}
                 alt="Map Location"
                 width={15}
                 height={14}
               />
               <span className="[text-box-trim:trim-both]">PALM VALLEY</span>
-              <img
+              <Image
                 src={ArrowDown.src}
                 alt="Arrow Down"
                 width={14}
@@ -100,7 +100,7 @@ export function Header() {
 
             <div className="flex items-center gap-3">
               <button className="flex p-3 items-center gap-2.5 hover:cursor-pointer rounded-[6px] border border-[rgba(243,202,158,0.11)] [background:rgba(0,0,0,0.23)] shadow-[0_3px_2px_0_rgba(97,80,62,0.20)_inset,_0_1px_4px_0_rgba(171,132,89,0.03)] hover:[background:rgba(0,0,0,0.15)] transition-all duration-300 active:[background:rgba(0,0,0,0.08)]">
-                <img src={Call.src} alt="Call" width={22} height={22} />
+                <Image src={Call.src} alt="Call" width={22} height={22} />
               </button>
               <div className="font-marlton text-[#F3C99D] [text-box-trim:trim-both]">
                 <p className="text-sm">CALL US</p>
@@ -115,13 +115,13 @@ export function Header() {
           </div>
 
           <button className="relative hover:cursor-pointer transition-all duration-300 group shrink-0">
-            <img
+            <Image
               src={TicketHolder.src}
               alt="Ticket Holder"
               width={125}
               height={14.444}
             />
-            <img
+            <Image
               src={Ticket.src}
               alt="Ticket"
               width={110}

@@ -36,6 +36,7 @@ import { useState } from "react";
 import { CheckIcon } from "lucide-react";
 import { GodlyButton } from "@/components/ui/godly-button";
 import ArrowRight from "@/assets/arrow-right.svg";
+import Image from "next/image";
 
 const formSchema = z.object({
   name: z
@@ -315,7 +316,7 @@ export function QuoteForm() {
             </div>
             <GodlyButton type="submit">
               <span className="h-[30.5px]">REQUEST A QUOTE</span>
-              <img
+              <Image
                 src={ArrowRight.src}
                 alt="Arrow Right"
                 width={32}
@@ -327,7 +328,7 @@ export function QuoteForm() {
       </Form>
 
       <div className="absolute flex items-center justify-center -top-[150px] -right-33 w-[354.512px] h-[353.446px] transform-[rotate(-16deg)] z-0">
-        <img
+        <Image
           src="/images/home/hero/tape.png"
           alt="Tape"
           width={234.158}
@@ -335,14 +336,14 @@ export function QuoteForm() {
           className="shrink-0"
         />
       </div>
-      <img
+      <Image
         src="/images/home/hero/hero-lights-left.webp"
         alt="Hero Lights Left"
         width={382.851}
         height={253.958}
         className="shrink-0 rotate-[-24deg] transform-[scaleX(-1)] aspect-[101/67] absolute -bottom-62 -left-52 -z-10"
       />
-      <img
+      <Image
         src="/images/home/hero/hero-lights-right.webp"
         alt="Hero Lights Right"
         width={465.548}
