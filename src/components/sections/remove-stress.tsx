@@ -5,7 +5,7 @@ import ArrowRight from "@/assets/arrow-right.svg";
 
 export function RemoveStress() {
   return (
-    <section id="remove-stress">
+    <section id="remove-stress" className="pb-[120px]">
       <div className="max-w-[1400px] mx-auto flex flex-col items-center justify-center gap-8 sm:gap-12 lg:gap-[64px] pb-16 sm:pb-20 lg:pb-[120px] px-4 sm:px-6">
         <h2 className="relative text-[32px] sm:text-[48px] lg:text-[64px] leading-[38px] sm:leading-[56px] lg:leading-[74px] max-w-fit max-h-fit tracking-[1.6px] sm:tracking-[2.4px] lg:tracking-[3.2px] font-marlton text-center pt-16 sm:pt-24 lg:pt-[144px] pb-10 sm:pb-16 lg:pb-[82px] text-transparent">
           REMOVE THE STRESS <br />

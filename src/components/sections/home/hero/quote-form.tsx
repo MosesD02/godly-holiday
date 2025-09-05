@@ -62,7 +62,7 @@ const formSchema = z.object({
     .min(1),
 });
 
-const inputClasses =
+export const inputClasses =
   "border-none shadow-none p-0 text-lg sm:text-xl lg:text-2xl font-marlton placeholder:text-lg placeholder:sm:text-xl placeholder:lg:text-2xl w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none";
 
 const services = [

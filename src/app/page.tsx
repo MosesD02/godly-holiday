@@ -6,6 +6,7 @@ import { WeGotYouCovered } from "@/components/sections/home/we-got-you-covered";
 import { LightingUpNights } from "@/components/sections/home/lighting-up-nights";
 import Image from "next/image";
 import { RemoveStress } from "@/components/sections/remove-stress";
+import { CTA } from "@/components/sections/home/cta";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
         <WrapperUp />
         <LightingUpNights />
         <RemoveStress />
+        <CTA />
       </div>
     </div>
   );
