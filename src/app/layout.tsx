@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import { Header } from "@/components/header";
+import { OsDetection } from "./os-detection";
 
 const luminaire = localFont({
   src: "../fonts/Luminaire.otf",
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body
         className={`antialiased ${luminaire.variable} overflow-x-clip ${marlton.variable} ${satoshi.variable} min-h-svh flex flex-col items-center justify-center w-full h-full`}
       >
+        <OsDetection />
         <Header />
         <main className="flex-1 w-full">{children}</main>
       </body>

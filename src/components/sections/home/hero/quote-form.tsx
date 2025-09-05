@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -317,7 +316,7 @@ export function QuoteForm() {
               </span>
             </div>
             <GodlyButton type="submit">
-              <span className="h-[30.5px]">REQUEST A QUOTE</span>
+              <span>REQUEST A QUOTE</span>
               <Image
                 src={ArrowRight.src}
                 alt="Arrow Right"

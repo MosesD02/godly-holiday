@@ -43,7 +43,7 @@ export function LightInstallation() {
             </div>
           </div>
           <GodlyButton className="max-w-fit">
-            <span className="h-[30.5px]">Request a Quote</span>{" "}
+            <span>Request a Quote</span>{" "}
             <Image
               src={ArrowRight.src}
               alt="Arrow Right"
@@ -104,7 +104,7 @@ export function LightInstallation() {
             </div>
           </div>
           <GodlyButton className="max-w-fit">
-            <span className="h-[30.5px]">Request a Quote</span>{" "}
+            <span>Request a Quote</span>{" "}
             <Image
               src={ArrowRight.src}
               alt="Arrow Right"

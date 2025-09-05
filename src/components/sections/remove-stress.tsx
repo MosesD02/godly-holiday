@@ -166,7 +166,7 @@ export function RemoveStress() {
               </div>
             </div>
             <GodlyButton className="max-w-full w-full justify-center mt-6">
-              <span className="h-[20.5px]">REQUEST A QUOTE</span>
+              <span>REQUEST A QUOTE</span>
               <Image
                 src={ArrowRight.src}
                 alt="Arrow Right"
@@ -268,7 +268,7 @@ export function RemoveStress() {
               </div>
             </span>
             <GodlyButton className="max-w-full w-full justify-center">
-              <span className="h-[20.5px]">REQUEST A QUOTE</span>
+              <span>REQUEST A QUOTE</span>
               <Image
                 src={ArrowRight.src}
                 alt="Arrow Right"

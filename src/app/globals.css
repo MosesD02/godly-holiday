@@ -82,6 +82,18 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --text-box-trim: trim-both;
+  --text-box-edge: cap alphabetic;
+}
+
+.os-windows {
+  --text-box-trim: trim-start;
+  --text-box-edge: cap alphabetic;
+
+  .godly-button span {
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+  }
 }
 
 @layer base {
@@ -93,17 +105,13 @@
   }
   .font-marlton,
   .font-luminaire {
-    text-box-trim: trim-both;
-  }
-
-  .font-marlton,
-  .font-luminaire {
-    text-box-edge: cap alphabetic;
+    text-box-trim: var(--text-box-trim);
+    text-box-edge: var(--text-box-edge);
   }
 
   .trim-text {
-    text-box-trim: trim-both;
-    text-box-edge: cap alphabetic;
+    text-box-trim: var(--text-box-trim);
+    text-box-edge: var(--text-box-edge);
   }
 }
 
@@ -172,10 +180,8 @@
     background-blend-mode: normal, hard-light, normal;
     box-shadow: 0 -7px 7.3px 0 rgba(36, 34, 34, 0.33) inset,
       0 -9px 5.289px 0 #930e0e inset, 0 17px 34px 0 rgba(9, 9, 9, 0.24);
-    color: #fde4c8;
-    text-box-trim: trim-both;
-    text-box-edge: text alphabetic;
     font-family: var(--font-marlton), sans-serif;
+    color: #fde4c8;
     font-size: 24px;
     font-weight: 400;
     text-transform: lowercase;
@@ -185,6 +191,11 @@
     transition-timing-function: ease-in-out;
     outline: none;
     position: relative;
+  }
+
+  .godly-button span {
+    text-box-trim: var(--text-box-trim);
+    text-box-edge: var(--text-box-edge);
   }
 
   .godly-button:hover,
