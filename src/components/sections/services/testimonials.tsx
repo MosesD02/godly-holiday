@@ -11,7 +11,7 @@ export function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="py-[120px] flex flex-col gap-[64px] items-center w-full justify-center"
+      className="py-16 md:py-24 lg:py-[120px] flex flex-col gap-8 md:gap-12 lg:gap-[64px] items-center w-full justify-center"
     >
       <div className="relative">
         <Image
@@ -19,9 +19,9 @@ export function Testimonials() {
           alt="Testimonials"
           width={370}
           height={175}
-          className="w-full h-full inset-0 absolute scale-125"
+          className="w-full h-full inset-0 absolute scale-110 md:scale-125"
         />
-        <h2 className="text-transparent text-center font-marlton text-[64px] leading-22">
+        <h2 className="text-transparent text-center font-marlton text-3xl md:text-5xl lg:text-[64px] leading-tight md:leading-22">
           STORIES FROM <br /> <span className="sr-only">Happy</span>HOMES &
           BUSINESSES
         </h2>
@@ -35,8 +35,11 @@ export function Testimonials() {
       >
         <CarouselContent className="max-w-full">
           {Array.from({ length: 10 }).map((_, index) => (
-            <CarouselItem className="basis-1/5" key={index}>
-              <div className="bg-paper-6 rounded-[6px] shadow-[0_4px_4px_0_rgba(255,255,255,0.3)_inset] border-2 border-[rgba(106,100,100,0.12)] max-w-[283px] w-full min-h-[271px] h-full flex flex-col items-start gap-4 px-5 py-4">
+            <CarouselItem
+              className="basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
+              key={index}
+            >
+              <div className="bg-paper-6 rounded-[6px] shadow-[0_4px_4px_0_rgba(255,255,255,0.3)_inset] border-2 border-[rgba(106,100,100,0.12)] max-w-full w-full min-h-[271px] h-full flex flex-col items-start gap-4 px-5 py-4 mx-auto">
                 <div className="space-y-7">
                   <div className="flex items-center gap-3">
                     <Image
@@ -81,14 +84,14 @@ export function Testimonials() {
           ))}
         </CarouselContent>
 
-        <div className="gap-4 flex items-center justify-center mt-[72px] w-full">
+        <div className="gap-3 md:gap-4 flex items-center justify-center mt-12 md:mt-16 lg:mt-[72px] w-full">
           <CarouselPrevious
             variant={"default"}
-            className="static inset-0 translate-0 size-[64px]"
+            className="static inset-0 translate-0 size-12 md:size-14 lg:size-[64px]"
           />
           <CarouselNext
             variant={"default"}
-            className="static inset-0 translate-0 size-[64px]"
+            className="static inset-0 translate-0 size-12 md:size-14 lg:size-[64px]"
           />
         </div>
       </Carousel>
