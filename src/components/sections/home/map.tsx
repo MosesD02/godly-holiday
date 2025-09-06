@@ -24,7 +24,7 @@ export function Map() {
           alt="Map Title"
           width={868}
           height={188}
-          className="absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none object-contain w-full h-auto max-w-[320px] sm:max-w-[500px] lg:max-w-none"
+          className="absolute  inset-0 pointer-events-none object-contain w-full h-auto max-w-[320px] sm:max-w-[500px] lg:max-w-none"
         />
       </div>
       <Image

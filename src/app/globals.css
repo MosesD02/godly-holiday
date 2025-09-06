@@ -235,6 +235,81 @@
     z-index: 2;
   }
 
+  .godly-button-gray {
+    display: inline-flex;
+    height: 61px;
+    padding: 22px 14px 22px 19px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    border: 1px solid #232222;
+    background: linear-gradient(
+        180deg,
+        rgba(97, 80, 62, 0.6) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      linear-gradient(180deg, #323030 100%, #262424 0%),
+      url(/images/textures/paper-14.webp) lightgray 50% / cover no-repeat;
+    background-blend-mode: normal, hard-light, normal;
+    box-shadow: 0 -7px 5.289px 0 rgba(36, 34, 34, 0.33) inset,
+      0 -9px 5.289px 0 #343232 inset, 0 17px 34px 0 rgba(9, 9, 9, 0.24),
+      0 0 0 4px #61503e;
+    font-family: var(--font-marlton), sans-serif;
+    color: #fde4c8;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: lowercase;
+    transition: background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s;
+    transition-delay: 0.3s;
+    transition-timing-function: ease-in-out;
+    outline: none;
+    position: relative;
+  }
+
+  .godly-button-gray span {
+    text-box-trim: var(--text-box-trim);
+    text-box-edge: var(--text-box-edge);
+  }
+
+  .godly-button-gray:hover,
+  .godly-button-gray:focus-visible {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(97, 80, 62, 0.7) 100%
+      ),
+      linear-gradient(180deg, #404040 100%, #323030 0%),
+      url(/images/textures/paper-14.webp) lightgray 50% / cover no-repeat;
+    background-blend-mode: lighten, hard-light, normal;
+    box-shadow: 0 -7px 5.289px 0 rgba(36, 34, 34, 0.33) inset,
+      0 -9px 5.289px 0 #343232 inset, 0 24px 48px 0 rgba(9, 9, 9, 0.28),
+      0 0 0 4px #61503e;
+    color: #fff6e9;
+    border-color: #404040;
+    cursor: pointer;
+    z-index: 1;
+    transition-timing-function: ease-in-out;
+  }
+
+  .godly-button-gray:active {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.18) 0%,
+        rgba(97, 80, 62, 0.8) 100%
+      ),
+      linear-gradient(180deg, #262424 100%, #1a1a1a 0%),
+      url(/images/textures/paper-14.webp) lightgray 50% / cover no-repeat;
+    background-blend-mode: multiply, hard-light, normal;
+    box-shadow: 0 -3px 3.3px 0 rgba(36, 34, 34, 0.33) inset,
+      0 -7px 5.289px 0 #343232 inset, 0 8px 16px 0 rgba(9, 9, 9, 0.18),
+      0 0 0 4px #61503e;
+    color: #ffe7c8;
+    border-color: #1a1a1a;
+    z-index: 2;
+  }
+
   .dashed-border {
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='6' ry='6' stroke='%23F3CA9EFF' stroke-width='3' stroke-dasharray='8%2c8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
     border-radius: 6px;
