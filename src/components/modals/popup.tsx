@@ -81,7 +81,7 @@ export function Popup() {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="bg-transparent border-none shadow-none text-black text-center max-w-[440px] sm:max-w-[440px] scale-120 sm:scale-100 min-h-[650px] sm:min-h-[675px]">
+      <DialogContent className="bg-transparent border-none shadow-none text-black text-center max-w-[440px] sm:max-w-[440px] scale-90 sm:scale-100 min-h-[650px] sm:min-h-[675px]">
         <div className="absolute inset-0 w-full h-full -z-10 pointer-events-none object-contain left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <img
             src="/images/textures/popup-bg.png"
