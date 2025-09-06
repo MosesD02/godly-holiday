@@ -5,6 +5,8 @@ import { Header } from "@/components/header";
 import { OsDetection } from "./os-detection";
 import { Footer } from "@/components/footer";
 import { Popup } from "@/components/modals/popup";
+import { QuoteModalProvider } from "@/hooks/use-quote-modal";
+import { QuoteModal } from "@/components/modals/quote-modal";
 
 const luminaire = localFont({
   src: "../fonts/Luminaire.otf",
@@ -40,11 +42,14 @@ export default function RootLayout({
       <body
         className={`antialiased ${luminaire.variable} overflow-x-clip ${marlton.variable} ${satoshi.variable} min-h-svh flex flex-col items-center justify-center w-full h-full`}
       >
-        <OsDetection />
-        <Header />
-        <main className="flex-1 w-full">{children}</main>
-        <Footer />
-        <Popup />
+        <QuoteModalProvider>
+          <OsDetection />
+          <Header />
+          <main className="flex-1 w-full">{children}</main>
+          <Footer />
+          <Popup />
+          <QuoteModal />
+        </QuoteModalProvider>
       </body>
     </html>
   );

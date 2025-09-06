@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Logo from "@/assets/logo.svg";
-import { GodlyButton } from "@/components/ui/godly-button";
+import { QuoteButton } from "@/components/ui/quote-button";
 import ArrowRight from "@/assets/arrow-right.svg";
 
 export function RemoveStress() {
@@ -165,7 +165,7 @@ export function RemoveStress() {
                 </div>
               </div>
             </div>
-            <GodlyButton className="max-w-full w-full justify-center mt-6">
+            <QuoteButton className="max-w-full w-full justify-center mt-6">
               <span>REQUEST A QUOTE</span>
               <Image
                 src={ArrowRight.src}
@@ -173,7 +173,7 @@ export function RemoveStress() {
                 width={32}
                 height={33}
               />
-            </GodlyButton>
+            </QuoteButton>
           </div>
         </div>
 
@@ -267,7 +267,7 @@ export function RemoveStress() {
                 <Icons.checkGold />
               </div>
             </span>
-            <GodlyButton className="max-w-full w-full justify-center">
+            <QuoteButton className="max-w-full w-full justify-center">
               <span>REQUEST A QUOTE</span>
               <Image
                 src={ArrowRight.src}
@@ -275,7 +275,7 @@ export function RemoveStress() {
                 width={32}
                 height={33}
               />
-            </GodlyButton>
+            </QuoteButton>
           </div>
           <Image
             src="/images/home/remove-stress/flowers.png"

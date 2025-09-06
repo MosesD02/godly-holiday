@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
-import { GodlyButton } from "@/components/ui/godly-button";
 import ArrowRight from "@/assets/arrow-right.svg";
 import Image from "next/image";
+import { QuoteButton } from "@/components/ui/quote-button";
 
 export function LightInstallation() {
   return (
@@ -42,7 +42,7 @@ export function LightInstallation() {
               <Badge size="sm">Churches</Badge>
             </div>
           </div>
-          <GodlyButton className="max-w-fit">
+          <QuoteButton className="max-w-fit">
             <span>Request a Quote</span>{" "}
             <Image
               src={ArrowRight.src}
@@ -50,7 +50,7 @@ export function LightInstallation() {
               width={32}
               height={33}
             />
-          </GodlyButton>
+          </QuoteButton>
         </div>
         <div className="p-[0_5px_13px_4px] sm:p-[0_7.5px_19px_6.5px] lg:p-[0_9.925px_25.561px_8.762px] order-first lg:order-none">
           <Image
@@ -103,7 +103,7 @@ export function LightInstallation() {
               <Badge size="sm">Estalases</Badge>
             </div>
           </div>
-          <GodlyButton className="max-w-fit">
+          <QuoteButton className="max-w-fit">
             <span>Request a Quote</span>{" "}
             <Image
               src={ArrowRight.src}
@@ -111,7 +111,7 @@ export function LightInstallation() {
               width={32}
               height={33}
             />
-          </GodlyButton>
+          </QuoteButton>
         </div>
       </div>
     </section>

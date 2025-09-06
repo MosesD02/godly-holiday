@@ -6,8 +6,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Image from "next/image";
-import { GodlyButton } from "../ui/godly-button";
 import ArrowRight from "@/assets/arrow-right.svg";
+import { QuoteButton } from "../ui/quote-button";
 
 export function FAQ() {
   return (
@@ -57,12 +57,10 @@ export function FAQ() {
           ))}
         </Accordion>
       </div>
-      <GodlyButton className="mt-8 sm:mt-12 lg:mt-[102px] mx-4 sm:mx-6 lg:mx-0">
-        <span className="text-sm sm:text-base md:text-2xl">
-          Request a Quote
-        </span>
+      <QuoteButton className="mt-8 sm:mt-12 lg:mt-[102px] mx-4 sm:mx-6 lg:mx-0">
+        <span className="text-2xl">Request a Quote</span>
         <Image src={ArrowRight.src} alt="Arrow Right" width={32} height={33} />
-      </GodlyButton>
+      </QuoteButton>
     </section>
   );
 }

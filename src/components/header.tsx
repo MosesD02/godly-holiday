@@ -4,11 +4,11 @@ import Link from "next/link";
 import { useState } from "react";
 
 import Logo from "@/assets/logo.svg";
-import ArrowDown from "@/assets/arrow-down.svg";
 import Call from "@/assets/call.svg";
 import TicketHolder from "@/assets/ticket-holder.svg";
 import Ticket from "@/assets/ticket.svg";
 import Image from "next/image";
+import { useQuoteModal } from "@/hooks/use-quote-modal";
 
 type NavItem = {
   label: string;
@@ -36,6 +36,7 @@ export const navItems: NavItem[] = [
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { openModal } = useQuoteModal();
 
   return (
     <header className="w-full h-16 sm:h-18 bg-background flex items-center justify-center sticky top-0 z-50">
@@ -81,7 +82,10 @@ export function Header() {
             </div>
           </div>
 
-          <button className="relative hover:cursor-pointer transition-all duration-300 group shrink-0">
+          <button
+            onClick={openModal}
+            className="relative hover:cursor-pointer transition-all duration-300 group shrink-0"
+          >
             <Image
               src={TicketHolder.src}
               alt="Ticket Holder"
@@ -163,7 +167,10 @@ export function Header() {
                     </div>
                   </div>
                 </div>
-                <button className="relative hover:cursor-pointer transition-all duration-300 group shrink-0">
+                <button
+                  onClick={openModal}
+                  className="relative hover:cursor-pointer transition-all duration-300 group shrink-0"
+                >
                   <Image
                     src={TicketHolder.src}
                     alt="Ticket Holder"

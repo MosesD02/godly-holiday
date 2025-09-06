@@ -9,9 +9,9 @@ import {
   DialogHeader,
   DialogTitle,
 } from "../ui/dialog";
-import { GodlyButton } from "../ui/godly-button";
 import ArrowRight from "@/assets/arrow-right.svg";
 import Image from "next/image";
+import { QuoteButton } from "../ui/quote-button";
 
 export function Popup() {
   const [isOpen, setIsOpen] = useState(false);
@@ -183,7 +183,7 @@ export function Popup() {
               </p>
             </div>
           </div>
-          <GodlyButton className="max-w-full w-full justify-center">
+          <QuoteButton className="max-w-full w-full justify-center">
             <span>REQUEST A QUOTE</span>
             <Image
               src={ArrowRight.src}
@@ -191,7 +191,7 @@ export function Popup() {
               width={32}
               height={33}
             />
-          </GodlyButton>
+          </QuoteButton>
         </div>
       </DialogContent>
     </Dialog>
