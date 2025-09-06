@@ -13,7 +13,7 @@ export function FAQ() {
   return (
     <section
       id="faq"
-      className="py-12 sm:py-20 lg:py-[100px] bg-paper-16-2 flex items-center flex-col px-4 sm:px-6 lg:px-0"
+      className="py-12 sm:py-20 lg:py-[100px] bg-paper-16-2 flex items-center flex-col px-4 sm:px-6 lg:px-8"
     >
       <div className="text-transparent pb-12 sm:pb-20 lg:pb-[120px] relative max-w-5xl mx-auto">
         <h2 className="font-marlton relative text-2xl sm:text-3xl lg:text-[40px] text-center leading-tight sm:leading-10 lg:leading-12 tracking-[1.2px] sm:tracking-[1.8px] lg:tracking-[2.4px]">
@@ -36,7 +36,7 @@ export function FAQ() {
           className="absolute bottom-1/2 lg:bottom-30 pointer-events-none object-contain scale-112"
         />
       </div>
-      <div className="relative w-full max-w-[900px]">
+      <div className="relative w-full max-w-[900px] mx-4 sm:mx-6 lg:mx-auto">
         <Image
           src="/images/home/faq/bg.png"
           alt="FAQ BG"
@@ -47,7 +47,7 @@ export function FAQ() {
         <Accordion
           type="single"
           collapsible
-          className="z-10 relative px-[60px] py-[40px]"
+          className="z-10 relative px-4 py-4 sm:px-8 sm:py-6 lg:px-[60px] lg:py-[40px]"
         >
           {faqs.map((faq) => (
             <AccordionItem key={faq.question} value={faq.question}>
@@ -57,8 +57,13 @@ export function FAQ() {
           ))}
         </Accordion>
       </div>
-      <GodlyButton className="mt-[102px]" variant="gray">
-        <span>Schedule your solar panel cleaning today</span>
+      <GodlyButton
+        className="mt-8 sm:mt-12 lg:mt-[102px] mx-4 sm:mx-6 lg:mx-0"
+        variant="gray"
+      >
+        <span className="text-sm sm:text-base md:text-2xl">
+          Schedule your solar panel cleaning today
+        </span>
         <Image src={ArrowRight.src} alt="Arrow Right" width={32} height={33} />
       </GodlyButton>
     </section>
