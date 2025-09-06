@@ -7,7 +7,7 @@ export function ServicesCTA() {
   return (
     <section className="bg-paper-16-2 pb-16 sm:pb-20 lg:pb-[114px] space-y-12 sm:space-y-16 lg:space-y-[96px]">
       <Image
-        src="/images/services/cta/lights.png"
+        src="/images/services/cta/lights.webp"
         alt="Lights"
         width={1452}
         height={350}
@@ -16,7 +16,7 @@ export function ServicesCTA() {
 
       <div className="max-w-[1332px] mx-auto bg-[#1F1D1D] h-full rounded-[12px] flex flex-col p-6 sm:p-12 lg:p-20 items-center justify-center gap-8 sm:gap-12 lg:gap-[64px] shadow-[0_3.015px_3.015px_0_rgba(0,0,0,0.25),_0_4px_4px_0_rgba(255,255,255,0.30)_inset] relative">
         <Image
-          src="/images/services/cta/bg.png"
+          src="/images/services/cta/bg.webp"
           alt="cta bg"
           width={1212}
           height={928}

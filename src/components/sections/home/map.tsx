@@ -28,7 +28,7 @@ export function Map() {
         />
       </div>
       <Image
-        src="/images/home/map/map.png"
+        src="/images/home/map/map.webp"
         alt="Map"
         width={1140}
         height={674}

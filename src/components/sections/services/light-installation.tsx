@@ -20,7 +20,7 @@ export function RecentLightInstallation() {
       </h2>
 
       <Image
-        src="/images/services/light-installation/img.png"
+        src="/images/services/light-installation/img.webp"
         alt="Recent Light Installation"
         width={1920}
         height={1080}

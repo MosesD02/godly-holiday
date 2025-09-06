@@ -10,14 +10,14 @@ export function WrapperUp() {
       className="bg-paper-16-2 flex flex-col items-center justify-center py-16 sm:py-20 lg:py-[120px] gap-12 sm:gap-16 lg:gap-[96px] relative px-4 sm:px-6"
     >
       <Image
-        src="/images/home/wrapped-up/grid.png"
+        src="/images/home/wrapped-up/grid.webp"
         alt="Grid"
         className="absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none max-w-[min(calc(100%-60px),300px)] sm:max-w-[min(calc(100%-120px),600px)] lg:max-w-[min(calc(100%-240px),1176px)]"
         width={1176}
         height={1176}
       />
       <Image
-        src="/images/home/wrapped-up/lights.png"
+        src="/images/home/wrapped-up/lights.webp"
         alt="Lights"
         width={421.576}
         height={279.646}
@@ -37,7 +37,7 @@ export function WrapperUp() {
           In
         </span>
         <img
-          src="/images/home/wrapped-up/heading.png"
+          src="/images/home/wrapped-up/heading.webp"
           alt="title"
           className="absolute inset-0 left-1/2 top-0 -translate-x-1/2 translte-y-1/2 pointer-events-none w-full max-w-[200px] sm:max-w-[300px] lg:max-w-none"
         />

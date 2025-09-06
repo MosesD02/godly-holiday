@@ -12,7 +12,7 @@ export function RemoveStress() {
           FROM HOLIDAY
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/home/remove-stress/heading.png"
+            src="/images/home/remove-stress/heading.webp"
             className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-contain mt-6.75 sm:mt-10 lg:mt-13.5 pointer-events-none w-[281px] sm:w-[422px] lg:w-[562.72px] h-[103px] sm:h-[155px] lg:h-[206.751px]"
             alt="Heading"
           />
@@ -278,7 +278,7 @@ export function RemoveStress() {
             </QuoteButton>
           </div>
           <Image
-            src="/images/home/remove-stress/flowers.png"
+            src="/images/home/remove-stress/flowers.webp"
             alt="Flowers"
             width={180}
             height={180}

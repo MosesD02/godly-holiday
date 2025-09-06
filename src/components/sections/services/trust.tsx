@@ -221,7 +221,7 @@ export function Trust() {
         </div>
       </div>
       <Image
-        src="/images/home/lighting-up-nights/flakes.png"
+        src="/images/home/lighting-up-nights/flakes.webp"
         alt="Flakes"
         className="absolute left-1/2 bottom-0 -translate-x-1/2 pointer-events-none w-full max-w-[1440px] mix-blend-overlay opacity-20"
         width={1440}

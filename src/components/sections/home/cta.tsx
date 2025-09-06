@@ -49,7 +49,7 @@ export function CTA() {
       className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12 lg:gap-[96px] max-w-[1344px] mx-auto justify-center py-12 sm:py-20 lg:py-[120px] w-full relative px-4 sm:px-6 lg:px-0"
     >
       <Image
-        src="/images/home/cta/flowers.png"
+        src="/images/home/cta/flowers.webp"
         alt="Flowers"
         width={410}
         height={614}
@@ -81,7 +81,7 @@ export function CTA() {
           className="relative max-w-fit mx-auto min-w-[280px] sm:min-w-[320px] lg:min-w-[336px] text-center text-[#2D2B2B] flex flex-col gap-1 px-4 sm:px-6 py-6 sm:py-8 hover:cursor-pointer hover:scale-105 transition-all duration-300"
         >
           <Image
-            src="/images/textures/cta-num-bg.png"
+            src="/images/textures/cta-num-bg.webp"
             alt="CTA Background"
             width={562.141}
             height={562.141}
@@ -111,7 +111,7 @@ export function CTA() {
       </div>
       <div className="relative max-w-[480px] sm:max-w-[520px] lg:max-w-[562.141px] w-full">
         <Image
-          src="/images/textures/cta-bg.png"
+          src="/images/textures/cta-bg.webp"
           alt="CTA Background"
           width={562.141}
           height={562.141}

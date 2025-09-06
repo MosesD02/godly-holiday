@@ -334,7 +334,7 @@ export function QuoteForm({ hideImages = false }: QuoteFormProps) {
 
       <div className="absolute flex items-center justify-center -top-[75px] sm:-top-[100px] lg:-top-[150px] -right-16 sm:-right-24 lg:-right-33 w-[180px] sm:w-[270px] lg:w-[354.512px] h-[180px] sm:h-[270px] lg:h-[353.446px] rotate-[-16deg] z-0">
         <Image
-          src="/images/home/hero/tape.png"
+          src="/images/home/hero/tape.webp"
           alt="Tape"
           width={234.158}
           height={266.58}

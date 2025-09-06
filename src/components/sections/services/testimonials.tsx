@@ -43,7 +43,7 @@ export function Testimonials() {
                 <div className="space-y-7">
                   <div className="flex items-center gap-3">
                     <Image
-                      src="/images/services/testimonials/alex.png"
+                      src="/images/services/testimonials/alex.webp"
                       alt="Avatar"
                       width={48}
                       height={48}

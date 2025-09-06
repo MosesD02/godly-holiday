@@ -40,7 +40,7 @@ export function Hero() {
       </div>
 
       <Image
-        src={"/images/services/hero/card.png"}
+        src={"/images/services/hero/card.webp"}
         alt="Hero Card"
         width={1654.5}
         height={661.002}
@@ -55,14 +55,14 @@ export function Hero() {
       <QuoteForm hideImages />
 
       <Image
-        src={"/images/services/hero/flowers-left.png"}
+        src={"/images/services/hero/flowers-left.webp"}
         alt="Flowers Left"
         width={382.851}
         height={253.958}
         className="hidden md:block absolute bottom-0 translate-y-1/2 left-0 max-w-[253px] -z-10 pointer-events-none"
       />
       <Image
-        src={"/images/services/hero/flowers-right.png"}
+        src={"/images/services/hero/flowers-right.webp"}
         alt="Flowers right"
         width={382.851}
         height={253.958}

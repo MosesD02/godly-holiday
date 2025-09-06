@@ -44,7 +44,7 @@ export function WhyChooseUs() {
       </div>
 
       <Image
-        src="/images/services/why-us/left-left.png"
+        src="/images/services/why-us/left-left.webp"
         alt="Why Choose Us"
         width={320}
         height={320}
@@ -52,7 +52,7 @@ export function WhyChooseUs() {
       />
 
       <Image
-        src="/images/services/why-us/left-right.png"
+        src="/images/services/why-us/left-right.webp"
         alt="Why Choose Us"
         width={320}
         height={320}

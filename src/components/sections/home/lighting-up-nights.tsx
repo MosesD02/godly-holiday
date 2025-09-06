@@ -8,7 +8,7 @@ export function LightingUpNights() {
       className="flex flex-col items-center justify-center relative px-4 sm:px-0"
     >
       <Image
-        src="/images/home/lighting-up-nights/flakes.png"
+        src="/images/home/lighting-up-nights/flakes.webp"
         alt="Flakes"
         className="absolute inset-0 left-1/2 top-0 -translate-x-1/2 pointer-events-none w-full max-w-[1440px] mix-blend-overlay opacity-20"
         width={1440}
@@ -18,14 +18,14 @@ export function LightingUpNights() {
         <span>LIGHTING UP NIGHTS</span> <br />
         <span>SPREADING HOLIDAY JOY</span>
         <img
-          src="/images/home/lighting-up-nights/heading.png"
+          src="/images/home/lighting-up-nights/heading.webp"
           className="absolute top-1/2 -translate-y-4.5 sm:-translate-y-6.75 lg:-translate-y-9 pointer-events-none w-full max-w-[320px] sm:max-w-[480px] lg:max-w-none"
           alt="Heading"
         />
       </h2>
       <div className="relative w-full h-[200px] sm:h-[400px] lg:h-[669.884px] mb-16 sm:mb-20 lg:mb-[102px]">
         <Image
-          src="/images/home/lighting-up-nights/images.png"
+          src="/images/home/lighting-up-nights/images.webp"
           alt="Images"
           width={2100}
           height={669.884}

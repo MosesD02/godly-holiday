@@ -36,7 +36,7 @@ export function ServicesFAQ() {
       </div>
       <div className="relative w-full max-w-[900px] mx-4 sm:mx-6 lg:mx-auto">
         <Image
-          src="/images/services/faq/bg.png"
+          src="/images/services/faq/bg.webp"
           alt="FAQ BG"
           width={1224}
           height={800}
