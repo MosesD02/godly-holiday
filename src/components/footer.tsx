@@ -2,14 +2,14 @@ import { cities } from "@/data/cities";
 
 export function Footer() {
   return (
-    <footer className="bg-paper-16-3 w-full p-[54px] pt-12 ">
-      <h2 className="font-marlton text-4xl sm:text-5xl lg:text-[64px] text-center lg:leading-[100px] tracking-[1.2px] sm:tracking-[1.8px] lg:tracking-[2.4px] relative">
+    <footer className="bg-paper-16-3 w-full p-4 sm:p-8 lg:p-[54px] pt-6 sm:pt-8 lg:pt-12">
+      <h2 className="font-marlton text-2xl sm:text-4xl lg:text-[64px] text-center leading-tight sm:leading-tight lg:leading-[82px] tracking-[0.6px] sm:tracking-[1.2px] lg:tracking-[2.4px] relative">
         CITIES <br />{" "}
         <span
-          className="font-luminaire absolute rotate-[-7.9deg] left-1/2 top-1/2 text-[#FFE7AF] -translate-x-1/2 -translate-y-1/2"
+          className="font-luminaire text-2xl sm:text-4xl lg:text-[48px] absolute rotate-[-7.9deg] left-1/2 top-1/2 text-[#FFE7AF] -translate-x-1/2 -translate-y-1/2"
           style={{
             textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
-            WebkitTextStrokeWidth: "8px",
+            WebkitTextStrokeWidth: "4px",
             WebkitTextStrokeColor: "#252323",
             paintOrder: "stroke fill",
           }}
@@ -18,24 +18,24 @@ export function Footer() {
         </span>{" "}
         SERVE
       </h2>
-      <div className="grid grid-cols-5 max-w-[1332px] py-[60px] mx-auto">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 max-w-[1332px] py-8 sm:py-12 lg:py-[60px] mx-auto gap-2 sm:gap-4">
         {cities.map((city) => (
           <div
             key={city.key}
-            className="py-3 max-w-[200px] w-full font-marlton text-white text-xl"
+            className="py-2 sm:py-3 max-w-[200px] w-full font-marlton text-white text-sm sm:text-lg lg:text-xl text-center sm:text-left"
           >
             {city.name}
           </div>
         ))}
       </div>
 
-      <nav className="bg-paper-16-2 px-10 py-8 flex flex-col gap-[96px] rounded-2xl w-full max-w-[1332px] mx-auto">
-        <div className="flex items-start justify-between">
-          <div className="space-y-6">
-            <h3 className="font-marlton text-[#2D2B2B] text-base opacity-60">
+      <nav className="bg-paper-16-2 px-4 sm:px-6 lg:px-10 py-6 sm:py-8 flex flex-col gap-8 sm:gap-12 lg:gap-[96px] rounded-xl sm:rounded-2xl w-full max-w-[1332px] mx-auto">
+        <div className="flex flex-col sm:flex-row items-start justify-between gap-6 sm:gap-0">
+          <div className="space-y-4 sm:space-y-6">
+            <h3 className="font-marlton text-[#2D2B2B] text-sm sm:text-base opacity-60">
               Menu
             </h3>
-            <ul className="text-[#312E2C] text-base font-satoshi font-medium">
+            <ul className="text-[#312E2C] text-sm sm:text-base font-satoshi font-medium space-y-1 sm:space-y-2">
               <li>Services</li>
               <li>About Us</li>
               <li>Our Promises</li>
@@ -44,24 +44,24 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="text-right">
+          <div className="text-left sm:text-right">
             <a
               href="tel:+19547514128"
-              className="text-[#312E2C] text-base font-satoshi font-medium"
+              className="text-[#312E2C] text-sm sm:text-base font-satoshi font-medium block sm:inline"
             >
               954-751-4128
             </a>
             <br />
             <a
               href="mailto:hello@godlywindows.com"
-              className="text-[#312E2C] text-base font-satoshi font-medium"
+              className="text-[#312E2C] text-sm sm:text-base font-satoshi font-medium block sm:inline"
             >
               hello@godlywindows.com
             </a>
           </div>
         </div>
 
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
           <div className="flex items-center gap-2">
             <Icons.facebook />
             <Icons.instagram />
@@ -71,7 +71,7 @@ export function Footer() {
             href="https://maps.app.goo.gl/N2m7rUo997VjZ8om6"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#312E2C] text-base font-satoshi font-medium"
+            className="text-[#312E2C] text-sm sm:text-base font-satoshi font-medium text-center sm:text-right"
           >
             1901 Thornridge Cir. Shiloh, <br />
             Hawaii 81063
