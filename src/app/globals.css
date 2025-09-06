@@ -146,6 +146,14 @@
     background-blend-mode: multiply, normal;
   }
 
+  .bg-paper-16-3 {
+    background: url(/images/textures/paper-16.webp) lightgray 50% / 149.931%
+        100% no-repeat,
+      #262424;
+    background-size: cover;
+    background-blend-mode: multiply, normal;
+  }
+
   .bg-paper-8 {
     background: url(/images/textures/paper-8.webp) lightgray 50% / cover
         no-repeat,
