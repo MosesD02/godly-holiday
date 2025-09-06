@@ -92,7 +92,11 @@ const services = [
   },
 ];
 
-export function QuoteForm() {
+interface QuoteFormProps {
+  hideImages?: boolean;
+}
+
+export function QuoteForm({ hideImages = false }: QuoteFormProps) {
   const [isChecked, setIsChecked] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -337,20 +341,25 @@ export function QuoteForm() {
           className="shrink-0 w-[120px] sm:w-[180px] lg:w-[234.158px] h-auto"
         />
       </div>
-      <Image
-        src="/images/home/hero/hero-lights-left.webp"
-        alt="Hero Lights Left"
-        width={382.851}
-        height={253.958}
-        className="shrink-0 rotate-[-24deg] scale-x-[-1] aspect-[101/67] absolute -bottom-16 sm:-bottom-32 lg:-bottom-62 -left-8 sm:-left-26 lg:-left-52 -z-10 w-[150px] sm:w-[250px] lg:w-[382.851px]"
-      />
-      <Image
-        src="/images/home/hero/hero-lights-right.webp"
-        alt="Hero Lights Right"
-        width={465.548}
-        height={308.814}
-        className="shrink-0 aspect-[101/67] rotate-[22deg] absolute -bottom-8 sm:-bottom-16 lg:-bottom-32 -right-8 sm:-right-16 lg:-right-32 -z-10 w-[180px] sm:w-[300px] lg:w-[465.548px]"
-      />
+
+      {!hideImages && (
+        <>
+          <Image
+            src="/images/home/hero/hero-lights-left.webp"
+            alt="Hero Lights Left"
+            width={382.851}
+            height={253.958}
+            className="shrink-0 rotate-[-24deg] scale-x-[-1] aspect-[101/67] absolute -bottom-16 sm:-bottom-32 lg:-bottom-62 -left-8 sm:-left-26 lg:-left-52 -z-10 w-[150px] sm:w-[250px] lg:w-[382.851px]"
+          />
+          <Image
+            src="/images/home/hero/hero-lights-right.webp"
+            alt="Hero Lights Right"
+            width={465.548}
+            height={308.814}
+            className="shrink-0 aspect-[101/67] rotate-[22deg] absolute -bottom-8 sm:-bottom-16 lg:-bottom-32 -right-8 sm:-right-16 lg:-right-32 -z-10 w-[180px] sm:w-[300px] lg:w-[465.548px]"
+          />
+        </>
+      )}
     </div>
   );
 }

@@ -6,11 +6,13 @@ import { RecentLightInstallation } from "@/components/sections/services/light-in
 import { Trust } from "@/components/sections/services/trust";
 import { WhyChooseUs } from "@/components/sections/services/why-us";
 import { HowItWorks } from "@/components/sections/services/how-it-works";
+import { Hero } from "@/components/sections/services/hero";
 
 export default function ServicesPage() {
   return (
     <div className="flex flex-col items-center justify-center relative">
       <div className="relative z-20 w-full">
+        <Hero />
         <LightingSolution />
         <WhyChooseUs />
         <HowItWorks />
