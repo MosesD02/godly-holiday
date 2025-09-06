@@ -5,8 +5,9 @@ import { WrapperUp } from "@/components/sections/home/wrapped-up";
 import { WeGotYouCovered } from "@/components/sections/home/we-got-you-covered";
 import { LightingUpNights } from "@/components/sections/home/lighting-up-nights";
 import Image from "next/image";
-import { RemoveStress } from "@/components/sections/remove-stress";
+import { RemoveStress } from "@/components/sections/home/remove-stress";
 import { CTA } from "@/components/sections/home/cta";
+import { Map } from "@/components/sections/home/map";
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
         <LightingUpNights />
         <RemoveStress />
         <CTA />
+        <Map />
       </div>
     </div>
   );
