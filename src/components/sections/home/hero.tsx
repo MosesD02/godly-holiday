@@ -8,7 +8,7 @@ export function Hero() {
       id="hero"
       className="relative w-full mb-24 sm:mb-32 lg:mb-[229px] overflow-x-clip"
     >
-      <div className="max-w-[1400px] w-full px-4 sm:px-8 lg:px-13.5 mx-auto relative z-10 pt-[calc(min(100svh,960px)-450px)]">
+      <div className="max-w-[1400px] w-full px-4 sm:px-8 lg:px-13.5 mx-auto relative z-10 pt-[calc(min(100svh,960px)-550px)]">
         <div className="space-y-3 sm:space-y-[11.65px] mb-6 sm:mb-8.5">
           <div>
             <Image

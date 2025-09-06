@@ -12,6 +12,7 @@ import {
 import ArrowRight from "@/assets/arrow-right.svg";
 import Image from "next/image";
 import { QuoteButton } from "../ui/quote-button";
+import { GodlyButton } from "../ui/godly-button";
 
 export function Popup() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +25,7 @@ export function Popup() {
   });
   const [isExpired, setIsExpired] = useState(false);
   const [targetDate, setTargetDate] = useState<Date | null>(null);
+  const [showFloatingButton, setShowFloatingButton] = useState(false);
 
   useEffect(() => {
     // South Florida is in Eastern Time - create end of month in ET
@@ -80,120 +82,142 @@ export function Popup() {
   }, [isExpired]);
 
   return (
-    <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="bg-transparent border-none shadow-none text-black text-center max-w-[440px] sm:max-w-[440px] scale-90 sm:scale-100 min-h-[650px] sm:min-h-[675px]">
-        <div className="absolute inset-0 w-full h-full -z-10 pointer-events-none object-contain left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <img
-            src="/images/textures/popup-bg.png"
-            alt="Popup"
-            className="w-full h-full"
-          />
-        </div>
-        <div className="w-[calc(100%-32px)] left-1/2 -translate-x-1/2 h-[1px] border-t border-dashed inset-0 absolute z-10 border-black top-1/2 -translate-y-1/2" />
-        <div className="flex flex-col gap-6">
-          <DialogHeader className="mx-auto text-black">
-            <DialogTitle className="font-marlton text-center shadow-none text-shadow-none text-3xl">
-              SOUTH FLORIDA SUMMER <br /> SPECIAL -{" "}
-              <span className="text-[#eb7a55]">$59 OFF</span>
-            </DialogTitle>
-            <DialogDescription className="font-satoshi text-center text-base font-medium text-[#0a0a0a]">
-              We&apos;re opening up limited spots for first- <br />
-              time clients this{" "}
-              {targetDate
-                ? targetDate.toLocaleDateString("en-US", {
-                    month: "long",
-                    timeZone: "America/New_York",
-                  })
-                : "month"}
-              .
-            </DialogDescription>
-          </DialogHeader>
-
-          <p>⏳ Offer ends in:</p>
-
-          <div className="grid grid-cols-4 gap-4 max-w-xs mx-auto">
-            <div className="flex items-center flex-col gap-2">
-              <div className="bg-[#282828] inset-shadow-sm inset-shadow-white/80 text-white rounded-[12px] flex items-center justify-center font-medium font-satoshi text-[32px] text-center aspect-square size-[64px]">
-                {timeLeft.days.toString().padStart(2, "0")}
-              </div>
-              <div className="font-satoshi text-base font-medium text-[#0a0a0a]">
-                DAYS
-              </div>
-            </div>
-            <div className="flex items-center flex-col gap-2">
-              <div className="bg-[#282828]  inset-shadow-sm inset-shadow-white/80 text-white rounded-[12px] flex items-center justify-center font-medium font-satoshi text-[32px] text-center aspect-square size-[64px]">
-                {timeLeft.hours.toString().padStart(2, "0")}
-              </div>
-              <div className="font-satoshi text-base font-medium text-[#0a0a0a]">
-                HOURS
-              </div>
-            </div>
-            <div className="flex items-center flex-col gap-2">
-              <div className="bg-[#282828]  inset-shadow-sm inset-shadow-white/80 text-white rounded-[12px] flex items-center justify-center font-medium font-satoshi text-[32px] text-center aspect-square size-[64px]">
-                {timeLeft.minutes.toString().padStart(2, "0")}
-              </div>
-              <div className="font-satoshi text-base font-medium text-[#0a0a0a]">
-                MINUTES
-              </div>
-            </div>
-            <div className="flex items-center flex-col gap-2">
-              <div className="bg-[#282828]  inset-shadow-sm inset-shadow-white/80 text-white rounded-[12px] flex items-center justify-center font-medium font-satoshi text-[32px] text-center aspect-square size-[64px]">
-                {timeLeft.seconds.toString().padStart(2, "0")}
-              </div>
-              <div className="font-satoshi text-base font-medium text-[#0a0a0a]">
-                SECONDS
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col justify-end gap-4">
-          <div className="border rounded-[20px] border-[#ae9d8a] p-2 h-fit">
-            <div className="border rounded-[12px] border-[#ae9d8a] p-2">
-              <div className="grid grid-cols-2 items-center gap-4">
-                <div className="font-marlton text-[#eb7a55] text-8xl text-right">
-                  $59
-                </div>
-                <div className="flex flex-col justify-start text-left font-marlton text-2xl">
-                  OFF <br />{" "}
-                  <span className="text-[#ae9d8a]">FIRST WINDOW CLEANING</span>
-                </div>
-              </div>
-              <hr />
-              <p className="font-satoshi text-base font-medium text-[#0a0a0a]">
-                Just in time for summer entertaining. Expires{" "}
-                {targetDate
-                  ? (() => {
-                      const day = targetDate.getDate();
-                      const suffix =
-                        day === 1 || day === 21 || day === 31
-                          ? "st"
-                          : day === 2 || day === 22
-                          ? "nd"
-                          : day === 3 || day === 23
-                          ? "rd"
-                          : "th";
-                      return `${targetDate.toLocaleDateString("en-US", {
-                        month: "long",
-                        timeZone: "America/New_York",
-                      })} ${day}${suffix}`;
-                    })()
-                  : "soon"}
-                . Countdown&apos;s ticking.
-              </p>
-            </div>
-          </div>
-          <QuoteButton className="max-w-full w-full justify-center">
-            <span>REQUEST A QUOTE</span>
-            <Image
-              src={ArrowRight.src}
-              alt="Arrow Right"
-              width={32}
-              height={33}
+    <>
+      <Dialog
+        open={isOpen}
+        onOpenChange={(isOpen) => {
+          setIsOpen(isOpen);
+          if (!isOpen) {
+            setShowFloatingButton(true);
+          }
+        }}
+      >
+        <DialogContent className="bg-transparent border-none shadow-none text-black text-center max-w-[440px] sm:max-w-[440px] scale-90 sm:scale-100 min-h-[650px] sm:min-h-[675px]">
+          <div className="absolute inset-0 w-full h-full -z-10 pointer-events-none object-contain left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <img
+              src="/images/textures/popup-bg.png"
+              alt="Popup"
+              className="w-full h-full"
             />
-          </QuoteButton>
+          </div>
+          <div className="w-[calc(100%-32px)] left-1/2 -translate-x-1/2 h-[1px] border-t border-dashed inset-0 absolute z-10 border-black top-1/2 -translate-y-1/2" />
+          <div className="flex flex-col gap-6">
+            <DialogHeader className="mx-auto text-black">
+              <DialogTitle className="font-marlton text-center shadow-none text-shadow-none text-3xl">
+                SOUTH FLORIDA SUMMER <br /> SPECIAL -{" "}
+                <span className="text-[#eb7a55]">$59 OFF</span>
+              </DialogTitle>
+              <DialogDescription className="font-satoshi text-center text-base font-medium text-[#0a0a0a]">
+                We&apos;re opening up limited spots for first- <br />
+                time clients this{" "}
+                {targetDate
+                  ? targetDate.toLocaleDateString("en-US", {
+                      month: "long",
+                      timeZone: "America/New_York",
+                    })
+                  : "month"}
+                .
+              </DialogDescription>
+            </DialogHeader>
+
+            <p>⏳ Offer ends in:</p>
+
+            <div className="grid grid-cols-4 gap-4 max-w-xs mx-auto">
+              <div className="flex items-center flex-col gap-2">
+                <div className="bg-[#282828] inset-shadow-sm inset-shadow-white/80 text-white rounded-[12px] flex items-center justify-center font-medium font-satoshi text-[32px] text-center aspect-square size-[64px]">
+                  {timeLeft.days.toString().padStart(2, "0")}
+                </div>
+                <div className="font-satoshi text-base font-medium text-[#0a0a0a]">
+                  DAYS
+                </div>
+              </div>
+              <div className="flex items-center flex-col gap-2">
+                <div className="bg-[#282828]  inset-shadow-sm inset-shadow-white/80 text-white rounded-[12px] flex items-center justify-center font-medium font-satoshi text-[32px] text-center aspect-square size-[64px]">
+                  {timeLeft.hours.toString().padStart(2, "0")}
+                </div>
+                <div className="font-satoshi text-base font-medium text-[#0a0a0a]">
+                  HOURS
+                </div>
+              </div>
+              <div className="flex items-center flex-col gap-2">
+                <div className="bg-[#282828]  inset-shadow-sm inset-shadow-white/80 text-white rounded-[12px] flex items-center justify-center font-medium font-satoshi text-[32px] text-center aspect-square size-[64px]">
+                  {timeLeft.minutes.toString().padStart(2, "0")}
+                </div>
+                <div className="font-satoshi text-base font-medium text-[#0a0a0a]">
+                  MINUTES
+                </div>
+              </div>
+              <div className="flex items-center flex-col gap-2">
+                <div className="bg-[#282828]  inset-shadow-sm inset-shadow-white/80 text-white rounded-[12px] flex items-center justify-center font-medium font-satoshi text-[32px] text-center aspect-square size-[64px]">
+                  {timeLeft.seconds.toString().padStart(2, "0")}
+                </div>
+                <div className="font-satoshi text-base font-medium text-[#0a0a0a]">
+                  SECONDS
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-end gap-4">
+            <div className="border rounded-[20px] border-[#ae9d8a] p-2 h-fit">
+              <div className="border rounded-[12px] border-[#ae9d8a] p-2">
+                <div className="grid grid-cols-2 items-center gap-4">
+                  <div className="font-marlton text-[#eb7a55] text-8xl text-right">
+                    $59
+                  </div>
+                  <div className="flex flex-col justify-start text-left font-marlton text-2xl">
+                    OFF <br />{" "}
+                    <span className="text-[#ae9d8a]">
+                      FIRST WINDOW CLEANING
+                    </span>
+                  </div>
+                </div>
+                <hr />
+                <p className="font-satoshi text-base font-medium text-[#0a0a0a]">
+                  Just in time for summer entertaining. Expires{" "}
+                  {targetDate
+                    ? (() => {
+                        const day = targetDate.getDate();
+                        const suffix =
+                          day === 1 || day === 21 || day === 31
+                            ? "st"
+                            : day === 2 || day === 22
+                            ? "nd"
+                            : day === 3 || day === 23
+                            ? "rd"
+                            : "th";
+                        return `${targetDate.toLocaleDateString("en-US", {
+                          month: "long",
+                          timeZone: "America/New_York",
+                        })} ${day}${suffix}`;
+                      })()
+                    : "soon"}
+                  . Countdown&apos;s ticking.
+                </p>
+              </div>
+            </div>
+            <QuoteButton className="max-w-full w-full justify-center">
+              <span>REQUEST A QUOTE</span>
+              <Image
+                src={ArrowRight.src}
+                alt="Arrow Right"
+                width={32}
+                height={33}
+              />
+            </QuoteButton>
+          </div>
+        </DialogContent>
+      </Dialog>
+      {showFloatingButton && !isOpen && !isExpired && (
+        <div className="fixed left-0 w-fit h-fit -translate-x-[55px] top-1/2 rotate-90 z-50">
+          <GodlyButton
+            onClick={() => setIsOpen(true)}
+            className="rounded-b-none! border-0! tracking-wider!"
+          >
+            <span>Save $59 OFF</span>
+          </GodlyButton>
         </div>
-      </DialogContent>
-    </Dialog>
+      )}
+    </>
   );
 }
