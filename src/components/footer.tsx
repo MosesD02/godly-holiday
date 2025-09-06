@@ -1,4 +1,8 @@
+"use client";
+
 import { cities } from "@/data/cities";
+import { navItems } from "./header";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -36,46 +40,48 @@ export function Footer() {
               Menu
             </h3>
             <ul className="text-[#312E2C] text-sm sm:text-base font-satoshi font-medium space-y-1 sm:space-y-2">
-              <li>Services</li>
-              <li>About Us</li>
-              <li>Our Promises</li>
-              <li>Our Process</li>
-              <li>Holiday Lighting</li>
+              {navItems.map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href}>{item.label}</Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div className="text-left sm:text-right">
-            <a
+            <Link
               href="tel:+19547514128"
               className="text-[#312E2C] text-sm sm:text-base font-satoshi font-medium block sm:inline"
             >
               954-751-4128
-            </a>
+            </Link>
             <br />
-            <a
+            <Link
               href="mailto:hello@godlywindows.com"
               className="text-[#312E2C] text-sm sm:text-base font-satoshi font-medium block sm:inline"
             >
               hello@godlywindows.com
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
           <div className="flex items-center gap-2">
-            <Icons.facebook />
-            <Icons.instagram />
+            <Link
+              href="https://www.facebook.com/godlywindows"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icons.facebook />
+            </Link>
+            <Link
+              href="https://www.instagram.com/godlywindows"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icons.instagram />
+            </Link>
           </div>
-
-          <a
-            href="https://maps.app.goo.gl/N2m7rUo997VjZ8om6"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#312E2C] text-sm sm:text-base font-satoshi font-medium text-center sm:text-right"
-          >
-            1901 Thornridge Cir. Shiloh, <br />
-            Hawaii 81063
-          </a>
         </div>
       </nav>
     </footer>

@@ -15,6 +15,7 @@ import { z } from "zod";
 import Image from "next/image";
 
 import ArrowRight from "@/assets/arrow-right.svg";
+import Link from "next/link";
 
 const formSchema = z.object({
   name: z.string().min(1),
@@ -75,8 +76,8 @@ export function CTA() {
           </p>
         </div>
 
-        <a
-          href="tel:+19548525326"
+        <Link
+          href="tel:+19547514128"
           className="relative max-w-fit mx-auto min-w-[280px] sm:min-w-[320px] lg:min-w-[336px] text-center text-[#2D2B2B] flex flex-col gap-1 px-4 sm:px-6 py-6 sm:py-8 hover:cursor-pointer hover:scale-105 transition-all duration-300"
         >
           <Image
@@ -106,7 +107,7 @@ export function CTA() {
           <p className="rotate-[-2deg] text-base sm:text-lg font-satoshi trakcing-[0.18px]">
             For Immediate Assistance
           </p>
-        </a>
+        </Link>
       </div>
       <div className="relative max-w-[480px] sm:max-w-[520px] lg:max-w-[562.141px] w-full">
         <Image

@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { Header } from "@/components/header";
 import { OsDetection } from "./os-detection";
 import { Footer } from "@/components/footer";
+import { Popup } from "@/components/modals/popup";
 
 const luminaire = localFont({
   src: "../fonts/Luminaire.otf",
@@ -43,6 +44,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1 w-full">{children}</main>
         <Footer />
+        <Popup />
       </body>
     </html>
   );

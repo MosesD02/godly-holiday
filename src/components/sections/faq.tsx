@@ -57,12 +57,9 @@ export function FAQ() {
           ))}
         </Accordion>
       </div>
-      <GodlyButton
-        className="mt-8 sm:mt-12 lg:mt-[102px] mx-4 sm:mx-6 lg:mx-0"
-        variant="gray"
-      >
+      <GodlyButton className="mt-8 sm:mt-12 lg:mt-[102px] mx-4 sm:mx-6 lg:mx-0">
         <span className="text-sm sm:text-base md:text-2xl">
-          Schedule your solar panel cleaning today
+          Request a Quote
         </span>
         <Image src={ArrowRight.src} alt="Arrow Right" width={32} height={33} />
       </GodlyButton>
