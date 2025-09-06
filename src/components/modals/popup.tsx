@@ -94,10 +94,14 @@ export function Popup() {
       >
         <DialogContent className="bg-transparent border-none shadow-none text-black text-center max-w-[440px] sm:max-w-[440px] scale-90 sm:scale-100 min-h-[650px] sm:min-h-[675px]">
           <div className="absolute inset-0 w-full h-full -z-10 pointer-events-none object-contain left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-            <img
+            <Image
               src="/images/textures/popup-bg.png"
               alt="Popup"
               className="w-full h-full"
+              width={1440}
+              height={1440}
+              priority
+              loading="eager"
             />
           </div>
           <div className="w-[calc(100%-32px)] left-1/2 -translate-x-1/2 h-[1px] border-t border-dashed inset-0 absolute z-10 border-black top-1/2 -translate-y-1/2" />
