@@ -14,9 +14,9 @@ export function Hero() {
             <Image
               src={"/google.png"}
               alt="Google"
-              width={75}
-              height={25}
-              className="w-auto h-auto"
+              width={184}
+              height={58}
+              className="w-[184px] h-[58px] object-contain object-left"
             />
             <div className="text-[#FDE4C8] font-marlton lg:text-[20.704px] tracking-[1.4px] sm:tracking-[1.6px] lg:tracking-[2.07px] flex items-start sm:items-center gap-2 sm:gap-3">
               <div className="flex items-center gap-0.5 sm:gap-1">
