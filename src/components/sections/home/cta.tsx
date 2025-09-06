@@ -45,24 +45,24 @@ export function CTA() {
   return (
     <section
       id="cta"
-      className="flex items-center gap-[96px] max-w-[1344px] mx-auto justify-center py-[120px] w-full relative"
+      className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12 lg:gap-[96px] max-w-[1344px] mx-auto justify-center py-12 sm:py-20 lg:py-[120px] w-full relative px-4 sm:px-6 lg:px-0"
     >
       <Image
         src="/images/home/cta/flowers.png"
         alt="Flowers"
         width={410}
         height={614}
-        className="absolute left-0 bottom-0 -translate-x-1/2 translate-y-1/3 -z-10 object-contain"
+        className="absolute left-0 bottom-0 -translate-x-1/2 translate-y-1/3 -z-10 object-contain hidden lg:block"
       />
-      <div className="space-y-10">
-        <div className="space-y-6">
-          <h2 className="max-w-[562px] text-[52px] font-marlton text-white leading-[72px] tracking-[3.12px] text-center relative">
+      <div className="space-y-6 lg:space-y-10 flex-1 lg:flex-none">
+        <div className="space-y-4 lg:space-y-6">
+          <h2 className="max-w-[562px] text-3xl sm:text-4xl lg:text-[52px] font-marlton text-white leading-tight sm:leading-[50px] lg:leading-[72px] tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] text-center relative">
             Together, let&apos;s make EVENING your favourite part of every day
             <span
-              className="absolute inset-0 left-1/2 top-8 -translate-x-1/2 font-luminaire text-[#FFE7AF] rotate-[-8.065deg] text-[52px] ps-8 trim-text"
+              className="absolute inset-0 left-1/2 top-4 sm:top-6 lg:top-8 -translate-x-1/2 font-luminaire text-[#FFE7AF] rotate-[-8.065deg] text-3xl sm:text-4xl lg:text-[52px] ps-4 sm:ps-6 lg:ps-8 trim-text"
               style={{
                 textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
-                WebkitTextStrokeWidth: "3.5px",
+                WebkitTextStrokeWidth: "2.5px",
                 WebkitTextStrokeColor: "#252323",
                 paintOrder: "stroke fill",
               }}
@@ -70,14 +70,14 @@ export function CTA() {
               Holiday
             </span>
           </h2>
-          <p className="text-center font-satoshi text-xl font-medium leading-6">
+          <p className="text-center font-satoshi text-lg sm:text-xl font-medium leading-6 px-4 sm:px-0">
             Contact us today for your free quote
           </p>
         </div>
 
         <a
           href="tel:+19548525326"
-          className="relative max-w-fit mx-auto min-w-[336px] text-center text-[#2D2B2B] flex flex-col gap-1 px-6 py-8 hover:cursor-pointer hover:scale-105 transition-all duration-300"
+          className="relative max-w-fit mx-auto min-w-[280px] sm:min-w-[320px] lg:min-w-[336px] text-center text-[#2D2B2B] flex flex-col gap-1 px-4 sm:px-6 py-6 sm:py-8 hover:cursor-pointer hover:scale-105 transition-all duration-300"
         >
           <Image
             src="/images/textures/cta-num-bg.png"
@@ -86,7 +86,7 @@ export function CTA() {
             height={562.141}
             className="absolute inset-0 w-full h-full -z-10"
           />
-          <div className="rotate-[-2deg] font-marlton text-2xl flex items-center gap-2.5 justify-center">
+          <div className="rotate-[-2deg] font-marlton text-xl sm:text-2xl flex items-center gap-2 sm:gap-2.5 justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"
@@ -99,14 +99,16 @@ export function CTA() {
                 fill="#2D2B2B"
               />
             </svg>
-            <span className="trim-text">(954) 751-4128</span>
+            <span className="trim-text text-lg sm:text-xl lg:text-2xl">
+              (954) 751-4128
+            </span>
           </div>
-          <p className="rotate-[-2deg] text-lg font-satoshi trakcing-[0.18px]">
+          <p className="rotate-[-2deg] text-base sm:text-lg font-satoshi trakcing-[0.18px]">
             For Immediate Assistance
           </p>
         </a>
       </div>
-      <div className="relative max-w-[562.141px] w-full">
+      <div className="relative max-w-[480px] sm:max-w-[520px] lg:max-w-[562.141px] w-full">
         <Image
           src="/images/textures/cta-bg.png"
           alt="CTA Background"
@@ -117,7 +119,7 @@ export function CTA() {
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="space-y-6 w-full max-w-[442px] mx-auto py-15 text-[#8D8C8C]"
+            className="space-y-4 sm:space-y-6 w-full max-w-[380px] sm:max-w-[420px] lg:max-w-[442px] mx-auto py-8 px-12 sm:py-12 lg:py-15 lg:px-0 text-[#8D8C8C]"
           >
             <FormField
               control={form.control}
@@ -130,7 +132,7 @@ export function CTA() {
                       type="text"
                       {...field}
                       className={
-                        "border-none shadow-none p-0 text-lg! font-medium placeholder:text-lg w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none"
+                        "border-none shadow-none p-0 text-base sm:text-lg font-medium placeholder:text-base sm:placeholder:text-lg w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none"
                       }
                     />
                   </FormControl>
@@ -151,7 +153,7 @@ export function CTA() {
                       type="text"
                       {...field}
                       className={
-                        "border-none shadow-none p-0 text-lg! font-medium placeholder:text-lg w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none"
+                        "border-none shadow-none p-0 text-base sm:text-lg font-medium placeholder:text-base sm:placeholder:text-lg w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none"
                       }
                     />
                   </FormControl>
@@ -172,7 +174,7 @@ export function CTA() {
                       type="text"
                       {...field}
                       className={
-                        "border-none shadow-none p-0 text-lg! font-medium placeholder:text-lg w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none"
+                        "border-none shadow-none p-0 text-base sm:text-lg font-medium placeholder:text-base sm:placeholder:text-lg w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none"
                       }
                     />
                   </FormControl>
@@ -190,7 +192,7 @@ export function CTA() {
                   <FormControl>
                     <Textarea
                       placeholder="Message"
-                      className="resize-none border-none h-[160px] shadow-none p-0 text-lg! font-medium placeholder:text-lg w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none"
+                      className="resize-none border-none h-[120px] sm:h-[140px] lg:h-[160px] shadow-none p-0 text-base sm:text-lg font-medium placeholder:text-base sm:placeholder:text-lg w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none"
                       {...field}
                     />
                   </FormControl>
@@ -201,7 +203,7 @@ export function CTA() {
             />
             <GodlyButton
               type="submit"
-              className="max-w-full! w-full justify-center mt-6"
+              className="max-w-full! w-full justify-center mt-4 sm:mt-6"
             >
               <span>REQUEST A QUOTE</span>
               <Image
