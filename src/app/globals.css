@@ -161,6 +161,13 @@
     background-blend-mode: multiply, normal;
   }
 
+  .bg-paper-6 {
+    background: url(/images/textures/paper-6.jpg) lightgray 50% / cover
+        no-repeat,
+      #cbb7a0;
+    background-blend-mode: luminosity, normal;
+  }
+
   .paper-bg-1 {
     background: url(/images/textures/paper-1.png) lightgray 50% / cover
         no-repeat,
