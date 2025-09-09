@@ -57,10 +57,10 @@ export function Footer() {
             </Link>
             <br />
             <Link
-              href="mailto:hello@godlywindows.com"
+              href="mailto:hello@godlyholidaylights.com"
               className="text-[#312E2C] text-sm sm:text-base font-satoshi font-medium block sm:inline"
             >
-              hello@godlywindows.com
+              hello@godlyholidaylights.com
             </Link>
           </div>
         </div>

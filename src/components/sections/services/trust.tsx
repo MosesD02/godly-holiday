@@ -7,15 +7,31 @@ export function Trust() {
   return (
     <section id="Trust" className="pb-[120px] relative">
       <div className="max-w-[1400px] mx-auto flex flex-col items-center justify-center gap-8 sm:gap-12 lg:gap-[64px] pb-16 sm:pb-20 lg:pb-[120px] px-4 sm:px-6">
-        <h2 className="relative text-[32px] sm:text-[48px] lg:text-[64px] leading-[38px] sm:leading-[56px] lg:leading-[74px] max-w-fit max-h-fit tracking-[1.6px] sm:tracking-[2.4px] lg:tracking-[3.2px] font-marlton text-center pt-16 sm:pt-24 lg:pt-[144px] pb-10 sm:pb-16 lg:pb-[82px] text-transparent">
-          WHY SOUTH FLORIDA TRUSTS US FOR <br />
-          HOLIDAY LIGHT <span className="sr-only">INSTALLATION</span>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/services/trust/title.svg"
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-contain mt-4 pointer-events-none"
-            alt="Heading"
-          />
+        <h2 className="relative text-[32px]  sm:text-[48px] lg:text-[64px] leading-[38px] sm:leading-[56px] lg:leading-[88px] max-w-fit max-h-fit tracking-[1.6px] sm:tracking-[2.4px] lg:tracking-[3.2px] font-marlton text-center mt-16 sm:mt-24 lg:mt-[144px] mb-10 sm:mb-16 lg:mb-[82px]">
+          <span className="text-grain bg-white relative">
+            <Image
+              src={"/images/services/trust/hat.png"}
+              alt="Heading"
+              width={75.008}
+              height={75.008}
+              className="absolute -left-2 top-2 md:top-4 md:-left-1 object-contain pointer-events-none -translate-x-1/2 -translate-y-1/2"
+            />
+            WHY{" "}
+            <span className="underline decoration-white">SOUTH FLORIDA</span>{" "}
+            TRUSTS US FOR <br />
+            HOLIDAY LIGHT{" "}
+          </span>
+          <span
+            className="font-luminaire text-[#FFE7AF] rotate-[-8.115deg] absolute -bottom-4 right-0 -translate-x-1/2"
+            style={{
+              textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
+              WebkitTextStrokeWidth: "6px",
+              WebkitTextStrokeColor: "#252323",
+              paintOrder: "stroke fill",
+            }}
+          >
+            Installation
+          </span>
         </h2>
       </div>
 
@@ -39,7 +55,7 @@ export function Trust() {
                 </div>
               </div>
               <div className="flex items-center justify-between">
-                <span>Timer Setup Included</span>
+                <span>Automatic Timers Setup Included</span>
                 <div className="w-8 h-8 flex items-center justify-center">
                   <Icons.cross />
                 </div>
@@ -96,7 +112,7 @@ export function Trust() {
                 </div>
               </div>
               <div className="flex items-center justify-between">
-                <span>Timer Setup Included</span>
+                <span>Automatic Timers Setup Included</span>
                 <div className="w-8 h-8 flex items-center justify-center">
                   <Icons.checkGold />
                 </div>
@@ -137,7 +153,7 @@ export function Trust() {
           <div className="mt-[64px] py-10 [&_div]:py-5">
             <div>Custom Design Included</div>
             <div>Commercial-Grade Lights</div>
-            <div>Timer Setup Included</div>
+            <div>Automatic Timers Setup Included</div>
             <div>Free 24-Hour Maintenance</div>
             <div>Takedown & Storage</div>
             <div>Licensed & Insured</div>

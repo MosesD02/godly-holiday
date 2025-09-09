@@ -9,21 +9,29 @@ export function LightingSolution() {
       id="light-installation"
       className="flex items-center max-w-[1330px] mx-auto flex-col justify-center gap-12 sm:gap-16 lg:gap-21 pb-16 sm:pb-20 lg:pb-[113px] mt-8 sm:mt-10 lg:mt-14 px-4 sm:px-6"
     >
-      <div className="sr-only">
-        <h2>Our Lighting Solution</h2>
-      </div>
-
-      <Image
-        src="/images/services/lighting-solution/title.svg"
-        alt="Our Lighting Solutoions"
-        width={300}
-        height={150}
-      />
-
+      <h2 className="font-marlton relative text-center lg:text-left">
+        <span className="text-grain text-[18px] sm:text-[24px] md:text-[30px] bg-white absolute left-1/2 lg:left-0 bottom-full -translate-y-1/2 -translate-x-1/2 lg:-translate-x-full">
+          Our
+        </span>{" "}
+        <span className="text-[32px] sm:text-[48px] md:text-[64px] text-grain bg-white">
+          Lighting
+        </span>{" "}
+        <span
+          className="font-luminaire text-[#FFE7AF] text-[32px] sm:text-[48px] md:text-[64px] absolute -right-3 sm:-right-4 md:-right-6 -bottom-1 sm:-bottom-2 translate-y-1/2 rotate-[-8deg]"
+          style={{
+            textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
+            WebkitTextStrokeWidth: "6px",
+            WebkitTextStrokeColor: "#252323",
+            paintOrder: "stroke fill",
+          }}
+        >
+          Solutions
+        </span>
+      </h2>
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8 sm:gap-12 lg:gap-[156px] self-stretch">
         <div className="p-[0_5px_13px_4px] sm:p-[0_7.5px_19px_6.5px] lg:p-[0_9.925px_25.561px_8.762px] order-first lg:order-none">
           <Image
-            src="/images/home/light-installation/resident.webp"
+            src="/images/home/light-installation/resident.png"
             alt="Residential"
             width={481.34}
             height={580.705}
@@ -33,7 +41,7 @@ export function LightingSolution() {
         <div className="flex flex-col gap-12 sm:gap-16 lg:gap-20 flex-1 max-w-[521px]">
           <div className="flex flex-col gap-8 sm:gap-10 lg:gap-12 flex-1">
             <div className="flex flex-col gap-6 sm:gap-7 lg:gap-8 flex-1">
-              <h2 className="font-marlton text-[28px] sm:text-[42px] lg:text-[56px] leading-[32px] sm:leading-[48px] lg:leading-[64px] tracking-[1.68px] sm:tracking-[2.52px] lg:tracking-[3.36px]">
+              <h2 className="font-marlton text-[28px] sm:text-[42px] lg:text-[56px] leading-[32px] sm:leading-[48px] lg:leading-[64px] tracking-[1.68px] sm:tracking-[2.52px] lg:tracking-[3.36px] text-center lg:text-left">
                 Residential Holiday Light{" "}
                 <span
                   className="font-luminaire inline-block text-[#FFE7AF] md:-translate-x-8"
@@ -61,7 +69,7 @@ export function LightingSolution() {
               <Badge size="sm">Gated Communities</Badge>
             </div>
           </div>
-          <QuoteButton className="max-w-fit">
+          <QuoteButton className="max-w-fit scale-90 sm:scale-100 mx-auto lg:mx-0">
             <span>Request a Quote</span>{" "}
             <Image
               src={ArrowRight.src}
@@ -77,7 +85,7 @@ export function LightingSolution() {
         <div className="flex flex-col gap-12 sm:gap-16 lg:gap-20 flex-1 max-w-[521px]">
           <div className="flex flex-col gap-8 sm:gap-10 lg:gap-12 flex-1">
             <div className="flex flex-col gap-6 sm:gap-7 lg:gap-8 flex-1">
-              <h2 className="font-marlton text-[28px] sm:text-[42px] lg:text-[56px] leading-[32px] sm:leading-[48px] lg:leading-[64px] tracking-[1.68px] sm:tracking-[2.52px] lg:tracking-[3.36px]">
+              <h2 className="font-marlton text-[28px] sm:text-[42px] lg:text-[56px] leading-[32px] sm:leading-[48px] lg:leading-[64px] tracking-[1.68px] sm:tracking-[2.52px] lg:tracking-[3.36px] text-center lg:text-left">
                 Commercial HOLIDAY LIGHT{" "}
                 <span
                   className="font-luminaire inline-block text-[#FFE7AF] md:-translate-x-8"
@@ -106,7 +114,7 @@ export function LightingSolution() {
               <Badge size="sm">Community Spaces</Badge>
             </div>
           </div>
-          <QuoteButton className="max-w-fit">
+          <QuoteButton className="max-w-fit scale-90 sm:scale-100 mx-auto lg:mx-0">
             <span>Request a Quote</span>{" "}
             <Image
               src={ArrowRight.src}

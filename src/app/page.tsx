@@ -15,11 +15,11 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center relative">
       {/* Background Image - Absolute (only covers hero section) */}
       <Image
-        src="/images/home/hero/hero.webp"
+        src="/images/home/hero/hero-new.jpg"
         alt="Hero"
-        className="absolute top-0 left-0 w-full h-[min(100svh,960px)] object-cover z-0"
-        width={1920}
-        height={960}
+        className="absolute top-0 left-0 object-bottom w-full h-[min(100svh,960px)] object-cover z-0"
+        width={2000}
+        height={2000}
       />
 
       {/* Gradient Overlay - Absolute (only covers hero section) */}

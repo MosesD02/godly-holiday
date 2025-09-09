@@ -6,17 +6,21 @@ export function RecentLightInstallation() {
       id="recent-light-installation"
       className="flex flex-col items-center justify-center py-16 md:py-24 lg:py-32 gap-8 md:gap-12 lg:gap-16"
     >
-      <h2 className="text-transparent text-center font-marlton text-2xl sm:text-3xl md:text-5xl lg:text-[64px] leading-tight md:leading-22 relative px-4">
-        <Image
-          src="/images/services/light-installation/title.svg"
-          alt="Recent Light Installation"
-          width={300}
-          height={150}
-          className="w-full h-full inset-0 absolute 
-          scale-160 top-2 sm:top-3 md:top-5 pointer-events-none"
-        />
-        RECENT HOLIDAY LIGHT <br /> INSTALLATIONS IN{" "}
-        <span className="sr-only">SOUTH FLORIDA</span>
+      <h2 className="relative text-[32px]  sm:text-[48px] lg:text-[64px] leading-[38px] sm:leading-[56px] lg:leading-[88px] max-w-fit max-h-fit tracking-[1.6px] sm:tracking-[2.4px] lg:tracking-[3.2px] font-marlton text-center mt-16 sm:mt-24 lg:mt-[144px] mb-10 sm:mb-16 lg:mb-[82px]">
+        <span className="text-grain bg-white relative">
+          RECENT HOLIDAY LIGHT <br /> INSTALLATIONS IN
+        </span>
+        <span
+          className="font-luminaire text-[#FFE7AF] rotate-[-8.115deg] absolute -bottom-6 right-6 translate-x-1/2"
+          style={{
+            textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
+            WebkitTextStrokeWidth: "6px",
+            WebkitTextStrokeColor: "#252323",
+            paintOrder: "stroke fill",
+          }}
+        >
+          South Florida
+        </span>
       </h2>
 
       <Image

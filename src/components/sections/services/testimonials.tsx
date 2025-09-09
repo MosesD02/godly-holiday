@@ -14,16 +14,25 @@ export function Testimonials() {
       className="py-16 md:py-24 lg:py-[120px] flex flex-col gap-8 md:gap-12 lg:gap-[64px] items-center w-full justify-center"
     >
       <div className="relative">
-        <Image
-          src="/images/services/testimonials/title.svg"
-          alt="Testimonials"
-          width={370}
-          height={175}
-          className="w-full h-full inset-0 absolute scale-110 md:scale-125"
-        />
-        <h2 className="text-transparent text-center font-marlton text-3xl md:text-5xl lg:text-[64px] leading-tight md:leading-22">
-          STORIES FROM <br /> <span className="sr-only">Happy</span>HOMES &
-          BUSINESSES
+        <h2 className="font-marlton relative text-2xl sm:text-3xl lg:text-[40px] text-center leading-[52px] lg:leading-[88px] tracking-[1.2px] sm:tracking-[1.8px] lg:tracking-[2.4px]">
+          <span className="text-3xl bg-[white] text-grain-2 sm:text-4xl lg:text-[64px] leading-tight sm:leading-12 lg:leading-20">
+            STORIES FROM
+          </span>{" "}
+          <br />
+          <span
+            className="font-luminaire text-[#FFE7AF] rotate-[-7.9deg] absolute inset-0 text-2xl sm:text-4xl pt-6 lg:text-6xl leading-normal tracking-normal"
+            style={{
+              textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
+              WebkitTextStrokeWidth: "6px",
+              WebkitTextStrokeColor: "#1E1C1C",
+              paintOrder: "stroke fill",
+            }}
+          >
+            Happy
+          </span>
+          <span className="text-3xl bg-[white] text-grain-2 sm:text-4xl lg:text-[64px] leading-tight sm:leading-12 lg:leading-20">
+            HOMES & BUSINESSES
+          </span>
         </h2>
       </div>
 

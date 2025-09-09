@@ -66,7 +66,7 @@ export function LightInstallation() {
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8 sm:gap-12 lg:gap-[156px] self-stretch">
         <div className="p-[0_5px_13px_4px] sm:p-[0_7.5px_19px_6.5px] lg:p-[0_9.925px_25.561px_8.762px] order-first lg:order-none">
           <Image
-            src="/images/home/light-installation/resident.webp"
+            src="/images/home/light-installation/resident.png"
             alt="Residential"
             width={481.34}
             height={580.705}

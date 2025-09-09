@@ -1,5 +1,4 @@
 import { howItWorks } from "@/data/services/how-it-works";
-import Image from "next/image";
 
 export function HowItWorks() {
   return (
@@ -18,7 +17,7 @@ export function HowItWorks() {
             paintOrder: "stroke fill",
           }}
         >
-          Its
+          It
         </span>
         Works
       </h2>
@@ -50,15 +49,25 @@ export function HowItWorks() {
         ))}
       </div>
 
-      <div className="relative mx-auto mt-16 sm:mt-20">
-        <Image
-          src={"/images/services/how-it-works/trusted-by.svg"}
-          alt={"Trusted by Homeowners and businesses"}
-          width={730}
-          height={300}
-          className="mx-auto z-10 relative pointer-events-none w-full max-w-[730px] h-auto"
-        />
-        <p className="text-white -mt-4 md:-mt-6 max-w-[765px] px-4 font-marlton text-lg sm:text-2xl md:text-[32px] leading-8 md:leading-10 tracking-[0.75px] text-center mx-auto">
+      <div className="mx-auto mt-16 text-center flex flex-col items-center sm:mt-20">
+        <div className="text-grain-2 bg-[#252323] font-marlton text-[20px] sm:text-[28px] md:text-[32px] underline decoration-[#252323]!">
+          TRUSTED BY
+        </div>
+        <div className="font-marlton text-[28px] sm:text-[40px] md:text-[52px] bg-[#252323] text-grain-2 tracking-[1.8px] sm:tracking-[2.6px] md:tracking-[3.36px]">
+          Homeowners and Businesses
+        </div>
+        <div
+          className="font-luminaire text-[#FFE7AF] text-[28px] sm:text-[40px] md:text-[52px] rotate-[-4deg] mt-[-6px] sm:mt-[-8px] md:mt-[-12px] mb-[-3px] sm:mb-[-4px] md:mb-[-6px]"
+          style={{
+            textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
+            WebkitTextStrokeWidth: "6px",
+            WebkitTextStrokeColor: "#252323",
+            paintOrder: "stroke fill",
+          }}
+        >
+          Across
+        </div>
+        <p className="text-white max-w-[765px] px-4 font-marlton text-lg sm:text-2xl md:text-[32px] leading-8 md:leading-10 tracking-[0.75px] text-center mx-auto">
           Fort Lauderdale, Weston, Boca Raton, Pompano Beach, and Lighthouse
           Point.
         </p>

@@ -108,19 +108,12 @@ export function Popup() {
           <div className="flex flex-col gap-6">
             <DialogHeader className="mx-auto text-black">
               <DialogTitle className="font-marlton text-center shadow-none text-shadow-none text-3xl">
-                SOUTH FLORIDA SUMMER <br /> SPECIAL -{" "}
-                <span className="text-[#eb7a55]">$59 OFF</span>
+                SOUTH FLORIDA CHRISTMAS <br /> LIGHT SPECIAL -{" "}
+                <span className="text-[#eb7a55]">UP TO 15% OFF</span>
               </DialogTitle>
               <DialogDescription className="font-satoshi text-center text-base font-medium text-[#0a0a0a]">
-                We&apos;re opening up limited spots for first- <br />
-                time clients this{" "}
-                {targetDate
-                  ? targetDate.toLocaleDateString("en-US", {
-                      month: "long",
-                      timeZone: "America/New_York",
-                    })
-                  : "month"}
-                .
+                We&apos;re opening up limited spots for holiday light
+                installations this season.
               </DialogDescription>
             </DialogHeader>
 
@@ -165,20 +158,25 @@ export function Popup() {
           <div className="flex flex-col justify-end gap-4">
             <div className="border rounded-[20px] border-[#ae9d8a] p-2 h-fit">
               <div className="border rounded-[12px] border-[#ae9d8a] p-2">
-                <div className="grid grid-cols-2 items-center gap-4">
+                <div className="grid grid-cols-2 items-center gap-4 mb-3">
                   <div className="font-marlton text-[#eb7a55] text-8xl text-right">
-                    $59
+                    {/* if month is sep then 15% else 10% */}
+                    {new Date().getMonth() === 8 ? "15%" : "10%"}
                   </div>
                   <div className="flex flex-col justify-start text-left font-marlton text-2xl">
                     OFF <br />{" "}
                     <span className="text-[#ae9d8a]">
-                      FIRST WINDOW CLEANING
+                      {new Date().getMonth() === 8 ? "September" : "October"}{" "}
+                      installs
                     </span>
                   </div>
                 </div>
                 <hr />
-                <p className="font-satoshi text-base font-medium text-[#0a0a0a]">
-                  Just in time for summer entertaining. Expires{" "}
+                <p className="font-satoshi text-xs font-medium text-[#0a0a0a]">
+                  All-inclusive service: we supply the lights, install,
+                  maintain, and take-down, plus set everything on automatic
+                  timers for you. Expires October 31st. Countdown&apos;s
+                  ticking.
                   {targetDate
                     ? (() => {
                         const day = targetDate.getDate();
@@ -213,12 +211,12 @@ export function Popup() {
         </DialogContent>
       </Dialog>
       {showFloatingButton && !isOpen && !isExpired && (
-        <div className="fixed left-0 w-fit h-fit -translate-x-[60px] sm:-translate-x-[55px] top-1/2 rotate-90 z-50 scale-80 sm:scale-100">
+        <div className="fixed left-0 w-fit h-fit -translate-x-[60px] sm:-translate-x-[60px] top-1/2 rotate-90 z-50 scale-80 sm:scale-100">
           <GodlyButton
             onClick={() => setIsOpen(true)}
             className="rounded-b-none! border-0! tracking-wider!"
           >
-            <span>Save $59 OFF</span>
+            <span>Save $$$ NOW</span>
           </GodlyButton>
         </div>
       )}

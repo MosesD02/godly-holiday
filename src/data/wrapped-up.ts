@@ -1,9 +1,9 @@
 export const wrappedUpCards = [
   {
     index: 1,
-    title: "Design Consultation",
+    title: "Design Made Easy",
     description:
-      "Every holiday light installation starts with a design consultation. Our team will work with you to bring your vision to life, whether it’s residential or commercial. We’ll walk the property, review your lighting goals, and tailor the plan for a smooth outdoor holiday lights installation.",
+      "We’ll meet at your home or business, walk the property with you, and talk through your ideas. From there, we’ll sketch out a holiday lighting plan that fits your style and makes the whole process easy.",
     image: "/images/home/wrapped-up/design-consultation.webp",
     theme: "dark",
     imageClass: "w-[220px] -top-3 md:top-0 h-auto",
@@ -11,9 +11,9 @@ export const wrappedUpCards = [
   },
   {
     index: 2,
-    title: "Installation & Maintenance",
+    title: "Install & Keep It Shining",
     description:
-      "We handle every part of your holiday light installation, from setup to support. As a reliable holiday lighting company, we get the job done right, and if anything needs fixing, we take care of it fast.",
+      " We handle the full setup—hanging every light, checking every bulb, and making sure it all looks perfect. If something goes out, we’ll be back to fix it fast, no stress for you.",
     image: "/images/home/wrapped-up/installation-maintenance.webp",
     theme: "light",
     imageClass: "w-[232.956px] h-[232.956px] -top-3 md:-top-6",
@@ -21,9 +21,9 @@ export const wrappedUpCards = [
   },
   {
     index: 3,
-    title: "Removal & Storage",
+    title: "Take Down & Store Away",
     description:
-      "Once the season ends, we’ll handle removal and storage of your holiday light installation. Our team will take down everything cleanly, no mess, no stress. With holiday light installers near you, there’s no need to store a single strand.",
+      " When the season’s over, we’ll remove everything safely and pack it up for storage. No tangled strands, no boxes in your garage—just a clean slate until next year.",
     image: "/images/home/wrapped-up/removal-storage.webp",
     theme: "dark",
     imageClass: "w-[220px] -top-3 md:top-0 h-[190px]",

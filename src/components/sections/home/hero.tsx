@@ -42,11 +42,9 @@ export function Hero() {
             SOUTH FLORIDA
           </h1>
           <p className="max-w-[1030px] text-white text-base sm:text-lg lg:text-xl font-medium leading-6 sm:leading-7 lg:leading-normal">
-            Expert holiday and christmas light installation, designed,
-            installed, and removed for you. No ladders, no storage stress.
-            Whether it&rsquo;s your home or business, our holiday lighting
-            company makes the season shine.Looking for holiday light installers
-            near you? We&rsquo;ve got South Florida covered.
+            We provide everything—premium lights, full installation, and
+            hassle-free removal—so your South Florida home or business shines
+            all season without the ladders or storage stress.
           </p>
         </div>
         <QuoteForm />

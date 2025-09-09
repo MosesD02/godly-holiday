@@ -12,7 +12,7 @@ export function Hero() {
       <div className="space-y-4 md:space-y-6">
         <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4">
           <p className="font-marlton text-[#FDE4C8] text-sm sm:text-base md:text-xl leading-[30px] tracking-[2px]">
-            TOP RATED
+            5 Star Rated
           </p>
           <div className="flex items-center gap-0.5 mb-1.5">
             {Array.from({ length: 5 }).map((_, index) => (
@@ -27,16 +27,25 @@ export function Hero() {
           </div>
         </div>
 
-        <h1 className="sr-only">
-          RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT INSTALLATION SOUTH FLORIDA
+        <h1 className="text-[32px] sm:text-[48px] md:text-[64px] lg:text-[72px] text-center font-marlton relative leading-[36px] sm:leading-[52px] md:leading-[70px] lg:leading-[80px] tracking-[1.6px] sm:tracking-[2.4px] md:tracking-[3.2px] lg:tracking-[3.6px]">
+          <span className="text-grain bg-white">
+            RESIDENTIAL & COMMERCIAL <br /> HOLIDAY LIGHT
+          </span>{" "}
+          <span
+            className="font-luminaire text-[#FFE7AF] absolute rotate-[-8.155deg] text-[32px] sm:text-[48px] md:text-[64px] lg:text-[72px] -bottom-7 sm:-bottom-4 md:-bottom-5 lg:-bottom-6 right-8 sm:right-12 md:right-16 lg:right-18"
+            style={{
+              textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
+              WebkitTextStrokeWidth: "6px",
+              WebkitTextStrokeColor: "#252323",
+              paintOrder: "stroke fill",
+            }}
+          >
+            Installation
+          </span>{" "}
+          <span className="text-[#FDE4C8] absolute sm:-right-3 md:-right-4 bottom-0 sm:bottom-2 md:bottom-3 text-xs sm:text-sm md:text-base leading-4 sm:leading-5 md:leading-6 tracking-[1.5px] sm:tracking-[2px]">
+            SOUTH <br /> FLORIDA
+          </span>
         </h1>
-        <Image
-          src={"/images/services/hero/title.svg"}
-          alt="RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT INSTALLATION SOUTH FLORIDA"
-          width={840}
-          height={160}
-          className="mx-auto w-full max-w-[840px] h-auto"
-        />
       </div>
 
       <Image

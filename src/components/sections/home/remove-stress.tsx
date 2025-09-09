@@ -20,7 +20,7 @@ export function RemoveStress() {
             className="font-luminaire text-[#FFE7AF] rotate-[-8.065deg] text-[24px] sm:text-[32px] md:text-[48px] lg:text-[64px] leading-[28px] sm:leading-[38px] md:leading-[56px] lg:leading-[74px] max-w-fit max-h-fit tracking-[1.2px] sm:tracking-[1.6px] md:tracking-[2.4px] lg:tracking-[3.2px] absolute bottom-4 sm:bottom-6 md:bottom-12 -right-1/2 -translate-x-1/2"
             style={{
               textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
-              WebkitTextStrokeWidth: "4px sm:6px",
+              WebkitTextStrokeWidth: "6px",
               WebkitTextStrokeColor: "#252323",
               paintOrder: "stroke fill",
             }}

@@ -26,10 +26,15 @@ export function WhyChooseUs() {
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-[30px] max-w-[1200px] w-full mx-auto mt-8 md:mt-12 lg:mt-15 px-4 lg:px-0">
-        {whyUs.map((item) => (
-          <div key={item.title} className="bg-paper-8-2 rounded-[12px] p-2">
+        {whyUs.map((item, index) => (
+          <div key={index} className="bg-paper-8-2 rounded-[12px] p-2">
             <div className="flex flex-col h-full text-center items-center justify-center gap-8 px-4 py-6 rounded-[8px] border border-[#2D2B2B] border-dashed">
-              <Image src={item.image} alt={item.title} width={40} height={40} />
+              <Image
+                src={item.image}
+                alt={index.toString()}
+                width={40}
+                height={40}
+              />
               <div className="space-y-2">
                 <h3 className="font-marlton text-xl text-[#2D2B2B] uppercase">
                   {item.title}
