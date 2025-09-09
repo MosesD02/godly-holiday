@@ -10,7 +10,7 @@ export function LightingSolution() {
       className="flex items-center max-w-[1330px] mx-auto flex-col justify-center gap-12 sm:gap-16 lg:gap-21 pb-16 sm:pb-20 lg:pb-[113px] mt-8 sm:mt-10 lg:mt-14 px-4 sm:px-6"
     >
       <h2 className="font-marlton relative text-center lg:text-left">
-        <span className="text-grain text-[18px] sm:text-[24px] md:text-[30px] bg-white absolute left-1/2 lg:left-0 bottom-full -translate-y-1/2 -translate-x-1/2 lg:-translate-x-full">
+        <span className="text-grain text-[18px] sm:text-[24px] md:text-[30px] bg-white absolute left-0 -top-12 sm:-top-16 md:-top-20 -translate-x-full">
           Our
         </span>{" "}
         <span className="text-[32px] sm:text-[48px] md:text-[64px] text-grain bg-white">

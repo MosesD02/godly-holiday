@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative w-full flex items-center flex-col py-12 md:py-[96px] px-4 overflow-x-clip"
+      className="relative w-full flex items-center flex-col py-12 md:py-[96px] overflow-x-clip"
     >
       <div className="space-y-4 md:space-y-6">
         <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4">
@@ -49,19 +49,21 @@ export function Hero() {
       </div>
 
       <Image
-        src={"/images/services/hero/card.webp"}
+        src={"/images/services/hero/card.png"}
         alt="Hero Card"
         width={1654.5}
         height={661.002}
         className="mx-auto w-full h-auto"
       />
 
-      <p className="text-white font-satoshi text-center text-base sm:text-lg md:text-xl font-medium max-w-[686px] my-8 md:my-[80px]">
+      <p className="text-white px-4 md:px-0 font-satoshi text-center text-base sm:text-lg md:text-xl font-medium max-w-[686px] my-8 md:my-[80px]">
         Full-service lighting for homes, storefronts, and buildings—designed,
         installed, maintained, and removed by your local holiday
       </p>
 
-      <QuoteForm hideImages />
+      <div className="px-4 md:px-0">
+        <QuoteForm hideImages />
+      </div>
 
       <Image
         src={"/images/services/hero/flowers-left.webp"}

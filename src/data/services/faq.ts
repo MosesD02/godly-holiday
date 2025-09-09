@@ -1,22 +1,22 @@
 export const faqs = [
   {
-    question: "Do I need to provide the lights?",
+    question: "Do you handle both home and commercial jobs?",
     answer:
-      "No — we provide everything. We only use commercial-grade, high-efficiency LED lights in every color and style, so you don’t need to provide a thing.",
+      "Yes! We handle both residential and commercial projects of any size. We’re fully equipped with everything needed for tall trees and hard-to-reach areas that ladders can’t get to — including our own bucket truck.",
   },
   {
-    question: "Do you use subcontractors?",
+    question: "Are you a full-service provider?",
     answer:
-      "Never. Everyone who works on your home is a fully trained and vetted Godly Holiday Lights employee. ",
+      "We are a true full-service provider from A to Z. That means we supply everything: commercial-grade LED lights, wreaths, garland, timers, and all installation materials. You don’t need to worry about providing anything.",
   },
   {
-    question: "What is your maintenance policy?",
+    question: "Is maintenance included?",
     answer:
-      "We guarantee your display stays shining. If anything goes out, we’ll be there within 24 hours (often much sooner) — no questions asked, even if it was caused by landscapers, squirrels, or anything else.",
+      "Absolutely. If anything goes out or gets damaged for any reason, we’ll come out quickly and fix it at no cost to you. No questions asked.",
   },
   {
-    question: "What payment methods do you take?",
-    answer: "We accept cash, card, or check.",
+    question: "Do you serve my area?",
+    answer: "We proudly service all of Broward County.",
   },
   {
     question: "Do you have a minimum?",
@@ -24,8 +24,8 @@ export const faqs = [
       "Early in the season there’s no minimum, but as demand builds we do set one. Don’t worry — we’ll always discuss this with you beforehand.",
   },
   {
-    question: "Are you insured?",
+    question: "What’s the process?",
     answer:
-      "Yes. We’re fully insured with $2 million in general liability coverage as well as full workers’ compensation.",
+      "Our process is simple and stress-free. We start with a design consultation to bring your vision to life, then our team handles installation, maintenance, and safe takedown after the season. Everything is provided and managed for you from start to finish.",
   },
 ];

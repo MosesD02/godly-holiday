@@ -40,6 +40,7 @@ export function Testimonials() {
         className="max-w-full w-full"
         opts={{
           loop: true,
+          align: "center",
         }}
       >
         <CarouselContent className="max-w-full">
@@ -48,7 +49,7 @@ export function Testimonials() {
               className="basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
               key={index}
             >
-              <div className="bg-paper-6 rounded-[6px] shadow-[0_4px_4px_0_rgba(255,255,255,0.3)_inset] border-2 border-[rgba(106,100,100,0.12)] max-w-full w-full min-h-[271px] h-full flex flex-col items-start gap-4 px-5 py-4 mx-auto">
+              <div className="bg-paper-6 ms-2 rounded-[6px] shadow-[0_4px_4px_0_rgba(255,255,255,0.3)_inset] border-2 border-[rgba(106,100,100,0.12)] max-w-full w-full min-h-[271px] h-full flex flex-col items-start gap-4 px-5 py-4 mx-auto">
                 <div className="space-y-7">
                   <div className="flex items-center gap-3">
                     <Image
