@@ -63,21 +63,22 @@ const AboutUs = () => {
       className="bg-paper-8 flex flex-col items-center justify-items-center gap-10 px-[30px] pt-[50px] pb-[100px] md:px-[86px] md:py-[150px]"
     >
       <div
-        className="relative flex h-[200px] w-[758px] scale-50 -rotate-2 flex-col items-center justify-center bg-cover bg-center bg-no-repeat md:h-[210px] md:scale-100"
+        className="relative flex h-[120px] w-full max-w-[300px] scale-75 -rotate-2 flex-col items-center justify-center bg-cover bg-center bg-no-repeat sm:h-[150px] sm:max-w-[400px] sm:scale-90 md:h-[200px] md:max-w-[600px] lg:h-[210px] lg:max-w-[758px] lg:scale-100"
         style={{
           backgroundImage: `url(${ticketBg.src})`,
+          backgroundSize: "contain",
         }}
       >
-        <div className="flex -translate-y-7 flex-col items-center gap-4">
-          <h2 className="trim-text font-marlton -rotate-2 text-[64px] font-normal tracking-[5.76px] text-[#191717]">
+        <div className="flex -translate-y-3 sm:-translate-y-5 md:-translate-y-7 flex-col items-center gap-2 sm:gap-3 md:gap-4">
+          <h2 className="trim-text font-marlton -rotate-2 text-[24px] sm:text-[36px] md:text-[48px] lg:text-[64px] font-normal tracking-[2px] sm:tracking-[3px] md:tracking-[4px] lg:tracking-[5.76px] text-[#191717]">
             old fashioned Values
           </h2>
-          <h4 className="absolute top-3/5 -mt-4 -rotate-2 text-3xl font-normal text-[#191717]">
-            <span className="text-[32px] underline font-marlton">
+          <h4 className="absolute top-3/5 -mt-2 sm:-mt-3 md:-mt-4 -rotate-2 text-lg sm:text-2xl md:text-3xl font-normal text-[#191717]">
+            <span className="text-[16px] sm:text-[24px] md:text-[32px] underline font-marlton">
               UNRIVALED
             </span>{" "}
             <span
-              className="trim-text text-grain py-12! quality-text font-luminaire text-[80px] bg-[#B0906E] relative z-10"
+              className="trim-text text-grain py-12! quality-text font-luminaire text-[32px] sm:text-[48px] md:text-[64px] lg:text-[80px] bg-[#B0906E] relative z-10"
               data-text="Quality"
               style={{
                 position: "relative",
@@ -90,14 +91,14 @@ const AboutUs = () => {
         </div>
       </div>
       <Story />
-      <div className="flex flex-col items-center justify-center gap-4 py-10 md:gap-10">
+      <div className="flex flex-col items-center justify-center gap-4 py-8 sm:py-10 md:gap-10">
         <h4
-          className="text-grain font-marlton trim !bg-[#191717] text-center text-4xl font-normal tracking-wide md:text-[64px]"
+          className="text-grain font-marlton trim !bg-[#191717] text-center text-2xl sm:text-3xl md:text-4xl lg:text-[48px] xl:text-[64px] font-normal tracking-wide"
           data-text="Delivering"
         >
           Delivering
         </h4>
-        <h4 className="trim text-center font-marlton text-4xl font-normal tracking-wide md:-mt-6 md:text-[64px]">
+        <h4 className="trim text-center font-marlton text-2xl sm:text-3xl md:text-4xl lg:text-[48px] xl:text-[64px] font-normal tracking-wide md:-mt-6">
           <span
             className="md:text-grain font-marlton trim relative text-[#61503E] underline"
             data-text="Trustworthy"
@@ -105,7 +106,7 @@ const AboutUs = () => {
             Trustworthy
           </span>{" "}
           <span
-            className="text-grain font-marlton trim !bg-[#191717] text-4xl md:text-[64px]"
+            className="text-grain font-marlton trim !bg-[#191717]"
             data-text="Service"
           >
             Service
@@ -113,14 +114,14 @@ const AboutUs = () => {
         </h4>
       </div>
 
-      <div className="relative z-10 flex flex-wrap justify-center gap-6 sm:gap-2 sm:px-4 md:gap-8">
+      <div className="relative z-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap justify-center sm:gap-3 md:gap-6 lg:gap-8 px-2 sm:px-4">
         {steps.map((step, index) => {
           const isActive = activeCard === index;
           return (
             <div
               key={index}
               className={
-                "paper-bg-8 group relative flex w-full max-w-[350px] rounded-[6px] p-2 " +
+                "paper-bg-8 group relative flex w-full sm:w-[calc(50%-0.5rem)] lg:w-full lg:max-w-[350px] rounded-[6px] p-2 " +
                 (isActive
                   ? "bg-[#E7E3E0] text-black"
                   : "bg-[#201E1E] text-[#FFFFFF]") +
@@ -133,7 +134,7 @@ const AboutUs = () => {
                 alt={step.title}
                 width={500}
                 height={500}
-                className={`absolute top-0 object-contain object-right right-0 h-[80%] ${
+                className={`absolute top-0 object-contain object-right right-0 h-[60%] sm:h-[70%] md:h-[80%] ${
                   index === 1
                     ? (isActive ? "filter-[invert(0)]" : "filter-[invert(1)]") +
                       " group-hover:filter-[invert(0)]"
@@ -141,25 +142,25 @@ const AboutUs = () => {
                       " group-hover:filter-[invert(1)]"
                 }`}
               />
-              <div className="relative z-10 flex min-h-65 flex-col items-start justify-between gap-15 rounded-md border border-dashed border-[#6A6464] p-4">
-                <div className="flex flex-col gap-8">
-                  <h5 className="text-base font-normal font-marlton">
-                    <span className="text-base">{step.number}</span>
+              <div className="relative z-10 flex min-h-[200px] sm:min-h-[220px] md:min-h-65 flex-col items-start justify-between gap-4 sm:gap-8 md:gap-15 rounded-md border border-dashed border-[#6A6464] p-3 sm:p-4">
+                <div className="flex flex-col gap-4 sm:gap-6 md:gap-8">
+                  <h5 className="text-sm sm:text-base font-normal font-marlton">
+                    <span className="text-sm sm:text-base">{step.number}</span>
                   </h5>
 
                   <div
-                    className={`text-grain font-marlton max-w-[170px] text-left text-4xl ${
+                    className={`text-grain font-marlton max-w-[170px] text-left text-2xl sm:text-3xl md:text-4xl ${
                       isActive ? "!bg-[#2D2B2B]" : "!bg-white"
                     } group-hover:bg-[#2D2B2B]!`}
                     data-text={step.title}
-                    style={{ marginBottom: "1rem" }}
+                    style={{ marginBottom: "0.5rem" }}
                   >
                     {step.title}
                   </div>
                 </div>
 
                 <p
-                  className={`text-grain font-inter text-left text-base ${
+                  className={`text-grain font-inter text-left text-sm sm:text-base ${
                     isActive ? "!bg-[#2D2B2B]" : "!bg-white"
                   } group-hover:bg-[#2D2B2B]!`}
                   data-text={step.text}
@@ -207,13 +208,13 @@ function Story() {
   }, [api]);
   return (
     <div
-      className="flex w-full max-w-[1100px] flex-col gap-[34px] rounded-[12px] bg-[#1F1D1D] p-4 md:mt-12 md:flex-row md:gap-10"
+      className="flex w-full max-w-[1100px] flex-col gap-6 sm:gap-8 rounded-[12px] bg-[#1F1D1D] p-3 sm:p-4 md:mt-12 lg:flex-row md:gap-10"
       style={{
         boxShadow:
           "0px 4px 4px 0px rgba(255, 255, 255, 0.30) inset, 0px 3.015px 3.015px 0px rgba(0, 0, 0, 0.25)",
       }}
     >
-      <div className="relative overflow-visible">
+      <div className="relative overflow-visible w-full lg:max-w-[40%]">
         <Carousel
           className="carousel-dots pointer-none: relative w-full overflow-visible"
           setApi={setApi}
@@ -263,26 +264,24 @@ function Story() {
           ))}
         </div>
       </div>
-      <div className="flex flex-1 flex-col items-start justify-center gap-[34px] p-3 md:gap-[40px]">
-        <h4 className="flex items-center gap-4 text-4xl text-white md:text-6xl">
+      <div className="flex flex-1 flex-col items-start justify-center gap-6 sm:gap-8 md:gap-[40px] p-2 sm:p-3">
+        <h4 className="flex flex-wrap items-center gap-2 sm:gap-3 md:gap-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-tight">
           <span
-            className="text-grain !bg-[#F3CA9E] font-['marlton']"
+            className="text-grain !bg-[#F3CA9E] font-['marlton'] whitespace-nowrap"
             data-text="LOCAL"
           >
             LOCAL
           </span>
           <span
-            className="text-grain !bg-white font-['marlton']"
+            className="text-grain !bg-white font-['marlton'] whitespace-nowrap"
             data-text="FAMILY"
           >
-            {" "}
             FAMILY
           </span>
           <span
-            className="text-grain !bg-white font-['marlton']"
+            className="text-grain !bg-white font-['marlton'] whitespace-nowrap"
             data-text="OWNED"
           >
-            {" "}
             OWNED
           </span>
         </h4>
