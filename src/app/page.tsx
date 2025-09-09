@@ -9,6 +9,7 @@ import { RemoveStress } from "@/components/sections/home/remove-stress";
 import { CTA } from "@/components/sections/home/cta";
 import { Map } from "@/components/sections/home/map";
 import { FAQ } from "@/components/sections/faq";
+import AboutUs from "@/components/sections/home/about-us";
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
         <LightInstallation />
         <WrapperUp />
         <LightingUpNights />
+        <AboutUs />
         <RemoveStress />
         <CTA />
         <Map />

@@ -47,6 +47,7 @@
   --font-marlton: var(--font-marlton), sans-serif;
   --font-luminaire: var(--font-luminaire), sans-serif;
   --font-satoshi: var(--font-satoshi), sans-serif;
+  --font-inter: var(--font-inter), sans-serif;
 }
 
 :root {
