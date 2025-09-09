@@ -16,7 +16,7 @@ export default function Home() {
     <div className="flex flex-col max-w-screen overflow-x-clip items-center justify-center relative">
       {/* Background Image - Absolute (only covers hero section) */}
       <Image
-        src="/images/home/hero/hero-new.jpg"
+        src="/images/home/hero/hero.webp"
         alt="Hero"
         className="absolute top-0 left-0 object-bottom w-full h-[min(100svh,960px)] object-cover z-0"
         width={2000}
