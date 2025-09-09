@@ -18,20 +18,20 @@ type NavItem = {
 
 export const navItems: NavItem[] = [
   {
-    label: "We Got You Covered",
-    href: "#we-got-you-covered",
+    label: "Services",
+    href: "/#we-got-you-covered",
   },
   {
-    label: "Light Installation",
-    href: "#light-installation",
+    label: "Our Work",
+    href: "/#light-installation",
   },
   {
-    label: "Our Process",
-    href: "#wrapped-up",
+    label: "How it Works",
+    href: "/#wrapped-up",
   },
   {
-    label: "Remove The Stress",
-    href: "#remove-stress",
+    label: "Why Choose Us",
+    href: "/#remove-stress",
   },
 ];
 

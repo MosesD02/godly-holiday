@@ -30,7 +30,7 @@ export function Hero() {
                     className="w-3 h-3 sm:w-4 sm:h-4"
                   />
                 ))}
-                <div className="trim-text pt-1.5 ps-2">93 Reviews</div>
+                <div className="trim-text pt-1.5 ps-2">5 Star Rated</div>
               </div>
             </div>
           </div>
