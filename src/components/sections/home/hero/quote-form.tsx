@@ -33,14 +33,14 @@ const formSchema = z.object({
     })
     .min(1),
   zipCode: z
-    .number({
+    .string({
       message: "A zip code is required.",
     })
     .min(1),
 });
 
 export const inputClasses =
-  "border-none shadow-none p-0 text-lg sm:text-xl lg:text-2xl font-marlton placeholder:text-lg placeholder:text-[#d3c8b8] placeholder:sm:text-xl placeholder:lg:text-2xl w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none";
+  "border-none shadow-none p-0! h-auto [text-box-trim:none]! text-lg sm:text-xl lg:text-2xl font-marlton placeholder:text-lg placeholder:text-[#d3c8b8] placeholder:sm:text-xl placeholder:lg:text-2xl w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none";
 
 interface QuoteFormProps {
   hideImages?: boolean;
@@ -56,12 +56,39 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
       name: "",
       email: "",
       phone: "",
+      zipCode: "",
     },
   });
+  const { isSubmitting } = form.formState;
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch(
+        "https://hook.us1.make.com/gn5b64g52ssz7of2pcf8yoapbk5a1vdh",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        }
+      );
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error("Webhook error:", errorText);
+      } else {
+        alert("Thanks! We'll contact you shortly.");
+        try {
+          // Reset form fields and checkbox state
+          form.reset();
+          setIsChecked(false);
+        } catch (resetError) {
+          console.error("Form reset exception:", resetError);
+        }
+      }
+    } catch (error) {
+      console.error("Webhook exception:", error);
+    }
     console.log(values);
   }
 
@@ -200,14 +227,16 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
                 estimate and project
               </span>
             </div>
-            <GodlyButton type="submit">
-              <span>REQUEST A QUOTE</span>
-              <Image
-                src={ArrowRight.src}
-                alt="Arrow Right"
-                width={32}
-                height={33}
-              />
+            <GodlyButton type="submit" disabled={isSubmitting}>
+              <span>{isSubmitting ? "SENDING..." : "REQUEST A QUOTE"}</span>
+              {!isSubmitting && (
+                <Image
+                  src={ArrowRight.src}
+                  alt="Arrow Right"
+                  width={32}
+                  height={33}
+                />
+              )}
             </GodlyButton>
           </div>
         </form>

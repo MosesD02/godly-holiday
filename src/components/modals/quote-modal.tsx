@@ -35,7 +35,7 @@ const formSchema = z.object({
     })
     .min(1),
   zipCode: z
-    .number({
+    .string({
       message: "A zip code is required.",
     })
     .min(1),
@@ -54,14 +54,41 @@ export function QuoteModal() {
       name: "",
       email: "",
       phone: "",
+      zipCode: "",
     },
   });
+  const { isSubmitting } = form.formState;
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch(
+        "https://hook.us1.make.com/gn5b64g52ssz7of2pcf8yoapbk5a1vdh",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        }
+      );
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error("Webhook error:", errorText);
+      } else {
+        alert("Thanks! We'll contact you shortly.");
+        try {
+          // Reset form fields and checkbox state
+          form.reset();
+          setIsChecked(false);
+        } catch (resetError) {
+          console.error("Form reset exception:", resetError);
+        }
+      }
+    } catch (error) {
+      console.error("Webhook exception:", error);
+    }
     console.log(values);
-    // Close modal after successful submission
+    // Close modal after submission
     closeModal();
   }
 
@@ -205,15 +232,21 @@ export function QuoteModal() {
                   estimate and project
                 </span>
               </div>
-              <GodlyButton type="submit" className="mt-4 sm:mt-0">
-                <span>REQUEST A QUOTE</span>
-                <Image
-                  src={ArrowRight.src}
-                  alt="Arrow Right"
-                  width={24}
-                  height={25}
-                  className="sm:w-8 sm:h-[33px]"
-                />
+              <GodlyButton
+                type="submit"
+                className="mt-4 sm:mt-0"
+                disabled={isSubmitting}
+              >
+                <span>{isSubmitting ? "SENDING..." : "REQUEST A QUOTE"}</span>
+                {!isSubmitting && (
+                  <Image
+                    src={ArrowRight.src}
+                    alt="Arrow Right"
+                    width={24}
+                    height={25}
+                    className="sm:w-8 sm:h-[33px]"
+                  />
+                )}
               </GodlyButton>
             </div>
           </form>
