@@ -73,7 +73,7 @@ const AboutUs = () => {
           <h2 className="trim-text font-marlton -rotate-2 text-[24px] sm:text-[36px] md:text-[48px] lg:text-[64px] font-normal tracking-[2px] sm:tracking-[3px] md:tracking-[4px] lg:tracking-[5.76px] text-[#191717]">
             old fashioned Values
           </h2>
-          <h4 className="absolute top-3/5 -mt-2 sm:-mt-3 md:-mt-4 -rotate-2 text-lg sm:text-2xl md:text-3xl font-normal text-[#191717]">
+          <h4 className="absolute top-2 sm:top-4 md:top-6 -rotate-2 text-lg sm:text-2xl md:text-3xl font-normal text-[#191717]">
             <span className="text-[16px] sm:text-[24px] md:text-[32px] underline font-marlton">
               UNRIVALED
             </span>{" "}

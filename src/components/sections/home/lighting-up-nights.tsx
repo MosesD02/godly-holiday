@@ -22,7 +22,7 @@ export function LightingUpNights() {
   return (
     <section
       id="lighting-up-nights"
-      className="flex flex-col items-center justify-center relative"
+      className="flex flex-col pb-8 sm:pb-16 md:pb-24 items-center justify-center relative"
     >
       <Image
         src="/images/home/lighting-up-nights/flakes.webp"
@@ -57,15 +57,6 @@ export function LightingUpNights() {
           </span>
         </span>
       </h2>
-      {/* <div className="relative w-full h-[200px] sm:h-[400px] lg:h-[700.884px] mb-16 sm:mb-20 lg:mb-[102px]">
-        <Image
-          src="/images/home/lighting-up-nights/images.png"
-          alt="Images"
-          width={2100}
-          height={669.884}
-          className="w-full h-full mx-auto object-cover"
-        />
-      </div> */}
 
       <Carousel
         opts={{

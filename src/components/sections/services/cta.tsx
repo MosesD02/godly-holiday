@@ -26,7 +26,7 @@ export function ServicesCTA() {
           <h2 className="z-10 text-center relative font-marlton text-white text-[28px] sm:text-4xl lg:text-[64px] leading-[50px] sm:leading-[64px] lg:leading-[88px] tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px]">
             BOOK YOUR <br />
             <span
-              className="absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -mt-2 sm:mt-1 lg:mt-2 font-luminaire text-[#FFE7AF] rotate-[-8.351deg] text-3xl sm:text-4xl lg:text-[56px] trim-text"
+              className="absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 mt-1.5 font-luminaire text-[#FFE7AF] rotate-[-8.351deg] text-3xl sm:text-4xl lg:text-[56px] trim-text"
               style={{
                 textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
                 WebkitTextStrokeWidth: "6px",
@@ -36,7 +36,7 @@ export function ServicesCTA() {
             >
               Holiday
             </span>
-            <span className="inline-flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-3">
+            <span className="inline-flex flex-row items-center sm:items-start gap-2 sm:gap-3">
               <span className="py-2.5 sm:py-0 lg:py-2.5 text-lg sm:text-2xl lg:text-[32px] leading-normal tracking-[2px] sm:tracking-[3.2px]">
                 Light
               </span>{" "}

@@ -32,7 +32,7 @@ export function Hero() {
             RESIDENTIAL & COMMERCIAL <br /> HOLIDAY LIGHT
           </span>{" "}
           <span
-            className="font-luminaire text-[#FFE7AF] absolute rotate-[-8.155deg] text-[32px] sm:text-[48px] md:text-[64px] lg:text-[72px] -bottom-7 sm:-bottom-4 md:-bottom-5 lg:-bottom-6 right-8 sm:right-12 md:right-16 lg:right-18"
+            className="font-luminaire text-[#FFE7AF] absolute rotate-[-8.155deg] text-[32px] sm:text-[48px] md:text-[64px] lg:text-[72px] -bottom-9 sm:-bottom-9 md:-bottom-5 lg:-bottom-6 right-8 sm:right-12 md:right-16 lg:right-18"
             style={{
               textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
               WebkitTextStrokeWidth: "6px",
@@ -42,7 +42,7 @@ export function Hero() {
           >
             Installation
           </span>{" "}
-          <span className="text-[#FDE4C8] absolute sm:-right-3 md:-right-4 bottom-0 sm:bottom-2 md:bottom-3 text-xs sm:text-sm md:text-base leading-4 sm:leading-5 md:leading-6 tracking-[1.5px] sm:tracking-[2px]">
+          <span className="text-[#FDE4C8] absolute right-4 sm:-right-5 sm:top-20 md:-right-4 -bottom-2 md:bottom-3 text-xs sm:text-sm md:text-base leading-4 sm:leading-5 md:leading-6 tracking-[1.5px] sm:tracking-[2px]">
             SOUTH <br /> FLORIDA
           </span>
         </h1>
