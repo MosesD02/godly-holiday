@@ -32,7 +32,7 @@ export function Popup() {
 
     // Get current date in Eastern Time
     const easternTime = new Date(
-      now.toLocaleString("en-US", { timeZone: "America/New_York" })
+      now.toLocaleString("en-US", { timeZone: "America/New_York" }),
     );
     const year = easternTime.getFullYear();
     const month = easternTime.getMonth();
@@ -54,7 +54,7 @@ export function Popup() {
 
       const days = Math.floor(difference / (1000 * 60 * 60 * 24));
       const hours = Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
       );
       const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((difference % (1000 * 60)) / 1000);
@@ -183,10 +183,10 @@ export function Popup() {
                           day === 1 || day === 21 || day === 31
                             ? "st"
                             : day === 2 || day === 22
-                            ? "nd"
-                            : day === 3 || day === 23
-                            ? "rd"
-                            : "th";
+                              ? "nd"
+                              : day === 3 || day === 23
+                                ? "rd"
+                                : "th";
                         return `${targetDate.toLocaleDateString("en-US", {
                           month: "long",
                           timeZone: "America/New_York",

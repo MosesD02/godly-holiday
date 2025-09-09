@@ -1,102 +1,102 @@
 export const cities = [
   {
     name: "BOCA RATON",
-    key: "boca-raton"
+    key: "boca-raton",
   },
   {
     name: "CORAL SPRINGS",
-    key: "coral-springs"
+    key: "coral-springs",
   },
   {
     name: "DAVIE",
-    key: "davie"
+    key: "davie",
   },
   {
     name: "DEERFIELD BEACH",
-    key: "deerfield-beach"
+    key: "deerfield-beach",
   },
   {
     name: "DELRAY BEACH",
-    key: "delray-beach"
+    key: "delray-beach",
   },
   {
     name: "FORT LAUDERDALE",
-    key: "fort-lauderdale"
+    key: "fort-lauderdale",
   },
   {
     name: "HALLANDALE BEACH",
-    key: "hallandale-beach"
+    key: "hallandale-beach",
   },
   {
     name: "HILLSBORO BEACH",
-    key: "hillsboro-beach"
+    key: "hillsboro-beach",
   },
   {
     name: "HOLLYWOOD",
-    key: "hollywood"
+    key: "hollywood",
   },
   {
     name: "LAUDERDALE-BY-THE-SEA",
-    key: "lauderdale-by-the-sea"
+    key: "lauderdale-by-the-sea",
   },
   {
     name: "LIGHTHOUSE POINT",
-    key: "lighthouse-point"
+    key: "lighthouse-point",
   },
   {
     name: "MARGATE",
-    key: "margate"
+    key: "margate",
   },
   {
     name: "MIAMI",
-    key: "miami"
+    key: "miami",
   },
   {
     name: "MIRAMAR",
-    key: "miramar"
+    key: "miramar",
   },
   {
     name: "OAKLAND PARK",
-    key: "oakland-park"
+    key: "oakland-park",
   },
   {
     name: "PARKLAND",
-    key: "parkland"
+    key: "parkland",
   },
   {
     name: "PEMBROKE PINES",
-    key: "pembroke-pines"
+    key: "pembroke-pines",
   },
   {
     name: "PLANTATION",
-    key: "plantation"
+    key: "plantation",
   },
   {
     name: "POMPANO BEACH",
-    key: "pompano-beach"
+    key: "pompano-beach",
   },
   {
     name: "ROYAL PALM BEACH",
-    key: "royal-palm-beach"
+    key: "royal-palm-beach",
   },
   {
     name: "SOUTHWEST RANCHES",
-    key: "southwest-ranches"
+    key: "southwest-ranches",
   },
   {
     name: "SUNRISE",
-    key: "sunrise"
+    key: "sunrise",
   },
   {
     name: "TAMARAC",
-    key: "tamarac"
+    key: "tamarac",
   },
   {
     name: "WEST PALM BEACH",
-    key: "west-palm-beach"
+    key: "west-palm-beach",
   },
   {
     name: "WESTON",
-    key: "weston"
-  }
-]
+    key: "weston",
+  },
+];

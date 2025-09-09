@@ -69,7 +69,7 @@ export function QuoteModal() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(values),
-        }
+        },
       );
       if (!response.ok) {
         const errorText = await response.text();

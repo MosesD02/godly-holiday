@@ -9,7 +9,7 @@ interface QuoteModalContextType {
 }
 
 const QuoteModalContext = createContext<QuoteModalContextType | undefined>(
-  undefined
+  undefined,
 );
 
 export function QuoteModalProvider({ children }: { children: ReactNode }) {

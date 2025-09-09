@@ -71,7 +71,7 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(values),
-        }
+        },
       );
       if (!response.ok) {
         const errorText = await response.text();
@@ -97,13 +97,13 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
       <div
         className={cn(
           "flex flex-col sm:flex-row px-4 sm:px-8 lg:px-12 py-4 sm:py-6 lg:py-8 justify-between items-start sm:items-center bg-paper-16 rounded-t-[6px] sm:rounded-t-[8px] lg:rounded-t-[10px] relative z-10 gap-3 sm:gap-0",
-          size === "sm" && "sm:flex-col"
+          size === "sm" && "sm:flex-col",
         )}
       >
         <h2
           className={cn(
             "font-marlton text-[32px] sm:text-[48px] lg:text-[64px] tracking-[1.6px] sm:tracking-[2.4px] lg:tracking-[3.2px] leading-[100%]",
-            size === "sm" && "text-[24px] sm:text-[32px] lg:text-[48px]"
+            size === "sm" && "text-[24px] sm:text-[32px] lg:text-[48px]",
           )}
         >
           LET US CALL YOU!
@@ -112,7 +112,7 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
           className={cn(
             "font-satoshi max-w-[367px] text-left sm:text-right text-base sm:text-lg lg:text-2xl font-medium",
             size === "sm" &&
-              "text-sm sm:text-base lg:text-lg text-center sm:text-center"
+              "text-sm sm:text-base lg:text-lg text-center sm:text-center",
           )}
         >
           Receive a call within 30 minutes during normal business hours.
@@ -206,7 +206,7 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
           <div
             className={cn(
               "flex flex-col sm:flex-row items-start sm:items-center justify-between mt-6 sm:mt-8.5 gap-4 sm:gap-0",
-              size === "sm" && "sm:flex-col sm:gap-4"
+              size === "sm" && "sm:flex-col sm:gap-4",
             )}
           >
             <div className="flex items-center gap-3">

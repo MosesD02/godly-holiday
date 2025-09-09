@@ -10,7 +10,7 @@ export function GodlyButton({
       className={cn(
         variant === "gray" && "godly-button-gray",
         variant === "red" && "godly-button",
-        className
+        className,
       )}
       {...props}
     >
