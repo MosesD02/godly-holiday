@@ -19,6 +19,7 @@ import { CheckIcon } from "lucide-react";
 import { GodlyButton } from "@/components/ui/godly-button";
 import ArrowRight from "@/assets/arrow-right.svg";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 const formSchema = z.object({
   name: z
@@ -46,9 +47,10 @@ export const inputClasses =
 
 interface QuoteFormProps {
   hideImages?: boolean;
+  size?: "sm" | "lg";
 }
 
-export function QuoteForm({ hideImages = false }: QuoteFormProps) {
+export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
   const [isChecked, setIsChecked] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -68,11 +70,27 @@ export function QuoteForm({ hideImages = false }: QuoteFormProps) {
 
   return (
     <div className="bg-paper-14 rounded-[6px] sm:rounded-[8px] lg:rounded-[10px] flex flex-col gap-2 sm:gap-3 text-[#2D2B2B] max-w-[1332px] w-full relative">
-      <div className="flex flex-col sm:flex-row px-4 sm:px-8 lg:px-12 py-4 sm:py-6 lg:py-8 justify-between items-start sm:items-center bg-paper-16 rounded-t-[6px] sm:rounded-t-[8px] lg:rounded-t-[10px] relative z-10 gap-3 sm:gap-0">
-        <h2 className="font-marlton text-[32px] sm:text-[48px] lg:text-[64px] tracking-[1.6px] sm:tracking-[2.4px] lg:tracking-[3.2px] leading-[100%]">
+      <div
+        className={cn(
+          "flex flex-col sm:flex-row px-4 sm:px-8 lg:px-12 py-4 sm:py-6 lg:py-8 justify-between items-start sm:items-center bg-paper-16 rounded-t-[6px] sm:rounded-t-[8px] lg:rounded-t-[10px] relative z-10 gap-3 sm:gap-0",
+          size === "sm" && "sm:flex-col"
+        )}
+      >
+        <h2
+          className={cn(
+            "font-marlton text-[32px] sm:text-[48px] lg:text-[64px] tracking-[1.6px] sm:tracking-[2.4px] lg:tracking-[3.2px] leading-[100%]",
+            size === "sm" && "text-[24px] sm:text-[32px] lg:text-[48px]"
+          )}
+        >
           LET US CALL YOU!
         </h2>
-        <p className="font-satoshi max-w-[367px] text-left sm:text-right text-base sm:text-lg lg:text-2xl font-medium">
+        <p
+          className={cn(
+            "font-satoshi max-w-[367px] text-left sm:text-right text-base sm:text-lg lg:text-2xl font-medium",
+            size === "sm" &&
+              "text-sm sm:text-base lg:text-lg text-center sm:text-center"
+          )}
+        >
           Receive a call within 30 minutes during normal business hours.
         </p>
       </div>
@@ -161,7 +179,12 @@ export function QuoteForm({ hideImages = false }: QuoteFormProps) {
             />
           </div>
 
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-6 sm:mt-8.5 gap-4 sm:gap-0">
+          <div
+            className={cn(
+              "flex flex-col sm:flex-row items-start sm:items-center justify-between mt-6 sm:mt-8.5 gap-4 sm:gap-0",
+              size === "sm" && "sm:flex-col sm:gap-4"
+            )}
+          >
             <div className="flex items-center gap-3">
               <button
                 type="button"

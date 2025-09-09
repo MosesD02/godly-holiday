@@ -1,48 +1,9 @@
-"use client";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormMessage,
-} from "@/components/ui/form";
-import { GodlyButton } from "@/components/ui/godly-button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
 import Image from "next/image";
 
-import ArrowRight from "@/assets/arrow-right.svg";
 import Link from "next/link";
-
-const formSchema = z.object({
-  name: z.string().min(1),
-  phone: z.string().min(1),
-  city: z.string().min(1),
-  message: z.string(),
-});
+import { QuoteForm } from "./hero/quote-form";
 
 export function CTA() {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: "",
-      phone: "",
-      city: "",
-      message: "",
-    },
-  });
-
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    try {
-      console.log(values);
-    } catch (error) {
-      console.error("Form submission error", error);
-    }
-  }
-
   return (
     <section
       id="cta"
@@ -110,112 +71,7 @@ export function CTA() {
         </Link>
       </div>
       <div className="relative max-w-[480px] sm:max-w-[520px] lg:max-w-[562.141px] w-full">
-        <Image
-          src="/images/textures/cta-bg.webp"
-          alt="CTA Background"
-          width={562.141}
-          height={562.141}
-          className="absolute inset-0 w-full h-full -z-10"
-        />
-        <Form {...form}>
-          <form
-            onSubmit={form.handleSubmit(onSubmit)}
-            className="space-y-4 sm:space-y-6 w-full max-w-[380px] sm:max-w-[420px] lg:max-w-[442px] mx-auto py-8 px-12 sm:py-12 lg:py-15 lg:px-0 text-[#8D8C8C]"
-          >
-            <FormField
-              control={form.control}
-              name="name"
-              render={({ field }) => (
-                <FormItem className="border-b border-[#312E2C]">
-                  <FormControl>
-                    <Input
-                      placeholder="Name"
-                      type="text"
-                      {...field}
-                      className={
-                        "border-none shadow-none p-0 text-base sm:text-lg font-medium placeholder:text-base sm:placeholder:text-lg w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none"
-                      }
-                    />
-                  </FormControl>
-
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
-              name="phone"
-              render={({ field }) => (
-                <FormItem className=" border-b border-[#312E2C]">
-                  <FormControl>
-                    <Input
-                      placeholder="Number"
-                      type="text"
-                      {...field}
-                      className={
-                        "border-none shadow-none p-0 text-base sm:text-lg font-medium placeholder:text-base sm:placeholder:text-lg w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none"
-                      }
-                    />
-                  </FormControl>
-
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
-              name="city"
-              render={({ field }) => (
-                <FormItem className=" border-b border-[#312E2C]">
-                  <FormControl>
-                    <Input
-                      placeholder="City or Town"
-                      type="text"
-                      {...field}
-                      className={
-                        "border-none shadow-none p-0 text-base sm:text-lg font-medium placeholder:text-base sm:placeholder:text-lg w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none"
-                      }
-                    />
-                  </FormControl>
-
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
-              name="message"
-              render={({ field }) => (
-                <FormItem className=" border-b border-[#312E2C]">
-                  <FormControl>
-                    <Textarea
-                      placeholder="Message"
-                      className="resize-none border-none h-[120px] sm:h-[140px] lg:h-[160px] shadow-none p-0 text-base sm:text-lg font-medium placeholder:text-base sm:placeholder:text-lg w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none"
-                      {...field}
-                    />
-                  </FormControl>
-
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <GodlyButton
-              type="submit"
-              className="max-w-full! w-full justify-center mt-4 sm:mt-6"
-            >
-              <span>REQUEST A QUOTE</span>
-              <Image
-                src={ArrowRight.src}
-                alt="Arrow Right"
-                width={32}
-                height={33}
-              />
-            </GodlyButton>
-          </form>
-        </Form>
+        <QuoteForm size="sm" />
       </div>
     </section>
   );
