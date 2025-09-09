@@ -12,7 +12,7 @@ import { FAQ } from "@/components/sections/faq";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center relative">
+    <div className="flex flex-col max-w-screen overflow-x-clip items-center justify-center relative">
       {/* Background Image - Absolute (only covers hero section) */}
       <Image
         src="/images/home/hero/hero-new.jpg"

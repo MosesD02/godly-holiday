@@ -5,7 +5,7 @@ import ArrowRight from "@/assets/arrow-right.svg";
 
 export function RemoveStress() {
   return (
-    <section id="remove-stress" className="pb-[120px]">
+    <section id="remove-stress" className="pb-[120px] overflow-x-clip">
       <div className="max-w-[1400px] mx-auto flex flex-col items-center justify-center gap-8 sm:gap-12 lg:gap-[64px] pb-16 sm:pb-20 lg:pb-[120px] px-4 sm:px-6">
         <h2 className="relative -translate-x-[12px] sm:-translate-x-[16px] md:-translate-x-[24px] text-[24px] sm:text-[32px] md:text-[48px] lg:text-[64px] leading-[28px] sm:leading-[38px] md:leading-[56px] lg:leading-[74px] max-w-fit max-h-fit tracking-[1.2px] sm:tracking-[1.6px] md:tracking-[2.4px] lg:tracking-[3.2px] font-marlton text-center pt-12 sm:pt-16 md:pt-24 lg:pt-[144px] pb-8 sm:pb-10 md:pb-16 lg:pb-[82px]">
           <span className="text-grain bg-white">REMOVE THE</span>{" "}
@@ -31,163 +31,6 @@ export function RemoveStress() {
       </div>
 
       <div className="relative paper-bg-1 max-w-[1400px] mx-auto rounded-[10px] text-[#2D2B2B] font-satoshi text-sm sm:text-base lg:text-xl font-medium leading-5 sm:leading-6 px-3 sm:px-5 py-4 sm:py-6">
-        {/* Mobile Layout */}
-        <div className="lg:hidden space-y-4">
-          {/* Handymen Card */}
-          <div className="rounded-[12px] border-2 border-[#2D2B2B] p-4">
-            <h3 className="text-center font-semibold mb-4">Handymen</h3>
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <span>Free Custom Designs</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.check />
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>All Supplies Included</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.cross />
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>High Quality Lights</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.cross />
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>Fully Warranty</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.cross />
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>Maintenance Included</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.cross />
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>Removal & Storage Included</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.cross />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Lighting Companies Card */}
-          <div className="rounded-[12px] border-2 border-[#2D2B2B] p-4">
-            <h3 className="text-center font-semibold mb-4">
-              Lighting Companies
-            </h3>
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <span>Free Custom Designs</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.check />
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>All Supplies Included</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.check />
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>High Quality Lights</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.cross />
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>Fully Warranty</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.cross />
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>Maintenance Included</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.cross />
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>Removal & Storage Included</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.cross />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Godly Windows Card */}
-          <div
-            style={{
-              boxShadow:
-                "12px 12px 4px 0 rgba(0, 0, 0, 0.25), 8px 8px 20px 0 rgba(109, 109, 109, 0.20) inset",
-            }}
-            className="bg-[#282828] rounded-[12px] p-4"
-          >
-            <div className="text-center mb-4">
-              <Image
-                src={Logo.src}
-                alt="Godly Windows"
-                width={131}
-                height={75}
-                className="aspect-[131/75] mx-auto mb-4"
-              />
-            </div>
-            <div className="space-y-3 text-white">
-              <div className="flex items-center justify-between">
-                <span>Free Custom Designs</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.checkGold />
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>All Supplies Included</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.checkGold />
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>High Quality Lights</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.checkGold />
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>Fully Warranty</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.checkGold />
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>Maintenance Included</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.checkGold />
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <span>Removal & Storage Included</span>
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <Icons.checkGold />
-                </div>
-              </div>
-            </div>
-            <QuoteButton className="max-w-full w-full justify-center mt-6">
-              <span>REQUEST A QUOTE</span>
-              <Image
-                src={ArrowRight.src}
-                alt="Arrow Right"
-                width={32}
-                height={33}
-              />
-            </QuoteButton>
-          </div>
-        </div>
-
         {/* Desktop Layout */}
         <div className="hidden lg:flex rounded-[12px] border-2 border-[#2D2B2B] px-8.5 items-end gap-3 relative pr-[424px]">
           <div className="mt-[64px] py-10 [&_div]:py-5">
@@ -303,6 +146,115 @@ export function RemoveStress() {
               filter: "blur(112.78997802734375px)",
             }}
           ></div>
+        </div>
+
+        {/* Mobile/Tablet Layout */}
+        <div className="lg:hidden relative rounded-[12px] border-2 border-[#2D2B2B] p-3 sm:p-6 pr-[200px] sm:pr-[260px]">
+          {/* Table header */}
+          <div className="grid grid-cols-[1fr_auto_auto] items-center gap-x-3 gap-y-1 text-xs sm:text-sm leading-4">
+            <div className="py-2" />
+            <p className="text-center py-2 font-medium">Handymen</p>
+            <p className="text-center py-2 font-medium">Lighting Companies</p>
+
+            <div className="py-2">Free Custom Designs</div>
+            <div className="flex justify-center py-2 transform scale-[0.78] sm:scale-90">
+              <Icons.check />
+            </div>
+            <div className="flex justify-center py-2 transform scale-[0.78] sm:scale-90">
+              <Icons.check />
+            </div>
+            <div className="col-span-3 h-px bg-[#2D2B2B]/15 my-0.5" />
+
+            <div className="py-2">All Supplies Included</div>
+            <div className="flex justify-center py-2 transform scale-[0.78] sm:scale-90">
+              <Icons.cross />
+            </div>
+            <div className="flex justify-center py-2 transform scale-[0.78] sm:scale-90">
+              <Icons.check />
+            </div>
+            <div className="col-span-3 h-px bg-[#2D2B2B]/15 my-0.5" />
+
+            <div className="py-2">High Quality Lights</div>
+            <div className="flex justify-center py-2 transform scale-[0.78] sm:scale-90">
+              <Icons.cross />
+            </div>
+            <div className="flex justify-center py-2 transform scale-[0.78] sm:scale-90">
+              <Icons.cross />
+            </div>
+            <div className="col-span-3 h-px bg-[#2D2B2B]/15 my-0.5" />
+
+            <div className="py-2">Fully Warranty</div>
+            <div className="flex justify-center py-2 transform scale-[0.78] sm:scale-90">
+              <Icons.cross />
+            </div>
+            <div className="flex justify-center py-2 transform scale-[0.78] sm:scale-90">
+              <Icons.cross />
+            </div>
+            <div className="col-span-3 h-px bg-[#2D2B2B]/15 my-0.5" />
+
+            <div className="py-2">Maintenance Included</div>
+            <div className="flex justify-center py-2 transform scale-[0.78] sm:scale-90">
+              <Icons.cross />
+            </div>
+            <div className="flex justify-center py-2 transform scale-[0.78] sm:scale-90">
+              <Icons.cross />
+            </div>
+            <div className="col-span-3 h-px bg-[#2D2B2B]/15 my-0.5" />
+
+            <div className="py-2">Removal & Storage Included</div>
+            <div className="flex justify-center py-2 transform scale-[0.78] sm:scale-90">
+              <Icons.cross />
+            </div>
+            <div className="flex justify-center py-2 transform scale-[0.78] sm:scale-90">
+              <Icons.cross />
+            </div>
+          </div>
+
+          {/* Brand card (absolute on right, extends vertically) */}
+          <div
+            style={{
+              boxShadow:
+                "12px 12px 4px 0 rgba(0, 0, 0, 0.25), 8px 8px 20px 0 rgba(109, 109, 109, 0.20) inset",
+            }}
+            className="absolute -right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-[#282828] rounded-[12px] text-center space-y-4 w-[160px] sm:w-[220px] px-3 sm:px-5 py-5 sm:py-6 [&_div]:mx-auto [&_div]:max-w-fit"
+          >
+            <Image
+              src={Logo.src}
+              alt="Godly Windows"
+              width={75}
+              height={45}
+              className="aspect-[131/75] mx-auto"
+            />
+            <span className="grid gap-2 max-w-[180px] mx-auto">
+              <div className="p-2 transform scale-90">
+                <Icons.checkGold />
+              </div>
+              <div className="p-2 transform scale-90">
+                <Icons.checkGold />
+              </div>
+              <div className="p-2 transform scale-90">
+                <Icons.checkGold />
+              </div>
+              <div className="p-2 transform scale-90">
+                <Icons.checkGold />
+              </div>
+              <div className="p-2 transform scale-90">
+                <Icons.checkGold />
+              </div>
+              <div className="p-2 transform scale-90">
+                <Icons.checkGold />
+              </div>
+            </span>
+            <QuoteButton className="w-fit! h-fit! px-3! py-2! justify-center">
+              <span className="text-[10px]! sm:text-sm">REQUEST A QUOTE</span>
+              <Image
+                src={ArrowRight.src}
+                alt="Arrow Right"
+                width={24}
+                height={26}
+              />
+            </QuoteButton>
+          </div>
         </div>
       </div>
     </section>
