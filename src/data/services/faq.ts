@@ -1,23 +1,31 @@
 export const faqs = [
   {
-    question: "Do you handle both home and commercial jobs?",
-    answer: "",
-  },
-  {
-    question: "Are you a full-service provider?",
+    question: "Do I need to provide the lights?",
     answer:
-      "We’re a licensed holiday lighting company—design to takedown, we do it all.",
+      "No — we provide everything. We only use commercial-grade, high-efficiency LED lights in every color and style, so you don’t need to provide a thing.",
   },
   {
-    question: "Is maintenance included?",
-    answer: "",
+    question: "Do you use subcontractors?",
+    answer:
+      "Never. Everyone who works on your home is a fully trained and vetted Godly Holiday Lights employee. ",
   },
   {
-    question: "Do you serve my area?",
-    answer: "",
+    question: "What is your maintenance policy?",
+    answer:
+      "We guarantee your display stays shining. If anything goes out, we’ll be there within 24 hours (often much sooner) — no questions asked, even if it was caused by landscapers, squirrels, or anything else.",
   },
   {
-    question: "What’s the process?",
-    answer: "",
+    question: "What payment methods do you take?",
+    answer: "We accept cash, card, or check.",
+  },
+  {
+    question: "Do you have a minimum?",
+    answer:
+      "Early in the season there’s no minimum, but as demand builds we do set one. Don’t worry — we’ll always discuss this with you beforehand.",
+  },
+  {
+    question: "Are you insured?",
+    answer:
+      "Yes. We’re fully insured with $2 million in general liability coverage as well as full workers’ compensation.",
   },
 ];

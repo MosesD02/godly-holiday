@@ -67,7 +67,10 @@ export function QuoteModal() {
 
   return (
     <Dialog open={isOpen} onOpenChange={closeModal}>
-      <DialogContent className="max-w-4xl w-[95vw] max-h-[90vh] overflow-y-auto sm:max-w-fit bg-paper-14 border-none p-0 gap-0">
+      <DialogContent
+        className="max-w-4xl w-[95vw] max-h-[90vh] overflow-y-auto sm:max-w-fit bg-paper-14 border-none p-0 gap-0"
+        showCloseButton={true}
+      >
         {/* Header */}
         <DialogTitle className="sr-only">LET US CALL YOU!</DialogTitle>
         <div className="flex flex-col sm:flex-row px-4 sm:px-6 lg:px-8 py-4 sm:py-6 justify-between items-start sm:items-center bg-paper-16 rounded-t-[6px] sm:rounded-t-[8px] lg:rounded-t-[10px] relative z-10 gap-3 sm:gap-0">
@@ -79,15 +82,15 @@ export function QuoteModal() {
               Receive a call within 30 minutes during normal business hours.
             </p>
           </div>
-
-          {/* Close Button */}
-          <button
-            onClick={closeModal}
-            className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[rgba(0,0,0,0.1)] hover:bg-[rgba(0,0,0,0.2)] transition-all duration-300 shrink-0"
-          >
-            <X className="w-4 h-4 sm:w-5 sm:h-5 text-[#2D2B2B]" />
-          </button>
         </div>
+
+        {/* Close Button */}
+        <button
+          onClick={closeModal}
+          className="flex items-center absolute top-4 z-10 right-4 justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[rgba(0,0,0,0.1)] hover:bg-[rgba(0,0,0,0.2)] transition-all duration-300 shrink-0"
+        >
+          <X className="w-4 h-4 sm:w-5 sm:h-5 text-[#2D2B2B]" />
+        </button>
 
         {/* Form */}
         <Form {...form}>
