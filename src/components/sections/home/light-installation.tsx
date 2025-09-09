@@ -13,7 +13,7 @@ export function LightInstallation() {
         <div className="flex flex-col gap-12 sm:gap-16 lg:gap-20 flex-1 max-w-[521px]">
           <div className="flex flex-col gap-8 sm:gap-10 lg:gap-12 flex-1">
             <div className="flex flex-col gap-6 sm:gap-7 lg:gap-8 flex-1">
-              <h2 className="font-marlton text-[28px] sm:text-[42px] lg:text-[56px] leading-[32px] sm:leading-[48px] lg:leading-[64px] tracking-[1.68px] sm:tracking-[2.52px] lg:tracking-[3.36px]">
+              <h2 className="font-marlton text-[28px] sm:text-[42px] lg:text-[56px] leading-[32px] sm:leading-[48px] lg:leading-[64px] tracking-[1.68px] sm:tracking-[2.52px] lg:tracking-[3.36px] text-center lg:text-left">
                 Commercial HOLIDAY LIGHT{" "}
                 <span
                   className="font-luminaire inline-block text-[#FFE7AF] md:-translate-x-8"
@@ -42,7 +42,7 @@ export function LightInstallation() {
               <Badge size="sm">Churches</Badge>
             </div>
           </div>
-          <QuoteButton className="max-w-fit">
+          <QuoteButton className="max-w-fit scale-90 sm:scale-100 mx-auto lg:mx-0">
             <span>Request a Quote</span>{" "}
             <Image
               src={ArrowRight.src}
@@ -76,7 +76,7 @@ export function LightInstallation() {
         <div className="flex flex-col gap-12 sm:gap-16 lg:gap-20 flex-1 max-w-[521px]">
           <div className="flex flex-col gap-8 sm:gap-10 lg:gap-12 flex-1">
             <div className="flex flex-col gap-6 sm:gap-7 lg:gap-8 flex-1">
-              <h2 className="font-marlton text-[28px] sm:text-[42px] lg:text-[56px] leading-[32px] sm:leading-[48px] lg:leading-[64px] tracking-[1.68px] sm:tracking-[2.52px] lg:tracking-[3.36px]">
+              <h2 className="font-marlton text-[28px] sm:text-[42px] lg:text-[56px] leading-[32px] sm:leading-[48px] lg:leading-[64px] tracking-[1.68px] sm:tracking-[2.52px] lg:tracking-[3.36px] text-center lg:text-left">
                 Residential Holiday Light{" "}
                 <span
                   className="font-luminaire inline-block text-[#FFE7AF] md:-translate-x-8"
@@ -103,7 +103,7 @@ export function LightInstallation() {
               <Badge size="sm">Estalases</Badge>
             </div>
           </div>
-          <QuoteButton className="max-w-fit">
+          <QuoteButton className="max-w-fit scale-90 sm:scale-100 mx-auto lg:mx-0">
             <span>Request a Quote</span>{" "}
             <Image
               src={ArrowRight.src}
