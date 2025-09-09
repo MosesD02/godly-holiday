@@ -14,8 +14,8 @@ export function ServicesFAQ() {
       className="py-12 sm:py-20 lg:py-[100px] bg-paper-16-3 flex items-center flex-col px-4 sm:px-6 lg:px-8"
     >
       <div className="text-transparent pb-12 sm:pb-20 lg:pb-[120px] relative max-w-5xl mx-auto">
-        <h2 className="font-marlton relative text-2xl sm:text-3xl lg:text-[40px] text-center leading-tight sm:leading-10 lg:leading-12 tracking-[1.2px] sm:tracking-[1.8px] lg:tracking-[2.4px]">
-          <span className="text-3xl bg-[white] text-grain-2 sm:text-4xl lg:text-[64px] leading-tight sm:leading-12 lg:leading-20 tracking-[1.8px] sm:tracking-[2.5px] lg:tracking-[3.84px]">
+        <h2 className="font-marlton relative text-2xl sm:text-3xl lg:text-[40px] leading-[50px] sm:leading-[64px] lg:leading-[82px] text-center tracking-[1.2px] sm:tracking-[1.8px] lg:tracking-[2.4px]">
+          <span className="text-3xl bg-white text-grain-2 sm:text-4xl lg:text-[64px] tracking-[1.8px] sm:tracking-[2.5px] lg:tracking-[3.84px]">
             FREQUENTLY
           </span>{" "}
           <br />
@@ -30,7 +30,7 @@ export function ServicesFAQ() {
           >
             Asked
           </span>
-          <span className="text-3xl bg-[white] text-grain-2 sm:text-4xl lg:text-[64px] leading-tight sm:leading-12 lg:leading-20 tracking-[1.8px] sm:tracking-[2.5px] lg:tracking-[3.84px]">
+          <span className="text-3xl bg-white text-grain-2 sm:text-4xl lg:text-[64px] tracking-[1.8px] sm:tracking-[2.5px] lg:tracking-[3.84px]">
             QUESTIONS
           </span>
         </h2>

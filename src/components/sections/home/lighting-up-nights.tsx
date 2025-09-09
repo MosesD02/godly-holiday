@@ -1,4 +1,22 @@
+"use client";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 import Image from "next/image";
+import AutoScroll from "embla-carousel-auto-scroll";
+
+const images = [
+  "/images/home/lighting-up-nights/images_1.png",
+  "/images/home/lighting-up-nights/images_2.png",
+  "/images/home/lighting-up-nights/images_3.png",
+  "/images/home/lighting-up-nights/images_4.png",
+  "/images/home/lighting-up-nights/images_2.png",
+  "/images/home/lighting-up-nights/images_3.png",
+  "/images/home/lighting-up-nights/images_4.png",
+];
 
 export function LightingUpNights() {
   return (
@@ -39,7 +57,7 @@ export function LightingUpNights() {
           </span>
         </span>
       </h2>
-      <div className="relative w-full h-[200px] sm:h-[400px] lg:h-[700.884px] mb-16 sm:mb-20 lg:mb-[102px]">
+      {/* <div className="relative w-full h-[200px] sm:h-[400px] lg:h-[700.884px] mb-16 sm:mb-20 lg:mb-[102px]">
         <Image
           src="/images/home/lighting-up-nights/images.png"
           alt="Images"
@@ -47,7 +65,39 @@ export function LightingUpNights() {
           height={669.884}
           className="w-full h-full mx-auto object-cover"
         />
-      </div>
+      </div> */}
+
+      <Carousel
+        opts={{
+          loop: true,
+          align: "center",
+        }}
+        plugins={[
+          AutoScroll({
+            speed: 1,
+            stopOnMouseEnter: false,
+            stopOnFocusIn: false,
+            stopOnInteraction: false,
+          }),
+        ]}
+      >
+        <CarouselContent>
+          {images.map((image, index) => (
+            <CarouselItem
+              key={index}
+              className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 overflow-hidden"
+            >
+              <Image
+                src={image}
+                alt="Images"
+                width={2100}
+                height={669.884}
+                className="w-full h-full mx-auto object-cover"
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
     </section>
   );
 }

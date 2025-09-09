@@ -1,4 +1,23 @@
+"use client";
+
 import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+
+import AutoScroll from "embla-carousel-auto-scroll";
+
+const images = [
+  "/images/home/lighting-up-nights/images_1.png",
+  "/images/home/lighting-up-nights/images_2.png",
+  "/images/home/lighting-up-nights/images_3.png",
+  "/images/home/lighting-up-nights/images_4.png",
+  "/images/home/lighting-up-nights/images_2.png",
+  "/images/home/lighting-up-nights/images_3.png",
+  "/images/home/lighting-up-nights/images_4.png",
+];
 
 export function RecentLightInstallation() {
   return (
@@ -23,13 +42,37 @@ export function RecentLightInstallation() {
         </span>
       </h2>
 
-      <Image
-        src="/images/services/light-installation/img.webp"
-        alt="Recent Light Installation"
-        width={1920}
-        height={1080}
-        className="w-full h-auto max-w-full object-cover"
-      />
+      <Carousel
+        opts={{
+          loop: true,
+          align: "center",
+        }}
+        plugins={[
+          AutoScroll({
+            speed: 1,
+            stopOnMouseEnter: false,
+            stopOnFocusIn: false,
+            stopOnInteraction: false,
+          }),
+        ]}
+      >
+        <CarouselContent>
+          {images.map((image, index) => (
+            <CarouselItem
+              key={index}
+              className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 overflow-hidden"
+            >
+              <Image
+                src={image}
+                alt="Images"
+                width={2100}
+                height={669.884}
+                className="w-full h-full mx-auto object-cover"
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
     </section>
   );
 }

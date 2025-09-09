@@ -17,11 +17,11 @@ export function CTA() {
         className="absolute left-0 bottom-0 -translate-x-1/2 translate-y-1/3 -z-10 object-contain hidden lg:block"
       />
       <div className="space-y-6 lg:space-y-10 flex-1 lg:flex-none">
-        <div className="space-y-4 lg:space-y-6">
-          <h2 className="max-w-[562px] text-3xl sm:text-4xl lg:text-[52px] font-marlton text-white leading-tight sm:leading-[50px] lg:leading-[72px] tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] text-center relative">
-            Together, let&apos;s make EVENING your favourite part of every day
+        <div className="">
+          <h2 className="max-w-[562px] text-[28px] sm:text-4xl lg:text-[52px] font-marlton text-white leading-[50px] sm:leading-[64px] lg:leading-[72px] tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px] text-center relative">
+            Together, let&apos;s make EVENINGS your Favorite part of every day
             <span
-              className="absolute inset-0 left-1/2 top-4 sm:top-6 lg:top-8 -translate-x-1/2 font-luminaire text-[#FFE7AF] rotate-[-8.065deg] text-3xl sm:text-4xl lg:text-[52px] ps-4 sm:ps-6 lg:ps-8 trim-text"
+              className="absolute inset-0 left-1/2 top-1/2 -translate-y-1/2 lg:-mt-2 -translate-x-1/2 font-luminaire text-[#FFE7AF] rotate-[-8.065deg] text-3xl sm:text-4xl lg:text-[52px] ps-4 sm:ps-6 lg:ps-8 trim-text"
               style={{
                 textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
                 WebkitTextStrokeWidth: "6px",
@@ -71,7 +71,7 @@ export function CTA() {
         </Link>
       </div>
       <div className="relative max-w-[480px] sm:max-w-[520px] lg:max-w-[562.141px] w-full">
-        <QuoteForm size="sm" />
+        <QuoteForm size="sm" hideImages />
       </div>
     </section>
   );

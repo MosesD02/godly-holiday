@@ -14,8 +14,8 @@ export function Testimonials() {
       className="py-16 md:py-24 lg:py-[120px] flex flex-col gap-8 md:gap-12 lg:gap-[64px] items-center w-full justify-center"
     >
       <div className="relative">
-        <h2 className="font-marlton relative text-2xl sm:text-3xl lg:text-[40px] text-center leading-[52px] lg:leading-[88px] tracking-[1.2px] sm:tracking-[1.8px] lg:tracking-[2.4px]">
-          <span className="text-3xl bg-[white] text-grain-2 sm:text-4xl lg:text-[64px] leading-tight sm:leading-12 lg:leading-20">
+        <h2 className="font-marlton relative text-2xl sm:text-3xl lg:text-[40px] text-center leading-[52px] sm:leading-[64px] lg:leading-[88px] tracking-[1.2px] sm:tracking-[1.8px] lg:tracking-[2.4px]">
+          <span className="text-3xl bg-[white] text-grain-2 sm:text-4xl lg:text-[64px] lg:leading-20">
             STORIES FROM
           </span>{" "}
           <br />

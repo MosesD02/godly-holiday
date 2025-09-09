@@ -16,7 +16,7 @@ export function Map() {
             HOLIDAY LIGHTS INSTALLATION
           </span>
         </h2>
-        <p className="font-marlton text-[#191717] text-center text-xl sm:text-2xl lg:text-[32px] flex items-end gap-2 sm:gap-3 justify-center flex-wrap">
+        <p className="font-marlton text-[#191717] text-center text-xl sm:text-2xl lg:text-[32px] flex items-end gap-2 sm:gap-3 justify-center flex-wrap -mt-3 md:mt-0">
           <span className="sm:pb-1.5 lg:pb-3">
             IN <span className="text-xl sm:text-2xl lg:text-[32px]">SOUTH</span>
           </span>

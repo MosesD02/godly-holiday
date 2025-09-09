@@ -7,7 +7,7 @@ import Link from "next/link";
 export function Footer() {
   return (
     <footer className="bg-paper-16-3 w-full p-4 sm:p-8 lg:p-[54px] pt-6 sm:pt-8 lg:pt-12">
-      <h2 className="font-marlton text-2xl sm:text-4xl lg:text-[64px] text-center leading-tight sm:leading-tight lg:leading-[82px] tracking-[0.6px] sm:tracking-[1.2px] lg:tracking-[2.4px] relative">
+      <h2 className="font-marlton text-2xl sm:text-4xl lg:text-[64px] text-center leading-[40px] sm:leading-[58px] lg:leading-[82px] tracking-[0.6px] sm:tracking-[1.2px] lg:tracking-[2.4px] relative">
         CITIES <br />{" "}
         <span
           className="font-luminaire text-2xl sm:text-4xl lg:text-[48px] absolute rotate-[-7.9deg] left-1/2 top-1/2 text-[#FFE7AF] -translate-x-1/2 -translate-y-1/2"

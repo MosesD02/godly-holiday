@@ -63,7 +63,7 @@ const AboutUs = () => {
       className="bg-paper-8 flex flex-col items-center justify-items-center gap-10 px-[30px] pt-[50px] pb-[100px] md:px-[86px] md:py-[150px]"
     >
       <div
-        className="relative flex h-[120px] w-full max-w-[300px] scale-75 -rotate-2 flex-col items-center justify-center bg-cover bg-center bg-no-repeat sm:h-[150px] sm:max-w-[400px] sm:scale-90 md:h-[200px] md:max-w-[600px] lg:h-[210px] lg:max-w-[758px] lg:scale-100"
+        className="relative flex h-[120px] w-full max-w-[300px] -rotate-2 flex-col items-center justify-center bg-cover bg-center bg-no-repeat sm:h-[150px] sm:max-w-[400px] sm:scale-90 md:h-[200px] md:max-w-[600px] lg:h-[210px] lg:max-w-[758px] lg:scale-100"
         style={{
           backgroundImage: `url(${ticketBg.src})`,
           backgroundSize: "contain",
@@ -91,7 +91,7 @@ const AboutUs = () => {
         </div>
       </div>
       <Story />
-      <div className="flex flex-col items-center justify-center gap-4 py-8 sm:py-10 md:gap-10">
+      <div className="flex flex-col items-center justify-center py-8 sm:py-10 md:gap-10">
         <h4
           className="text-grain font-marlton trim !bg-[#191717] text-center text-2xl sm:text-3xl md:text-4xl lg:text-[48px] xl:text-[64px] font-normal tracking-wide"
           data-text="Delivering"
