@@ -20,7 +20,7 @@ export function WrapperUp() {
         alt="Lights"
         width={421.576}
         height={279.646}
-        className="absolute top-0 left-0 h-[140px] w-[211px] sm:h-[210px] sm:w-[316px] lg:h-[280px] lg:w-[422px] object-cover"
+        className="absolute top-0 -left-16 sm:left-0 h-[140px] w-[211px] sm:h-[210px] sm:w-[316px] lg:h-[280px] lg:w-[422px] object-cover"
       />
       <h2 className="font-marlton text-[33px] sm:text-[50px] lg:text-[66px] leading-[39px] sm:leading-[58px] lg:leading-[77px] tracking-[1.65px] sm:tracking-[2.5px] lg:tracking-[3.2px] text-center relative">
         <span className="text-grain bg-[#191717]">WRAPPED UP</span> <br />
