@@ -16,24 +16,7 @@ import {
   FormLabel,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import {
-  MultiSelect,
-  MultiSelectContent,
-  MultiSelectGroup,
-  MultiSelectItem,
-  MultiSelectTrigger,
-  MultiSelectValue,
-} from "@/components/ui/multi-select";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import { Calendar } from "@/components/ui/calendar";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-
-import { cn } from "@/lib/utils";
-import { CalendarIcon } from "@/components/icons/calendar";
 import { GodlyButton } from "@/components/ui/godly-button";
 import ArrowRight from "@/assets/arrow-right.svg";
 import Image from "next/image";
@@ -54,10 +37,6 @@ const formSchema = z.object({
       message: "A phone number is required.",
     })
     .min(1),
-  services: z.array(z.string()),
-  date: z.date({
-    error: "A date is required.",
-  }),
   zipCode: z
     .number({
       message: "A zip code is required.",
@@ -66,34 +45,7 @@ const formSchema = z.object({
 });
 
 export const inputClasses =
-  "border-none shadow-none p-0 text-base sm:text-lg lg:text-xl font-marlton placeholder:text-base placeholder:sm:text-lg placeholder:lg:text-xl w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none";
-
-const services = [
-  {
-    label: "Exterior Window Cleaning",
-    value: "exterior-window-cleaning",
-  },
-  {
-    label: "House Washing",
-    value: "house-washing",
-  },
-  {
-    label: "Paver Sealing",
-    value: "paver-sealing",
-  },
-  {
-    label: "Roof Washing",
-    value: "roof-washing",
-  },
-  {
-    label: "Pressure Washing",
-    value: "pressure-washing",
-  },
-  {
-    label: "Other",
-    value: "other",
-  },
-];
+  "border-none shadow-none p-0 text-base sm:text-lg lg:text-xl font-marlton placeholder:text-base placeholder:text-[#d3c8b8] placeholder:sm:text-lg placeholder:lg:text-xl w-full focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-none focus:outline-none";
 
 export function QuoteModal() {
   const { isOpen, closeModal } = useQuoteModal();
@@ -105,8 +57,6 @@ export function QuoteModal() {
       name: "",
       email: "",
       phone: "",
-      services: [],
-      date: new Date(new Date().setDate(new Date().getDate() + 1)),
     },
   });
 
@@ -154,7 +104,7 @@ export function QuoteModal() {
                 control={form.control}
                 name="name"
                 render={({ field }) => (
-                  <FormItem className="sm:col-span-4 pb-2 sm:pb-3 gap-2 sm:gap-3 border-b border-[#312E2C]">
+                  <FormItem className="sm:col-span-6 pb-2 sm:pb-3 gap-2 sm:gap-3 border-b border-[#312E2C]">
                     <FormLabel className="text-sm sm:text-base">Name</FormLabel>
                     <FormControl>
                       <Input
@@ -174,7 +124,7 @@ export function QuoteModal() {
                 control={form.control}
                 name="email"
                 render={({ field }) => (
-                  <FormItem className="sm:col-span-4 pb-2 sm:pb-3 gap-2 sm:gap-3 border-b border-[#312E2C]">
+                  <FormItem className="sm:col-span-6 pb-2 sm:pb-3 gap-2 sm:gap-3 border-b border-[#312E2C]">
                     <FormLabel htmlFor="email" className="text-sm sm:text-base">
                       Email
                     </FormLabel>
@@ -195,109 +145,18 @@ export function QuoteModal() {
                 control={form.control}
                 name="phone"
                 render={({ field }) => (
-                  <FormItem className="sm:col-span-4 pb-2 sm:pb-3 gap-2 sm:gap-3 border-b border-[#312E2C]">
+                  <FormItem className="sm:col-span-6 pb-2 sm:pb-3 gap-2 sm:gap-3 border-b border-[#312E2C]">
                     <FormLabel htmlFor="phone" className="text-sm sm:text-base">
                       Phone
                     </FormLabel>
                     <Input
                       id="phone"
                       autoComplete="tel"
-                      placeholder="+1 XXX XXX XXXX"
+                      placeholder="YOUR PHONE NUMBER"
                       type="tel"
                       {...field}
                       className={inputClasses}
                     />
-                  </FormItem>
-                )}
-              />
-
-              {/* Services */}
-              <FormField
-                control={form.control}
-                name="services"
-                render={({ field }) => (
-                  <FormItem className="sm:col-span-6 pb-2 sm:pb-3 gap-2 sm:gap-3 border-b border-[#312E2C]">
-                    <FormLabel className="text-sm sm:text-base">
-                      Services
-                    </FormLabel>
-                    <MultiSelect
-                      onValuesChange={field.onChange}
-                      values={field.value}
-                    >
-                      <FormControl>
-                        <MultiSelectTrigger
-                          className={cn(
-                            inputClasses,
-                            "hover:bg-transparent hover:text-[#312E2C] px-0!"
-                          )}
-                        >
-                          <MultiSelectValue
-                            overflowBehavior="cutoff"
-                            placeholder="CHOOSE YOUR SERVICES"
-                          />
-                        </MultiSelectTrigger>
-                      </FormControl>
-                      <MultiSelectContent
-                        search={false}
-                        className="[--popover:#fde4c8]"
-                      >
-                        <MultiSelectGroup>
-                          {services.map((service) => (
-                            <MultiSelectItem
-                              key={service.value}
-                              value={service.value}
-                              className="text-[#312E2C]"
-                            >
-                              {service.label}
-                            </MultiSelectItem>
-                          ))}
-                        </MultiSelectGroup>
-                      </MultiSelectContent>
-                    </MultiSelect>
-                  </FormItem>
-                )}
-              />
-
-              {/* Date */}
-              <FormField
-                control={form.control}
-                name="date"
-                render={({ field }) => (
-                  <FormItem className="sm:col-span-4 pb-2 sm:pb-3 gap-2 sm:gap-3 border-b border-[#312E2C]">
-                    <FormLabel className="text-sm sm:text-base">Date</FormLabel>
-                    <Popover>
-                      <PopoverTrigger asChild>
-                        <FormControl>
-                          <Button
-                            type="button"
-                            variant={"ghost"}
-                            className={cn(
-                              inputClasses,
-                              "hover:bg-transparent hover:text-[#312E2C] px-0!",
-                              !field.value && "text-muted-foreground"
-                            )}
-                          >
-                            {field.value ? (
-                              format(field.value, "MM / dd / yyyy")
-                            ) : (
-                              <span>Pick a date</span>
-                            )}
-
-                            {/* Calendar Icon */}
-                            <CalendarIcon className="ms-auto mt-2" />
-                          </Button>
-                        </FormControl>
-                      </PopoverTrigger>
-                      <PopoverContent className="w-auto p-0" align="start">
-                        <Calendar
-                          mode="single"
-                          selected={field.value}
-                          onSelect={field.onChange}
-                          disabled={(date) => date <= new Date()}
-                          captionLayout="dropdown"
-                        />
-                      </PopoverContent>
-                    </Popover>
                   </FormItem>
                 )}
               />
@@ -307,7 +166,7 @@ export function QuoteModal() {
                 control={form.control}
                 name="zipCode"
                 render={({ field }) => (
-                  <FormItem className="sm:col-span-2 pb-2 sm:pb-3 gap-2 sm:gap-3 border-b border-[#312E2C]">
+                  <FormItem className="sm:col-span-6 pb-2 sm:pb-3 gap-2 sm:gap-3 border-b border-[#312E2C]">
                     <FormLabel
                       htmlFor="zipCode"
                       className="text-sm sm:text-base"
