@@ -9,9 +9,8 @@ export function Map() {
       <div className="pb-12 sm:pb-20 lg:pb-[120px]  max-w-5xl mx-auto">
         <h2 className="font-marlton relative text-xl sm:text-2xl md:text-3xl lg:text-[40px] text-center leading-tight sm:leading-8 md:leading-10 lg:leading-12 tracking-[1px] sm:tracking-[1.2px] md:tracking-[1.8px] lg:tracking-[2.4px]">
           <span className="text-grain-2 bg-[#61503E]">
-            PROVIDING THE HIGHEST QUALITY
-          </span>{" "}
-          <br />
+            PROVIDING THE HIGHEST QUALITY <br />
+          </span>
           <span className="text-2xl sm:text-3xl md:text-4xl lg:text-[64px] leading-tight sm:leading-8 md:leading-12 lg:leading-20 tracking-[1.2px] sm:tracking-[1.8px] md:tracking-[2.5px] lg:tracking-[3.84px] text-grain-2 bg-[#191717]">
             HOLIDAY LIGHTS INSTALLATION
           </span>
