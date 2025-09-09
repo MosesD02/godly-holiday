@@ -11,6 +11,7 @@ import {
   FormField,
   FormItem,
   FormLabel,
+  FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
@@ -19,13 +20,14 @@ import ArrowRight from "@/assets/arrow-right.svg";
 import Image from "next/image";
 import { useQuoteModal } from "@/hooks/use-quote-modal";
 import { DialogTitle } from "@radix-ui/react-dialog";
+import { cn } from "@/lib/utils";
 
 const formSchema = z.object({
   name: z
     .string({
       message: "A name is required.",
     })
-    .min(1),
+    .min(1, { message: "A name is required." }),
   email: z.email({
     message: "A valid email is required.",
   }),
@@ -33,12 +35,16 @@ const formSchema = z.object({
     .string({
       message: "A phone number is required.",
     })
-    .min(1),
+    .refine((val) => val.replace(/\D/g, "").length === 10, {
+      message: "Enter a valid 10-digit phone number.",
+    }),
   zipCode: z
     .string({
       message: "A zip code is required.",
     })
-    .min(1),
+    .regex(/^\d{5}(?:[-\s]?\d{4})?$/, {
+      message: "Enter a valid US ZIP code (e.g. 33101 or 33101-1234).",
+    }),
 });
 
 export const inputClasses =
@@ -59,6 +65,13 @@ export function QuoteModal() {
   });
   const { isSubmitting } = form.formState;
 
+  const formatPhone = (value: string) => {
+    const digits = value.replace(/\D/g, "").slice(0, 10);
+    if (digits.length <= 3) return digits;
+    if (digits.length <= 6) return `${digits.slice(0, 3)}-${digits.slice(3)}`;
+    return `${digits.slice(0, 3)}-${digits.slice(3, 6)}-${digits.slice(6)}`;
+  };
+
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       const response = await fetch(
@@ -69,7 +82,7 @@ export function QuoteModal() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(values),
-        },
+        }
       );
       if (!response.ok) {
         const errorText = await response.text();
@@ -142,6 +155,7 @@ export function QuoteModal() {
                         className={inputClasses}
                       />
                     </FormControl>
+                    <FormMessage />
                   </FormItem>
                 )}
               />
@@ -163,6 +177,7 @@ export function QuoteModal() {
                       {...field}
                       className={inputClasses}
                     />
+                    <FormMessage />
                   </FormItem>
                 )}
               />
@@ -176,14 +191,24 @@ export function QuoteModal() {
                     <FormLabel htmlFor="phone" className="text-sm sm:text-base">
                       Phone
                     </FormLabel>
-                    <Input
-                      id="phone"
-                      autoComplete="tel"
-                      placeholder="YOUR PHONE NUMBER"
-                      type="tel"
-                      {...field}
-                      className={inputClasses}
-                    />
+                    <div className="relative">
+                      <Input
+                        id="phone"
+                        autoComplete="tel"
+                        placeholder="YOUR PHONE NUMBER"
+                        type="tel"
+                        inputMode="tel"
+                        value={formatPhone(field.value)}
+                        onChange={(e) => {
+                          const digitsOnly = e.target.value
+                            .replace(/\D/g, "")
+                            .slice(0, 10);
+                          field.onChange(digitsOnly);
+                        }}
+                        className={cn(inputClasses)}
+                      />
+                    </div>
+                    <FormMessage />
                   </FormItem>
                 )}
               />
@@ -204,10 +229,12 @@ export function QuoteModal() {
                       id="zipCode"
                       autoComplete="postal-code"
                       placeholder="ZIP CODE"
-                      type="number"
+                      inputMode="numeric"
+                      type="text"
                       {...field}
                       className={inputClasses}
                     />
+                    <FormMessage />
                   </FormItem>
                 )}
               />
@@ -234,8 +261,8 @@ export function QuoteModal() {
               </div>
               <GodlyButton
                 type="submit"
-                className="mt-4 sm:mt-0"
-                disabled={isSubmitting}
+                className="ms-4 mt-4 sm:mt-0 disabled:opacity-50 disabled:cursor-not-allowed!"
+                disabled={isSubmitting || !isChecked}
               >
                 <span>{isSubmitting ? "SENDING..." : "REQUEST A QUOTE"}</span>
                 {!isSubmitting && (

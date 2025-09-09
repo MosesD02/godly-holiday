@@ -9,6 +9,7 @@ import {
   FormField,
   FormItem,
   FormLabel,
+  FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
@@ -23,7 +24,7 @@ const formSchema = z.object({
     .string({
       message: "A name is required.",
     })
-    .min(1),
+    .min(1, { message: "A name is required." }),
   email: z.email({
     message: "A valid email is required.",
   }),
@@ -31,12 +32,16 @@ const formSchema = z.object({
     .string({
       message: "A phone number is required.",
     })
-    .min(1),
+    .refine((val) => val.replace(/\D/g, "").length === 10, {
+      message: "Enter a valid 10-digit phone number.",
+    }),
   zipCode: z
     .string({
       message: "A zip code is required.",
     })
-    .min(1),
+    .regex(/^\d{5}(?:[-\s]?\d{4})?$/, {
+      message: "Enter a valid US ZIP code (e.g. 33101 or 33101-1234).",
+    }),
 });
 
 export const inputClasses =
@@ -61,6 +66,13 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
   });
   const { isSubmitting } = form.formState;
 
+  const formatPhone = (value: string) => {
+    const digits = value.replace(/\D/g, "").slice(0, 10);
+    if (digits.length <= 3) return digits;
+    if (digits.length <= 6) return `${digits.slice(0, 3)}-${digits.slice(3)}`;
+    return `${digits.slice(0, 3)}-${digits.slice(3, 6)}-${digits.slice(6)}`;
+  };
+
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       const response = await fetch(
@@ -71,7 +83,7 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(values),
-        },
+        }
       );
       if (!response.ok) {
         const errorText = await response.text();
@@ -97,13 +109,13 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
       <div
         className={cn(
           "flex flex-col sm:flex-row px-4 sm:px-8 lg:px-12 py-4 sm:py-6 lg:py-8 justify-between items-start sm:items-center bg-paper-16 rounded-t-[6px] sm:rounded-t-[8px] lg:rounded-t-[10px] relative z-10 gap-3 sm:gap-0",
-          size === "sm" && "sm:flex-col",
+          size === "sm" && "sm:flex-col"
         )}
       >
         <h2
           className={cn(
             "font-marlton text-[32px] sm:text-[48px] lg:text-[64px] tracking-[1.6px] sm:tracking-[2.4px] lg:tracking-[3.2px] leading-[100%]",
-            size === "sm" && "text-[24px] sm:text-[32px] lg:text-[48px]",
+            size === "sm" && "text-[24px] sm:text-[32px] lg:text-[48px]"
           )}
         >
           LET US CALL YOU!
@@ -112,7 +124,7 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
           className={cn(
             "font-satoshi max-w-[367px] text-left sm:text-right text-base sm:text-lg lg:text-2xl font-medium",
             size === "sm" &&
-              "text-sm sm:text-base lg:text-lg text-center sm:text-center",
+              "text-sm sm:text-base lg:text-lg text-center sm:text-center"
           )}
         >
           Receive a call within 30 minutes during normal business hours.
@@ -141,6 +153,7 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
                       className={inputClasses}
                     />
                   </FormControl>
+                  <FormMessage />
                 </FormItem>
               )}
             />
@@ -159,7 +172,8 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
                     type="email"
                     {...field}
                     className={inputClasses}
-                  />{" "}
+                  />
+                  <FormMessage />
                 </FormItem>
               )}
             />
@@ -171,14 +185,24 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
               render={({ field }) => (
                 <FormItem className="sm:col-span-6 pb-2 sm:pb-3 gap-3 sm:gap-4 border-b border-[#312E2C]">
                   <FormLabel htmlFor="phone">Phone</FormLabel>
-                  <Input
-                    id="phone"
-                    autoComplete="tel"
-                    placeholder="YOUR PHONE NUMBER"
-                    type="tel"
-                    {...field}
-                    className={inputClasses}
-                  />{" "}
+                  <div className="relative">
+                    <Input
+                      id="phone"
+                      autoComplete="tel"
+                      placeholder="YOUR PHONE NUMBER"
+                      type="tel"
+                      inputMode="tel"
+                      value={formatPhone(field.value)}
+                      onChange={(e) => {
+                        const digitsOnly = e.target.value
+                          .replace(/\D/g, "")
+                          .slice(0, 10);
+                        field.onChange(digitsOnly);
+                      }}
+                      className={cn(inputClasses)}
+                    />
+                  </div>
+                  <FormMessage />
                 </FormItem>
               )}
             />
@@ -194,10 +218,12 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
                     id="zipCode"
                     autoComplete="postal-code"
                     placeholder="ZIP CODE"
-                    type="number"
+                    inputMode="numeric"
+                    type="text"
                     {...field}
                     className={inputClasses}
                   />
+                  <FormMessage />
                 </FormItem>
               )}
             />
@@ -206,7 +232,7 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
           <div
             className={cn(
               "flex flex-col sm:flex-row items-start sm:items-center justify-between mt-6 sm:mt-8.5 gap-4 sm:gap-0",
-              size === "sm" && "sm:flex-col sm:gap-4",
+              size === "sm" && "sm:flex-col sm:gap-4"
             )}
           >
             <div className="flex items-center gap-3">
@@ -227,7 +253,11 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
                 estimate and project
               </span>
             </div>
-            <GodlyButton type="submit" disabled={isSubmitting}>
+            <GodlyButton
+              type="submit"
+              disabled={isSubmitting || !isChecked}
+              className="disabled:opacity-50 disabled:cursor-not-allowed!"
+            >
               <span>{isSubmitting ? "SENDING..." : "REQUEST A QUOTE"}</span>
               {!isSubmitting && (
                 <Image
