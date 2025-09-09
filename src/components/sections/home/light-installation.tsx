@@ -100,7 +100,7 @@ export function LightInstallation() {
             </div>
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 flex-wrap">
               <Badge size="sm">Houses</Badge>
-              <Badge size="sm">Estalases</Badge>
+              <Badge size="sm">Estates</Badge>
             </div>
           </div>
           <QuoteButton className="max-w-fit scale-90 sm:scale-100 mx-auto lg:mx-0">
