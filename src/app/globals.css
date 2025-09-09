@@ -336,4 +336,42 @@
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='6' ry='6' stroke='%23F3CA9EFF' stroke-width='3' stroke-dasharray='8%2c8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
     border-radius: 6px;
   }
+
+  .text-grain {
+    background-image: url(/images/textures/grain.png);
+    background-size: 400px 400px;
+    background-position: center;
+    background-repeat: repeat;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .text-grain.underline {
+    text-decoration-color: #f3ca9e;
+  }
+
+  .text-grain-2.underline {
+    text-decoration-color: #f3ca9e;
+  }
+
+  .text-grain-3.underline {
+    text-decoration-color: #f3ca9e;
+  }
+
+  .text-grain-2 {
+    background-image: url(/images/textures/grain_white.png);
+    background-size: 400px 400px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    background-position: center;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
 }

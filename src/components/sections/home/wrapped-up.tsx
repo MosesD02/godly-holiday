@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Card } from "./wrapped-up/card";
 import { wrappedUpCards } from "@/data/wrapped-up";
 
-/* eslint-disable @next/next/no-img-element */
 export function WrapperUp() {
   return (
     <section
@@ -23,8 +22,9 @@ export function WrapperUp() {
         height={279.646}
         className="absolute top-0 left-0 h-[140px] w-[211px] sm:h-[210px] sm:w-[316px] lg:h-[280px] lg:w-[422px] object-cover"
       />
-      <h2 className="font-marlton text-[33px] sm:text-[50px] lg:text-[66px] leading-[39px] sm:leading-[58px] lg:leading-[77px] tracking-[1.65px] sm:tracking-[2.5px] lg:tracking-[3.2px] text-center text-transparent relative">
-        WRAPPED UP <br /> 3 SIMPLE STEPS
+      <h2 className="font-marlton text-[33px] sm:text-[50px] lg:text-[66px] leading-[39px] sm:leading-[58px] lg:leading-[77px] tracking-[1.65px] sm:tracking-[2.5px] lg:tracking-[3.2px] text-center relative">
+        <span className="text-grain bg-[#191717]">WRAPPED UP</span> <br />
+        <span className="text-grain bg-[#191717]">3 SIMPLE STEPS</span>
         <span
           className="absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-luminaire text-[#FFE7AF] rotate-[-14.351deg] text-[27px] sm:text-[41px] lg:text-[55px] pr-4 sm:pr-6 lg:pr-8 trim-text"
           style={{
@@ -36,11 +36,6 @@ export function WrapperUp() {
         >
           In
         </span>
-        <img
-          src="/images/home/wrapped-up/heading.webp"
-          alt="title"
-          className="absolute inset-0 left-1/2 top-0 -translate-x-1/2 translte-y-1/2 pointer-events-none w-full max-w-[200px] sm:max-w-[300px] lg:max-w-none"
-        />
       </h2>
       <div className="flex flex-col items-center justify-center gap-12 sm:gap-16 lg:gap-[92px]">
         {wrappedUpCards.map((card) => (

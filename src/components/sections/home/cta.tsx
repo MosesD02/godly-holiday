@@ -63,7 +63,7 @@ export function CTA() {
               className="absolute inset-0 left-1/2 top-4 sm:top-6 lg:top-8 -translate-x-1/2 font-luminaire text-[#FFE7AF] rotate-[-8.065deg] text-3xl sm:text-4xl lg:text-[52px] ps-4 sm:ps-6 lg:ps-8 trim-text"
               style={{
                 textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
-                WebkitTextStrokeWidth: "2.5px",
+                WebkitTextStrokeWidth: "6px",
                 WebkitTextStrokeColor: "#252323",
                 paintOrder: "stroke fill",
               }}

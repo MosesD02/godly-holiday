@@ -7,15 +7,26 @@ export function RemoveStress() {
   return (
     <section id="remove-stress" className="pb-[120px]">
       <div className="max-w-[1400px] mx-auto flex flex-col items-center justify-center gap-8 sm:gap-12 lg:gap-[64px] pb-16 sm:pb-20 lg:pb-[120px] px-4 sm:px-6">
-        <h2 className="relative text-[32px] sm:text-[48px] lg:text-[64px] leading-[38px] sm:leading-[56px] lg:leading-[74px] max-w-fit max-h-fit tracking-[1.6px] sm:tracking-[2.4px] lg:tracking-[3.2px] font-marlton text-center pt-16 sm:pt-24 lg:pt-[144px] pb-10 sm:pb-16 lg:pb-[82px] text-transparent">
-          REMOVE THE STRESS <br />
-          FROM HOLIDAY
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/home/remove-stress/heading.webp"
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-contain mt-6.75 sm:mt-10 lg:mt-13.5 pointer-events-none w-[281px] sm:w-[422px] lg:w-[562.72px] h-[103px] sm:h-[155px] lg:h-[206.751px]"
-            alt="Heading"
-          />
+        <h2 className="relative -translate-x-[12px] sm:-translate-x-[16px] md:-translate-x-[24px] text-[24px] sm:text-[32px] md:text-[48px] lg:text-[64px] leading-[28px] sm:leading-[38px] md:leading-[56px] lg:leading-[74px] max-w-fit max-h-fit tracking-[1.2px] sm:tracking-[1.6px] md:tracking-[2.4px] lg:tracking-[3.2px] font-marlton text-center pt-12 sm:pt-16 md:pt-24 lg:pt-[144px] pb-8 sm:pb-10 md:pb-16 lg:pb-[82px]">
+          <span className="text-grain bg-white">REMOVE THE</span>{" "}
+          <span className="text-[16px] sm:text-[20px] md:text-[32px] underline text-grain bg-[#FFE7AF]">
+            STRESS
+          </span>{" "}
+          <br />
+          <span className="ms-[45px] sm:ms-[60px] md:ms-[75px] text-grain bg-white">
+            FROM HOLIDAY
+          </span>
+          <span
+            className="font-luminaire text-[#FFE7AF] rotate-[-8.065deg] text-[24px] sm:text-[32px] md:text-[48px] lg:text-[64px] leading-[28px] sm:leading-[38px] md:leading-[56px] lg:leading-[74px] max-w-fit max-h-fit tracking-[1.2px] sm:tracking-[1.6px] md:tracking-[2.4px] lg:tracking-[3.2px] absolute bottom-4 sm:bottom-6 md:bottom-12 -right-1/2 -translate-x-1/2"
+            style={{
+              textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
+              WebkitTextStrokeWidth: "4px sm:6px",
+              WebkitTextStrokeColor: "#252323",
+              paintOrder: "stroke fill",
+            }}
+          >
+            Decorating
+          </span>
         </h2>
       </div>
 
