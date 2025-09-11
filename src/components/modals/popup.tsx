@@ -108,7 +108,7 @@ export function Popup() {
             <DialogHeader className="mx-auto text-black">
               <DialogTitle className="font-marlton text-center shadow-none text-shadow-none text-4xl">
                 SOUTH FLORIDA <br />
-                <span className="text-3xl">
+                <span className="text-[26px]">
                   Holiday LIGHT SPECIAL -{" "}
                   <span className="text-[#eb7a55]">
                     {new Date().getMonth() === 8 ? "15%" : "10%"} OFF
@@ -176,7 +176,7 @@ export function Popup() {
                   </div>
                 </div>
                 <hr />
-                <p className="font-satoshi text-xs font-medium text-[#0a0a0a]">
+                <p className="font-satoshi text-[10px] font-medium text-[#0a0a0a]">
                   All-inclusive service: we supply the lights, install,
                   maintain, and take-down, plus set everything on automatic
                   timers for you. Expires October 31st. Countdown&apos;s
