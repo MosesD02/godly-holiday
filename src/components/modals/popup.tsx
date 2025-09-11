@@ -215,12 +215,12 @@ export function Popup() {
         </DialogContent>
       </Dialog>
       {showFloatingButton && !isOpen && !isExpired && (
-        <div className="fixed left-0 w-fit h-fit -translate-x-[65px] sm:-translate-x-[60px] top-1/2 rotate-90 z-50 scale-80 sm:scale-100">
+        <div className="fixed right-0 sm:right-auto sm:left-0 w-fit h-fit translate-x-[55px] sm:-translate-x-[50px] top-1/2 -rotate-90 sm:rotate-90 z-50 scale-70 sm:scale-100">
           <GodlyButton
             onClick={() => setIsOpen(true)}
             className="rounded-b-none! border-0! tracking-wider!"
           >
-            <span>Save $$$ NOW</span>
+            <span>Save $ NOW</span>
           </GodlyButton>
         </div>
       )}
