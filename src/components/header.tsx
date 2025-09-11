@@ -41,7 +41,7 @@ export function Header() {
 
   return (
     <div className="sticky top-0 z-50 w-full">
-      <div className="godly-button h-[48px] border-0! rounded-none! w-full! text-lg! text-center justify-center pointer-events-none shadow-none!">
+      <div className="godly-button h-[48px] border-0! rounded-none! w-full! text-[clamp(12px,3.75vw,24px)]! text-center justify-center pointer-events-none shadow-none!">
         <span>LIMITED SPOTS: HOLIDAY LIGHT INSTALLATIONS UP TO 15% OFF</span>
       </div>
       <header className="w-full h-16 sm:h-18 bg-background flex items-center justify-center">
