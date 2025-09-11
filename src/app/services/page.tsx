@@ -10,7 +10,7 @@ import { Hero } from "@/components/sections/services/hero";
 
 export default function ServicesPage() {
   return (
-    <div className="flex flex-col items-center justify-center relative">
+    <div className="flex flex-col items-center overflow-x-clip justify-center relative">
       <div className="relative z-20 w-full">
         <Hero />
         <RecentLightInstallation />
