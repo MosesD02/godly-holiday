@@ -91,7 +91,7 @@ export function RecentLightInstallation() {
 
                 <div className="flex flex-col text-center mt-4 text-[#2D2B2B] leading-6">
                   <div className="flex flex-col gap-2 font-marlton-script text-2xl">
-                    {image.location},
+                    {image.location}
                   </div>
                 </div>
               </div>
