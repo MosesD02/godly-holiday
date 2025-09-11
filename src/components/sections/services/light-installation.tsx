@@ -93,9 +93,6 @@ export function RecentLightInstallation() {
                   <div className="flex flex-col gap-2 font-marlton-script text-2xl">
                     {image.location},
                   </div>
-                  <div className="flex flex-col gap-2 font-marlton text-base">
-                    {image.type}
-                  </div>
                 </div>
               </div>
             </CarouselItem>

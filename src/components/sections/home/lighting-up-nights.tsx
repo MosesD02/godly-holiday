@@ -19,112 +19,96 @@ export const images = [
   {
     imgSrc: "/images/home/lighting-up-nights/images/1.webp",
     location: "Boca Raton",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-1.png",
     className: "rotate-[-0.102deg]",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/2.webp",
     location: "Ft. Lauderdale",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-2.png",
     className: "rotate-[-2.494deg]",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/3.webp",
     location: "Delray Beach",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-3.png",
     className: "rotate-[1.74deg]",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/4.webp",
     location: "Weston",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-3.png",
     className: "rotate-[-1.212deg]",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/5.webp",
     location: "Parkland",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-1.png",
     className: "rotate-[-0.102deg]",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/6.webp",
     location: "Lighthouse Point",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-2.png",
     className: "rotate-[-2.494deg]",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/7.webp",
     location: "Pompano Beach",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-3.png",
     className: "rotate-[1.74deg]",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/8.webp",
     location: "Southwest Ranches",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-3.png",
     className: "rotate-[-1.212deg]",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/9.webp",
     location: "Parkland",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-1.png",
     className: "rotate-[-0.102deg]",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/10.webp",
     location: "Southwest Ranches",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-2.png",
     className: "rotate-[-2.494deg]",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/11.webp",
     location: "West Palm Beach",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-3.png",
     className: "rotate-[1.74deg]",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/12.webp",
     location: "Boca Raton",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-3.png",
     className: "rotate-[-1.212deg]",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/13.webp",
     location: "Pompano Beach",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-1.png",
     className: "rotate-[-0.102deg]",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/14.webp",
     location: "Boca Raton",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-2.png",
     className: "rotate-[-2.494deg]",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/15.webp",
     location: "Delray Beach",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-3.png",
     className: "rotate-[1.74deg]",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/16.webp",
     location: "West Palm Beach",
-    type: "Residential Building",
     pinSrc: "/images/home/lighting-up-nights/pin-3.png",
     className: "rotate-[-1.212deg]",
   },
@@ -223,9 +207,6 @@ export function LightingUpNights() {
                 <div className="flex flex-col text-center mt-4 text-[#2D2B2B] leading-6">
                   <div className="flex flex-col gap-2 font-marlton-script text-2xl">
                     {image.location},
-                  </div>
-                  <div className="flex flex-col gap-2 font-marlton text-base">
-                    {image.type}
                   </div>
                 </div>
               </div>
