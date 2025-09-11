@@ -75,7 +75,7 @@ export function Footer() {
               <Icons.facebook />
             </Link>
             <Link
-              href="https://www.instagram.com/godlywindows"
+              href="https://www.instagram.com/godlylights"
               target="_blank"
               rel="noopener noreferrer"
             >

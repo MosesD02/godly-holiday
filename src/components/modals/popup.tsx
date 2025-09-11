@@ -32,7 +32,7 @@ export function Popup() {
 
     // Get current date in Eastern Time
     const easternTime = new Date(
-      now.toLocaleString("en-US", { timeZone: "America/New_York" }),
+      now.toLocaleString("en-US", { timeZone: "America/New_York" })
     );
     const year = easternTime.getFullYear();
     const month = easternTime.getMonth();
@@ -54,7 +54,7 @@ export function Popup() {
 
       const days = Math.floor(difference / (1000 * 60 * 60 * 24));
       const hours = Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
       const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((difference % (1000 * 60)) / 1000);
@@ -106,9 +106,14 @@ export function Popup() {
           <div className="w-[calc(100%-32px)] left-1/2 -translate-x-1/2 h-[1px] border-t border-dashed inset-0 absolute z-10 border-black top-1/2 -translate-y-1/2" />
           <div className="flex flex-col gap-6">
             <DialogHeader className="mx-auto text-black">
-              <DialogTitle className="font-marlton text-center shadow-none text-shadow-none text-3xl">
-                SOUTH FLORIDA CHRISTMAS <br /> LIGHT SPECIAL -{" "}
-                <span className="text-[#eb7a55]">UP TO 15% OFF</span>
+              <DialogTitle className="font-marlton text-center shadow-none text-shadow-none text-4xl">
+                SOUTH FLORIDA <br />
+                <span className="text-3xl">
+                  Holiday LIGHT SPECIAL -{" "}
+                  <span className="text-[#eb7a55]">
+                    {new Date().getMonth() === 8 ? "15%" : "10%"} OFF
+                  </span>
+                </span>
               </DialogTitle>
               <DialogDescription className="font-satoshi text-center text-base font-medium text-[#0a0a0a]">
                 We&apos;re opening up limited spots for holiday light
@@ -183,10 +188,10 @@ export function Popup() {
                           day === 1 || day === 21 || day === 31
                             ? "st"
                             : day === 2 || day === 22
-                              ? "nd"
-                              : day === 3 || day === 23
-                                ? "rd"
-                                : "th";
+                            ? "nd"
+                            : day === 3 || day === 23
+                            ? "rd"
+                            : "th";
                         return `${targetDate.toLocaleDateString("en-US", {
                           month: "long",
                           timeZone: "America/New_York",

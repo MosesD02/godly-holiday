@@ -16,9 +16,9 @@ export default function Home() {
     <div className="flex flex-col max-w-screen overflow-x-clip items-center justify-center relative">
       {/* Background Image - Absolute (only covers hero section) */}
       <Image
-        src="/images/home/hero/hero.webp"
+        src="/images/home/hero/hero.jpg"
         alt="Hero"
-        className="absolute top-0 left-0 object-bottom w-full h-[min(100svh,960px)] object-cover z-0"
+        className="absolute top-0 left-0 object-[50%_100%] md:object-[50%_70%] w-full h-[min(100svh,960px)] object-cover z-0"
         width={2000}
         height={2000}
       />
@@ -37,11 +37,11 @@ export default function Home() {
       {/* Content */}
       <div className="relative z-20 w-full">
         <Hero />
+        <LightingUpNights />
         <WeGotYouCovered />
         <HappyCustomer />
         <LightInstallation />
         <WrapperUp />
-        <LightingUpNights />
         <AboutUs />
         <RemoveStress />
         <CTA />

@@ -13,11 +13,11 @@ export default function ServicesPage() {
     <div className="flex flex-col items-center justify-center relative">
       <div className="relative z-20 w-full">
         <Hero />
+        <RecentLightInstallation />
         <LightingSolution />
         <WhyChooseUs />
         <HowItWorks />
         <Trust />
-        <RecentLightInstallation />
         <Testimonials />
         <ServicesFAQ />
         <ServicesCTA />

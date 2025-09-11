@@ -15,9 +15,15 @@ const luminaire = localFont({
   display: "swap",
 });
 
-const marlton = localFont({
+const marltonSans = localFont({
   src: "../fonts/MarltonSans.otf",
   variable: "--font-marlton",
+  display: "swap",
+});
+
+const marltonScript = localFont({
+  src: "../fonts/MarltonScript.otf",
+  variable: "--font-marlton-script",
   display: "swap",
 });
 
@@ -48,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased ${luminaire.variable} overflow-x-clip ${marlton.variable} ${satoshi.variable} ${inter.variable} min-h-svh flex flex-col items-center justify-center max-w-screen w-full h-full`}
+        className={`antialiased ${luminaire.variable} overflow-x-clip ${marltonSans.variable} ${marltonScript.variable} ${satoshi.variable} ${inter.variable} min-h-svh flex flex-col items-center justify-center max-w-screen w-full h-full`}
       >
         <QuoteModalProvider>
           <OsDetection />

@@ -8,14 +8,126 @@ import {
 import Image from "next/image";
 import AutoScroll from "embla-carousel-auto-scroll";
 
-const images = [
-  "/images/home/lighting-up-nights/images_1.png",
-  "/images/home/lighting-up-nights/images_2.png",
-  "/images/home/lighting-up-nights/images_3.png",
-  "/images/home/lighting-up-nights/images_4.png",
-  "/images/home/lighting-up-nights/images_2.png",
-  "/images/home/lighting-up-nights/images_3.png",
-  "/images/home/lighting-up-nights/images_4.png",
+export const pin1Class =
+  "absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[42.033px] h-[46.571px] object-cover";
+export const pin2Class =
+  "absolute -top-1 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[42.033px] h-[46.571px] object-cover";
+export const pin3Class =
+  "absolute -top-1 left-6/7 -translate-x-1/2 -translate-y-1/2 w-[42.033px] h-[46.571px] object-cover";
+
+export const images = [
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/1.webp",
+    location: "Boca Raton",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-1.png",
+    className: "rotate-[-0.102deg]",
+  },
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/2.webp",
+    location: "Ft. Lauderdale",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-2.png",
+    className: "rotate-[-2.494deg]",
+  },
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/3.webp",
+    location: "Delray Beach",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
+    className: "rotate-[1.74deg]",
+  },
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/4.webp",
+    location: "Weston",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
+    className: "rotate-[-1.212deg]",
+  },
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/5.webp",
+    location: "Parkland",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-1.png",
+    className: "rotate-[-0.102deg]",
+  },
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/6.webp",
+    location: "Lighthouse Point",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-2.png",
+    className: "rotate-[-2.494deg]",
+  },
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/7.webp",
+    location: "Pompano Beach",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
+    className: "rotate-[1.74deg]",
+  },
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/8.webp",
+    location: "Southwest Ranches",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
+    className: "rotate-[-1.212deg]",
+  },
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/9.webp",
+    location: "Parkland",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-1.png",
+    className: "rotate-[-0.102deg]",
+  },
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/10.webp",
+    location: "Southwest Ranches",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-2.png",
+    className: "rotate-[-2.494deg]",
+  },
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/11.webp",
+    location: "West Palm Beach",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
+    className: "rotate-[1.74deg]",
+  },
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/12.webp",
+    location: "Boca Raton",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
+    className: "rotate-[-1.212deg]",
+  },
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/13.webp",
+    location: "Pompano Beach",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-1.png",
+    className: "rotate-[-0.102deg]",
+  },
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/14.webp",
+    location: "Boca Raton",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-2.png",
+    className: "rotate-[-2.494deg]",
+  },
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/15.webp",
+    location: "Delray Beach",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
+    className: "rotate-[1.74deg]",
+  },
+  {
+    imgSrc: "/images/home/lighting-up-nights/images/16.webp",
+    location: "West Palm Beach",
+    type: "Residential Building",
+    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
+    className: "rotate-[-1.212deg]",
+  },
 ];
 
 export function LightingUpNights() {
@@ -76,15 +188,47 @@ export function LightingUpNights() {
           {images.map((image, index) => (
             <CarouselItem
               key={index}
-              className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 overflow-hidden"
+              className="basis-2/10 sm:basis-2/10 md:basis-2/10 lg:basis-2/10 xl:basis-2/10 my-8"
             >
-              <Image
-                src={image}
-                alt="Images"
-                width={2100}
-                height={669.884}
-                className="w-full h-full mx-auto object-cover"
-              />
+              <div
+                className={`bg-paper-8-3 relative max-w-[328.27px] rounded-[4px] p-[13px] ${image.className}`}
+                style={{
+                  boxShadow:
+                    "4px 8px 6px 0 rgba(0, 0, 0, 0.25), 0 3.015px 3.015px 0 rgba(0, 0, 0, 0.25), 0 3.015px 3.015px 0 rgba(255, 255, 255, 0.30) inset",
+                }}
+              >
+                <Image
+                  src={image.pinSrc}
+                  alt="Images"
+                  width={1500}
+                  height={1500}
+                  className={
+                    image.pinSrc === "/images/home/lighting-up-nights/pin-1.png"
+                      ? pin1Class
+                      : image.pinSrc ===
+                        "/images/home/lighting-up-nights/pin-2.png"
+                      ? pin2Class
+                      : pin3Class
+                  }
+                />
+
+                <Image
+                  src={image.imgSrc}
+                  alt="Images"
+                  width={1500}
+                  height={1500}
+                  className="max-w-[287.128px] w-full max-h-[261.025px] aspect-[287.128/261.025] h-full mx-auto object-cover"
+                />
+
+                <div className="flex flex-col text-center mt-4 text-[#2D2B2B] leading-6">
+                  <div className="flex flex-col gap-2 font-marlton-script text-2xl">
+                    {image.location},
+                  </div>
+                  <div className="flex flex-col gap-2 font-marlton text-base">
+                    {image.type}
+                  </div>
+                </div>
+              </div>
             </CarouselItem>
           ))}
         </CarouselContent>
