@@ -33,10 +33,7 @@ export function RecentLightInstallation() {
         </span>
       </h2>
 
-      <Marquee
-        className="[--duration:180s] [--gap:4rem] pt-8"
-        pauseOnHover={true}
-      >
+      <Marquee className="[--duration:180s] [--gap:4rem] pt-8">
         {images.map((image, index) => (
           <div
             key={index}

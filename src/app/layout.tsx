@@ -44,6 +44,23 @@ export const metadata: Metadata = {
   title: "Professional Holiday Light Installation In South Florida",
   description:
     "We provide everything—premium lights, full installation, and hassle-free removal—so your South Florida home or business shines all season without the ladders or storage stress.",
+  openGraph: {
+    images: "/og.png",
+    title: "Professional Holiday Light Installation In South Florida",
+    description:
+      "We provide everything—premium lights, full installation, and hassle-free removal—so your South Florida home or business shines all season without the ladders or storage stress.",
+    url: "https://godlyholidaylights.com/",
+    siteName: "Godly Windows",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Professional Holiday Light Installation In South Florida",
+    description:
+      "We provide everything—premium lights, full installation, and hassle-free removal—so your South Florida home or business shines all season without the ladders or storage stress.",
+    images: "/og.png",
+  },
 };
 
 export default function RootLayout({

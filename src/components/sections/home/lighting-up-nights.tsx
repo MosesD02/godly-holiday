@@ -101,12 +101,6 @@ export const images = [
     pinSrc: "/images/home/lighting-up-nights/pin-3.png",
     className: "rotate-[1.74deg]",
   },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/16.webp",
-    location: "West Palm Beach",
-    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
-    className: "rotate-[-1.212deg]",
-  },
 ];
 
 export function LightingUpNights() {
@@ -149,10 +143,7 @@ export function LightingUpNights() {
         </span>
       </h2>
 
-      <Marquee
-        className="[--duration:180s] [--gap:4rem] pt-8"
-        pauseOnHover={true}
-      >
+      <Marquee className="[--duration:180s] [--gap:4rem] pt-8">
         {images.map((image, index) => (
           <div
             key={index}
