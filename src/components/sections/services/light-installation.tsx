@@ -1,13 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
-
-import AutoScroll from "embla-carousel-auto-scroll";
+import { Marquee } from "@/components/ui/marquee";
 
 import {
   images,
@@ -39,66 +33,49 @@ export function RecentLightInstallation() {
         </span>
       </h2>
 
-      <Carousel
-        opts={{
-          loop: true,
-          align: "center",
-        }}
-        plugins={[
-          AutoScroll({
-            speed: 1,
-            stopOnMouseEnter: false,
-            stopOnFocusIn: false,
-            stopOnInteraction: false,
-          }),
-        ]}
+      <Marquee
+        className="[--duration:180s] [--gap:4rem] pt-8"
+        pauseOnHover={true}
       >
-        <CarouselContent>
-          {images.map((image, index) => (
-            <CarouselItem
-              key={index}
-              className="basis-2/10 sm:basis-2/10 md:basis-2/10 lg:basis-2/10 xl:basis-2/10 my-8"
-            >
-              <div
-                className={`bg-paper-8-3 relative max-w-[328.27px] rounded-[4px] p-[13px] ${image.className}`}
-                style={{
-                  boxShadow:
-                    "4px 8px 6px 0 rgba(0, 0, 0, 0.25), 0 3.015px 3.015px 0 rgba(0, 0, 0, 0.25), 0 3.015px 3.015px 0 rgba(255, 255, 255, 0.30) inset",
-                }}
-              >
-                <Image
-                  src={image.pinSrc}
-                  alt="Images"
-                  width={1500}
-                  height={1500}
-                  className={
-                    image.pinSrc === "/images/home/lighting-up-nights/pin-1.png"
-                      ? pin1Class
-                      : image.pinSrc ===
-                        "/images/home/lighting-up-nights/pin-2.png"
-                      ? pin2Class
-                      : pin3Class
-                  }
-                />
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`bg-paper-8-3 relative max-w-[328.27px] rounded-[4px] p-[13px] ${image.className}`}
+            style={{
+              boxShadow:
+                "4px 8px 6px 0 rgba(0, 0, 0, 0.25), 0 3.015px 3.015px 0 rgba(0, 0, 0, 0.25), 0 3.015px 3.015px 0 rgba(255, 255, 255, 0.30) inset",
+            }}
+          >
+            <Image
+              src={image.pinSrc}
+              alt="Images"
+              width={1500}
+              height={1500}
+              className={
+                image.pinSrc === "/images/home/lighting-up-nights/pin-1.png"
+                  ? pin1Class
+                  : image.pinSrc === "/images/home/lighting-up-nights/pin-2.png"
+                  ? pin2Class
+                  : pin3Class
+              }
+            />
 
-                <Image
-                  src={image.imgSrc}
-                  alt="Images"
-                  width={1500}
-                  height={1500}
-                  className="max-w-[287.128px] w-full max-h-[261.025px] aspect-[287.128/261.025] h-full mx-auto object-cover"
-                />
+            <Image
+              src={image.imgSrc}
+              alt="Images"
+              width={1500}
+              height={1500}
+              className="max-w-[287.128px] w-full max-h-[261.025px] aspect-[287.128/261.025] h-full mx-auto object-cover"
+            />
 
-                <div className="flex flex-col text-center mt-4 text-[#2D2B2B] leading-6">
-                  <div className="flex flex-col gap-2 font-marlton-script text-2xl">
-                    {image.location}
-                  </div>
-                </div>
+            <div className="flex flex-col text-center mt-4 text-[#2D2B2B] leading-6">
+              <div className="flex flex-col gap-2 font-marlton-script text-2xl">
+                {image.location}
               </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-      </Carousel>
+            </div>
+          </div>
+        ))}
+      </Marquee>
     </section>
   );
 }
