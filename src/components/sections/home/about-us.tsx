@@ -267,19 +267,19 @@ function Story() {
       <div className="flex flex-1 flex-col items-start justify-center gap-6 sm:gap-8 md:gap-[40px] p-2 sm:p-3">
         <h4 className="flex flex-wrap items-center gap-2 sm:gap-3 md:gap-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-tight">
           <span
-            className="text-grain !bg-[#F3CA9E] font-['marlton'] whitespace-nowrap"
+            className="text-grain !bg-[#F3CA9E] font-marlton whitespace-nowrap"
             data-text="LOCAL"
           >
             LOCAL
           </span>
           <span
-            className="text-grain !bg-white font-['marlton'] whitespace-nowrap"
+            className="text-grain !bg-white font-marlton whitespace-nowrap"
             data-text="FAMILY"
           >
             FAMILY
           </span>
           <span
-            className="text-grain !bg-white font-['marlton'] whitespace-nowrap"
+            className="text-grain !bg-white font-marlton whitespace-nowrap"
             data-text="OWNED"
           >
             OWNED
