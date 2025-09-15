@@ -261,7 +261,7 @@ export function QuoteModal() {
               </div>
               <GodlyButton
                 type="submit"
-                className="ms-4 mt-4 sm:mt-0 disabled:opacity-50 disabled:cursor-not-allowed!"
+                className="ms-4 mt-4 sm:mt-0"
                 disabled={isSubmitting || !isChecked}
               >
                 <span>{isSubmitting ? "SENDING..." : "REQUEST A QUOTE"}</span>

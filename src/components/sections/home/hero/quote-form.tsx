@@ -253,11 +253,7 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
                 estimate and project
               </span>
             </div>
-            <GodlyButton
-              type="submit"
-              disabled={isSubmitting || !isChecked}
-              className="disabled:opacity-50 disabled:cursor-not-allowed!"
-            >
+            <GodlyButton type="submit" disabled={isSubmitting || !isChecked}>
               <span>{isSubmitting ? "SENDING..." : "REQUEST A QUOTE"}</span>
               {!isSubmitting && (
                 <Image
