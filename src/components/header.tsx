@@ -19,7 +19,7 @@ type NavItem = {
 export const navItems: NavItem[] = [
   {
     label: "Services",
-    href: "/#we-got-you-covered",
+    href: "/services",
   },
   {
     label: "Our Work",

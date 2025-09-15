@@ -49,6 +49,24 @@
   --font-luminaire: var(--font-luminaire), sans-serif;
   --font-satoshi: var(--font-satoshi), sans-serif;
   --font-inter: var(--font-inter), sans-serif;
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  @keyframes marquee {
+  from {
+    transform: translateX(0);
+    }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+    }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
 }
 
 :root {
@@ -383,5 +401,14 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
