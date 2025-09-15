@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Marquee } from "@/components/ui/marquee";
+import { cn } from "@/lib/utils";
 
 export const pin1Class =
   "absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[42.033px] h-[46.571px] object-cover";
@@ -34,6 +35,7 @@ export const images = [
     location: "Weston",
     pinSrc: "/images/home/lighting-up-nights/pin-3.png",
     className: "rotate-[-1.212deg]",
+    imgClassName: "object-right",
   },
   {
     imgSrc: "/images/home/lighting-up-nights/images/5.webp",
@@ -172,7 +174,10 @@ export function LightingUpNights() {
               alt="Images"
               width={1500}
               height={1500}
-              className="max-w-[287.128px] w-full max-h-[261.025px] aspect-[287.128/261.025] h-full mx-auto object-cover"
+              className={cn(
+                "max-w-[287.128px] w-full max-h-[261.025px] aspect-[287.128/261.025] h-full mx-auto object-cover",
+                image.imgClassName
+              )}
             />
 
             <div className="flex flex-col text-center mt-4 text-[#2D2B2B] leading-6">

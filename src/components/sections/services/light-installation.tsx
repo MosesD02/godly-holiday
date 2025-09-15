@@ -9,6 +9,7 @@ import {
   pin2Class,
   pin3Class,
 } from "../home/lighting-up-nights";
+import { cn } from "@/lib/utils";
 
 export function RecentLightInstallation() {
   return (
@@ -62,7 +63,10 @@ export function RecentLightInstallation() {
               alt="Images"
               width={1500}
               height={1500}
-              className="max-w-[287.128px] w-full max-h-[261.025px] aspect-[287.128/261.025] h-full mx-auto object-cover"
+              className={cn(
+                "max-w-[287.128px] w-full max-h-[261.025px] aspect-[287.128/261.025] h-full mx-auto object-cover",
+                image.imgClassName
+              )}
             />
 
             <div className="flex flex-col text-center mt-4 text-[#2D2B2B] leading-6">
