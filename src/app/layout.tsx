@@ -61,6 +61,7 @@ export const metadata: Metadata = {
       "We provide everything—premium lights, full installation, and hassle-free removal—so your South Florida home or business shines all season without the ladders or storage stress.",
     images: "/og.png",
   },
+  metadataBase: new URL("https://godlyholidaylights.com/"),
 };
 
 export default function RootLayout({
