@@ -53,6 +53,7 @@ export const inputClasses =
 export function QuoteModal() {
   const { isOpen, closeModal } = useQuoteModal();
   const [isChecked, setIsChecked] = useState(false);
+  const [showSuccessDialog, setShowSuccessDialog] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -88,7 +89,7 @@ export function QuoteModal() {
         const errorText = await response.text();
         console.error("Webhook error:", errorText);
       } else {
-        alert("Thanks! We'll contact you shortly.");
+        setShowSuccessDialog(true);
         try {
           // Reset form fields and checkbox state
           form.reset();
@@ -100,9 +101,6 @@ export function QuoteModal() {
     } catch (error) {
       console.error("Webhook exception:", error);
     }
-    console.log(values);
-    // Close modal after submission
-    closeModal();
   }
 
   return (
@@ -278,6 +276,30 @@ export function QuoteModal() {
             </div>
           </form>
         </Form>
+
+        {showSuccessDialog && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+            <div className="w-full max-w-sm rounded-xl bg-[#f9f0df] p-6 text-center shadow-lg">
+              <h2 className="mb-4 text-3xl font-normal tracking-wide text-[#2D2B2B]">
+                THANK YOU
+              </h2>
+              <p className="mb-6 font-sans text-[#2D2B2B]">
+                I agree to receive updates from Godly
+                <br />
+                about my estimate via text message
+              </p>
+              <button
+                onClick={() => {
+                  setShowSuccessDialog(false);
+                  closeModal();
+                }}
+                className="trim rounded-md bg-[#2D2B2B] px-8 py-4 font-semibold text-white shadow transition-all hover:bg-[#1c1a1a]"
+              >
+                DONE
+              </button>
+            </div>
+          </div>
+        )}
       </DialogContent>
     </Dialog>
   );
