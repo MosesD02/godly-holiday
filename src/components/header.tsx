@@ -90,14 +90,14 @@ export function Header() {
               className="relative hover:cursor-pointer transition-all duration-300 group shrink-0"
             >
               <img
-                src={TicketHolder.src}
+                src={"/images/ticket-holder.png"}
                 alt="Ticket Holder"
                 className="w-[125px] h-auto"
               />
               <img
-                src={Ticket.src}
+                src={"/images/ticket.png"}
                 alt="Ticket"
-                className="absolute w-[110px] h-auto top-1/2 left-1/2 translate-y-0.5 -translate-x-1/2 group-hover:translate-y-1 group-active:translate-y-2 transition-all duration-300"
+                className="absolute w-[110px] mt-0.5 h-auto top-1/2 left-1/2 translate-y-0.5 -translate-x-1/2 group-hover:translate-y-1 group-active:translate-y-2 transition-all duration-300"
               />
             </button>
           </div>
@@ -187,14 +187,14 @@ export function Header() {
                   className="relative hover:cursor-pointer transition-all duration-300 group shrink-0"
                 >
                   <img
-                    src={TicketHolder.src}
+                    src={"/images/ticket-holder.png"}
                     alt="Ticket Holder"
                     className="w-[125px] h-auto"
                   />
                   <img
-                    src={Ticket.src}
+                    src={"/images/ticket.png"}
                     alt="Ticket"
-                    className="absolute w-[110px] h-auto top-1/2 left-1/2 translate-y-0.5 -translate-x-1/2 group-hover:translate-y-1 group-active:translate-y-2 transition-all duration-300"
+                    className="absolute w-[110px] mt-0.5 h-auto top-1/2 left-1/2 translate-y-0.5 -translate-x-1/2 group-hover:translate-y-1 group-active:translate-y-2 transition-all duration-300"
                   />
                 </button>
 
