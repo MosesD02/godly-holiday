@@ -9,6 +9,8 @@ import { Popup } from "@/components/modals/popup";
 import { QuoteModalProvider } from "@/hooks/use-quote-modal";
 import { QuoteModal } from "@/components/modals/quote-modal";
 
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 const luminaire = localFont({
   src: "../fonts/Luminaire.otf",
   variable: "--font-luminaire",
@@ -82,6 +84,7 @@ export default function RootLayout({
           <Popup />
           <QuoteModal />
         </QuoteModalProvider>
+        <GoogleAnalytics gaId="GTM-W89KWZGQ" />
       </body>
     </html>
   );

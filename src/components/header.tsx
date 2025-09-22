@@ -191,15 +191,16 @@ export function Header() {
                   <Image
                     src={TicketHolder.src}
                     alt="Ticket Holder"
-                    width={125}
-                    height={14.444}
+                    width={500}
+                    height={500}
+                    className="w-[125px]"
                   />
                   <Image
                     src={Ticket.src}
                     alt="Ticket"
-                    width={110}
-                    height={64}
-                    className="absolute top-1/2 left-1/2 translate-y-0.5 -translate-x-1/2 group-hover:translate-y-1 group-active:translate-y-2 transition-all duration-300"
+                    width={500}
+                    height={500}
+                    className="absolute w-[110px] top-1/2 left-1/2 translate-y-0.5 -translate-x-1/2 group-hover:translate-y-1 group-active:translate-y-2 transition-all duration-300"
                   />
                 </button>
 
