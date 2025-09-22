@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import Link from "next/link";
@@ -88,18 +89,15 @@ export function Header() {
               onClick={openModal}
               className="relative hover:cursor-pointer transition-all duration-300 group shrink-0"
             >
-              <Image
+              <img
                 src={TicketHolder.src}
                 alt="Ticket Holder"
-                width={125}
-                height={14.444}
+                className="w-[125px] h-auto"
               />
-              <Image
+              <img
                 src={Ticket.src}
                 alt="Ticket"
-                width={110}
-                height={64}
-                className="absolute top-1/2 left-1/2 translate-y-0.5 -translate-x-1/2 group-hover:translate-y-1 group-active:translate-y-2 transition-all duration-300"
+                className="absolute w-[110px] h-auto top-1/2 left-1/2 translate-y-0.5 -translate-x-1/2 group-hover:translate-y-1 group-active:translate-y-2 transition-all duration-300"
               />
             </button>
           </div>
@@ -188,19 +186,15 @@ export function Header() {
                   onClick={openModal}
                   className="relative hover:cursor-pointer transition-all duration-300 group shrink-0"
                 >
-                  <Image
+                  <img
                     src={TicketHolder.src}
                     alt="Ticket Holder"
-                    width={500}
-                    height={500}
-                    className="w-[125px]"
+                    className="w-[125px] h-auto"
                   />
-                  <Image
+                  <img
                     src={Ticket.src}
                     alt="Ticket"
-                    width={500}
-                    height={500}
-                    className="absolute w-[110px] top-1/2 left-1/2 translate-y-0.5 -translate-x-1/2 group-hover:translate-y-1 group-active:translate-y-2 transition-all duration-300"
+                    className="absolute w-[110px] h-auto top-1/2 left-1/2 translate-y-0.5 -translate-x-1/2 group-hover:translate-y-1 group-active:translate-y-2 transition-all duration-300"
                   />
                 </button>
 
