@@ -6,8 +6,6 @@ import { useState } from "react";
 
 import Logo from "@/assets/logo.svg";
 import Call from "@/assets/call.svg";
-import TicketHolder from "@/assets/ticket-holder.svg";
-import Ticket from "@/assets/ticket.svg";
 import Image from "next/image";
 import { useQuoteModal } from "@/hooks/use-quote-modal";
 import { X } from "lucide-react";
