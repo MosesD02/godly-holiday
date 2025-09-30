@@ -216,7 +216,7 @@ export function RemoveStress() {
               boxShadow:
                 "12px 12px 4px 0 rgba(0, 0, 0, 0.25), 8px 8px 20px 0 rgba(109, 109, 109, 0.20) inset",
             }}
-            className="absolute -right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-[#282828] rounded-[12px] text-center space-y-4 w-[160px] sm:w-[220px] px-3 sm:px-5 py-5 sm:py-6 [&_div]:mx-auto [&_div]:max-w-fit"
+            className="absolute -right-2 sm:right-4 top-1/2 -translate-y-[calc(50%-1rem)] bg-[#282828] rounded-[12px] text-center space-y-4 w-[160px] sm:w-[220px] px-3 sm:px-5 py-5 sm:py-6 [&_div]:mx-auto [&_div]:max-w-fit"
           >
             <Image
               src={Logo.src}
@@ -225,7 +225,7 @@ export function RemoveStress() {
               height={45}
               className="aspect-[131/75] mx-auto"
             />
-            <span className="grid gap-2 max-w-[180px] mx-auto">
+            <span className="grid gap-4 max-w-[180px] mx-auto">
               <div className="p-2 transform scale-90">
                 <Icons.checkGold />
               </div>
