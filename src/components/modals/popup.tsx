@@ -23,7 +23,6 @@ export function Popup() {
     seconds: 0,
   });
   const [isExpired, setIsExpired] = useState(false);
-  const [targetDate, setTargetDate] = useState<Date | null>(null);
   const [showFloatingButton, setShowFloatingButton] = useState(false);
 
   useEffect(() => {
@@ -35,12 +34,9 @@ export function Popup() {
       now.toLocaleString("en-US", { timeZone: "America/New_York" })
     );
     const year = easternTime.getFullYear();
-    const month = easternTime.getMonth();
 
-    // Create end of current month in Eastern Time (11:59:59 PM)
-    const endOfMonth = new Date(year, month + 1, 0, 23, 59, 59, 999);
-
-    setTargetDate(endOfMonth);
+    // Create end of october month in Eastern Time (11:59:59 PM)
+    const endOfMonth = new Date(year, 9, 31, 23, 59, 59, 999);
 
     const updateTimer = () => {
       const now = new Date();
@@ -110,9 +106,7 @@ export function Popup() {
                 SOUTH FLORIDA <br />
                 <span className="text-[26px]">
                   Holiday LIGHT SPECIAL -{" "}
-                  <span className="text-[#eb7a55]">
-                    {new Date().getMonth() === 8 ? "15%" : "10%"} OFF
-                  </span>
+                  <span className="text-[#eb7a55]">$150 OFF</span>
                 </span>
               </DialogTitle>
               <DialogDescription className="font-satoshi text-center text-base font-medium text-[#0a0a0a]">
@@ -165,40 +159,21 @@ export function Popup() {
                 <div className="grid grid-cols-2 items-center gap-4 mb-3">
                   <div className="font-marlton text-[#eb7a55] text-8xl text-right">
                     {/* if month is sep then 15% else 10% */}
-                    {new Date().getMonth() === 8 ? "15%" : "10%"}
+                    $150
                   </div>
                   <div className="flex flex-col justify-start text-left font-marlton text-2xl">
                     OFF <br />{" "}
                     <span className="text-[#ae9d8a]">
-                      {new Date().getMonth() === 8 ? "September" : "October"}{" "}
-                      installs
+                      NEW CLIENTS <br /> ONLY
                     </span>
                   </div>
                 </div>
                 <hr />
                 <p className="font-satoshi text-[10px] font-medium text-[#0a0a0a]">
-                  All-inclusive service: we supply the lights, install,
-                  maintain, and take-down, plus set everything on automatic
-                  timers for you. Expires October 31st. Countdown&apos;s
-                  ticking.
-                  {targetDate
-                    ? (() => {
-                        const day = targetDate.getDate();
-                        const suffix =
-                          day === 1 || day === 21 || day === 31
-                            ? "st"
-                            : day === 2 || day === 22
-                            ? "nd"
-                            : day === 3 || day === 23
-                            ? "rd"
-                            : "th";
-                        return `${targetDate.toLocaleDateString("en-US", {
-                          month: "long",
-                          timeZone: "America/New_York",
-                        })} ${day}${suffix}`;
-                      })()
-                    : "soon"}
-                  . Countdown&apos;s ticking.
+                  All-inclusive holiday lighting: we provide the lights, handle
+                  installation, maintenance, and takedown, and even set
+                  everything on automatic timers for you. Limited spots
+                  available — offer ends October 31. Countdown’s on, don’t wait.
                 </p>
               </div>
             </div>
@@ -215,12 +190,12 @@ export function Popup() {
         </DialogContent>
       </Dialog>
       {showFloatingButton && !isOpen && !isExpired && (
-        <div className="fixed right-0 sm:right-auto sm:left-0 w-fit h-fit translate-x-[55px] sm:-translate-x-[50px] top-1/2 -rotate-90 sm:rotate-90 z-50 scale-70 sm:scale-100">
+        <div className="fixed right-0 sm:right-auto sm:left-0 w-fit h-fit translate-x-[75px] sm:-translate-x-[65px] top-1/2 -rotate-90 sm:rotate-90 z-50 scale-70 sm:scale-100">
           <GodlyButton
             onClick={() => setIsOpen(true)}
             className="rounded-b-none! border-0! tracking-wider!"
           >
-            <span>Save $ NOW</span>
+            <span>Save $150 NOW</span>
           </GodlyButton>
         </div>
       )}
