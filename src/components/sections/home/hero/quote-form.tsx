@@ -187,6 +187,9 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
                 <FormItem className="sm:col-span-6 pb-2 sm:pb-3 gap-3 sm:gap-4 border-b border-[#312E2C]">
                   <FormLabel htmlFor="phone">Phone</FormLabel>
                   <div className="relative">
+                    <div className="absolute left-0 top-1/2 -translate-y-1/2 flex items-center justify-center [text-box-trim:none]! text-lg sm:text-xl lg:text-2xl font-marlton">
+                      +1
+                    </div>
                     <Input
                       id="phone"
                       autoComplete="tel"
@@ -200,7 +203,7 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
                           .slice(0, 10);
                         field.onChange(digitsOnly);
                       }}
-                      className={cn(inputClasses)}
+                      className={cn(inputClasses, "ml-6")}
                     />
                   </div>
                   <FormMessage />

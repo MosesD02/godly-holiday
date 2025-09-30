@@ -185,11 +185,12 @@ export function QuoteModal() {
                 control={form.control}
                 name="phone"
                 render={({ field }) => (
-                  <FormItem className="sm:col-span-6 pb-2 sm:pb-3 gap-2 sm:gap-3 border-b border-[#312E2C]">
-                    <FormLabel htmlFor="phone" className="text-sm sm:text-base">
-                      Phone
-                    </FormLabel>
+                  <FormItem className="sm:col-span-6 pb-2 sm:pb-3 gap-3 sm:gap-4 border-b border-[#312E2C]">
+                    <FormLabel htmlFor="phone">Phone</FormLabel>
                     <div className="relative">
+                      <div className="absolute left-0 top-1/2 -translate-y-[calc(50%-1px)] flex items-center justify-center [text-box-trim:none]! text-base sm:text-lg lg:text-xl font-marlton">
+                        +1
+                      </div>
                       <Input
                         id="phone"
                         autoComplete="tel"
@@ -203,7 +204,7 @@ export function QuoteModal() {
                             .slice(0, 10);
                           field.onChange(digitsOnly);
                         }}
-                        className={cn(inputClasses)}
+                        className={cn(inputClasses, "ml-6")}
                       />
                     </div>
                     <FormMessage />
