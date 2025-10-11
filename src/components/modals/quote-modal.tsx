@@ -31,13 +31,9 @@ const formSchema = z.object({
   email: z.email({
     message: "A valid email is required.",
   }),
-  phone: z
-    .string({
-      message: "A phone number is required.",
-    })
-    .refine((val) => val.replace(/\D/g, "").length === 10, {
-      message: "Enter a valid 10-digit phone number.",
-    }),
+  phone: z.string({
+    message: "A phone number is required.",
+  }),
   zipCode: z
     .string({
       message: "A zip code is required.",
@@ -67,7 +63,7 @@ export function QuoteModal() {
   const { isSubmitting } = form.formState;
 
   const formatPhone = (value: string) => {
-    const digits = value.replace(/\D/g, "").slice(0, 10);
+    const digits = value.replace(/\D/g, "");
     if (digits.length <= 3) return digits;
     if (digits.length <= 6) return `${digits.slice(0, 3)}-${digits.slice(3)}`;
     return `${digits.slice(0, 3)}-${digits.slice(3, 6)}-${digits.slice(6)}`;
@@ -199,9 +195,7 @@ export function QuoteModal() {
                         inputMode="tel"
                         value={formatPhone(field.value)}
                         onChange={(e) => {
-                          const digitsOnly = e.target.value
-                            .replace(/\D/g, "")
-                            .slice(0, 10);
+                          const digitsOnly = e.target.value.replace(/\D/g, "");
                           field.onChange(digitsOnly);
                         }}
                         className={cn(inputClasses, "ml-6")}
