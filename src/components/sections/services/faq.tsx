@@ -1,4 +1,4 @@
-import { faqs } from "@/data/services/faq";
+import { faqs as defaultFaqs } from "@/data/services/faq";
 import {
   Accordion,
   AccordionContent,
@@ -6,8 +6,14 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Image from "next/image";
+import type { CityFaq } from "@/data/services/city-content";
 
-export function ServicesFAQ() {
+interface ServicesFAQProps {
+  items?: CityFaq[];
+}
+
+export function ServicesFAQ({ items }: ServicesFAQProps = {}) {
+  const faqs = items || defaultFaqs;
   return (
     <section
       id="faq"

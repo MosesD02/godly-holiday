@@ -24,12 +24,13 @@ export function Footer() {
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 max-w-[1332px] py-8 sm:py-12 lg:py-[60px] mx-auto gap-2 sm:gap-4">
         {cities.map((city) => (
-          <div
+          <Link
             key={city.key}
-            className="py-2 sm:py-3 max-w-[200px] w-full font-marlton text-white text-sm sm:text-lg lg:text-xl text-center sm:text-left"
+            href={`/services/${city.key}`}
+            className="py-2 sm:py-3 max-w-[200px] w-full font-marlton text-white text-sm sm:text-lg lg:text-xl text-center sm:text-left hover:text-[#FFE7AF] transition-colors"
           >
             {city.name}
-          </div>
+          </Link>
         ))}
       </div>
 

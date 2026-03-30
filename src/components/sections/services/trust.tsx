@@ -3,7 +3,11 @@ import Logo from "@/assets/logo.svg";
 import { QuoteButton } from "@/components/ui/quote-button";
 import ArrowRight from "@/assets/arrow-right.svg";
 
-export function Trust() {
+interface TrustProps {
+  regionName?: string;
+}
+
+export function Trust({ regionName }: TrustProps = {}) {
   return (
     <section id="Trust" className="pb-[120px] relative">
       <div className="max-w-[1400px] mx-auto flex flex-col items-center justify-center gap-8 sm:gap-12 lg:gap-[64px] pb-16 sm:pb-20 lg:pb-[120px] px-4 sm:px-6">
@@ -17,7 +21,7 @@ export function Trust() {
               className="absolute -left-2 top-2 md:top-4 md:-left-1 object-contain pointer-events-none -translate-x-1/2 -translate-y-1/2"
             />
             WHY{" "}
-            <span className="underline decoration-white">SOUTH FLORIDA</span>{" "}
+            <span className="underline decoration-white">{regionName || "SOUTH FLORIDA"}</span>{" "}
             TRUSTS US FOR <br />
             HOLIDAY LIGHT{" "}
           </span>

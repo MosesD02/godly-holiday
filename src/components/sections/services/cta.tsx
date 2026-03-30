@@ -3,7 +3,11 @@ import Image from "next/image";
 
 import ArrowRight from "@/assets/arrow-right.svg";
 
-export function ServicesCTA() {
+interface ServicesCTAProps {
+  cityName?: string;
+}
+
+export function ServicesCTA({ cityName }: ServicesCTAProps = {}) {
   return (
     <section className="bg-paper-16-2 pb-16 sm:pb-20 lg:pb-[114px] space-y-12 sm:space-y-16 lg:space-y-[96px]">
       <Image
@@ -24,7 +28,7 @@ export function ServicesCTA() {
         />
         <div className="flex flex-col items-center justify-center space-y-6 lg:space-y-10">
           <h2 className="z-10 text-center relative font-marlton text-white text-[28px] sm:text-4xl lg:text-[64px] leading-[50px] sm:leading-[64px] lg:leading-[88px] tracking-[1px] sm:tracking-[2px] lg:tracking-[3.12px]">
-            BOOK YOUR <br />
+            BOOK YOUR {cityName ? cityName.toUpperCase() : ""}<br />
             <span
               className="absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 mt-1.5 font-luminaire text-[#FFE7AF] rotate-[-8.351deg] text-3xl sm:text-4xl lg:text-[56px] trim-text"
               style={{

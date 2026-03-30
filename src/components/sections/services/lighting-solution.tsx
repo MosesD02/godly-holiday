@@ -6,7 +6,12 @@ import Image from "next/image";
 import { QuoteButton } from "@/components/ui/quote-button";
 import { useEffect, useState } from "react";
 
-export function LightingSolution() {
+interface LightingSolutionProps {
+  residentialDescription?: string;
+  commercialDescription?: string;
+}
+
+export function LightingSolution({ residentialDescription, commercialDescription }: LightingSolutionProps = {}) {
   const [showResidentialAlt, setShowResidentialAlt] = useState(false);
   const [showCommercialAlt, setShowCommercialAlt] = useState(false);
 
@@ -94,10 +99,7 @@ export function LightingSolution() {
                 </span>
               </h2>
               <p className="text-white text-base sm:text-lg leading-6 sm:leading-[26px] tracking-[0.16px] sm:tracking-[0.18px]">
-                Whether it&rsquo;s subtle or show-stopping, our holiday light
-                installation services bring joy to your home all season long. We
-                handle everything, from setup to removal for houses and estates
-                across South Florida.
+                {residentialDescription || "Whether it\u2019s subtle or show-stopping, our holiday light installation services bring joy to your home all season long. We handle everything, from setup to removal for houses and estates across South Florida."}
               </p>
             </div>
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 flex-wrap">
@@ -138,10 +140,7 @@ export function LightingSolution() {
                 </span>
               </h2>
               <p className="text-white text-base sm:text-lg leading-6 sm:leading-[26px] tracking-[0.16px] sm:tracking-[0.18px]">
-                Make your business shine this season with our holiday Christmas
-                light installation services. We create festive, professional
-                displays that attract attention and bring in customers—all
-                installed safely and efficiently.
+                {commercialDescription || "Make your business shine this season with our holiday Christmas light installation services. We create festive, professional displays that attract attention and bring in customers\u2014all installed safely and efficiently."}
               </p>
             </div>
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 flex-wrap">

@@ -11,7 +11,11 @@ import {
 } from "../home/lighting-up-nights";
 import { cn } from "@/lib/utils";
 
-export function RecentLightInstallation() {
+interface RecentLightInstallationProps {
+  cityName?: string;
+}
+
+export function RecentLightInstallation({ cityName }: RecentLightInstallationProps = {}) {
   return (
     <section
       id="recent-light-installation"
@@ -30,7 +34,7 @@ export function RecentLightInstallation() {
             paintOrder: "stroke fill",
           }}
         >
-          South Florida
+          {cityName || "South Florida"}
         </span>
       </h2>
 

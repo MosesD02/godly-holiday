@@ -1,6 +1,13 @@
-import { howItWorks } from "@/data/services/how-it-works";
+import { howItWorks as defaultHowItWorks } from "@/data/services/how-it-works";
+import type { CityHowItWorksStep } from "@/data/services/city-content";
 
-export function HowItWorks() {
+interface HowItWorksProps {
+  steps?: CityHowItWorksStep[];
+  trustedByCities?: string;
+}
+
+export function HowItWorks({ steps, trustedByCities }: HowItWorksProps = {}) {
+  const howItWorks = steps || defaultHowItWorks;
   return (
     <section
       id="how-it-works"
@@ -68,8 +75,7 @@ export function HowItWorks() {
           Across
         </div>
         <p className="text-white max-w-[765px] px-4 font-marlton text-lg sm:text-2xl md:text-[32px] leading-8 md:leading-10 tracking-[0.75px] text-center mx-auto">
-          Fort Lauderdale, Weston, Boca Raton, Pompano Beach, and Lighthouse
-          Point.
+          {trustedByCities || "Fort Lauderdale, Weston, Boca Raton, Pompano Beach, and Lighthouse Point."}
         </p>
       </div>
     </section>

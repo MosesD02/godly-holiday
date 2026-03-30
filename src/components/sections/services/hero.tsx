@@ -3,7 +3,12 @@ import Image from "next/image";
 import Star from "@/assets/star.svg";
 import { QuoteForm } from "../home/hero/quote-form";
 
-export function Hero() {
+interface HeroProps {
+  cityName?: string;
+  subheadline?: string;
+}
+
+export function Hero({ cityName, subheadline }: HeroProps = {}) {
   return (
     <section
       id="hero"
@@ -43,7 +48,9 @@ export function Hero() {
             Installation
           </span>{" "}
           <span className="text-[#FDE4C8] absolute right-4 sm:-right-5 sm:top-20 md:-right-4 -bottom-2 md:bottom-3 text-xs sm:text-sm md:text-base leading-4 sm:leading-5 md:leading-6 tracking-[1.5px] sm:tracking-[2px]">
-            SOUTH <br /> FLORIDA
+            {cityName ? cityName.split(" ").map((word, i) => (
+              <span key={i}>{word}<br /></span>
+            )) : <>SOUTH <br /> FLORIDA</>}
           </span>
         </h1>
       </div>
@@ -57,8 +64,7 @@ export function Hero() {
       />
 
       <p className="text-white px-4 md:px-0 font-satoshi text-center text-base sm:text-lg md:text-xl font-medium max-w-[686px] my-8 md:my-[80px]">
-        Full-service lighting for homes, storefronts, and buildings—designed,
-        installed, maintained, and removed by your local holiday
+        {subheadline || "Full-service lighting for homes, storefronts, and buildings—designed, installed, maintained, and removed by your local holiday"}
       </p>
 
       <div className="px-4 md:px-0">

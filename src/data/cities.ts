@@ -4,6 +4,14 @@ export const cities = [
     key: "boca-raton",
   },
   {
+    name: "COCONUT CREEK",
+    key: "coconut-creek",
+  },
+  {
+    name: "COOPER CITY",
+    key: "cooper-city",
+  },
+  {
     name: "CORAL SPRINGS",
     key: "coral-springs",
   },
@@ -94,6 +102,10 @@ export const cities = [
   {
     name: "WEST PALM BEACH",
     key: "west-palm-beach",
+  },
+  {
+    name: "WEST PARK",
+    key: "west-park",
   },
   {
     name: "WESTON",

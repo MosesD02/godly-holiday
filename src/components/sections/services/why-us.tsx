@@ -1,7 +1,13 @@
 import Image from "next/image";
-import { whyUs } from "@/data/services/why-us";
+import { whyUs as defaultWhyUs } from "@/data/services/why-us";
+import type { CityWhyUsItem } from "@/data/services/city-content";
 
-export function WhyChooseUs() {
+interface WhyChooseUsProps {
+  items?: CityWhyUsItem[];
+}
+
+export function WhyChooseUs({ items }: WhyChooseUsProps = {}) {
+  const whyUs = items || defaultWhyUs;
   return (
     <section
       id="why-choose-us"
