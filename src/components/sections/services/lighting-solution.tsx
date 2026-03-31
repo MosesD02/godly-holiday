@@ -69,7 +69,7 @@ export function LightingSolution({ residentialDescription, commercialDescription
                 {residentialDescription || "Whether it\u2019s subtle or show-stopping, our holiday light installation services bring joy to your home all season long. We handle everything, from setup to removal for houses and estates across South Florida."}
               </p>
             </div>
-            <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 flex-wrap">
+            <div className="flex items-center gap-1.5 sm:gap-3 lg:gap-4 flex-wrap justify-center lg:justify-start">
               {(residentialServiceTypes || ["Houses", "Estates", "Gated Communities"]).map((type) => (
                 <Badge key={type} size="sm">{type}</Badge>
               ))}
@@ -110,7 +110,7 @@ export function LightingSolution({ residentialDescription, commercialDescription
                 {commercialDescription || "Make your business shine this season with our holiday Christmas light installation services. We create festive, professional displays that attract attention and bring in customers\u2014all installed safely and efficiently."}
               </p>
             </div>
-            <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 flex-wrap">
+            <div className="flex items-center gap-1.5 sm:gap-3 lg:gap-4 flex-wrap justify-center lg:justify-start">
               {(commercialPropertyTypes || ["Storefronts", "Office Buildings", "Plazas & Shopping Centers", "Community Spaces"]).map((type) => (
                 <Badge key={type} size="sm">{type}</Badge>
               ))}

@@ -123,40 +123,10 @@ export function Hero({ cityName, subheadline, heading }: HeroProps = {}) {
               >
                 {parsed.highlight}
               </span>{" "}
-              <span className="text-[#FDE4C8] absolute right-4 sm:-right-5 sm:top-20 md:-right-4 -bottom-2 md:bottom-3 text-xs sm:text-sm md:text-base leading-4 sm:leading-5 md:leading-6 tracking-[1.5px] sm:tracking-[2px]">
-                {cityName ? (
-                  cityName.split(" ").map((word, i) => (
-                    <span key={i}>
-                      {word}
-                      <br />
-                    </span>
-                  ))
-                ) : (
-                  <>
-                    SOUTH <br /> FLORIDA
-                  </>
-                )}
-              </span>
             </>
           ) : (
             <>
-              <span className="text-grain bg-white">
-                {parsed?.before}
-              </span>{" "}
-              <span className="text-[#FDE4C8] absolute right-4 sm:-right-5 sm:top-20 md:-right-4 -bottom-2 md:bottom-3 text-xs sm:text-sm md:text-base leading-4 sm:leading-5 md:leading-6 tracking-[1.5px] sm:tracking-[2px]">
-                {cityName ? (
-                  cityName.split(" ").map((word, i) => (
-                    <span key={i}>
-                      {word}
-                      <br />
-                    </span>
-                  ))
-                ) : (
-                  <>
-                    SOUTH <br /> FLORIDA
-                  </>
-                )}
-              </span>
+              <span className="text-grain bg-white">{parsed?.before}</span>{" "}
             </>
           )}
         </h1>

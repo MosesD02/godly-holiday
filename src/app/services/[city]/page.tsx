@@ -1,9 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import { getCityContent, getAllCitySlugs } from "@/data/services/city-content";
 import { getCityTestimonials } from "@/data/services/city-testimonials";
-import { cities } from "@/data/cities";
 import { Hero } from "@/components/sections/services/hero";
 import { RecentLightInstallation } from "@/components/sections/services/light-installation";
 import { LightingSolution } from "@/components/sections/services/lighting-solution";
@@ -111,7 +109,7 @@ export default async function CityServicePage({ params }: PageProps) {
   };
 
   return (
-    <div className="flex flex-col items-center overflow-x-visible justify-center relative">
+    <div className="flex flex-col items-center justify-center relative max-w-screen overflow-x-hidden">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

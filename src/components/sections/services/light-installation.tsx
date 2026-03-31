@@ -13,7 +13,9 @@ interface RecentLightInstallationProps {
   cityName?: string;
 }
 
-export function RecentLightInstallation({ cityName }: RecentLightInstallationProps = {}) {
+export function RecentLightInstallation({
+  cityName,
+}: RecentLightInstallationProps = {}) {
   return (
     <section
       id="recent-light-installation"
@@ -24,7 +26,7 @@ export function RecentLightInstallation({ cityName }: RecentLightInstallationPro
           RECENT HOLIDAY LIGHT <br /> INSTALLATIONS IN
         </span>
         <span
-          className="font-luminaire text-[#FFE7AF] rotate-[-8.115deg] absolute -bottom-6 right-6 translate-x-1/2"
+          className="font-luminaire text-[#FFE7AF] rotate-[-8.115deg] absolute -bottom-6 right-12 translate-x-1/2"
           style={{
             textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
             WebkitTextStrokeWidth: "6px",
@@ -55,8 +57,8 @@ export function RecentLightInstallation({ cityName }: RecentLightInstallationPro
                 image.pinSrc === "/images/home/lighting-up-nights/pin-1.png"
                   ? pin1Class
                   : image.pinSrc === "/images/home/lighting-up-nights/pin-2.png"
-                  ? pin2Class
-                  : pin3Class
+                    ? pin2Class
+                    : pin3Class
               }
             />
 
@@ -67,7 +69,7 @@ export function RecentLightInstallation({ cityName }: RecentLightInstallationPro
               height={1500}
               className={cn(
                 "max-w-[287.128px] w-full max-h-[261.025px] aspect-[287.128/261.025] h-full mx-auto object-cover",
-                image.imgClassName
+                image.imgClassName,
               )}
             />
 
