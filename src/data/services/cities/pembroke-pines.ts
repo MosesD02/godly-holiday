@@ -101,38 +101,38 @@ export const pembrokePines: CityContent = {
   faq: [
     {
       question:
-        "Do you serve all of Pembroke Pines' diverse neighborhoods?",
+        "What kind of holiday lighting jobs do you handle in Pembroke Pines?",
       answer:
-        "Yes, we serve Pembroke Pines in its entirety—all 171,000 residents across all neighborhoods. We're experienced with the city's cultural diversity and varied residential areas.",
-    },
-    {
-      question: "Do you work with Pembroke Falls gated community?",
-      answer:
-        "Absolutely. We understand Pembroke Falls' 24-hour security requirements and gated community protocols. We coordinate access and ensure installations comply with community guidelines.",
+        "We install holiday lights on residential homes, commercial properties, HOAs, and more throughout Pembroke Pines. No job is too big or small. We also serve Miramar, Cooper City, and Hollywood and the rest of South Florida.",
     },
     {
       question:
-        "What about Century Village's active adult residents?",
+        "Do you supply everything needed for holiday light installation in Pembroke Pines?",
       answer:
-        "We have extensive experience with Century Village's 7,700 units and 55+ community. We understand active adult residents' preferences and design festive displays they appreciate.",
+        "We supply all the lights, cords, clips, timers, and any other equipment needed. You don't buy anything. We own all the materials and bring everything to your Pembroke Pines property. When the season is over, we take it all back.",
     },
     {
       question:
-        "Are you experienced with Pembroke Pines' HOA requirements?",
+        "What if a light goes out or something needs repair in Pembroke Pines?",
       answer:
-        "Yes. We're experienced working with HOAs throughout Pembroke Pines and understand design guidelines and community standards. We ensure all installations comply with requirements.",
+        "Yes, all maintenance is included at no charge. If anything needs fixing for any reason, including weather damage, we come out within a day and handle it. That covers the full season from installation through removal.",
     },
     {
       question:
-        "Can you coordinate with Pembroke Pines community events like Santa's Express?",
+        "What affects the cost of holiday light installation in Pembroke Pines?",
       answer:
-        "We understand Pembroke Pines' family-focused character and community traditions. We can time installations to complement community events and family celebrations.",
+        "It depends on the scope of the project. We have a minimum that fluctuates with seasonal demand. The earlier in the season you book, the better. We're happy to come out to your Pembroke Pines property, take a look, and give you an honest quote.",
+    },
+    {
+      question: "When is the best time to book holiday lights in Pembroke Pines?",
+      answer:
+        "September is when we start taking bookings and installing. The earlier you get on our schedule, the better. By October and November, spots start filling up fast across Pembroke Pines and Miramar, Cooper City, and Hollywood. Don't wait until the last minute.",
     },
     {
       question:
-        "What about commercial installations in Pembroke Pines?",
+        "What should I expect during the Pembroke Pines holiday light installation process?",
       answer:
-        "We service retail centers, office parks, medical facilities, and community event spaces throughout Pembroke Pines. Our commercial installations create welcoming holiday atmosphere for customers.",
+        "First, we visit your property in Pembroke Pines and assess the space. We suggest options, collaborate on a design, and then schedule the installation. From there, we install using all of our own materials, maintain the display throughout the season at no extra cost, and come back after New Year's to remove and store everything.",
     },
   ],
   cta: {

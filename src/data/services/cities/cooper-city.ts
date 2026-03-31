@@ -100,38 +100,37 @@ export const cooperCity: CityContent = {
   faq: [
     {
       question:
-        "Do you comply with Monterra and HOA architectural guidelines?",
+        "What types of properties do you install holiday lights on in Cooper City?",
       answer:
-        "Yes, completely. Monterra's design standards are among the most rigorous in the region. We're familiar with every guideline and design our displays to comply fully while still creating stunning visual impact. We've successfully installed in Monterra and can coordinate with your HOA if needed.",
+        "We install holiday lights on residential homes, commercial properties, HOAs, and more throughout Cooper City. No job is too big or small. We also serve Davie, Pembroke Pines, and Southwest Ranches and the rest of South Florida.",
     },
     {
       question:
-        "What makes commercial-grade LED lights worth the investment?",
+        "Do you provide the lights and all materials for Cooper City installations?",
       answer:
-        "Commercial-grade LEDs cost more upfront but deliver exceptional longevity and consistent performance. They maintain brightness and color throughout the season, require minimal maintenance, and typically last 5-10 years. For homeowners investing in quality like Cooper City residents do, they're simply the smart choice.",
+        "We supply all the lights, cords, clips, timers, and any other equipment needed. You don't buy anything. We own all the materials and bring everything to your Cooper City property. When the season is over, we take it all back.",
     },
     {
       question:
-        "How do you handle complex roof lines and architectural details?",
+        "What happens if lights stop working or get damaged in Cooper City?",
       answer:
-        "That's where our expertise shines. Cooper City homes often feature sophisticated architecture—steep rooflines, architectural details, multiple levels. We have the expertise and equipment to safely and beautifully light these features, creating displays that enhance rather than overwhelm your home's design.",
+        "Yes, all maintenance is included at no charge. If anything needs fixing for any reason, including weather damage, we come out within a day and handle it. That covers the full season from installation through removal.",
+    },
+    {
+      question: "How much does holiday light installation cost in Cooper City?",
+      answer:
+        "It depends on the scope of the project. We have a minimum that fluctuates with seasonal demand. The earlier in the season you book, the better. We're happy to come out to your Cooper City property, take a look, and give you an honest quote.",
+    },
+    {
+      question: "When should I book holiday light installation in Cooper City?",
+      answer:
+        "September is when we start taking bookings and installing. The earlier you get on our schedule, the better. By October and November, spots start filling up fast across Cooper City and Davie, Pembroke Pines, and Southwest Ranches. Don't wait until the last minute.",
     },
     {
       question:
-        "Can you create a display visible from the street without being over-the-top?",
+        "What does the holiday light installation process look like in Cooper City?",
       answer:
-        "Absolutely. Elegance and impact aren't mutually exclusive. We design displays that create impressive curb appeal while maintaining the refined aesthetic that defines Cooper City's neighborhoods. Think sophistication, not spectacle.",
-    },
-    {
-      question: "What about storage and next-year reinstallation?",
-      answer:
-        "We professionally remove, clean, and store all lights and hardware in climate-controlled conditions. Next year, we can reinstall your exact display, make modifications, or start fresh—your choice. This protects your investment and gives you complete flexibility.",
-    },
-    {
-      question:
-        "Do you offer design consultations for commercial properties?",
-      answer:
-        "Yes. Our commercial team specializes in office parks, retail centers, hotels, and professional facilities. We design displays that enhance your property's image while increasing holiday traffic. We'll work within your budget and timeline.",
+        "First, we visit your property in Cooper City and assess the space. We suggest options, collaborate on a design, and then schedule the installation. From there, we install using all of our own materials, maintain the display throughout the season at no extra cost, and come back after New Year's to remove and store everything.",
     },
   ],
   cta: {

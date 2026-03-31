@@ -101,39 +101,39 @@ export const weston: CityContent = {
   faq: [
     {
       question:
-        "How do I ensure my holiday lights comply with my gated community's HOA guidelines?",
+        "What properties do you service for holiday lighting in Weston?",
       answer:
-        "We're familiar with Weston's gated communities and their specific architectural standards. We review your property's HOA requirements, design installations that meet guidelines, and can coordinate with your community management for approval if needed. Our experience ensures designs gain HOA acceptance while delivering the festive impact you want.",
+        "We handle it all in Weston. Residential homes, commercial buildings, HOAs, estates, storefronts, you name it. If it needs holiday lights, we do it. We've worked on properties of all sizes across Weston and the surrounding areas like Southwest Ranches, Davie, and Pembroke Pines.",
     },
     {
       question:
-        "What makes Windmill Ranch Estates installations premium?",
+        "Do I need to provide any materials for my Weston installation?",
       answer:
-        "Windmill Ranch Estates' prestige demands premium materials, meticulous installation, and luxury-level service. We use the finest commercial-grade components, employ master-level technicians, provide comprehensive consultation, and deliver finishing touches that match Windmill Ranch's elite positioning and property values.",
+        "You don't need to buy a thing. We bring everything with us, the lights, extension cords, clips, timers, all of it. We own all the materials and essentially rent them to you for the season. You just enjoy the lights completely hands-off.",
     },
     {
       question:
-        "Can you design family-friendly displays in Weston's 87.9% family-household community?",
+        "What happens if there's storm damage to my holiday lights in Weston?",
       answer:
-        "Absolutely! With Weston's exceptional 87.9% family household rate, we specialize in installations that delight children, create neighborhood gathering spaces, emphasize community togetherness, and reflect family values. We design displays that families love while maintaining sophistication.",
+        "If anything stops working, a bulb goes out, a strand gets knocked loose, even after a storm, we come out and fix it at no extra charge. We typically get there within a day. That's included for the entire season until we come remove everything after New Year's.",
     },
     {
       question:
-        "How do you coordinate with Weston's master-planned community management?",
+        "How is holiday light installation priced in Weston?",
       answer:
-        "We work directly with Weston's gated community management, understanding each community's structure, common areas, and approval processes. We can attend community meetings, coordinate with HOA leadership, and ensure smooth approval and installation processes.",
+        "Pricing depends on the size of the property and the design. There's a minimum, and it varies based on the time of season. If you book early, starting in September, demand is lower and we have more flexibility. Best thing to do is reach out for a free consultation and we'll give you exact numbers.",
     },
     {
       question:
-        "Can you illuminate Weston Town Center and community gathering spaces?",
+        "When do you start installing holiday lights in Weston?",
       answer:
-        "Yes! We design premium lighting for Weston Town Center, the amphitheater hosting Holiday Lighting Ceremonies, community entrances, and other shared amenities. We create sophisticated displays that enhance the shared experience and reflect Weston's master-planned excellence.",
+        "We start installing as early as September. The earlier you book, the more availability we have and the easier it is to get on the schedule. Closer to the holidays, demand picks up fast. If you're thinking about it, sooner is always better.",
     },
     {
       question:
-        "What's included in your premium Weston installation service?",
+        "Can you walk me through the holiday light installation process in Weston?",
       answer:
-        "Our premium Weston package includes detailed on-site consultation, comprehensive design renderings, HOA coordination, complete material procurement, master-level installation, full system testing, operation training, Holiday Lighting Ceremony readiness, emergency support throughout the season, and off-season professional storage of your lighting system.",
+        "We come out to your Weston property, walk it with you, and figure out the best approach. We'll put together a design concept, bounce ideas off each other until you love it, then schedule the installation. After that, we handle everything. If anything needs maintenance during the season, we're out within a day at no charge. After New Year's, we come back, take everything down, and store it all.",
     },
   ],
   cta: {

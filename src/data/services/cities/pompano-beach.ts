@@ -100,39 +100,39 @@ export const pompanoBeach: CityContent = {
   faq: [
     {
       question:
-        "Why do standard holiday lights fail so quickly in Pompano Beach?",
+        "Do you do residential and commercial holiday lighting in Pompano Beach?",
       answer:
-        "Pompano Beach's salt air and ocean moisture corrode standard electrical connections, fasteners, and light sockets within weeks. We use marine-grade components—stainless steel fasteners, sealed connector caps, and corrosion-resistant housings—that withstand coastal conditions for multiple seasons, unlike standard equipment that rusts quickly near saltwater environments.",
+        "We service residential and commercial properties across Pompano Beach, including HOAs and community spaces. From small homes to large estates, we handle holiday lighting for all property types.",
     },
     {
       question:
-        "Can you install lights on my boat or dock for the Holiday Boat Parade?",
+        "Are the lights and equipment included in your Pompano Beach pricing?",
       answer:
-        "Yes! We specialize in boat and dock lighting for Pompano Beach's 63rd Annual Holiday Boat Parade. We use specialized waterproof connectors, secure mounting on railings or davits, and ensure systems are safe for maritime conditions. We can design synchronized patterns and program timed sequences for maximum parade impact.",
+        "100%. We provide every single thing needed for the installation. Lights, cords, clips, timers, everything. It's all owned by us and included in the service. Nothing for you to buy or store.",
     },
     {
       question:
-        "Do you work around the Hillsboro Inlet Lighthouse and protected beach areas?",
+        "Do you offer maintenance during the holiday season in Pompano Beach?",
       answer:
-        "Absolutely. We're familiar with coastal permitting requirements and environmental protections around Pompano Beach's treasured landmarks like the historic 1907 Hillsboro Inlet Lighthouse. We work with local regulations to ensure installations comply with coastal preservation guidelines.",
+        "We cover all maintenance throughout the season at no extra charge. Burned out bulbs, storm damage, anything. We're out within a day to fix it. That goes for the entire time the lights are up on your Pompano Beach property.",
     },
     {
       question:
-        "How do you protect oceanfront homes from wind damage during installation?",
+        "Do you have a minimum order for Pompano Beach holiday light installation?",
       answer:
-        "We monitor Pompano Beach weather closely and schedule installations during stable conditions. We use redundant fastening systems, secure all cords to prevent flapping, and use hurricane-rated mounting hardware. All installations are designed to withstand the wind speeds typical of coastal Florida winter storms.",
+        "Pricing is based on your property size and the display design. There is a minimum, and it can change depending on how far into the season we are. Book earlier for the best availability. We'll come out and give you a free quote for your Pompano Beach property.",
     },
     {
       question:
-        "Are your systems safe for waterfront properties with children or pets?",
+        "How far in advance should I book holiday lights in Pompano Beach?",
       answer:
-        "Yes. All our installations use GFCI-protected outlets, sealed electrical connections away from water contact, and secure fastening preventing entanglement hazards. We follow maritime safety standards and can discuss specific concerns for families and pet owners on waterfront properties.",
+        "Installations start in September and go through the season. Early bookings get priority since our Pompano Beach schedule fills up the closer we get to the holidays. Reach out early to lock in your spot.",
     },
     {
       question:
-        "What's your timeline for Pompano Beach installations before the Holiday Boat Parade?",
+        "What is the process for holiday light installation in Pompano Beach?",
       answer:
-        "We typically schedule oceanfront and waterfront installations 6-8 weeks before the 63rd Annual Holiday Boat Parade to ensure proper testing and any adjustments. We offer expedited service in October and November. Contact us early to secure your preferred installation date.",
+        "We start with a free consultation at your Pompano Beach property. We walk the space together, talk design ideas, and create a plan. Then we install everything using our commercial-grade lights and equipment. We maintain the display all season at no charge, and after New Year's we remove everything and store it until next year.",
     },
   ],
   cta: {

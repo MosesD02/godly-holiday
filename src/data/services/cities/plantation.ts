@@ -99,38 +99,39 @@ export const plantation: CityContent = {
   faq: [
     {
       question:
-        "How do you handle holiday light installation on Plantation Acres' larger properties?",
+        "Do you do residential and commercial holiday lighting in Plantation?",
       answer:
-        "Plantation Acres properties typically span 1-2+ acres with mature trees and equestrian features. We use extended lighting runs, elevated installation points on barns or riding structures, and weatherproof commercial components designed for expanded spaces. Our crew size scales to complete larger installations efficiently without compromising quality.",
+        "Absolutely. Homes, businesses, HOAs, shopping centers, we cover all of it in Plantation. We've installed on every type of property you can think of, from Jacaranda homes to Broward Boulevard offices.",
     },
     {
       question:
-        "Do you offer synchronized light shows like Christmas Lights in the Acres?",
+        "Are the lights and equipment included in your Plantation pricing?",
       answer:
-        "Yes! We design and install synchronized holiday light displays that can be programmed to music or pre-set sequences, similar to the Christmas Lights in the Acres experience. We provide DMX controllers, weather-sealed connections, and can customize animation patterns to your preferences.",
+        "Yes, everything is included in our pricing. All lights, extension cords, clips, and equipment are ours. We bring it all, install it all, and take it all back after the season. You don't need to supply or buy anything.",
     },
     {
       question:
-        "Are your installations compliant with Hawk's Landing's homeowners association guidelines?",
+        "Do you offer maintenance during the holiday season in Plantation?",
       answer:
-        "Absolutely. We're familiar with Hawk's Landing's architectural guidelines and community standards. We'll review your specific HOA requirements and design installations that meet approval criteria while delivering the festive impact you want.",
+        "Absolutely. Any issue at all, whether a light burns out or a storm hits, we come out and fix it within a day at no cost to you. Maintenance is built into the service for the entire holiday season.",
     },
     {
       question:
-        "Can you install lights on historic Plantation Acres structures?",
+        "Do you have a minimum order for Plantation holiday light installation?",
       answer:
-        "Yes. We use non-invasive installation methods like gutter clips and roof-safe fasteners that respect historic properties. If drilling is necessary, we work carefully to minimize impact and can fill holes at season's end to preserve your structure's integrity.",
+        "Every property is different, so pricing depends on the size and design. We do have a minimum that shifts with demand throughout the season. Reach out and we'll set up a free consultation at your Plantation property to give you a clear price.",
     },
     {
       question:
-        "What happens if lights fail during the holiday season in Plantation?",
+        "How far in advance should I book holiday lights in Plantation?",
       answer:
-        "We provide emergency service throughout the Plantation area. Call us immediately if any section fails—we diagnose and repair issues typically within 24-48 hours at no additional charge during the contracted service period.",
+        "We begin installations in September. That's when demand is lowest and scheduling is easiest. As we get deeper into fall, availability tightens across Plantation. Our advice is always to book as early as you can.",
     },
     {
-      question: "Do you offer light removal and storage services?",
+      question:
+        "What is the process for holiday light installation in Plantation?",
       answer:
-        "Yes. After the holiday season, we safely remove all lights, neatly coil and label them by section, and store them in our climate-controlled facility throughout the year, ready for reinstallation next season.",
+        "Simple. We come see your Plantation property, talk about what you want, and put together a custom design. We handle the full installation with our own lights and equipment. If anything needs maintenance during the season, we fix it within a day for free. After the holidays, we take it all down and store it for you.",
     },
   ],
   cta: {

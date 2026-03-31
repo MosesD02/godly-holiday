@@ -99,38 +99,39 @@ export const hillsboroBeach: CityContent = {
   faq: [
     {
       question:
-        "Are your holiday light installations safe for oceanfront properties subject to hurricane winds?",
+        "Do you install Christmas lights for both homes and businesses in Hillsboro Beach?",
       answer:
-        "Absolutely. We specifically design installations for Hillsboro Beach's coastal environment using commercial-grade, hurricane-resistant materials and secure fastening systems. All electrical work meets or exceeds Florida's coastal construction standards for salt spray and wind exposure.",
+        "We service residential and commercial properties across Hillsboro Beach, including HOAs and community spaces. From small homes to large estates, we handle holiday lighting for all property types.",
     },
     {
       question:
-        "Do you use turtle-safe lighting for the holiday season?",
+        "Do I need to buy my own holiday lights for installation in Hillsboro Beach?",
       answer:
-        "Yes. As residents of a critical sea turtle nesting area, we prioritize conservation. We use warm-spectrum (amber/orange) LED bulbs and employ careful lighting techniques that minimize disruption to nesting sea turtles during holiday season months.",
+        "100%. We provide every single thing needed for the installation. Lights, cords, clips, timers, everything. It's all owned by us and included in the service. Nothing for you to buy or store.",
     },
     {
       question:
-        "Can you work with my property's unique oceanfront architecture?",
+        "Is maintenance included with holiday light installation in Hillsboro Beach?",
       answer:
-        "Our team has extensive experience with Hillsboro Beach's diverse oceanfront properties, from contemporary beachfront homes to classic Mediterranean-style mansions. We customize every design to complement your home's architectural character.",
+        "We cover all maintenance throughout the season at no extra charge. Burned out bulbs, storm damage, anything. We're out within a day to fix it. That goes for the entire time the lights are up on your Hillsboro Beach property.",
     },
     {
       question:
-        "Do you offer removal and storage services after the holidays?",
+        "Is there a minimum for holiday light installation in Hillsboro Beach?",
       answer:
-        "Yes. We handle complete removal of all materials and safely store them for next season, leaving your property pristine. For oceanfront homes, proper off-season maintenance of lighting equipment is especially important.",
-    },
-    {
-      question: "What areas of Hillsboro Beach do you serve?",
-      answer:
-        "We serve the entire Hillsboro Beach community, including all properties along A1A and the surrounding oceanfront areas. We're particularly experienced with Millionaires' Mile estates and exclusive beachfront condominiums.",
+        "Pricing is based on your property size and the display design. There is a minimum, and it can change depending on how far into the season we are. Book earlier for the best availability. We'll come out and give you a free quote for your Hillsboro Beach property.",
     },
     {
       question:
-        "How far in advance should I book holiday light installation?",
+        "How early can I schedule holiday light installation in Hillsboro Beach?",
       answer:
-        "For Hillsboro Beach's premium properties, we recommend booking by September to secure your preferred installation dates and allow time for custom design and planning. Premium residential customers often book even earlier.",
+        "Installations start in September and go through the season. Early bookings get priority since our Hillsboro Beach schedule fills up the closer we get to the holidays. Reach out early to lock in your spot.",
+    },
+    {
+      question:
+        "How does your Hillsboro Beach holiday light installation service work?",
+      answer:
+        "We start with a free consultation at your Hillsboro Beach property. We walk the space together, talk design ideas, and create a plan. Then we install everything using our commercial-grade lights and equipment. We maintain the display all season at no charge, and after New Year's we remove everything and store it until next year.",
     },
   ],
   cta: {

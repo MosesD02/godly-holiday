@@ -99,39 +99,39 @@ export const delrayBeach: CityContent = {
   faq: [
     {
       question:
-        "How do you design displays for $8M+ oceanfront estates?",
+        "Do you install Christmas lights for both homes and businesses in Delray Beach?",
       answer:
-        "Ultra-luxury oceanfront properties require bespoke design, premium materials, and meticulous installation. We treat each estate as a unique design opportunity—we don't use templates. Our team understands sophisticated aesthetics and creates displays that enhance rather than overwhelm exceptional architectural investments.",
+        "Yes, we work with homeowners, businesses, and HOAs throughout Delray Beach. Whether it's a single-family home or a large commercial property, we install holiday lights on everything, from Atlantic Avenue businesses to residential estates.",
     },
     {
       question:
-        "What makes your designs appropriate for Delray's arts scene?",
+        "Do I need to buy my own holiday lights for installation in Delray Beach?",
       answer:
-        "Delray's artistic culture values creativity and individuality. We don't impose corporate holiday templates. Instead, we collaborate with you to create displays that reflect your artistic sensibilities and celebrate Delray's vibrant cultural character.",
+        "Everything is included. The lights, the equipment, the extension cords, every single thing needed for the installation. We own all of it and provide it as part of our service. You never have to purchase or store anything.",
     },
     {
       question:
-        "How do you protect ultra-high-end finishes during installation?",
+        "Is maintenance included with holiday light installation in Delray Beach?",
       answer:
-        "Our installation team works with extreme care around high-end materials. We use protective coverings where needed, secure all fasteners properly without damaging finishes, and follow specialized protocols for luxury properties. Your investment is treated accordingly.",
+        "Maintenance is fully included. If a light goes out or something gets damaged, even from a hurricane, we come out and take care of it within 24 hours at no additional cost. Your display stays looking perfect the entire season.",
     },
     {
       question:
-        "Can you create displays celebrating Old School Square or Atlantic Avenue?",
+        "Is there a minimum for holiday light installation in Delray Beach?",
       answer:
-        "Absolutely. Whether you own a business on Atlantic Avenue, operate a cultural venue at Old School Square, or participate in Delray's holiday village celebrations, we design displays that enhance the festive atmosphere and draw customers during peak season.",
+        "The cost depends on your property and what you're looking for. We do have a minimum, which varies depending on demand and where we are in the season. Earlier bookings tend to have more availability. Contact us for a free estimate specific to your Delray Beach property.",
     },
     {
       question:
-        "What marine-grade materials do you use for oceanfront properties?",
+        "How early can I schedule holiday light installation in Delray Beach?",
       answer:
-        "We exclusively use stainless steel hardware, sealed weatherproof connections, corrosion-resistant LED fixtures, and specialized coatings designed for oceanfront salt spray exposure. All materials meet marine-grade specifications for maximum durability.",
+        "Our season starts in September and runs through the holidays. Booking early gives you the best availability since things fill up quick as the season goes on. We recommend reaching out as soon as you know you want lights on your Delray Beach property.",
     },
     {
       question:
-        "Do you offer design consultation for Delray business owners?",
+        "How does your Delray Beach holiday light installation service work?",
       answer:
-        "Yes. Whether you operate on Atlantic Avenue, participate in Old School Square events, or run a hospitality business during the busy holiday season, we design displays tailored to your business's unique character and location.",
+        "It starts with a free visit to your Delray Beach property. We look at the space, talk through your vision, and design something that works. Once you're happy with the plan, we schedule the install and handle everything from there. Maintenance is covered all season, and we remove and store everything after the holidays.",
     },
   ],
   cta: {

@@ -99,36 +99,38 @@ export const oaklandPark: CityContent = {
   faq: [
     {
       question:
-        "Do you work with Culinary Arts District restaurants and breweries?",
+        "What kind of holiday lighting jobs do you handle in Oakland Park?",
       answer:
-        "Yes, absolutely. We specialize in creating festive displays for Oakland Park's Culinary Arts District establishments. We enhance the dining and entertainment experience with quality holiday lighting.",
-    },
-    {
-      question: "What neighborhoods in Oakland Park do you serve?",
-      answer:
-        "We serve Oakland Park's entire community, including Twin Lakes, North Andrews Gardens, Coral Ridge Isles, and all other neighborhoods. We're familiar with each area's character.",
-    },
-    {
-      question: "How do you approach affordable neighborhoods?",
-      answer:
-        "Oakland Park offers quality housing at reasonable prices. We provide excellent holiday installations at competitive rates, understanding the area's value-conscious residents.",
+        "We handle it all in Oakland Park. Residential homes, commercial buildings, HOAs, estates, storefronts, you name it. If it needs holiday lights, we do it. We've worked on properties of all sizes across Oakland Park and the surrounding areas like Fort Lauderdale, Wilton Manors, and Lauderdale Lakes.",
     },
     {
       question:
-        "Are you experienced with Oakland Park's diverse, multicultural communities?",
+        "Do you supply everything needed for holiday light installation in Oakland Park?",
       answer:
-        "Yes. We respect and celebrate Oakland Park's diversity—33.1% Hispanic, 33.33% foreign-born. Our team is experienced working across diverse communities.",
-    },
-    {
-      question: "Can you create installations for commercial establishments?",
-      answer:
-        "Yes. We work with Oakland Park's restaurants, breweries, retail shops, and service businesses. We create festive displays that enhance commercial properties and draw customers.",
+        "You don't need to buy a thing. We bring everything with us, the lights, extension cords, clips, timers, all of it. We own all the materials and essentially rent them to you for the season. You just enjoy the lights completely hands-off.",
     },
     {
       question:
-        "What's unique about Oakland Park's arts and culinary scene?",
+        "What if a light goes out or something needs repair in Oakland Park?",
       answer:
-        "Oakland Park is experiencing exciting growth with a unique Culinary Arts District featuring innovative restaurants and breweries. We celebrate this vibrant cultural scene through quality holiday installations.",
+        "If anything stops working, a bulb goes out, a strand gets knocked loose, even after a storm, we come out and fix it at no extra charge. We typically get there within a day. That's included for the entire season until we come remove everything after New Year's.",
+    },
+    {
+      question:
+        "What affects the cost of holiday light installation in Oakland Park?",
+      answer:
+        "Pricing depends on the size of the property and the design. There's a minimum, and it varies based on the time of season. If you book early, starting in September, demand is lower and we have more flexibility. Best thing to do is reach out for a free consultation and we'll give you exact numbers.",
+    },
+    {
+      question: "When is the best time to book holiday lights in Oakland Park?",
+      answer:
+        "We start installing as early as September. The earlier you book, the more availability we have and the easier it is to get on the schedule. Closer to the holidays, demand picks up fast. If you're thinking about it, sooner is always better.",
+    },
+    {
+      question:
+        "What should I expect during the Oakland Park holiday light installation process?",
+      answer:
+        "We come out to your Oakland Park property, walk it with you, and figure out the best approach. We'll put together a design concept, bounce ideas off each other until you love it, then schedule the installation. After that, we handle everything. If anything needs maintenance during the season, we're out within a day at no charge. After New Year's, we come back, take everything down, and store it all.",
     },
   ],
   cta: {

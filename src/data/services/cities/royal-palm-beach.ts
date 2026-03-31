@@ -100,37 +100,39 @@ export const royalPalmBeach: CityContent = {
   faq: [
     {
       question:
-        "Will my holiday light installation comply with Bella Terra's HOA guidelines?",
+        "Do you do residential and commercial holiday lighting in Royal Palm Beach?",
       answer:
-        "Yes. We're familiar with Bella Terra's architectural guidelines and community standards. Before installation, we review your property's specific HOA requirements and design systems that gain approval while delivering the festive impact your family wants. We handle coordination with your HOA if needed.",
+        "We handle it all in Royal Palm Beach. Residential homes, commercial buildings, HOAs, estates, storefronts, you name it. If it needs holiday lights, we do it. We've worked on properties of all sizes across Royal Palm Beach and the surrounding areas like Wellington, West Palm Beach, and Loxahatchee.",
     },
     {
       question:
-        "What installation options work best for Palm Beach Plantation's varied subdivisions?",
+        "Are the lights and equipment included in your Royal Palm Beach pricing?",
       answer:
-        "Palm Beach Plantation includes six different subdivisions, each with unique character and guidelines. We customize installations to match each subdivision's aesthetic—from traditional designs in family-oriented areas to more elaborate displays in upscale sections. We assess each neighborhood's preferences and create appropriately scaled installations.",
-    },
-    {
-      question: "Are your installations safe for homes with young children?",
-      answer:
-        "Absolutely. We route all cords along home structure (never across yards), secure connections away from reach, use shatterproof bulbs, and ensure no hanging cords create entanglement hazards. For families with small children, we can design lower-impact displays or position lights higher on structures.",
+        "You don't need to buy a thing. We bring everything with us, the lights, extension cords, clips, timers, all of it. We own all the materials and essentially rent them to you for the season. You just enjoy the lights completely hands-off.",
     },
     {
       question:
-        "How do hurricane-resistant standards apply to holiday light installation?",
+        "Do you offer maintenance during the holiday season in Royal Palm Beach?",
       answer:
-        "We use redundant fastening (never single-point attachment), secure all cords to prevent flapping, employ commercial-grade wind-rated mounting hardware, and route connections through protected areas. Our installations are designed to withstand the same wind speeds that your CBS construction can handle.",
+        "If anything stops working, a bulb goes out, a strand gets knocked loose, even after a storm, we come out and fix it at no extra charge. We typically get there within a day. That's included for the entire season until we come remove everything after New Year's.",
     },
     {
       question:
-        "Can you coordinate with Royal Palm Beach Winter Fest timing for Commons Park?",
+        "Do you have a minimum order for Royal Palm Beach holiday light installation?",
       answer:
-        "Yes! We schedule residential installations to align with Winter Fest at Commons Park so your home is beautifully lit when the community celebrates. We typically schedule October-November installations to ensure everything is perfect before the event season begins.",
+        "Pricing depends on the size of the property and the design. There's a minimum, and it varies based on the time of season. If you book early, starting in September, demand is lower and we have more flexibility. Best thing to do is reach out for a free consultation and we'll give you exact numbers.",
     },
     {
-      question: "Do you offer storage for lights during the off-season?",
+      question:
+        "How far in advance should I book holiday lights in Royal Palm Beach?",
       answer:
-        "Yes. After the holiday season, we carefully remove, coil, and label your lights by section, then store everything in our climate-controlled facility. Your system arrives ready for reinstallation next season—one less thing for you to manage throughout the year.",
+        "We start installing as early as September. The earlier you book, the more availability we have and the easier it is to get on the schedule. Closer to the holidays, demand picks up fast. If you're thinking about it, sooner is always better.",
+    },
+    {
+      question:
+        "What is the process for holiday light installation in Royal Palm Beach?",
+      answer:
+        "We come out to your Royal Palm Beach property, walk it with you, and figure out the best approach. We'll put together a design concept, bounce ideas off each other until you love it, then schedule the installation. After that, we handle everything. If anything needs maintenance during the season, we're out within a day at no charge. After New Year's, we come back, take everything down, and store it all.",
     },
   ],
   cta: {

@@ -99,39 +99,38 @@ export const parkland: CityContent = {
   faq: [
     {
       question:
-        "Do you have experience with Heron Bay's 1,000+ luxury homes?",
+        "What kind of holiday lighting jobs do you handle in Parkland?",
       answer:
-        "Yes. We have extensive experience in Heron Bay and understand the neighborhood's premium standards. From $900,000 homes to $3 million-plus estates, we create installations appropriate for each property's value and sophistication.",
+        "Yes, we work with homeowners, businesses, and HOAs throughout Parkland. Whether it's a single-family home or a large commercial property, we install holiday lights on everything, from luxury estates to gated communities.",
     },
     {
       question:
-        "Can you work with properties featuring equestrian facilities?",
+        "Do you supply everything needed for holiday light installation in Parkland?",
       answer:
-        "Absolutely. Many Parkland residents maintain equestrian facilities. We're experienced working around stables, paddocks, and riding trails to create cohesive installations for equestrian estates.",
+        "Everything is included. The lights, the equipment, the extension cords, every single thing needed for the installation. We own all of it and provide it as part of our service. You never have to purchase or store anything.",
     },
     {
       question:
-        "What makes Parkland installations unique compared to other areas?",
+        "What if a light goes out or something needs repair in Parkland?",
       answer:
-        "Parkland's ultra-affluent demographics ($200K median household income, 67% college-educated, 68% married) demand premium installations. We create sophisticated displays matching the area's exceptional standards.",
+        "Maintenance is fully included. If a light goes out or something gets damaged, even from a hurricane, we come out and take care of it within 24 hours at no additional cost. Your display stays looking perfect the entire season.",
     },
     {
       question:
-        "Do you offer services for Parkland Golf & Country Club?",
+        "What affects the cost of holiday light installation in Parkland?",
       answer:
-        "Yes. We work with country clubs, golf facilities, and resort-style amenities throughout Parkland. Our commercial installations enhance these prestigious properties.",
+        "The cost depends on your property and what you're looking for. We do have a minimum, which varies depending on demand and where we are in the season. Earlier bookings tend to have more availability. Contact us for a free estimate specific to your Parkland property.",
+    },
+    {
+      question: "When is the best time to book holiday lights in Parkland?",
+      answer:
+        "Our season starts in September and runs through the holidays. Booking early gives you the best availability since things fill up quick as the season goes on. We recommend reaching out as soon as you know you want lights on your Parkland property.",
     },
     {
       question:
-        "How do you approach multi-acre estates with complex landscaping?",
+        "What should I expect during the Parkland holiday light installation process?",
       answer:
-        "Our team excels with large properties featuring sophisticated landscaping, multiple structures, and architectural details. We create comprehensive designs accounting for your entire property.",
-    },
-    {
-      question:
-        "What about properties in Watercrest and other luxury communities?",
-      answer:
-        "We serve all of Parkland's ultra-luxury communities, including Watercrest and similar gated neighborhoods. We're familiar with each community's standards and design requirements.",
+        "It starts with a free visit to your Parkland property. We look at the space, talk through your vision, and design something that works. Once you're happy with the plan, we schedule the install and handle everything from there. Maintenance is covered all season, and we remove and store everything after the holidays.",
     },
   ],
   cta: {

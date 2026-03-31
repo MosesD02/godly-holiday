@@ -100,39 +100,39 @@ export const hallandaleBeach: CityContent = {
   faq: [
     {
       question:
-        "How do you handle installations in oceanfront condo buildings?",
+        "Do you install Christmas lights for both homes and businesses in Hallandale Beach?",
       answer:
-        "Oceanfront condos require coordination with building management and condo associations. We navigate these requirements expertly—submitting proper documentation, respecting building policies, and using installation methods approved by management. We've successfully completed many condo installations in Hallandale.",
+        "Absolutely. Homes, businesses, HOAs, shopping centers, we cover all of it in Hallandale Beach. We've installed on every type of property you can think of, from high-rise buildings to residential streets.",
     },
     {
       question:
-        "What's involved in installing displays at 2000 Ocean and similar high-rises?",
+        "Do I need to buy my own holiday lights for installation in Hallandale Beach?",
       answer:
-        "High-rise oceanfront condos require specialized expertise. We coordinate with building management, use appropriate safety equipment for working at height, respect common area policies, and use installation methods that don't damage building infrastructure. We're experienced with this complex property type.",
+        "Yes, everything is included in our pricing. All lights, extension cords, clips, and equipment are ours. We bring it all, install it all, and take it all back after the season. You don't need to supply or buy anything.",
     },
     {
       question:
-        "How do you protect oceanfront materials from salt spray?",
+        "Is maintenance included with holiday light installation in Hallandale Beach?",
       answer:
-        "Salt spray corrodes standard materials quickly. We use exclusively marine-grade LED fixtures, stainless steel hardware, sealed weatherproof connections, and specialized coatings. Your lights maintain appearance and functionality season after season despite oceanfront exposure.",
+        "Absolutely. Any issue at all, whether a light burns out or a storm hits, we come out and fix it within a day at no cost to you. Maintenance is built into the service for the entire holiday season.",
     },
     {
       question:
-        "Can you design displays celebrating Hallandale's international community?",
+        "Is there a minimum for holiday light installation in Hallandale Beach?",
       answer:
-        "Absolutely. Hallandale's diverse international population may celebrate various cultural holidays. We can design displays reflecting different traditions or create contemporary, sophisticated designs that appeal to international sensibilities. We celebrate Hallandale's multicultural character.",
+        "Every property is different, so pricing depends on the size and design. We do have a minimum that shifts with demand throughout the season. Reach out and we'll set up a free consultation at your Hallandale Beach property to give you a clear price.",
     },
     {
       question:
-        "Do you work with Gulfstream Park and Village businesses?",
+        "How early can I schedule holiday light installation in Hallandale Beach?",
       answer:
-        "Yes. Whether you operate a Gulfstream Park facility, restaurant or shop in the Village, or other Hallandale business, we design holiday displays that enhance your venue and increase customer traffic during peak season.",
+        "We begin installations in September. That's when demand is lowest and scheduling is easiest. As we get deeper into fall, availability tightens across Hallandale Beach. Our advice is always to book as early as you can.",
     },
     {
       question:
-        "What if my condo building has design restrictions?",
+        "How does your Hallandale Beach holiday light installation service work?",
       answer:
-        "Many condo buildings have restrictions on visible decorations from exterior. We work within these requirements—designing interior displays, balcony displays that comply with policy, or exterior displays in approved common areas. We navigate restrictions expertly.",
+        "Simple. We come see your Hallandale Beach property, talk about what you want, and put together a custom design. We handle the full installation with our own lights and equipment. If anything needs maintenance during the season, we fix it within a day for free. After the holidays, we take it all down and store it for you.",
     },
   ],
   cta: {

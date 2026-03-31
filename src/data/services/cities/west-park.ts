@@ -98,38 +98,39 @@ export const westPark: CityContent = {
   faq: [
     {
       question:
-        "How can holiday lighting increase my West Park property's value?",
+        "What properties do you service for holiday lighting in West Park?",
       answer:
-        "Professional holiday lighting enhances curb appeal, creates memorable first impressions, and showcases property features during peak buying/renting season. Properties with professional displays attract more interest, appear better maintained, and command higher interest from buyers attracted to West Park's investment market.",
+        "We service residential and commercial properties across West Park, including HOAs and community spaces. From small homes to large estates, we handle holiday lighting for all property types.",
     },
     {
       question:
-        "Can you design displays honoring diverse West Park cultural traditions?",
+        "Do I need to provide any materials for my West Park installation?",
       answer:
-        "Absolutely! West Park's 51.5% Black population and diverse communities celebrate holidays in varied ways. We create installations honoring Kwanzaa, Hanukkah, Diwali, and multicultural traditions with cultural sensitivity and celebration. We'd love to help you light up the season in the way that matters most to your family.",
+        "100%. We provide every single thing needed for the installation. Lights, cords, clips, timers, everything. It's all owned by us and included in the service. Nothing for you to buy or store.",
     },
     {
       question:
-        "What's your experience with West Park's newer construction homes?",
+        "What happens if there's storm damage to my holiday lights in West Park?",
       answer:
-        "We're very familiar with West Park's newer construction. We understand modern electrical systems, work with today's building materials, and design installations that complement contemporary architecture. We ensure all work is compliant with current building codes and manufacturer specifications.",
-    },
-    {
-      question: "How close is West Park to Hollywood Broadwalk?",
-      answer:
-        "West Park is just 10 minutes from Hollywood Beach Broadwalk—one of South Florida's premier entertainment destinations. We can coordinate installations with Broadwalk holiday events and create displays that position your West Park property competitively during peak tourist season.",
+        "We cover all maintenance throughout the season at no extra charge. Burned out bulbs, storm damage, anything. We're out within a day to fix it. That goes for the entire time the lights are up on your West Park property.",
     },
     {
       question:
-        "Can you install lights at commercial properties near Gulfstream Park?",
+        "How is holiday light installation priced in West Park?",
       answer:
-        "Yes! We serve West Park's commercial districts including areas near Gulfstream Park entertainment venue. We design business-appropriate lighting that drives traffic, creates welcoming environments, and positions your business competitively during holiday season.",
+        "Pricing is based on your property size and the display design. There is a minimum, and it can change depending on how far into the season we are. Book earlier for the best availability. We'll come out and give you a free quote for your West Park property.",
     },
     {
       question:
-        "Are your systems appropriate for young families with children and pets?",
+        "When do you start installing holiday lights in West Park?",
       answer:
-        "Yes! We design family-safe installations—securing all cords away from play areas, using shatterproof materials, ensuring no entanglement hazards, and creating displays that delight children while maintaining safety. Your West Park family can enjoy festive celebration worry-free.",
+        "Installations start in September and go through the season. Early bookings get priority since our West Park schedule fills up the closer we get to the holidays. Reach out early to lock in your spot.",
+    },
+    {
+      question:
+        "Can you walk me through the holiday light installation process in West Park?",
+      answer:
+        "We start with a free consultation at your West Park property. We walk the space together, talk design ideas, and create a plan. Then we install everything using our commercial-grade lights and equipment. We maintain the display all season at no charge, and after New Year's we remove everything and store it until next year.",
     },
   ],
   cta: {

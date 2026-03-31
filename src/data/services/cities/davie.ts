@@ -99,39 +99,37 @@ export const davie: CityContent = {
   faq: [
     {
       question:
-        "How do you handle lighting equestrian properties and barns?",
+        "What types of properties do you install holiday lights on in Davie?",
       answer:
-        "Equestrian properties need special consideration—we avoid placement near pastures or arenas where animals are present, ensure all equipment is secure so it won't spook horses, and design displays that highlight beautiful barns without creating safety concerns. We're experienced with this unique property type.",
+        "We service residential and commercial properties across Davie, including HOAs and community spaces. From small homes to large estates, we handle holiday lighting for all property types.",
     },
     {
       question:
-        "What about powering lights on large Davie estates?",
+        "Do you provide the lights and all materials for Davie installations?",
       answer:
-        "Spacious properties sometimes require creative power solutions. We assess your electrical access and design displays that work within your property's power capabilities. We use efficient LED lighting to minimize electrical load and may recommend strategic outlet placement for future seasons.",
+        "100%. We provide every single thing needed for the installation. Lights, cords, clips, timers, everything. It's all owned by us and included in the service. Nothing for you to buy or store.",
     },
     {
       question:
-        "Can you light properties with mature, large trees?",
+        "What happens if lights stop working or get damaged in Davie?",
       answer:
-        "Absolutely. Large mature trees are Davie assets we highlight beautifully. We use uplighting and canopy lighting techniques to create dramatic effects while respecting tree health. Your property's natural beauty becomes part of the display.",
+        "We cover all maintenance throughout the season at no extra charge. Burned out bulbs, storm damage, anything. We're out within a day to fix it. That goes for the entire time the lights are up on your Davie property.",
+    },
+    {
+      question: "How much does holiday light installation cost in Davie?",
+      answer:
+        "Pricing is based on your property size and the display design. There is a minimum, and it can change depending on how far into the season we are. Book earlier for the best availability. We'll come out and give you a free quote for your Davie property.",
+    },
+    {
+      question: "When should I book holiday light installation in Davie?",
+      answer:
+        "Installations start in September and go through the season. Early bookings get priority since our Davie schedule fills up the closer we get to the holidays. Reach out early to lock in your spot.",
     },
     {
       question:
-        "Do you have experience with Long Lake Ranches requirements?",
+        "What does the holiday light installation process look like in Davie?",
       answer:
-        "Yes. Long Lake Ranches has specific design guidelines and restrictions. We understand these requirements and design displays that comply fully while creating the visual impact you want. We can coordinate with your community if needed.",
-    },
-    {
-      question:
-        "How do you secure lights on ranch-style properties?",
-      answer:
-        "Ranch and estate properties often feature different architecture than typical homes—barns, extended rooflines, multiple structures. We have expertise securing lights on varied architectural elements using appropriate hardware that protects your property.",
-    },
-    {
-      question:
-        "What's typical installation cost for a Davie property?",
-      answer:
-        "Davie properties vary widely in size and scope. A typical residential installation ranges from $2,500-$7,000+ depending on property size, design complexity, and scope. We provide transparent pricing during your consultation.",
+        "We start with a free consultation at your Davie property. We walk the space together, talk design ideas, and create a plan. Then we install everything using our commercial-grade lights and equipment. We maintain the display all season at no charge, and after New Year's we remove everything and store it until next year.",
     },
   ],
   cta: {

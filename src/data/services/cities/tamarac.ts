@@ -98,39 +98,39 @@ export const tamarac: CityContent = {
   faq: [
     {
       question:
-        "How do you handle installation in Mainlands of Tamarac Lakes' large 55+ community?",
+        "Do you do residential and commercial holiday lighting in Tamarac?",
       answer:
-        "Mainlands of Tamarac Lakes' 5,000+ homes require coordinated installation scheduling and community-aware practices. We schedule work during daylight hours, respect resident privacy, coordinate with community management, and design lighting that enhances neighborhood gathering spaces without overwhelming individual properties.",
+        "Absolutely. Homes, businesses, HOAs, shopping centers, we cover all of it in Tamarac. We've installed on every type of property you can think of, from active communities to Commercial Boulevard businesses.",
     },
     {
       question:
-        "What makes your systems appropriate for aging-in-place communities?",
+        "Are the lights and equipment included in your Tamarac pricing?",
       answer:
-        "We design with accessibility in mind—installing control switches at convenient heights, using large clear labels, creating simple on/off systems, and avoiding complex programming that requires tech expertise. We also ensure lighting isn't overly bright (which can strain aging eyes) while remaining festive and visible.",
+        "Yes, everything is included in our pricing. All lights, extension cords, clips, and equipment are ours. We bring it all, install it all, and take it all back after the season. You don't need to supply or buy anything.",
     },
     {
       question:
-        "Can you coordinate Holiday Lighting ceremonies at Caporella Park?",
+        "Do you offer maintenance during the holiday season in Tamarac?",
       answer:
-        "Yes! We design lighting for Caporella Park community events and can coordinate with residences to create neighborhood-wide festive atmosphere. We work with community leadership to ensure Holiday Lighting ceremonies showcase beautiful displays across your neighborhood.",
+        "Absolutely. Any issue at all, whether a light burns out or a storm hits, we come out and fix it within a day at no cost to you. Maintenance is built into the service for the entire holiday season.",
     },
     {
       question:
-        "Do you work with Tamarac community management and HOAs?",
+        "Do you have a minimum order for Tamarac holiday light installation?",
       answer:
-        "Absolutely. We understand that each of Tamarac's 124 communities has distinct HOA guidelines and management structures. We can coordinate directly with your HOA, attend community meetings if needed, and ensure all installations comply with neighborhood standards.",
+        "Every property is different, so pricing depends on the size and design. We do have a minimum that shifts with demand throughout the season. Reach out and we'll set up a free consultation at your Tamarac property to give you a clear price.",
     },
     {
       question:
-        "Are your installations safe for neighborhoods with many aging residents?",
+        "How far in advance should I book holiday lights in Tamarac?",
       answer:
-        "Yes. We ensure all lighting is securely fastened (no tripping hazards), route cords along structures (not across walkways), use soft lighting that doesn't create glare, and design displays that encourage safe outdoor community gathering. We follow accessibility standards throughout installation.",
+        "We begin installations in September. That's when demand is lowest and scheduling is easiest. As we get deeper into fall, availability tightens across Tamarac. Our advice is always to book as early as you can.",
     },
     {
       question:
-        "Can you help organize neighborhood-wide holiday lighting?",
+        "What is the process for holiday light installation in Tamarac?",
       answer:
-        "Yes! We can consult with community leadership about coordinating holiday lighting across multiple properties, creating neighborhood-themed displays, or designing block-wide lighting that brings Tamarac's 124 communities together in festive celebration.",
+        "Simple. We come see your Tamarac property, talk about what you want, and put together a custom design. We handle the full installation with our own lights and equipment. If anything needs maintenance during the season, we fix it within a day for free. After the holidays, we take it all down and store it for you.",
     },
   ],
   cta: {

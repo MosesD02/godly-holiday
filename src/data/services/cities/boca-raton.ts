@@ -100,35 +100,37 @@ export const bocaRaton: CityContent = {
   faq: [
     {
       question:
-        "How do you protect oceanfront properties from salt water corrosion?",
+        "What types of properties do you install holiday lights on in Boca Raton?",
       answer:
-        "Salt spray and humidity are constant challenges for Boca Raton's waterfront estates. We exclusively use marine-grade LED lighting, stainless steel hardware, and strategic placement away from direct salt spray exposure. Our materials are specifically chosen to withstand the harsh beachfront environment while maintaining that sophisticated look your oceanfront property deserves.",
-    },
-    {
-      question: "Do you work with Boca Raton HOA requirements?",
-      answer:
-        "Absolutely. Many of Boca Raton's gated golf communities and active adult neighborhoods have specific guidelines about holiday displays. We're familiar with common HOA requirements and work proactively to design displays that comply with your community's rules while still creating impressive visual impact.",
+        "We handle it all in Boca Raton. Residential homes, commercial buildings, HOAs, estates, storefronts, you name it. If it needs holiday lights, we do it. We've worked on properties of all sizes across Boca Raton and the surrounding areas like Delray Beach, Deerfield Beach, and Coconut Creek.",
     },
     {
       question:
-        "Can you illuminate architectural features like barrel-tile roofs?",
+        "Do you provide the lights and all materials for Boca Raton installations?",
       answer:
-        "Yes—that's one of our specialties. Boca Raton's Mediterranean and Spanish Colonial homes feature distinctive architectural elements that look stunning when properly lit. We use uplighting, soffit lighting, and careful color selection to accentuate these features without creating a chaotic appearance.",
+        "You don't need to buy a thing. We bring everything with us, the lights, extension cords, clips, timers, all of it. We own all the materials and essentially rent them to you for the season. You just enjoy the lights completely hands-off.",
     },
     {
-      question: "What happens to my lights after the holiday season?",
+      question:
+        "What happens if lights stop working or get damaged in Boca Raton?",
       answer:
-        "We handle complete removal and professional storage. We carefully take down every light, safely remove all hardware, and store your lights in climate-controlled conditions. This protects your investment and ensures we can reinstall the exact same display next season if you'd like.",
+        "If anything stops working, a bulb goes out, a strand gets knocked loose, even after a storm, we come out and fix it at no extra charge. We typically get there within a day. That's included for the entire season until we come remove everything after New Year's.",
     },
     {
-      question: "Do you offer maintenance during the season?",
+      question: "How much does holiday light installation cost in Boca Raton?",
       answer:
-        "Yes. We offer optional maintenance visits to inspect lights, check connections, and address any issues that may arise. Given Boca Raton's weather patterns, some clients appreciate having a professional check on their investment during the busy holiday weeks.",
+        "Pricing depends on the size of the property and the design. There's a minimum, and it varies based on the time of season. If you book early, starting in September, demand is lower and we have more flexibility. Best thing to do is reach out for a free consultation and we'll give you exact numbers.",
     },
     {
-      question: "What's the typical investment for a Boca Raton home?",
+      question: "When should I book holiday light installation in Boca Raton?",
       answer:
-        "Costs vary significantly based on your home's size, architectural complexity, and design ambitions. A typical residential installation ranges from $2,500-$8,000+, with oceanfront estates and larger properties typically at the higher end. We provide transparent pricing during your consultation.",
+        "We start installing as early as September. The earlier you book, the more availability we have and the easier it is to get on the schedule. Closer to the holidays, demand picks up fast. If you're thinking about it, sooner is always better.",
+    },
+    {
+      question:
+        "What does the holiday light installation process look like in Boca Raton?",
+      answer:
+        "We come out to your Boca Raton property, walk it with you, and figure out the best approach. We'll put together a design concept, bounce ideas off each other until you love it, then schedule the installation. After that, we handle everything. If anything needs maintenance during the season, we're out within a day at no charge. After New Year's, we come back, take everything down, and store it all.",
     },
   ],
   cta: {

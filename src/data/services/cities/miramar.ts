@@ -101,39 +101,38 @@ export const miramar: CityContent = {
   faq: [
     {
       question:
-        "Do you serve all 24 of Miramar's neighborhoods?",
+        "What kind of holiday lighting jobs do you handle in Miramar?",
       answer:
-        "Yes, we serve the entire Miramar area, including all 24 neighborhoods. We're familiar with each community's character and can design installations appropriate for any neighborhood.",
+        "We service residential and commercial properties across Miramar, including HOAs and community spaces. From small homes to large estates, we handle holiday lighting for all property types.",
     },
     {
       question:
-        "Can you work with gated communities like Harbour Lake Estates?",
+        "Do you supply everything needed for holiday light installation in Miramar?",
       answer:
-        "Absolutely. We have experience with Miramar's gated waterfront communities and understand their access requirements and security protocols. We coordinate with community management.",
+        "100%. We provide every single thing needed for the installation. Lights, cords, clips, timers, everything. It's all owned by us and included in the service. Nothing for you to buy or store.",
     },
     {
       question:
-        "How do you work with modern home architecture?",
+        "What if a light goes out or something needs repair in Miramar?",
       answer:
-        "Miramar's newer construction features clean lines and contemporary design. We create installations that complement modern architecture—enhancing flat rooflines, stucco facades, and contemporary landscaping with lighting that feels current and sophisticated.",
+        "We cover all maintenance throughout the season at no extra charge. Burned out bulbs, storm damage, anything. We're out within a day to fix it. That goes for the entire time the lights are up on your Miramar property.",
     },
     {
       question:
-        "Are you experienced with family-oriented neighborhoods?",
+        "What affects the cost of holiday light installation in Miramar?",
       answer:
-        "Yes. With 42% of Miramar households including children, we understand family communities. Our installations are safe, professional, and create festive atmosphere children enjoy.",
+        "Pricing is based on your property size and the display design. There is a minimum, and it can change depending on how far into the season we are. Book earlier for the best availability. We'll come out and give you a free quote for your Miramar property.",
+    },
+    {
+      question: "When is the best time to book holiday lights in Miramar?",
+      answer:
+        "Installations start in September and go through the season. Early bookings get priority since our Miramar schedule fills up the closer we get to the holidays. Reach out early to lock in your spot.",
     },
     {
       question:
-        "What about commercial installations in Miramar?",
+        "What should I expect during the Miramar holiday light installation process?",
       answer:
-        "We service Miramar's growing retail centers, office buildings, and business parks. Our commercial installations draw customers and create welcoming holiday atmosphere.",
-    },
-    {
-      question:
-        "How experienced is your team with Miramar's diverse population?",
-      answer:
-        "Our team respects and celebrates Miramar's diversity—42.5% Black, 39.3% Hispanic, and other communities. We create installations reflecting the values and character of all neighborhoods.",
+        "We start with a free consultation at your Miramar property. We walk the space together, talk design ideas, and create a plan. Then we install everything using our commercial-grade lights and equipment. We maintain the display all season at no charge, and after New Year's we remove everything and store it until next year.",
     },
   ],
   cta: {

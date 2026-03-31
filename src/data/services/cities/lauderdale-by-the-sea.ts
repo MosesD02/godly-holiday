@@ -101,38 +101,39 @@ export const lauderdaleByTheSea: CityContent = {
   faq: [
     {
       question:
-        "Can you install holiday lights around private docks and boat lifts?",
+        "Do you install Christmas lights for both homes and businesses in Lauderdale-by-the-Sea?",
       answer:
-        "Yes. We have extensive experience with waterfront installations and can safely work around docks, boat lifts, and other marine structures. We use waterproof, marine-grade materials and ensure all electrical work is properly protected.",
+        "Yes, we work with homeowners, businesses, and HOAs throughout Lauderdale-by-the-Sea. Whether it's a single-family home or a large commercial property, we install holiday lights on everything, from beachside cottages to local restaurants.",
     },
     {
       question:
-        "Are your installations suitable for salt spray and waterfront exposure?",
+        "Do I need to buy my own holiday lights for installation in Lauderdale-by-the-Sea?",
       answer:
-        "Absolutely. We use commercial-grade marine materials designed specifically for salt-air environments. All components are corrosion-resistant, and we employ secure fastening methods appropriate for barrier island living.",
+        "Everything is included. The lights, the equipment, the extension cords, every single thing needed for the installation. We own all of it and provide it as part of our service. You never have to purchase or store anything.",
     },
     {
       question:
-        "What makes Lauderdale-by-the-Sea installations different from other communities?",
+        "Is maintenance included with holiday light installation in Lauderdale-by-the-Sea?",
       answer:
-        "Lauderdale-by-the-Sea residents typically prefer elegant, tasteful displays that complement the community's intimate character and maritime heritage. We design installations that enhance rather than overwhelm, reflecting the area's understated sophistication.",
+        "Maintenance is fully included. If a light goes out or something gets damaged, even from a hurricane, we come out and take care of it within 24 hours at no additional cost. Your display stays looking perfect the entire season.",
     },
     {
       question:
-        "Do you have experience with waterfront businesses like dive shops?",
+        "Is there a minimum for holiday light installation in Lauderdale-by-the-Sea?",
       answer:
-        "Yes. We work with Lauderdale-by-the-Sea's dive shops, waterfront restaurants, and other maritime businesses. Our designs celebrate the area's reputation as Florida's Beach Diving Capital.",
-    },
-    {
-      question: "Can lighting be installed near the reef areas?",
-      answer:
-        "We use environmentally conscious lighting practices that minimize impact on near-shore coral reefs and marine ecosystems. Our installations respect the area's natural environment while creating festive holiday ambiance.",
+        "The cost depends on your property and what you're looking for. We do have a minimum, which varies depending on demand and where we are in the season. Earlier bookings tend to have more availability. Contact us for a free estimate specific to your Lauderdale-by-the-Sea property.",
     },
     {
       question:
-        "How long before the holidays should I book installation?",
+        "How early can I schedule holiday light installation in Lauderdale-by-the-Sea?",
       answer:
-        "For Lauderdale-by-the-Sea properties, we recommend booking by September. This small, intimate community fills up quickly, and early booking ensures we can schedule your installation during your preferred dates.",
+        "Our season starts in September and runs through the holidays. Booking early gives you the best availability since things fill up quick as the season goes on. We recommend reaching out as soon as you know you want lights on your Lauderdale-by-the-Sea property.",
+    },
+    {
+      question:
+        "How does your Lauderdale-by-the-Sea holiday light installation service work?",
+      answer:
+        "It starts with a free visit to your Lauderdale-by-the-Sea property. We look at the space, talk through your vision, and design something that works. Once you're happy with the plan, we schedule the install and handle everything from there. Maintenance is covered all season, and we remove and store everything after the holidays.",
     },
   ],
   cta: {

@@ -99,38 +99,39 @@ export const sunrise: CityContent = {
   faq: [
     {
       question:
-        "Can you design holiday lights that celebrate cultural traditions beyond Christmas?",
+        "Do you do residential and commercial holiday lighting in Sunrise?",
       answer:
-        "Absolutely! We create installations honoring Hanukkah, Kwanzaa, Diwali, and other cultural holiday traditions. We understand symbolic colors, traditional decorative elements, and design approaches for different celebrations. We'd be honored to help your family light up the season in the way that matters most to you.",
-    },
-    {
-      question: "Do you have multilingual support for consultations?",
-      answer:
-        "Yes! We have bilingual team members and translation services available for Spanish, and we can arrange interpretation for other languages. We believe the consultation process should be comfortable and clear regardless of your primary language.",
+        "We install holiday lights on residential homes, commercial properties, HOAs, and more throughout Sunrise. No job is too big or small. We also serve Plantation, Tamarac, and Fort Lauderdale and the rest of South Florida.",
     },
     {
       question:
-        "Can you install lights at Sawgrass Mills or other major Sunrise destinations?",
+        "Are the lights and equipment included in your Sunrise pricing?",
       answer:
-        "Yes. We have extensive experience with large-scale commercial installations at major retail centers like Sawgrass Mills. We coordinate with property management, work within vendor requirements, and deliver professional installations at premium shopping destinations and entertainment venues.",
+        "We supply all the lights, cords, clips, timers, and any other equipment needed. You don't buy anything. We own all the materials and bring everything to your Sunrise property. When the season is over, we take it all back.",
     },
     {
       question:
-        "How do you work with Sunrise Lakes' 55+ community?",
+        "Do you offer maintenance during the holiday season in Sunrise?",
       answer:
-        "We design age-appropriate installations for Sunrise Lakes residents, with convenient light switches, easy-to-understand control systems, and minimal maintenance requirements. We schedule installations at times convenient to residents and ensure systems are simple to operate.",
+        "Yes, all maintenance is included at no charge. If anything needs fixing for any reason, including weather damage, we come out within a day and handle it. That covers the full season from installation through removal.",
     },
     {
       question:
-        "What's your timeline for Light Up The Holidays and other Sunrise community events?",
+        "Do you have a minimum order for Sunrise holiday light installation?",
       answer:
-        "We schedule installations 6-8 weeks before major Sunrise community events like Light Up The Holidays and Arts & Crafts Festival Winter Wonderland. We offer flexible scheduling to work around your availability and ensure everything is perfect before the community celebrates.",
+        "It depends on the scope of the project. We have a minimum that fluctuates with seasonal demand. The earlier in the season you book, the better. We're happy to come out to your Sunrise property, take a look, and give you an honest quote.",
     },
     {
       question:
-        "Are your installations designed for Sunrise's heat and humidity?",
+        "How far in advance should I book holiday lights in Sunrise?",
       answer:
-        "Yes. We use equipment rated for South Florida's subtropical climate—sealed connections resistant to humidity, heat-stable materials, and weatherproof components. Our installations perform reliably through the varied conditions of Sunrise's holiday season.",
+        "September is when we start taking bookings and installing. The earlier you get on our schedule, the better. By October and November, spots start filling up fast across Sunrise and Plantation, Tamarac, and Fort Lauderdale. Don't wait until the last minute.",
+    },
+    {
+      question:
+        "What is the process for holiday light installation in Sunrise?",
+      answer:
+        "First, we visit your property in Sunrise and assess the space. We suggest options, collaborate on a design, and then schedule the installation. From there, we install using all of our own materials, maintain the display throughout the season at no extra cost, and come back after New Year's to remove and store everything.",
     },
   ],
   cta: {

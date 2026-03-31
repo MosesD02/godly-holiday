@@ -100,38 +100,37 @@ export const coralSprings: CityContent = {
   faq: [
     {
       question:
-        "Do you design displays for different cultural holiday traditions?",
+        "What types of properties do you install holiday lights on in Coral Springs?",
       answer:
-        "Absolutely—that's one of our specialties. Coral Springs' diversity means families celebrate in different ways. Whether you're creating displays for Hanukkah, Diwali, Kwanzaa, Christmas, or any other celebration, we design displays that honor your traditions. Our team has experience with diverse holiday aesthetics and symbolism.",
+        "Absolutely. Homes, businesses, HOAs, shopping centers, we cover all of it in Coral Springs. We've installed on every type of property you can think of, from family homes to commercial plazas.",
     },
     {
       question:
-        "How do you handle Heron Bay's neighborhood design guidelines?",
+        "Do you provide the lights and all materials for Coral Springs installations?",
       answer:
-        "Heron Bay's 30+ sub-neighborhoods each have their own character and often their own HOA guidelines. We're familiar with these requirements and proactively design displays that comply fully while still creating the visual impact you want. We can coordinate with your HOA if needed.",
+        "Yes, everything is included in our pricing. All lights, extension cords, clips, and equipment are ours. We bring it all, install it all, and take it all back after the season. You don't need to supply or buy anything.",
     },
     {
       question:
-        "Can you create modern or contemporary holiday displays?",
+        "What happens if lights stop working or get damaged in Coral Springs?",
       answer:
-        "Yes. While traditional displays are beautiful, we also specialize in contemporary designs—clean lines, minimalist color palettes, architectural lighting that highlights modern home features. If your style is contemporary, we'll design accordingly.",
+        "Absolutely. Any issue at all, whether a light burns out or a storm hits, we come out and fix it within a day at no cost to you. Maintenance is built into the service for the entire holiday season.",
     },
     {
-      question: "What's the range of installation costs?",
+      question: "How much does holiday light installation cost in Coral Springs?",
       answer:
-        "Coral Springs installations typically range from $2,000-$6,000+ depending on home size, design complexity, and scope. Smaller properties or simpler designs cost less; larger homes or intricate custom designs cost more. We provide transparent pricing during your consultation.",
+        "Every property is different, so pricing depends on the size and design. We do have a minimum that shifts with demand throughout the season. Reach out and we'll set up a free consultation at your Coral Springs property to give you a clear price.",
+    },
+    {
+      question: "When should I book holiday light installation in Coral Springs?",
+      answer:
+        "We begin installations in September. That's when demand is lowest and scheduling is easiest. As we get deeper into fall, availability tightens across Coral Springs. Our advice is always to book as early as you can.",
     },
     {
       question:
-        "Do you offer design modifications during the season?",
+        "What does the holiday light installation process look like in Coral Springs?",
       answer:
-        "Yes. If you want to adjust colors, add elements, or make changes mid-season, we can help. We offer maintenance visits and are flexible about accommodating reasonable modifications to ensure you absolutely love your display.",
-    },
-    {
-      question:
-        "How do you manage installations in neighborhoods with strict HOAs?",
-      answer:
-        "We're experienced navigating HOA requirements throughout Coral Springs. We review guidelines thoroughly during the design phase and ensure full compliance before installation. We've completed hundreds of installations in neighborhoods with various design standards.",
+        "Simple. We come see your Coral Springs property, talk about what you want, and put together a custom design. We handle the full installation with our own lights and equipment. If anything needs maintenance during the season, we fix it within a day for free. After the holidays, we take it all down and store it for you.",
     },
   ],
   cta: {

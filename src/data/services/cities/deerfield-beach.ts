@@ -100,35 +100,37 @@ export const deerfieldBeach: CityContent = {
   faq: [
     {
       question:
-        "How do marine-grade lights differ from standard holiday lights?",
+        "What types of properties do you install holiday lights on in Deerfield Beach?",
       answer:
-        "Marine-grade lights use stainless steel or corrosion-resistant hardware, sealed connections that resist salt spray, and specialized coating on all materials. Standard lights corrode quickly in coastal salt environments. We exclusively use marine-grade products for all Deerfield Beach oceanfront installations.",
+        "We handle it all in Deerfield Beach. Residential homes, commercial buildings, HOAs, estates, storefronts, you name it. If it needs holiday lights, we do it. We've worked on properties of all sizes across Deerfield Beach and the surrounding areas like Boca Raton, Lighthouse Point, and Pompano Beach.",
     },
     {
       question:
-        "What special considerations apply to oceanfront properties?",
+        "Do you provide the lights and all materials for Deerfield Beach installations?",
       answer:
-        "Oceanfront properties face salt spray exposure, higher wind conditions, UV intensity, and often elevated installation heights. We design secure fastening systems, use weatherproof materials throughout, protect connections from salt intrusion, and follow specialized safety protocols for elevated properties.",
+        "You don't need to buy a thing. We bring everything with us, the lights, extension cords, clips, timers, all of it. We own all the materials and essentially rent them to you for the season. You just enjoy the lights completely hands-off.",
     },
     {
-      question: "Can you light elevated beachfront homes safely?",
+      question:
+        "What happens if lights stop working or get damaged in Deerfield Beach?",
       answer:
-        "Yes. Our team has extensive experience with elevated properties common to beachfront communities. We have specialized safety equipment for working at height, secure fastening systems appropriate for elevated construction, and deep experience with this specific property type.",
+        "If anything stops working, a bulb goes out, a strand gets knocked loose, even after a storm, we come out and fix it at no extra charge. We typically get there within a day. That's included for the entire season until we come remove everything after New Year's.",
     },
     {
-      question: "How often do oceanfront displays need maintenance?",
+      question: "How much does holiday light installation cost in Deerfield Beach?",
       answer:
-        "Salt spray can affect even marine-grade materials. We recommend professional inspections every 4-6 weeks during the season for oceanfront properties. We're available for maintenance visits if you notice any salt accumulation or corrosion concerns.",
+        "Pricing depends on the size of the property and the design. There's a minimum, and it varies based on the time of season. If you book early, starting in September, demand is lower and we have more flexibility. Best thing to do is reach out for a free consultation and we'll give you exact numbers.",
     },
     {
-      question: "What's the lifespan of marine-grade holiday lights?",
+      question: "When should I book holiday light installation in Deerfield Beach?",
       answer:
-        "With proper marine-grade materials and annual maintenance, your lights typically last 5-10 years even in demanding coastal conditions. This durability makes the higher upfront cost worthwhile—your investment is protected long-term.",
+        "We start installing as early as September. The earlier you book, the more availability we have and the easier it is to get on the schedule. Closer to the holidays, demand picks up fast. If you're thinking about it, sooner is always better.",
     },
     {
-      question: "Can you design displays celebrating Blue Wave beaches?",
+      question:
+        "What does the holiday light installation process look like in Deerfield Beach?",
       answer:
-        "Absolutely. We celebrate Deerfield Beach's Blue Wave distinction and oceanfront character. We can incorporate water themes, ocean colors, and designs that highlight your property's beautiful coastal setting. Your display should reflect the pride of living in this award-winning community.",
+        "We come out to your Deerfield Beach property, walk it with you, and figure out the best approach. We'll put together a design concept, bounce ideas off each other until you love it, then schedule the installation. After that, we handle everything. If anything needs maintenance during the season, we're out within a day at no charge. After New Year's, we come back, take everything down, and store it all.",
     },
   ],
   cta: {

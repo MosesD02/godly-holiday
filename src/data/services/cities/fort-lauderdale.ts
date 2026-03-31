@@ -99,39 +99,39 @@ export const fortLauderdale: CityContent = {
   faq: [
     {
       question:
-        "How do you handle waterfront and yacht estate properties?",
+        "Do you install Christmas lights for both homes and businesses in Fort Lauderdale?",
       answer:
-        "Waterfront properties with yacht access require specialized expertise. We use marine-grade materials, understand salt spray and high-wind considerations, and have experience with boat-accessible estates. We design displays that celebrate your waterfront location while protecting your investment.",
+        "We install holiday lights on residential homes, commercial properties, HOAs, and more throughout Fort Lauderdale. No job is too big or small. We also serve Oakland Park, Hollywood, and Lauderdale-by-the-Sea and the rest of South Florida.",
     },
     {
       question:
-        "What about Las Olas Boulevard storefronts during Winterfest?",
+        "Do I need to buy my own holiday lights for installation in Fort Lauderdale?",
       answer:
-        "Winterfest brings over 1 million visitors and creates peak shopping season. We design eye-catching displays for Las Olas businesses that capitalize on holiday foot traffic. We coordinate around your business operations and ensure installations are professional and impressive.",
+        "We supply all the lights, cords, clips, timers, and any other equipment needed. You don't buy anything. We own all the materials and bring everything to your Fort Lauderdale property. When the season is over, we take it all back.",
     },
     {
       question:
-        "Do you comply with Harbor Beach and neighborhood guidelines?",
+        "Is maintenance included with holiday light installation in Fort Lauderdale?",
       answer:
-        "Yes. Harbor Beach, Nurmi Isles, and other prestige neighborhoods often have design guidelines. We review requirements thoroughly and ensure full compliance while still delivering visual impact. We understand these neighborhoods' character and design accordingly.",
+        "Yes, all maintenance is included at no charge. If anything needs fixing for any reason, including weather damage, we come out within a day and handle it. That covers the full season from installation through removal.",
     },
     {
       question:
-        "Can you design displays for yacht clubs and marina properties?",
+        "Is there a minimum for holiday light installation in Fort Lauderdale?",
       answer:
-        "Absolutely. Yacht clubs, marinas, and water-based venues create unique opportunities for holiday displays that celebrate nautical themes. We design displays that enhance the water-based atmosphere while using marine-grade materials throughout.",
+        "It depends on the scope of the project. We have a minimum that fluctuates with seasonal demand. The earlier in the season you book, the better. We're happy to come out to your Fort Lauderdale property, take a look, and give you an honest quote.",
     },
     {
       question:
-        "What about displays for Winterfest viewing locations?",
+        "How early can I schedule holiday light installation in Fort Lauderdale?",
       answer:
-        "Many Fort Lauderdale properties have Winterfest viewing advantages. We can design displays that celebrate this iconic event while creating beautiful decoration for your home or business throughout the season.",
+        "September is when we start taking bookings and installing. The earlier you get on our schedule, the better. By October and November, spots start filling up fast across Fort Lauderdale and Oakland Park, Hollywood, and Lauderdale-by-the-Sea. Don't wait until the last minute.",
     },
     {
       question:
-        "How do elevated or architecturally complex properties work?",
+        "How does your Fort Lauderdale holiday light installation service work?",
       answer:
-        "Fort Lauderdale's prestigious properties often feature dramatic architecture—elevated construction, complex rooflines, distinctive features. We have expertise lighting these properties beautifully and safely. Our team handles challenging architectural installations as routine work.",
+        "First, we visit your property in Fort Lauderdale and assess the space. We suggest options, collaborate on a design, and then schedule the installation. From there, we install using all of our own materials, maintain the display throughout the season at no extra cost, and come back after New Year's to remove and store everything.",
     },
   ],
   cta: {

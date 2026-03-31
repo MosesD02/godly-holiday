@@ -98,39 +98,40 @@ export const hollywood: CityContent = {
   },
   faq: [
     {
-      question: "Do you install holiday lights in all Hollywood neighborhoods?",
+      question:
+        "Do you install Christmas lights for both homes and businesses in Hollywood?",
       answer:
-        "Yes, we serve the entire Hollywood area, including Emerald Hills, Harbor Islands, Hollywood Lakes, Driftwood, and all other neighborhoods. We're familiar with the distinct architectural styles and community characteristics throughout Hollywood.",
+        "We handle it all in Hollywood. Residential homes, commercial buildings, HOAs, estates, storefronts, you name it. If it needs holiday lights, we do it. We've worked on properties of all sizes across Hollywood and the surrounding areas like Hallandale Beach, Pembroke Pines, and Fort Lauderdale.",
     },
     {
       question:
-        "Can you handle installations for businesses on the Hollywood Broadwalk?",
+        "Do I need to buy my own holiday lights for installation in Hollywood?",
       answer:
-        "Absolutely. We have experience with Broadwalk retail properties, restaurants, and entertainment venues. We understand the importance of professional installations in high-visibility locations and can coordinate around business hours.",
+        "You don't need to buy a thing. We bring everything with us, the lights, extension cords, clips, timers, all of it. We own all the materials and essentially rent them to you for the season. You just enjoy the lights completely hands-off.",
     },
     {
       question:
-        "What about installations for resort properties like Trump Hollywood or Hyde Resort?",
+        "Is maintenance included with holiday light installation in Hollywood?",
       answer:
-        "We work with resort and hospitality properties throughout Hollywood. Our team is experienced with large-scale commercial installations and can coordinate with your property management team.",
+        "If anything stops working, a bulb goes out, a strand gets knocked loose, even after a storm, we come out and fix it at no extra charge. We typically get there within a day. That's included for the entire season until we come remove everything after New Year's.",
     },
     {
       question:
-        "How do you handle holiday lighting in Emerald Hills?",
+        "Is there a minimum for holiday light installation in Hollywood?",
       answer:
-        "Emerald Hills properties receive premium attention. We design installations that match the neighborhood's sophisticated aesthetic and use high-quality materials befitting the area's median home values around $1.18M.",
+        "Pricing depends on the size of the property and the design. There's a minimum, and it varies based on the time of season. If you book early, starting in September, demand is lower and we have more flexibility. Best thing to do is reach out for a free consultation and we'll give you exact numbers.",
     },
     {
       question:
-        "Do you offer services specifically for townhome communities?",
+        "How early can I schedule holiday light installation in Hollywood?",
       answer:
-        "Yes. We work with many of Hollywood's 50+ townhome communities, understanding their unique lighting challenges and HOA requirements. We coordinate efficiently to complete neighborhood-wide installations.",
+        "We start installing as early as September. The earlier you book, the more availability we have and the easier it is to get on the schedule. Closer to the holidays, demand picks up fast. If you're thinking about it, sooner is always better.",
     },
     {
       question:
-        "Can you design displays for the Candy Cane Parade season?",
+        "How does your Hollywood holiday light installation service work?",
       answer:
-        "Definitely. Many of our Hollywood customers participate in or take advantage of the Candy Cane Parade season and IGNITE Art and Light Festival. We time installations to be showcase-ready for these major holiday events.",
+        "We come out to your Hollywood property, walk it with you, and figure out the best approach. We'll put together a design concept, bounce ideas off each other until you love it, then schedule the installation. After that, we handle everything. If anything needs maintenance during the season, we're out within a day at no charge. After New Year's, we come back, take everything down, and store it all.",
     },
   ],
   cta: {

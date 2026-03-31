@@ -99,39 +99,39 @@ export const southwestRanches: CityContent = {
   faq: [
     {
       question:
-        "Can you illuminate equestrian facilities without spooking horses?",
+        "Do you do residential and commercial holiday lighting in Southwest Ranches?",
       answer:
-        "Yes! We understand equestrian property concerns and design lighting that doesn't trigger startle responses in horses. We use warm color temperatures, avoid sudden brightness changes, position lights strategically away from direct sightlines to animal facilities, and can even program lighting to activate only at specific times to maintain normal routines.",
+        "Yes, we work with homeowners, businesses, and HOAs throughout Southwest Ranches. Whether it's a single-family home or a large commercial property, we install holiday lights on everything, from multi-acre estates to gated ranch properties.",
     },
     {
       question:
-        "How do you handle installation across multi-acre properties in Southwest Ranches?",
+        "Are the lights and equipment included in your Southwest Ranches pricing?",
       answer:
-        "We use extended professional-grade electrical runs, multiple power sources, strategic relay points, and lighting zones that can be controlled independently. We design coordinated displays visible from distance and create visual interest across your property while avoiding an overwhelming or industrial appearance.",
+        "Everything is included. The lights, the equipment, the extension cords, every single thing needed for the installation. We own all of it and provide it as part of our service. You never have to purchase or store anything.",
     },
     {
       question:
-        "What's your approach to lighting century-old trees without damaging them?",
+        "Do you offer maintenance during the holiday season in Southwest Ranches?",
       answer:
-        "We use non-invasive techniques like rope lights in branches, clip-style fasteners that don't pierce bark, and weighted systems that distribute force evenly. We avoid nails or screws that damage historic trees, and our arborist-aware approach respects the mature landscaping that defines Southwest Ranches properties.",
+        "Maintenance is fully included. If a light goes out or something gets damaged, even from a hurricane, we come out and take care of it within 24 hours at no additional cost. Your display stays looking perfect the entire season.",
     },
     {
       question:
-        "Can you create displays for the December Holiday Lights Contest?",
+        "Do you have a minimum order for Southwest Ranches holiday light installation?",
       answer:
-        "Absolutely! We understand the December Holiday Lights Contest expectations and design spectacular installations worthy of recognition. We focus on creativity, execution quality, and originality—creating displays that showcase your property's unique character while competing at the highest level.",
+        "The cost depends on your property and what you're looking for. We do have a minimum, which varies depending on demand and where we are in the season. Earlier bookings tend to have more availability. Contact us for a free estimate specific to your Southwest Ranches property.",
     },
     {
       question:
-        "What's included in your premium installation service package?",
+        "How far in advance should I book holiday lights in Southwest Ranches?",
       answer:
-        "Our premium package includes comprehensive on-site design consultation, detailed renderings, complete material procurement, professional installation by master-level technicians, full system testing, comprehensive operation training, 24/7 emergency support during the holiday season, and off-season storage of your lighting system in our climate-controlled facility.",
+        "Our season starts in September and runs through the holidays. Booking early gives you the best availability since things fill up quick as the season goes on. We recommend reaching out as soon as you know you want lights on your Southwest Ranches property.",
     },
     {
       question:
-        "How do you protect Rolling Oaks Park and other community spaces?",
+        "What is the process for holiday light installation in Southwest Ranches?",
       answer:
-        "We approach community installations with the same preservation ethics as private estates. For Rolling Oaks Park's century-old ficus trees and 46-acre grounds, we use only non-invasive techniques, coordinate with community leadership, and create lighting that enhances natural beauty without overwhelming the landscape character residents value.",
+        "It starts with a free visit to your Southwest Ranches property. We look at the space, talk through your vision, and design something that works. Once you're happy with the plan, we schedule the install and handle everything from there. Maintenance is covered all season, and we remove and store everything after the holidays.",
     },
   ],
   cta: {

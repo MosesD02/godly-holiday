@@ -100,38 +100,38 @@ export const lighthousePoint: CityContent = {
   faq: [
     {
       question:
-        "Can you illuminate properties along Lighthouse Point's scenic canals?",
+        "What kind of holiday lighting jobs do you handle in Lighthouse Point?",
       answer:
-        "Absolutely. Our team specializes in canalside properties and creates designs that enhance your home's waterfront appeal. We account for the unique lighting opportunities that canal properties provide.",
+        "We install holiday lights on residential homes, commercial properties, HOAs, and more throughout Lighthouse Point. No job is too big or small. We also serve Pompano Beach, Deerfield Beach, and Hillsboro Beach and the rest of South Florida.",
     },
     {
       question:
-        "Do you have experience with Lighthouse Point's professional community standards?",
+        "Do you supply everything needed for holiday light installation in Lighthouse Point?",
       answer:
-        "Yes. With 85% of residents in professional fields, we understand the importance of premium service quality. Our installations reflect the sophisticated standards Lighthouse Point residents expect.",
+        "We supply all the lights, cords, clips, timers, and any other equipment needed. You don't buy anything. We own all the materials and bring everything to your Lighthouse Point property. When the season is over, we take it all back.",
     },
     {
       question:
-        "What are your guidelines for properties near Dan Witt Park and Frank McDonough Park?",
+        "What if a light goes out or something needs repair in Lighthouse Point?",
       answer:
-        "We respect all community guidelines regarding installations near public spaces. We design displays that enhance your property while being considerate of parks and recreational areas.",
-    },
-    {
-      question: "Can you work with Cap's Place Restaurant?",
-      answer:
-        "Yes, we have experience with Lighthouse Point's premier waterfront dining destinations. We can design installations suitable for this iconic boat-accessible restaurant and similar establishments.",
+        "Yes, all maintenance is included at no charge. If anything needs fixing for any reason, including weather damage, we come out within a day and handle it. That covers the full season from installation through removal.",
     },
     {
       question:
-        "Are most properties in Lighthouse Point single-family homes?",
+        "What affects the cost of holiday light installation in Lighthouse Point?",
       answer:
-        "Yes, approximately 80% of Lighthouse Point properties are single-family homes, with many featuring canalside locations. Our team is specifically experienced with this residential property type.",
+        "It depends on the scope of the project. We have a minimum that fluctuates with seasonal demand. The earlier in the season you book, the better. We're happy to come out to your Lighthouse Point property, take a look, and give you an honest quote.",
+    },
+    {
+      question: "When is the best time to book holiday lights in Lighthouse Point?",
+      answer:
+        "September is when we start taking bookings and installing. The earlier you get on our schedule, the better. By October and November, spots start filling up fast across Lighthouse Point and Pompano Beach, Deerfield Beach, and Hillsboro Beach. Don't wait until the last minute.",
     },
     {
       question:
-        "How do you maintain the community's casual elegance in holiday displays?",
+        "What should I expect during the Lighthouse Point holiday light installation process?",
       answer:
-        "Lighthouse Point residents appreciate the area's 'flip-flop village' charm and relaxed sophistication. We design displays that are festive and impressive while respecting the community's understated elegance.",
+        "First, we visit your property in Lighthouse Point and assess the space. We suggest options, collaborate on a design, and then schedule the installation. From there, we install using all of our own materials, maintain the display throughout the season at no extra cost, and come back after New Year's to remove and store everything.",
     },
   ],
   cta: {

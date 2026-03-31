@@ -101,39 +101,38 @@ export const margate: CityContent = {
   faq: [
     {
       question:
-        "Do you work with Margate's gated communities and HOAs?",
+        "What kind of holiday lighting jobs do you handle in Margate?",
       answer:
-        "Yes, we have extensive experience with Margate's 7 gated communities and understand HOA requirements. We coordinate with community management and ensure all installations comply with community guidelines.",
+        "Absolutely. Homes, businesses, HOAs, shopping centers, we cover all of it in Margate. We've installed on every type of property you can think of, from family neighborhoods to commercial centers.",
     },
     {
       question:
-        "Can you install lights in Margate's retirement communities?",
+        "Do you supply everything needed for holiday light installation in Margate?",
       answer:
-        "Absolutely. With 8 retirement communities in Margate, we're experienced in working with these communities and understand their specific needs. We're respectful of residents and coordinate timing appropriately.",
+        "Yes, everything is included in our pricing. All lights, extension cords, clips, and equipment are ours. We bring it all, install it all, and take it all back after the season. You don't need to supply or buy anything.",
     },
     {
       question:
-        "How do you work with Margate's diverse population?",
+        "What if a light goes out or something needs repair in Margate?",
       answer:
-        "We celebrate Margate's diversity and create installations that reflect the community's inclusive character. Our team is experienced working across all neighborhoods and backgrounds represented in Margate.",
+        "Absolutely. Any issue at all, whether a light burns out or a storm hits, we come out and fix it within a day at no cost to you. Maintenance is built into the service for the entire holiday season.",
     },
     {
       question:
-        "Can you coordinate with the Fair at Margate?",
+        "What affects the cost of holiday light installation in Margate?",
       answer:
-        "Yes. We understand the timing and significance of the Fair at Margate, Broward's largest holiday fair. We can schedule installations to complement this major community event.",
+        "Every property is different, so pricing depends on the size and design. We do have a minimum that shifts with demand throughout the season. Reach out and we'll set up a free consultation at your Margate property to give you a clear price.",
+    },
+    {
+      question: "When is the best time to book holiday lights in Margate?",
+      answer:
+        "We begin installations in September. That's when demand is lowest and scheduling is easiest. As we get deeper into fall, availability tightens across Margate. Our advice is always to book as early as you can.",
     },
     {
       question:
-        "Do you have experience with Margate's canal properties?",
+        "What should I expect during the Margate holiday light installation process?",
       answer:
-        "Definitely. With 30 miles of scenic canals, many Margate properties feature waterfront locations. We specialize in canalside installations that enhance waterfront properties.",
-    },
-    {
-      question:
-        "What about installations for Margate's commercial areas?",
-      answer:
-        "We service Margate's retail centers, event spaces, community venues, and professional offices. We design displays that draw customers and create festive atmosphere for businesses throughout the city.",
+        "Simple. We come see your Margate property, talk about what you want, and put together a custom design. We handle the full installation with our own lights and equipment. If anything needs maintenance during the season, we fix it within a day for free. After the holidays, we take it all down and store it for you.",
     },
   ],
   cta: {

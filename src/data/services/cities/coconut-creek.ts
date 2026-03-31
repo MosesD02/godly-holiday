@@ -98,35 +98,38 @@ export const coconutCreek: CityContent = {
   },
   faq: [
     {
-      question: "Do you work with Coconut Creek HOA guidelines?",
+      question:
+        "What types of properties do you install holiday lights on in Coconut Creek?",
       answer:
-        "Yes, we're familiar with the design standards in Regency Lakes, Heron Bay, Winston Park, and other Coconut Creek neighborhoods. We design displays that meet community guidelines while still creating that festive holiday magic families want. We can even coordinate with your HOA if needed.",
+        "Yes, we work with homeowners, businesses, and HOAs throughout Coconut Creek. Whether it's a single-family home or a large commercial property, we install holiday lights on everything, from single-family homes to townhome communities.",
     },
     {
       question:
-        "Are your lights safe for families with children and pets?",
+        "Do you provide the lights and all materials for Coconut Creek installations?",
       answer:
-        "Absolutely. We use only UL-certified, low-heat LED lights and outdoor-rated equipment. All electrical connections are secure and meet safety codes. We place lights thoughtfully so they're not accessible to curious hands or paws, letting your family enjoy the season worry-free.",
+        "Everything is included. The lights, the equipment, the extension cords, every single thing needed for the installation. We own all of it and provide it as part of our service. You never have to purchase or store anything.",
     },
     {
-      question: "How do you handle mature landscaping?",
+      question:
+        "What happens if lights stop working or get damaged in Coconut Creek?",
       answer:
-        "Coconut Creek's mature trees and landscaping are assets we highlight, never fight. We use careful placement, strategic lighting angles, and color selection to showcase your landscape's beauty while adding festive brightness. Your trees stay healthy and look even better lit.",
+        "Maintenance is fully included. If a light goes out or something gets damaged, even from a hurricane, we come out and take care of it within 24 hours at no additional cost. Your display stays looking perfect the entire season.",
     },
     {
-      question: "What if I want to change my display next year?",
+      question: "How much does holiday light installation cost in Coconut Creek?",
       answer:
-        "We store your lights professionally during the off-season. Next year, you can keep the same display, modify it, or go in a completely new direction. Starting fresh costs less than you might think, and we'll work within your budget.",
+        "The cost depends on your property and what you're looking for. We do have a minimum, which varies depending on demand and where we are in the season. Earlier bookings tend to have more availability. Contact us for a free estimate specific to your Coconut Creek property.",
     },
     {
-      question: "Do you offer design consultations for renters?",
+      question: "When should I book holiday light installation in Coconut Creek?",
       answer:
-        "Yes! Renters in Coconut Creek can enjoy beautiful holiday displays too. We use non-permanent installation methods and temporary-friendly setups that landlords approve. Ask us about renter-friendly options during your consultation.",
+        "Our season starts in September and runs through the holidays. Booking early gives you the best availability since things fill up quick as the season goes on. We recommend reaching out as soon as you know you want lights on your Coconut Creek property.",
     },
     {
-      question: "How long does installation typically take?",
+      question:
+        "What does the holiday light installation process look like in Coconut Creek?",
       answer:
-        "Most Coconut Creek residential properties can be fully lit within one day. Some larger homes or complex designs might take two days, but we'll give you a specific timeline during your consultation. We work efficiently while maintaining quality.",
+        "It starts with a free visit to your Coconut Creek property. We look at the space, talk through your vision, and design something that works. Once you're happy with the plan, we schedule the install and handle everything from there. Maintenance is covered all season, and we remove and store everything after the holidays.",
     },
   ],
   cta: {
