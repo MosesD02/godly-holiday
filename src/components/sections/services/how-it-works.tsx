@@ -4,9 +4,14 @@ import type { CityHowItWorksStep } from "@/data/services/city-content";
 interface HowItWorksProps {
   steps?: CityHowItWorksStep[];
   trustedByCities?: string;
+  trustedByDescription?: string;
 }
 
-export function HowItWorks({ steps, trustedByCities }: HowItWorksProps = {}) {
+export function HowItWorks({
+  steps,
+  trustedByCities,
+  trustedByDescription,
+}: HowItWorksProps = {}) {
   const howItWorks = steps || defaultHowItWorks;
   return (
     <section
@@ -33,7 +38,7 @@ export function HowItWorks({ steps, trustedByCities }: HowItWorksProps = {}) {
         {howItWorks.map((item, index) => (
           <div
             key={item.title}
-            className="flex h-auto md:h-[280px] flex-col p-3 sm:p-4 rounded-[20px] bg-[#E7E3DF]"
+            className="flex h-auto md:min-h-[280px] flex-col p-3 sm:p-4 rounded-[20px] bg-[#E7E3DF]"
             style={{
               boxShadow:
                 "0 3.015px 3.015px 0 rgba(0, 0, 0, 0.25), 0 3.015px 3.015px 0 rgba(255, 255, 255, 0.30) inset, 0 4px 4px 0 rgba(255, 255, 255, 0.30) inset",
@@ -60,23 +65,32 @@ export function HowItWorks({ steps, trustedByCities }: HowItWorksProps = {}) {
         <div className="text-grain-2 bg-[#252323] font-marlton text-[20px] sm:text-[28px] md:text-[32px] underline decoration-[#252323]!">
           TRUSTED BY
         </div>
-        <div className="font-marlton text-[28px] sm:text-[40px] md:text-[52px] bg-[#252323] text-grain-2 tracking-[1.8px] sm:tracking-[2.6px] md:tracking-[3.36px]">
-          Homeowners and Businesses
-        </div>
-        <div
-          className="font-luminaire text-[#FFE7AF] text-[28px] sm:text-[40px] md:text-[52px] rotate-[-4deg] mt-[-6px] sm:mt-[-8px] md:mt-[-12px] mb-[-3px] sm:mb-[-4px] md:mb-[-6px]"
-          style={{
-            textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
-            WebkitTextStrokeWidth: "6px",
-            WebkitTextStrokeColor: "#252323",
-            paintOrder: "stroke fill",
-          }}
-        >
-          Across
-        </div>
-        <p className="text-white max-w-[765px] px-4 font-marlton text-lg sm:text-2xl md:text-[32px] leading-8 md:leading-10 tracking-[0.75px] text-center mx-auto">
-          {trustedByCities || "Fort Lauderdale, Weston, Boca Raton, Pompano Beach, and Lighthouse Point."}
-        </p>
+        {trustedByDescription ? (
+          <p className="text-[#252323] max-w-[765px] px-4 font-marlton text-lg sm:text-2xl md:text-[32px] leading-8 md:leading-10 tracking-[0.75px] text-center mx-auto mt-4">
+            {trustedByDescription}
+          </p>
+        ) : (
+          <>
+            <div className="font-marlton text-[28px] sm:text-[40px] md:text-[52px] bg-[#252323] text-grain-2 tracking-[1.8px] sm:tracking-[2.6px] md:tracking-[3.36px]">
+              Homeowners and Businesses
+            </div>
+            <div
+              className="font-luminaire text-[#FFE7AF] text-[28px] sm:text-[40px] md:text-[52px] rotate-[-4deg] mt-[-6px] sm:mt-[-8px] md:mt-[-12px] mb-[-3px] sm:mb-[-4px] md:mb-[-6px]"
+              style={{
+                textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
+                WebkitTextStrokeWidth: "6px",
+                WebkitTextStrokeColor: "#252323",
+                paintOrder: "stroke fill",
+              }}
+            >
+              Across
+            </div>
+            <p className="text-white max-w-[765px] px-4 font-marlton text-lg sm:text-2xl md:text-[32px] leading-8 md:leading-10 tracking-[0.75px] text-center mx-auto">
+              {trustedByCities ||
+                "Fort Lauderdale, Weston, Boca Raton, Pompano Beach, and Lighthouse Point."}
+            </p>
+          </>
+        )}
       </div>
     </section>
   );

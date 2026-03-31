@@ -5,10 +5,15 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { CityTestimonial } from "@/data/services/city-testimonials";
 import { testimonials } from "@/data/services/testimonials";
 import Image from "next/image";
 
-export function Testimonials() {
+export function Testimonials({
+  cityTestimonials,
+}: {
+  cityTestimonials?: CityTestimonial[];
+} = {}) {
   return (
     <section
       id="testimonials"
@@ -45,40 +50,77 @@ export function Testimonials() {
         }}
       >
         <CarouselContent className="max-w-full">
-          {[...testimonials, ...testimonials].map((testimonial, index) => (
-            <CarouselItem
-              className="basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
-              key={index}
-            >
-              <div className="bg-paper-6 ms-2 rounded-[6px] shadow-[0_4px_4px_0_rgba(255,255,255,0.3)_inset] border-2 border-[rgba(106,100,100,0.12)] max-w-full w-full min-h-[230px] h-full flex flex-col items-start gap-4 px-5 py-4 mx-auto">
-                <div className="space-y-7">
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={testimonial.image}
-                      alt="Avatar"
-                      width={48}
-                      height={48}
-                      className="size-12 rounded-full"
-                    />
+          {cityTestimonials
+            ? [...cityTestimonials, ...cityTestimonials].map(
+                (testimonial, index) => (
+                  <CarouselItem
+                    className="basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
+                    key={index}
+                  >
+                    <div className="bg-paper-6 ms-2 rounded-[6px] shadow-[0_4px_4px_0_rgba(255,255,255,0.3)_inset] border-2 border-[rgba(106,100,100,0.12)] max-w-full w-full min-h-[230px] h-full flex flex-col items-start gap-4 px-5 py-4 mx-auto">
+                      <div className="space-y-7">
+                        <div className="flex items-center gap-3">
+                          <Image
+                            src={testimonial.image}
+                            alt="Avatar"
+                            width={48}
+                            height={48}
+                            className="size-12 rounded-full"
+                          />
 
-                    <div className="space-y-2.5 pt-1.5">
-                      <p className="font-marlton text-base trim-text text-[#232323]">
-                        {testimonial.name}
-                      </p>
-                      <div className="flex items-center gap-0.5">
-                        {Array.from({ length: 5 }).map((_, index) => (
-                          <Icons.star key={index} />
-                        ))}
+                          <div className="space-y-2.5 pt-1.5">
+                            <p className="font-marlton text-base trim-text text-[#232323]">
+                              {testimonial.name}
+                            </p>
+                            <div className="flex items-center gap-0.5">
+                              {Array.from({ length: 5 }).map((_, index) => (
+                                <Icons.star key={index} />
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                        <p className="font-satoshi text-base text-[#2D2B2B] font-medium leading-6 flex-1">
+                          {testimonial.quote}
+                        </p>
                       </div>
                     </div>
+                  </CarouselItem>
+                ),
+              )
+            : [...testimonials, ...testimonials].map((testimonial, index) => (
+                <CarouselItem
+                  className="basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
+                  key={index}
+                >
+                  <div className="bg-paper-6 ms-2 rounded-[6px] shadow-[0_4px_4px_0_rgba(255,255,255,0.3)_inset] border-2 border-[rgba(106,100,100,0.12)] max-w-full w-full min-h-[230px] h-full flex flex-col items-start gap-4 px-5 py-4 mx-auto">
+                    <div className="space-y-7">
+                      <div className="flex items-center gap-3">
+                        <Image
+                          src={testimonial.image}
+                          alt="Avatar"
+                          width={48}
+                          height={48}
+                          className="size-12 rounded-full"
+                        />
+
+                        <div className="space-y-2.5 pt-1.5">
+                          <p className="font-marlton text-base trim-text text-[#232323]">
+                            {testimonial.name}
+                          </p>
+                          <div className="flex items-center gap-0.5">
+                            {Array.from({ length: 5 }).map((_, index) => (
+                              <Icons.star key={index} />
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                      <p className="font-satoshi text-base text-[#2D2B2B] font-medium leading-6 flex-1">
+                        {testimonial.description}
+                      </p>
+                    </div>
                   </div>
-                  <p className="font-satoshi text-base text-[#2D2B2B] font-medium leading-6 flex-1">
-                    {testimonial.description}
-                  </p>
-                </div>
-              </div>
-            </CarouselItem>
-          ))}
+                </CarouselItem>
+              ))}
         </CarouselContent>
 
         <div className="gap-3 md:gap-4 flex items-center justify-center mt-12 md:mt-16 lg:mt-[72px] w-full">

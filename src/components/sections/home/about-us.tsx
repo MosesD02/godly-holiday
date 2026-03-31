@@ -27,12 +27,7 @@ const steps = [
     number: "01",
     icon: img1,
     title: "QUICK ESTIMATES",
-    text: (
-      <>
-        We offer free estimates within{" "}
-        <span className="font-bold">24 hours</span> for all jobs.
-      </>
-    ),
+    text: "We offer free estimates within 24 hours for all jobs.",
   },
   {
     number: "02",

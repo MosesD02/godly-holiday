@@ -6,7 +6,11 @@
       "Bash(curl -s -I \"https://godlyholidaylights.com/privacy-policy/%24\")",
       "Bash(curl -s \"https://godlyholidaylights.com/landing\")",
       "Bash(xargs grep:*)",
-      "Bash(grep -E \"\\\\.\\(config|json|js|ts\\)$\")"
+      "Bash(grep -E \"\\\\.\\(config|json|js|ts\\)$\")",
+      "Bash(npx tsc:*)",
+      "Bash(./node_modules/.bin/tsc.exe --noEmit --strict src/data/services/cities/boca-raton.ts src/data/services/cities/coconut-creek.ts src/data/services/cities/cooper-city.ts src/data/services/cities/coral-springs.ts src/data/services/cities/davie.ts)",
+      "Bash(grep:*)",
+      "Bash(python3:*)"
     ]
   }
 }

@@ -16,8 +16,8 @@ export function Trust({ regionName }: TrustProps = {}) {
             <Image
               src={"/images/services/trust/hat.png"}
               alt="Heading"
-              width={75.008}
-              height={75.008}
+              width={76}
+              height={76}
               className="absolute -left-2 top-2 md:top-4 md:-left-1 object-contain pointer-events-none -translate-x-1/2 -translate-y-1/2"
             />
             WHY{" "}

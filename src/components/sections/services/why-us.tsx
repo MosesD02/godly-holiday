@@ -37,7 +37,7 @@ export function WhyChooseUs({ items }: WhyChooseUsProps = {}) {
             <div className="flex flex-col h-full text-center items-center justify-center gap-8 px-4 py-6 rounded-[8px] border border-[#2D2B2B] border-dashed">
               <Image
                 src={item.image}
-                alt={index.toString()}
+                alt={item.title}
                 width={40}
                 height={40}
               />

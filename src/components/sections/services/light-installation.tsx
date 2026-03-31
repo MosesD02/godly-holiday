@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { Marquee } from "@/components/ui/marquee";
 
@@ -50,7 +48,7 @@ export function RecentLightInstallation({ cityName }: RecentLightInstallationPro
           >
             <Image
               src={image.pinSrc}
-              alt="Images"
+              alt="Decorative pin"
               width={1500}
               height={1500}
               className={
@@ -64,7 +62,7 @@ export function RecentLightInstallation({ cityName }: RecentLightInstallationPro
 
             <Image
               src={image.imgSrc}
-              alt="Images"
+              alt="Holiday light installation"
               width={1500}
               height={1500}
               className={cn(

@@ -1,31 +1,10 @@
-"use client";
-
 import { Badge } from "@/components/ui/badge";
 import ArrowRight from "@/assets/arrow-right.svg";
 import Image from "next/image";
 import { QuoteButton } from "@/components/ui/quote-button";
-import { useEffect, useState } from "react";
+import { AnimatedImagePair } from "@/components/sections/services/animated-image-pair";
 
 export function LightInstallation() {
-  const [showAltImage, setShowAltImage] = useState(false);
-  const [showResidentialAlt, setShowResidentialAlt] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShowAltImage(prev => !prev);
-    }, 4000); // Switch every 4 seconds
-
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShowResidentialAlt(prev => !prev);
-    }, 4000); // Switch every 4 seconds
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
       <section
         id="light-installation"
@@ -75,57 +54,23 @@ export function LightInstallation() {
           </QuoteButton>
         </div>
         <div className="p-[0_5px_13px_4px] sm:p-[0_7.5px_19px_6.5px] lg:p-[0_9.925px_25.561px_8.762px] order-first lg:order-none">
-          <div className="relative w-full">
-            <Image
-              src="/images/home/light-installation/commercial.png"
-              alt="Commercial"
-              width={481.34}
-              height={580.705}
-              className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[457px] h-auto transition-opacity duration-1000 ease-in-out"
-              style={{
-                opacity: showAltImage ? 0 : 1,
-              }}
-            />
-            <Image
-              src="/images/home/light-installation/commercial-2.png"
-              alt="Commercial Alt"
-              width={481.34}
-              height={580.705}
-              className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[457px] h-auto absolute inset-0 transition-all duration-1000 ease-in-out"
-              style={{
-                opacity: showAltImage ? 1 : 0,
-                transform: showAltImage ? 'scale(1.02)' : 'scale(0.98)',
-              }}
-            />
-          </div>
+          <AnimatedImagePair
+            src1="/images/home/light-installation/commercial.png"
+            src2="/images/home/light-installation/commercial-2.png"
+            alt1="Commercial"
+            alt2="Commercial Alt"
+          />
         </div>
       </div>
 
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8 sm:gap-12 lg:gap-[156px] self-stretch">
         <div className="p-[0_5px_13px_4px] sm:p-[0_7.5px_19px_6.5px] lg:p-[0_9.925px_25.561px_8.762px] order-first lg:order-none">
-          <div className="relative w-full">
-            <Image
-              src="/images/home/light-installation/resident.png"
-              alt="Residential"
-              width={481.34}
-              height={580.705}
-              className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[457px] h-auto transition-opacity duration-1000 ease-in-out"
-              style={{
-                opacity: showResidentialAlt ? 0 : 1,
-              }}
-            />
-            <Image
-              src="/images/home/light-installation/residential-2.png"
-              alt="Residential Alt"
-              width={481.34}
-              height={580.705}
-              className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[457px] h-auto absolute inset-0 transition-all duration-1000 ease-in-out"
-              style={{
-                opacity: showResidentialAlt ? 1 : 0,
-                transform: showResidentialAlt ? 'scale(1.02)' : 'scale(0.98)',
-              }}
-            />
-          </div>
+          <AnimatedImagePair
+            src1="/images/home/light-installation/resident.png"
+            src2="/images/home/light-installation/residential-2.png"
+            alt1="Residential"
+            alt2="Residential Alt"
+          />
         </div>
         <div className="flex flex-col gap-12 sm:gap-16 lg:gap-20 flex-1 max-w-[521px]">
           <div className="flex flex-col gap-8 sm:gap-10 lg:gap-12 flex-1">

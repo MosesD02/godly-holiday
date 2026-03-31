@@ -1,5 +1,3 @@
-"use client";
-
 import { cities } from "@/data/cities";
 import { navItems } from "./header";
 import Link from "next/link";

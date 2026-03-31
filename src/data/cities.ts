@@ -56,10 +56,6 @@ export const cities = [
     key: "margate",
   },
   {
-    name: "MIAMI",
-    key: "miami",
-  },
-  {
     name: "MIRAMAR",
     key: "miramar",
   },
@@ -98,10 +94,6 @@ export const cities = [
   {
     name: "TAMARAC",
     key: "tamarac",
-  },
-  {
-    name: "WEST PALM BEACH",
-    key: "west-palm-beach",
   },
   {
     name: "WEST PARK",
