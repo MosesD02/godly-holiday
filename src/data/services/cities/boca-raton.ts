@@ -11,9 +11,9 @@ export const bocaRaton: CityContent = {
   },
   hero: {
     heading:
-      "Transform Your Boca Raton Estate with Stunning Holiday Light Installation",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation BOCA RATON",
     subheadline:
-      "Godly Holiday Lights specializes in bringing festive brilliance to Boca Raton's most prestigious properties—from Mediterranean-style estates to oceanfront residences and exclusive gated golf communities. Let us create a holiday display that matches the elegance of your home.",
+      "Full-service holiday lighting for homes and businesses in Boca Raton. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Boca Raton",
@@ -24,19 +24,19 @@ export const bocaRaton: CityContent = {
     residentialDescription:
       "Boca Raton's distinctive architectural style—Mediterranean villas, luxury oceanfront estates, and sprawling golf course properties—deserves holiday lighting that honors its sophistication. Our designers understand the unique challenges of lighting dramatic archways, barrel-tile rooflines, and multi-level waterfront properties. Whether your home overlooks the Atlantic or sits within one of Boca Raton's prestigious active adult communities, we create custom displays that enhance your home's natural beauty while maintaining the refined aesthetic your neighborhood expects.",
     residentialServiceTypes: [
-      "Mediterranean and Spanish Colonial estates with distinctive architectural features",
-      "Oceanfront and waterfront properties including private yacht club communities",
-      "Luxury golf course homes in gated communities throughout Boca Raton",
+      "Estates",
+      "Oceanfront Homes",
+      "Golf Communities",
     ],
     commercialHeading:
       "Commercial Holiday Displays for Boca Raton's Premier Businesses",
     commercialDescription:
       "Boca Raton's business landscape spans upscale Mizner Park shops, professional office parks, and hospitality venues that attract sophisticated clientele year-round. Strategic holiday lighting boosts foot traffic during peak shopping season while reinforcing your brand's premium positioning. Our commercial team designs displays that blend seamlessly with Boca Raton's polished business environment, whether you operate an independent boutique, restaurant, or corporate headquarters.",
     commercialPropertyTypes: [
-      "Mizner Park storefronts and upscale retail establishments",
-      "Professional office parks and corporate headquarters",
-      "Hotels, restaurants, and hospitality venues",
-      "Galleries and cultural institutions",
+      "Retail Shops",
+      "Office Parks",
+      "Hotels & Resorts",
+      "Galleries",
     ],
     commercialNearbyCities: "",
   },

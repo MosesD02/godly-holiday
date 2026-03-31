@@ -11,9 +11,9 @@ export const hallandaleBeach: CityContent = {
   },
   hero: {
     heading:
-      "Brighten Hallandale Beach's Luxury Oceanfront Properties with Holiday Lights",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation HALLANDALE BEACH",
     subheadline:
-      "Hallandale Beach's oceanfront luxury condos, prestigious estates, and diverse international community create a sophisticated coastal enclave deserving world-class holiday lighting. Godly Holiday Lights brings expertise in oceanfront installations and luxury properties to Hallandale's most distinguished addresses.",
+      "Full-service holiday lighting for homes and businesses in Hallandale Beach. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Hallandale Beach",
@@ -24,19 +24,19 @@ export const hallandaleBeach: CityContent = {
     residentialDescription:
       "Hallandale Beach's oceanfront luxury condo towers—including iconic properties like 2000 Ocean—and prestigious estates attract an international clientele seeking sophisticated beachfront living. These properties represent significant investments in prime oceanfront real estate. Our holiday lighting expertise honors this investment by creating displays that celebrate architectural sophistication, respect refined aesthetics, and withstand oceanfront salt spray exposure. Whether you own a condo with panoramic views, beachfront estate, or residence in the Village at Gulfstream Park community, we create custom displays appropriate for Hallandale's distinguished properties.",
     residentialServiceTypes: [
-      "Oceanfront luxury condominium towers and high-rises",
-      "Beachfront estates with private beach access",
-      "Village at Gulfstream Park and prestige community properties",
+      "Condominiums",
+      "Townhomes",
+      "Waterfront Homes",
     ],
     commercialHeading:
       "Holiday Displays for Hallandale Beach's Premier Businesses",
     commercialDescription:
       "Gulfstream Park & Casino, Village at Gulfstream Park shops and restaurants, waterfront hospitality venues, and oceanfront hotels create Hallandale's commercial landscape. Strategic holiday displays attract customers during peak season and enhance the sophisticated ambiance these venues cultivate. We design displays for luxury retail, hospitality businesses, and entertainment venues that create festive, upscale atmospheres. Given Hallandale's significant international visitor base, holiday displays that communicate warmth and celebration across cultural boundaries are particularly effective.",
     commercialPropertyTypes: [
-      "Gulfstream Park & Casino facilities",
-      "Village at Gulfstream Park retail and dining establishments",
-      "Oceanfront hotels, resorts, and hospitality properties",
-      "Luxury retail and entertainment venues",
+      "Retail Centers",
+      "Office Buildings",
+      "Restaurants",
+      "Entertainment Venues",
     ],
     commercialNearbyCities: "",
   },

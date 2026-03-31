@@ -12,9 +12,9 @@ export const royalPalmBeach: CityContent = {
   },
   hero: {
     heading:
-      "Premium Holiday Light Installation for Royal Palm Beach's Planned Communities",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation ROYAL PALM BEACH",
     subheadline:
-      "Royal Palm Beach's mission of preserving green space and family living deserves holiday lighting that enhances rather than overwhelms. Our installations celebrate the planned village character that makes this community special, from Bella Terra's gated privacy to Palm Beach Plantation's family-oriented neighborhoods.",
+      "Full-service holiday lighting for homes and businesses in Royal Palm Beach. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Royal Palm Beach",
@@ -25,18 +25,18 @@ export const royalPalmBeach: CityContent = {
     residentialDescription:
       "Royal Palm Beach's 76.3% family households and median income of $96K reflect a community committed to quality living and neighborhood pride. Our holiday lighting installations are designed for families who want to celebrate the season while respecting the planned, tasteful aesthetic that defines their neighborhoods. From Bella Terra's gated estates to Palm Beach Plantation's six varied subdivisions, we create displays that feel at home in communities built on master planning and green space preservation. Our CBS hurricane-resistant construction awareness ensures installations that protect both homes and property values during Florida's unpredictable weather.",
     residentialServiceTypes: [
-      "Gated community properties in Bella Terra with architectural harmony and covenant compliance",
-      "Family homes throughout Palm Beach Plantation's six subdivisions with scaled, age-appropriate installations",
-      "Estates of Royal Palm and other planned neighborhoods respecting community green space mission",
+      "Gated Homes",
+      "Family Neighborhoods",
+      "Planned Communities",
     ],
     commercialHeading:
       "Commercial Holiday Displays for Royal Palm Beach Businesses",
     commercialDescription:
       "Royal Palm Beach Winter Fest at Commons Park draws families and community members throughout the holiday season. We partner with local businesses, retail centers, and community venues to create welcoming holiday displays that support Royal Palm Beach's family-first identity. Our installations enhance shopping districts while maintaining the planned, organized aesthetic that residents value.",
     commercialPropertyTypes: [
-      "Commons Park and community venues hosting Royal Palm Beach Winter Fest events",
-      "Retail and shopping destinations throughout Royal Palm Beach's commercial districts",
-      "Medical offices, professional services, and corporate locations throughout Bella Terra and Palm Beach Plantation",
+      "Community Parks",
+      "Shopping Centers",
+      "Professional Offices",
     ],
     commercialNearbyCities: "",
   },

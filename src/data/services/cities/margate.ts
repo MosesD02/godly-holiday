@@ -12,9 +12,9 @@ export const margate: CityContent = {
   },
   hero: {
     heading:
-      "Professional Holiday Light Installation Across Margate's Diverse Communities",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation MARGATE",
     subheadline:
-      "Godly Holiday Lights brings festive cheer to Margate's 30 miles of scenic canals and vibrant neighborhoods. From gated communities to established residences, we create holiday displays tailored to your community's unique character.",
+      "Full-service holiday lighting for homes and businesses in Margate. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Margate",
@@ -25,19 +25,19 @@ export const margate: CityContent = {
     residentialDescription:
       "Margate's diverse population—including significant Black, White, and Hispanic communities—reflects the area's vibrant, welcoming character. With 7 gated communities and 8 retirement communities, Margate offers housing options for families, retirees, and everyone in between. Our team understands the distinct needs of each community and creates holiday displays that celebrate the neighborhood's diversity while enhancing individual properties. From established family neighborhoods to secure gated communities, we deliver installations that residents of all backgrounds appreciate.",
     residentialServiceTypes: [
-      "Gated Communities and Master-Planned Residential Areas",
-      "Retirement and Active Adult Communities",
-      "Established Family Neighborhoods Throughout Margate",
+      "Houses",
+      "Gated Communities",
+      "55+ Communities",
     ],
     commercialHeading:
       "Seasonal Displays for Margate's Business and Event Spaces",
     commercialDescription:
       "The Fair at Margate brings the community together each holiday season as Broward County's largest holiday-season fair. Beyond the Fair, Margate's commercial areas and event spaces benefit from festive holiday lighting that draws customers and celebrates the season. We design installations for businesses and venues that capture the community's festive spirit and welcoming character.",
     commercialPropertyTypes: [
-      "Fair at Margate Event Spaces and Facilities",
-      "Retail Centers and Shopping Areas",
-      "Community Event Venues and Recreation Centers",
-      "Professional Offices and Service Establishments",
+      "Event Spaces",
+      "Shopping Centers",
+      "Recreation Centers",
+      "Offices",
     ],
     commercialNearbyCities: "",
   },

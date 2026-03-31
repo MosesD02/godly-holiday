@@ -12,9 +12,9 @@ export const southwestRanches: CityContent = {
   },
   hero: {
     heading:
-      "Luxury Holiday Light Installation for Southwest Ranches Exclusive Estates",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation SOUTHWEST RANCHES",
     subheadline:
-      "Southwest Ranches represents South Florida's most exclusive residential lifestyle—with the highest median household income in the region, sprawling equestrian properties, and an intentional commitment to rural elegance. Your holiday lighting should reflect the same exclusivity and sophistication that defines this prestigious community.",
+      "Full-service holiday lighting for homes and businesses in Southwest Ranches. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Southwest Ranches",
@@ -25,18 +25,18 @@ export const southwestRanches: CityContent = {
     residentialDescription:
       "Southwest Ranches' population of just 7,827 with a median household income of $157K represents the pinnacle of South Florida living—properties spanning 1-4+ acres with private equestrian facilities, mature landscapes, and architectural estates designed for prestige and privacy. Our holiday installations match this level of exclusivity, creating displays visible across substantial acreage that enhance rather than dominate these prestigious properties. We understand the equestrian culture defining Southwest Ranches and design installations that complement stables, riding arenas, and rural landscape features. Every installation reflects the quality and discretion expected in this incorporated-for-privacy community.",
     residentialServiceTypes: [
-      "Multi-acre equestrian estates with barn lighting, arena illumination, and property-wide display coordination",
-      "Luxury architectural homes requiring extended reach and customized design for premium properties",
-      "Properties featuring century-old ficus trees and mature landscapes needing specialized lighting preservation",
+      "Equestrian Estates",
+      "Luxury Homes",
+      "Acreage Properties",
     ],
     commercialHeading:
       "Showcase Lighting for Southwest Ranches Community Facilities",
     commercialDescription:
       "Southwest Ranches' commitment to rural lifestyle includes shared community spaces like Sunshine Ranches Equestrian Park and Rolling Oaks Park with its impressive 46 acres and century-old ficus trees. Holiday lighting at these community assets requires the same premium quality and aesthetic sensitivity as residential properties. We design installations that celebrate community gathering spaces while honoring the natural landscape that residents chose Southwest Ranches to preserve.",
     commercialPropertyTypes: [
-      "Sunshine Ranches Equestrian Park facilities and event spaces",
-      "Rolling Oaks Park's 46-acre grounds featuring historic century-old ficus trees",
-      "Community entrances and gatehouse areas reflecting Southwest Ranches' exclusive character",
+      "Equestrian Parks",
+      "Community Grounds",
+      "Private Amenities",
     ],
     commercialNearbyCities: "",
   },

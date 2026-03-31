@@ -12,9 +12,9 @@ export const lauderdaleByTheSea: CityContent = {
   },
   hero: {
     heading:
-      "Holiday Light Installation for Lauderdale-by-the-Sea's Charming Waterfront Community",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation LAUDERDALE-BY-THE-SEA",
     subheadline:
-      "Godly Holiday Lights specializes in transforming Lauderdale-by-the-Sea's intimate waterfront properties into festive seasonal showpieces. Our team understands the unique character of this barrier island diving capital and its distinctive waterfront architecture.",
+      "Full-service holiday lighting for homes and businesses in Lauderdale-by-the-Sea. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Lauderdale-by-the-Sea",
@@ -25,19 +25,19 @@ export const lauderdaleByTheSea: CityContent = {
     residentialDescription:
       "Lauderdale-by-the-Sea's close-knit community of approximately 6,365 residents treasures the charm and character of their barrier island homes. Many properties feature distinctive waterfront elements—private docks, boat lifts, and direct canal or ocean access—that create unique opportunities for creative holiday lighting. We design installations that enhance your waterfront property's natural beauty while complementing the community's intimate, understated elegance.",
     residentialServiceTypes: [
-      "Waterfront Homes with Private Docks and Canal Access",
-      "Barrier Island Properties with Ocean Views",
-      "Coastal Residences with Distinctive Nautical Character",
+      "Waterfront Homes",
+      "Beach Properties",
+      "Canal Residences",
     ],
     commercialHeading:
       "Seasonal Displays for Lauderdale-by-the-Sea's Waterfront Businesses",
     commercialDescription:
       "From dive shops to waterfront restaurants and boutique accommodations, Lauderdale-by-the-Sea's commercial establishments thrive on the community's reputation as Florida's Beach Diving Capital. Holiday lighting creates welcoming ambiance for visiting divers, tourists, and local residents. We design displays that reflect the area's maritime heritage and draw customers during the peak holiday season.",
     commercialPropertyTypes: [
-      "Dive Shops and Marine-Related Businesses",
-      "Waterfront Restaurants and Bars",
-      "Small Hotels and Guest Accommodations",
-      "Retail Shops and Service Establishments",
+      "Dive Shops",
+      "Restaurants & Bars",
+      "Small Hotels",
+      "Retail Shops",
     ],
     commercialNearbyCities: "",
   },

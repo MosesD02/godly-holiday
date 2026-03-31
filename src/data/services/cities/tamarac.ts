@@ -10,9 +10,10 @@ export const tamarac: CityContent = {
       "Professional holiday lights for Tamarac retirement & active adult communities. Serving Mainlands, Kings Point & 124+ neighborhoods. Free quote!",
   },
   hero: {
-    heading: "Holiday Light Installation for Tamarac's Vibrant Communities",
+    heading:
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation TAMARAC",
     subheadline:
-      "Tamarac's 124 communities with 75,000 residents represent a thriving, active lifestyle where neighbors celebrate together throughout the year. From the Mainlands of Tamarac Lakes' 5,000+ homes to Kings Point's 4,869 residences, we create holiday lighting that brings your entire community together in festive celebration.",
+      "Full-service holiday lighting for homes and businesses in Tamarac. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Tamarac",
@@ -23,17 +24,17 @@ export const tamarac: CityContent = {
     residentialDescription:
       "Tamarac's origins as a retirement community have evolved into a thriving, multi-generational environment with 124 distinct communities creating a unique neighborhood fabric. With a median age of 47.5 and 25.9% of residents over 65, our holiday installations emphasize community gathering, accessibility, and shared celebration. The Mainlands of Tamarac Lakes' 5,000+ homes and Kings Point's 4,869 residences benefit from lighting designs that encourage neighborhood socializing and block-wide celebration. We create installations that honor Tamarac's heritage as an active adult destination while celebrating its evolution into a vibrant, multi-age community.",
     residentialServiceTypes: [
-      "Mainlands of Tamarac Lakes' 5,000+ 55+ homes with community-focused lighting design",
-      "Kings Point's 4,869 residences with lighting scaled for established active adult neighborhoods",
-      "Multi-generational communities throughout Tamarac's remaining 119 neighborhoods",
+      "Houses",
+      "55+ Communities",
+      "Family Neighborhoods",
     ],
     commercialHeading: "Community Event Lighting for Tamarac Facilities",
     commercialDescription:
       "Tamarac's calendar is filled with community celebrations—Holiday Lighting ceremonies at Caporella Park, Paws with Claus pet events, and neighborhood gatherings throughout the season. We design lighting for community venues, recreation centers, and event spaces that amplify the festive atmosphere where Tamarac residents gather. Our installations create settings that encourage neighbors to celebrate together and make holiday gatherings memorable.",
     commercialPropertyTypes: [
-      "Caporella Park and community gathering spaces for Holiday Lighting ceremonies",
-      "Recreation centers and pool areas throughout Tamarac's 124 communities",
-      "Event venues and neighborhood amenities hosting holiday celebrations",
+      "Community Parks",
+      "Recreation Centers",
+      "Event Venues",
     ],
     commercialNearbyCities: "",
   },

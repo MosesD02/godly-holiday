@@ -10,9 +10,10 @@ export const plantation: CityContent = {
       "Transform your Plantation home or business with professional holiday light installation. Serving Hawk's Landing, Plantation Acres & beyond. Free quote today!",
   },
   hero: {
-    heading: "Professional Holiday Light Installation in Plantation",
+    heading:
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation PLANTATION",
     subheadline:
-      "From the elegant estates of Hawk's Landing to the serene equestrian properties of Plantation Acres, Godly Holiday Lights brings festive magic to every corner of this sophisticated community. Our expert installers understand the unique architectural and landscape demands of Plantation's luxury properties.",
+      "Full-service holiday lighting for homes and businesses in Plantation. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Plantation",
@@ -23,18 +24,18 @@ export const plantation: CityContent = {
     residentialDescription:
       "Plantation's distinctive neighborhoods—from the 550 luxury estates of Hawk's Landing to the sprawling acreage of Plantation Acres—deserve holiday lighting that matches their elegance and scale. We specialize in customized installations that complement classic and contemporary architecture alike. Whether you're hosting guests for 'It's a Wonderful Life' Holiday Parade season or simply want to brighten your neighborhood's festive spirit, our designs incorporate the mature landscaping and architectural details that define this mature community. Your holiday display will enhance your property's curb appeal while respecting the tasteful aesthetic Plantation residents value.",
     residentialServiceTypes: [
-      "Luxury estate properties in Hawk's Landing with custom design consultations",
-      "Equestrian properties and expanded acreage throughout Plantation Acres requiring extended installation services",
-      "Architectural homes with landscape preservation and uplighting for mature trees",
+      "Estates",
+      "Equestrian Properties",
+      "Family Homes",
     ],
     commercialHeading:
       "Commercial Holiday Lighting for Plantation Businesses",
     commercialDescription:
       "Westfield Broward and other retail destinations throughout Plantation benefit from professional holiday lighting that drives foot traffic and creates memorable shopping experiences. We deliver installations that communicate seasonal joy while maintaining the professional standards Plantation's business community expects. Our commercial systems are designed for reliability through Florida's unpredictable holiday weather and are fully insured and permitted.",
     commercialPropertyTypes: [
-      "Retail centers and shopping destinations including Westfield Broward",
-      "Corporate office parks and business complexes with customized branding integration",
-      "Community venues and municipal spaces for holiday events and festivals",
+      "Shopping Centers",
+      "Office Parks",
+      "Community Venues",
     ],
     commercialNearbyCities: "",
   },

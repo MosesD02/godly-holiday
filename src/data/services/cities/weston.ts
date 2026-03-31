@@ -12,9 +12,9 @@ export const weston: CityContent = {
   },
   hero: {
     heading:
-      "Luxury Holiday Light Installation for Weston's Gated Communities",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation WESTON",
     subheadline:
-      "Weston is entirely composed of gated, master-planned communities representing South Florida's most sophisticated residential living. From Windmill Ranch Estates' premium properties to Weston Hills' 500+ homes, our holiday installations celebrate the exclusivity and elevated lifestyle that defines this 1996-incorporated planned city.",
+      "Full-service holiday lighting for homes and businesses in Weston. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Weston",
@@ -25,19 +25,19 @@ export const weston: CityContent = {
     residentialDescription:
       "Weston's extraordinary 87.9% family household rate (highest in the region) combined with median household income of $140K reflects a community dedicated to family values and quality living. Every residence sits within gated communities featuring master-planned amenities, landscaped common areas, and architectural standards that define luxury suburban living. Windmill Ranch Estates—Weston's most prestigious address—demands holiday lighting matching its premium positioning. Weston Hills' 500+ homes and other gated subdivisions benefit from installations that enhance property values while respecting the community standards that make Weston distinctly refined. Our designs understand gated community guidelines and family-first aesthetics.",
     residentialServiceTypes: [
-      "Windmill Ranch Estates luxury properties with customized premium design and exclusive consultation",
-      "Weston Hills' 500+ homes and other gated subdivisions with covenant-compliant installations",
-      "Family-focused properties throughout Weston's master-planned communities respecting HOA guidelines",
+      "Luxury Estates",
+      "Gated Communities",
+      "Family Homes",
     ],
     commercialHeading:
       "Showcase Lighting for Weston's Gated Community Amenities",
     commercialDescription:
       "Weston's master-planned design includes shared amenities and community gathering spaces—from Sawgrass Recreation Park's Everglades tours to Weston Town Center's retail and dining to the amphitheater hosting Holiday Lighting Ceremonies. We design premium lighting for these community assets that enhances the shared experience while reflecting Weston's elevated standards. Every installation reinforces Weston's position as a premier gated destination.",
     commercialPropertyTypes: [
-      "Weston Town Center retail and dining venues with upscale holiday atmosphere",
-      "Community amphitheater and gathering spaces hosting Holiday Lighting Ceremony events",
-      "Gated community entrances and gatehouse facilities reflecting Weston's exclusive character",
-      "Recreation facilities and amenities throughout Weston's master-planned communities",
+      "Town Center Shops",
+      "Community Spaces",
+      "Gated Entrances",
+      "Recreation Facilities",
     ],
     commercialNearbyCities: "",
   },

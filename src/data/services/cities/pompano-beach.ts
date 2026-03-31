@@ -12,9 +12,9 @@ export const pompanoBeach: CityContent = {
   },
   hero: {
     heading:
-      "Expert Holiday Light Installation for Pompano Beach Waterfront Living",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation POMPANO BEACH",
     subheadline:
-      "Pompano Beach's vibrant boating culture and stunning oceanfront properties deserve holiday lighting that captures the magic of the season. From homes near the iconic 63rd Annual Holiday Boat Parade to beachfront businesses, we create installations that shine as brilliantly as the golden sand beneath your feet.",
+      "Full-service holiday lighting for homes and businesses in Pompano Beach. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Pompano Beach",
@@ -25,19 +25,19 @@ export const pompanoBeach: CityContent = {
     residentialDescription:
       "Pompano Beach's oceanfront and near-beach properties face unique challenges: salt air corrosion, moisture exposure, and the need for weather-resistant materials that outperform standard equipment. Our holiday lighting installations are specifically engineered for coastal living, using marine-grade components rated for Pompano Beach's marine environment. Whether your home overlooks the 3-mile golden sand beach or sits in residential neighborhoods, we design displays that complement your architecture while withstanding humidity, salt spray, and occasional tropical storms. Prepare your home to shine during the Yuletide on Atlantic Parade season.",
     residentialServiceTypes: [
-      "Oceanfront and beachfront properties with corrosion-resistant marine-grade lighting systems",
-      "Homes near Fisher Family Pier and Atlantic Avenue corridors with extended reach installations",
-      "Residential neighborhoods throughout Pompano Beach with custom architectural lighting design",
+      "Oceanfront Homes",
+      "Beachside Properties",
+      "Family Neighborhoods",
     ],
     commercialHeading:
       "Commercial Holiday Lighting for Pompano Beach Businesses & Attractions",
     commercialDescription:
       "Pompano Beach's strong tourism industry—featuring the Harbor and Holiday Boat Parade, waterfront dining, and the historic Hillsboro Inlet Lighthouse—benefits from professional holiday displays that welcome visitors and locals alike. We work with retail centers, waterfront restaurants, marinas, and hospitality businesses to create eye-catching installations that drive foot traffic during peak holiday season. Our systems are designed for outdoor salt-air environments and operate reliably through variable coastal weather patterns.",
     commercialPropertyTypes: [
-      "Waterfront restaurants and bars with maritime-themed holiday lighting integration",
-      "Marina facilities and boat slips decorated for the 63rd Annual Holiday Boat Parade season",
-      "Retail destinations and shopping areas throughout Pompano Beach commercial districts",
-      "Hospitality businesses and attractions near Fisher Family Pier and Hillsboro Inlet",
+      "Waterfront Dining",
+      "Marinas",
+      "Retail Centers",
+      "Hotels",
     ],
     commercialNearbyCities: "",
   },

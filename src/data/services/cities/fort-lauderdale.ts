@@ -11,9 +11,9 @@ export const fortLauderdale: CityContent = {
   },
   hero: {
     heading:
-      "Transform Fort Lauderdale's Finest Homes & Businesses with Holiday Lights",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation FORT LAUDERDALE",
     subheadline:
-      "Fort Lauderdale—known for its iconic Winterfest Boat Parade, prestigious Harbor Beach estates, and vibrant Las Olas Boulevard culture—deserves holiday lighting that celebrates the city's sophistication and yacht lifestyle. Godly Holiday Lights creates stunning installations that illuminate Fort Lauderdale's most distinguished properties.",
+      "Full-service holiday lighting for homes and businesses in Fort Lauderdale. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Fort Lauderdale",
@@ -24,19 +24,19 @@ export const fortLauderdale: CityContent = {
     residentialDescription:
       "Fort Lauderdale's reputation as one of South Florida's most prestigious cities is evident in its exceptional waterfront estates, Harbor Beach mansions, Nurmi Isles properties, and Las Olas-adjacent residences. These homes reflect significant architectural investment and sophisticated design. Our holiday lighting honors that investment by creating displays that enhance architectural features, respect refined aesthetics, and celebrate Fort Lauderdale's distinctive character. Whether your estate is waterfront with yacht access, situated on prestigious islands, or located in historic neighborhoods, we create custom displays worthy of Fort Lauderdale's most distinguished addresses.",
     residentialServiceTypes: [
-      "Waterfront estates with yacht access and private docks",
-      "Harbor Beach and Nurmi Isles luxury residences",
-      "Las Olas-area estates and historic prestige neighborhoods",
+      "Waterfront Homes",
+      "Estates",
+      "Condominiums",
     ],
     commercialHeading:
       "Holiday Displays for Fort Lauderdale's Iconic Businesses & Venues",
     commercialDescription:
       "Las Olas Boulevard, the waterfront district, and hospitality venues create Fort Lauderdale's vibrant commercial landscape. Strategic holiday displays capitalize on the city's peak tourism and shopping season, especially during the world-famous Winterfest Boat Parade when over 1 million spectators visit. We design displays for upscale retailers, restaurants, hotels, and entertainment venues that create festive atmospheres attracting customers from across the region. From Las Olas storefronts to waterfront properties and holiday destination venues, we create installations that increase visibility and drive holiday season revenue.",
     commercialPropertyTypes: [
-      "Las Olas Boulevard retail, dining, and entertainment establishments",
-      "Waterfront hotels, resorts, and hospitality properties",
-      "Yacht clubs, marinas, and water-based venues",
-      "Event spaces and seasonal celebration venues",
+      "Storefronts",
+      "Office Towers",
+      "Hotels & Resorts",
+      "Marinas",
     ],
     commercialNearbyCities: "",
   },

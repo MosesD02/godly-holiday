@@ -10,9 +10,10 @@ export const sunrise: CityContent = {
       "Professional holiday light installation in Sunrise. Serve Sawgrass Mills, Amerant Arena, diverse neighborhoods. Get your free estimate now!",
   },
   hero: {
-    heading: "Expert Holiday Light Installation Throughout Sunrise",
+    heading:
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation SUNRISE",
     subheadline:
-      "Sunrise is a dynamic, diverse community of 102,000 residents representing cultures and traditions from around the world. Godly Holiday Lights honors that diversity by creating holiday installations that celebrate each family's unique traditions while bringing the entire community together in festive celebration.",
+      "Full-service holiday lighting for homes and businesses in Sunrise. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Sunrise",
@@ -22,19 +23,19 @@ export const sunrise: CityContent = {
     residentialDescription:
       "Sunrise's population includes 35.9% Hispanic, 33% Black, and diverse representation from immigrant communities bringing rich holiday traditions to South Florida. Our holiday lighting installations celebrate this cultural diversity—from traditional Christmas displays to installations reflecting Hanukkah, Kwanzaa, and multicultural family celebrations. Whether your home is in established neighborhoods, newer family-oriented sections, or communities like Sunrise Lakes (55+), we create installations that honor your family's traditions while complementing Sunrise's vibrant, inclusive character. We speak multiple languages, understand diverse celebration styles, and design with cultural sensitivity and celebration in mind.",
     residentialServiceTypes: [
-      "Family neighborhoods with diverse cultural traditions and celebration styles",
-      "Sunrise Lakes 55+ community properties with accessible installation and age-appropriate designs",
-      "Newer residential subdivisions reflecting Sunrise's growth and diverse population demographics",
+      "Family Homes",
+      "55+ Communities",
+      "New Developments",
     ],
     commercialHeading:
       "Commercial Holiday Displays for Sunrise's Major Destinations",
     commercialDescription:
       "Sunrise is home to Sawgrass Mills—one of South Florida's premier shopping destinations with 2.7 million square feet of retail space and 350+ stores drawing 25 million annual visitors. We also serve Amerant Bank Arena, Sunrise's sports and entertainment venue, plus the Arts & Crafts Festival Winter Wonderland and other community events. Our commercial installations create festive atmospheres that drive traffic, enhance shopper experiences, and celebrate the season at Sunrise's most visited destinations.",
     commercialPropertyTypes: [
-      "Sawgrass Mills retail center with storefront lighting and property-wide festive displays",
-      "Amerant Bank Arena for holiday events, concerts, and sports entertainment",
-      "Arts & Crafts Festival Winter Wonderland and community event spaces throughout Sunrise",
-      "Office parks, restaurants, and professional services throughout Sunrise's commercial districts",
+      "Sawgrass Mills",
+      "Amerant Bank Arena",
+      "Event Spaces",
+      "Restaurants",
     ],
     commercialNearbyCities: "",
   },

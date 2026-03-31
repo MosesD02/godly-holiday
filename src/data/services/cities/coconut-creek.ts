@@ -11,9 +11,9 @@ export const coconutCreek: CityContent = {
   },
   hero: {
     heading:
-      "Create Holiday Magic in Coconut Creek with Expert Light Installation",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation COCONUT CREEK",
     subheadline:
-      "Coconut Creek families deserve holiday displays that bring joy to every corner of their homes and neighborhoods. Godly Holiday Lights specializes in designing and installing festive, safe, and beautiful displays throughout Coconut Creek's master-planned communities, from Regency Lakes to the Promenade.",
+      "Full-service holiday lighting for homes and businesses in Coconut Creek. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Coconut Creek",
@@ -24,18 +24,18 @@ export const coconutCreek: CityContent = {
     residentialDescription:
       "Coconut Creek's reputation as the 'Butterfly Capital of the World' reflects the community's appreciation for natural beauty and family values. Our holiday light designs complement your home's landscaping while creating that warm, inviting atmosphere families cherish during the season. Whether you live in Regency Lakes, Heron Bay, Winston Park, or another of Coconut Creek's excellent neighborhoods, we design displays that delight children and adults alike while respecting your home's architectural style.",
     residentialServiceTypes: [
-      "Family homes throughout master-planned communities like Regency Lakes and Winston Park",
-      "Properties with mature landscaping perfect for accent and feature lighting",
-      "Single-family residences in Coconut Creek's neighborhood-focused developments",
+      "Houses",
+      "Townhomes",
+      "55+ Communities",
     ],
     commercialHeading:
       "Holiday Displays for Coconut Creek's Community Businesses",
     commercialDescription:
       "The Promenade at Coconut Creek and other local shopping areas serve as gathering places for families throughout the community. Strategic holiday lighting creates festive environments that boost customer traffic and reinforce your business's commitment to the local neighborhood. From restaurants to retail shops and family-oriented businesses, our commercial displays help you stand out during the critical holiday shopping season.",
     commercialPropertyTypes: [
-      "Promenade at Coconut Creek retail and dining establishments",
-      "Shopping centers and family-oriented commercial properties",
-      "Restaurants, recreation facilities, and community gathering spaces",
+      "Storefronts",
+      "Office Buildings",
+      "Shopping Centers",
     ],
     commercialNearbyCities: "",
   },

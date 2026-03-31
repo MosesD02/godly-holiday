@@ -11,9 +11,9 @@ export const parkland: CityContent = {
   },
   hero: {
     heading:
-      "Exceptional Holiday Light Installation for Parkland's Most Prestigious Estates",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation PARKLAND",
     subheadline:
-      "Godly Holiday Lights specializes in transforming Parkland's ultra-affluent estates into stunning seasonal showcases. With experience in Heron Bay's luxury homes, equestrian communities, and five-star neighborhoods, we create installations matching the area's premium standards.",
+      "Full-service holiday lighting for homes and businesses in Parkland. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Parkland",
@@ -24,19 +24,19 @@ export const parkland: CityContent = {
     residentialDescription:
       "Parkland represents some of South Florida's most prestigious residential real estate, with a median household income of $200,000 and a population that is 68% married, 56% with children, and 67% college-educated. Heron Bay alone encompasses over 1,000 homes ranging from $900,000 to $3 million-plus, while other communities like Watercrest reflect similar luxury standards. These sophisticated properties deserve holiday lighting that matches their grandeur. Our team understands Parkland's discerning residents and creates installations reflecting the neighborhood's exceptional character.",
     residentialServiceTypes: [
-      "Heron Bay 1,000+ Luxury Homes ($900K-$3M+)",
-      "Watercrest and Ultra-Luxury Gated Communities",
-      "Equestrian Estate Properties and Multi-Acre Residences",
+      "Luxury Homes",
+      "Gated Estates",
+      "Equestrian Properties",
     ],
     commercialHeading:
       "Premium Displays for Parkland's Upscale Businesses and Amenities",
     commercialDescription:
       "Parkland's commercial landscape is carefully curated to serve the area's affluent residents—premium restaurants, exclusive clubs, and high-end professional services. The Parkland Golf & Country Club, equestrian facilities, and resort-style amenities warrant equally premium holiday lighting. We design displays that maintain Parkland's sophisticated aesthetic while creating welcoming, festive ambiance.",
     commercialPropertyTypes: [
-      "Parkland Golf & Country Club and Resort Amenities",
-      "Equestrian Facilities and Recreation Centers",
-      "Upscale Dining and Professional Services",
-      "Country Club Communities and Private Facilities",
+      "Country Clubs",
+      "Equestrian Facilities",
+      "Dining & Retail",
+      "Private Amenities",
     ],
     commercialNearbyCities: "",
   },

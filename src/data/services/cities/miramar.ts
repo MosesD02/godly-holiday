@@ -12,9 +12,9 @@ export const miramar: CityContent = {
   },
   hero: {
     heading:
-      "Comprehensive Holiday Light Installation Across Miramar's 24 Neighborhoods",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation MIRAMAR",
     subheadline:
-      "Godly Holiday Lights brings festive brilliance to Miramar, one of Florida's fastest-growing cities. We create custom installations for the diverse neighborhoods and modern properties that make Miramar home to 138,000 residents.",
+      "Full-service holiday lighting for homes and businesses in Miramar. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Miramar",
@@ -25,19 +25,19 @@ export const miramar: CityContent = {
     residentialDescription:
       "Miramar's explosive growth has created 24 distinct neighborhoods, each with its own character and appeal. From Harbour Lake Estates' gated waterfront luxury to Windsor Palms' family-friendly design to Riviera Isles' sophisticated residences, every neighborhood deserves installations reflecting its unique identity. With 42% of Miramar households including children and a median household income of $89,000, we understand the area's aspirational, family-oriented character. Our team creates holiday displays that enhance modern architecture while celebrating community spirit.",
     residentialServiceTypes: [
-      "Harbour Lake Estates Gated Waterfront Properties",
-      "Windsor Palms and Riviera Isles Modern Homes",
-      "Family-Friendly Neighborhoods with Children's Communities",
+      "Gated Homes",
+      "Waterfront Properties",
+      "Family Neighborhoods",
     ],
     commercialHeading:
       "Seasonal Displays for Miramar's Growing Business Areas",
     commercialDescription:
       "As the 14th largest city in Florida, Miramar's commercial landscape continues to expand with retail centers, professional offices, and service establishments serving the city's 138,000 residents. Holiday lighting creates welcoming ambiance in these modern business environments and drives foot traffic during peak holiday season. We design installations for commercial properties that reflect Miramar's contemporary character and growing prominence.",
     commercialPropertyTypes: [
-      "Retail Centers and Shopping Developments",
-      "Professional Office Buildings and Business Parks",
-      "Service Establishments and Medical Centers",
-      "Multi-Use Development Properties",
+      "Retail Centers",
+      "Office Parks",
+      "Medical Offices",
+      "Event Spaces",
     ],
     commercialNearbyCities: "",
   },

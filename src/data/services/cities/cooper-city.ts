@@ -11,9 +11,9 @@ export const cooperCity: CityContent = {
   },
   hero: {
     heading:
-      "Professional Holiday Light Installation for Cooper City's Premium Homes",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation COOPER CITY",
     subheadline:
-      "Cooper City homeowners invest in quality and excellence—from architectural upgrades to meticulous landscaping. Godly Holiday Lights brings that same commitment to your holiday displays, creating stunning installations that reflect your home's caliber and your neighborhood's high standards.",
+      "Full-service holiday lighting for homes and businesses in Cooper City. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Cooper City",
@@ -24,19 +24,19 @@ export const cooperCity: CityContent = {
     residentialDescription:
       "Cooper City boasts the highest median household income in the region and the highest homeownership rates—a community where excellence matters. Your home likely reflects significant investment in quality construction, thoughtful design, and beautiful grounds. Our holiday light installations honor that investment. Whether your home is in the prestigious Monterra gated community, Embassy Lakes, or another of Cooper City's excellent neighborhoods, we design displays that elevate your property's natural beauty and match your home's architectural sophistication.",
     residentialServiceTypes: [
-      "Upscale single-family homes in Monterra and gated communities",
-      "Embassy Lakes residences with golf course views and mature landscaping",
-      "Executive homes and architectural showcase properties throughout Cooper City",
+      "Houses",
+      "Estates",
+      "Gated Communities",
     ],
     commercialHeading:
       "Professional Holiday Displays for Cooper City Businesses",
     commercialDescription:
       "Cooper City's business community reflects the same commitment to quality that defines its residential neighborhoods. Strategic holiday lighting increases visibility and foot traffic during peak season while projecting the professional excellence your business stands for. From office parks to hospitality venues and retail establishments, we design displays that enhance your commercial property and reinforce your brand's premium positioning.",
     commercialPropertyTypes: [
-      "Professional office parks and corporate headquarters",
-      "Retail establishments and shopping centers",
-      "Restaurants, hotels, and hospitality properties",
-      "Medical and professional service facilities",
+      "Storefronts",
+      "Office Buildings",
+      "Plazas",
+      "Community Spaces",
     ],
     commercialNearbyCities: "",
   },

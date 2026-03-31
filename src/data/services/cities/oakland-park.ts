@@ -11,9 +11,9 @@ export const oaklandPark: CityContent = {
   },
   hero: {
     heading:
-      "Holiday Light Installation for Oakland Park's Vibrant Arts and Culinary Communities",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation OAKLAND PARK",
     subheadline:
-      "Godly Holiday Lights celebrates Oakland Park's emerging character as a cultural hub. We create custom installations for residential properties throughout this affordable, welcoming community near the Culinary Arts District.",
+      "Full-service holiday lighting for homes and businesses in Oakland Park. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Oakland Park",
@@ -24,19 +24,19 @@ export const oaklandPark: CityContent = {
     residentialDescription:
       "Oakland Park is experiencing a renaissance with its unique Culinary Arts District and burgeoning food and arts scene—all at more affordable price points than nearby beachfront communities. The area's neighborhoods—Twin Lakes, North Andrews Gardens, and Coral Ridge Isles—reflect Oakland Park's working and middle-class heritage while attracting young professionals and creative residents. With 33.1% Hispanic and 33.33% foreign-born residents, Oakland Park's cultural diversity is reflected in neighborhood character. We create holiday installations that celebrate this dynamic, eclectic community.",
     residentialServiceTypes: [
-      "Twin Lakes and North Andrews Gardens Neighborhoods",
-      "Coral Ridge Isles Residential Areas",
-      "Diverse Communities with Modern and Established Homes",
+      "Houses",
+      "Modern Homes",
+      "Lakeside Properties",
     ],
     commercialHeading:
       "Festival-Ready Lighting for Oakland Park's Culinary Arts District",
     commercialDescription:
       "Oakland Park's Culinary Arts District is the city's pride—a collection of unique restaurants, breweries, and specialty food venues creating a vibrant commercial corridor. Holiday lighting enhances the festive atmosphere and draws diners and visitors. We design installations for Oakland Park's restaurants, breweries, and specialty shops that complement the area's artistic character and culinary reputation.",
     commercialPropertyTypes: [
-      "Restaurants and Dining Establishments",
-      "Craft Breweries and Specialty Beverage Venues",
-      "Culinary Arts District Retail and Services",
-      "Emerging Arts and Entertainment Spaces",
+      "Restaurants",
+      "Breweries",
+      "Retail Shops",
+      "Arts Spaces",
     ],
     commercialNearbyCities: "",
   },

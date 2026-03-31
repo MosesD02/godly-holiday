@@ -11,9 +11,9 @@ export const hollywood: CityContent = {
   },
   hero: {
     heading:
-      "Professional Holiday Light Installation Throughout Hollywood, Florida",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation HOLLYWOOD",
     subheadline:
-      "Godly Holiday Lights brings festive brilliance to Hollywood's diverse neighborhoods, from the luxury estates of Emerald Hills to the vibrant Broadwalk community. We create custom installations that capture the holiday spirit unique to each area.",
+      "Full-service holiday lighting for homes and businesses in Hollywood, FL. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Hollywood",
@@ -24,19 +24,19 @@ export const hollywood: CityContent = {
     residentialDescription:
       "Hollywood offers an incredible variety of residential properties, from Mediterranean-style Harbor Islands homes to the established estates of Emerald Hills and the dynamic townhome communities scattered throughout the city. We design holiday light installations that celebrate each neighborhood's character while enhancing your home's curb appeal. Whether your property features palm-lined driveways, lush landscaping, or architectural details worth highlighting, our team creates installations that feel authentic to your community.",
     residentialServiceTypes: [
-      "Emerald Hills Luxury Estates and High-Value Homes",
-      "Harbor Islands Mediterranean-Style Residences",
-      "Townhome Communities Throughout Hollywood (50+ developments)",
+      "Luxury Estates",
+      "Townhomes",
+      "Waterfront Homes",
     ],
     commercialHeading:
       "Festival-Ready Holiday Lighting for Hollywood Businesses",
     commercialDescription:
       "From the iconic Broadwalk to premier resorts and entertainment venues, Hollywood's commercial corridor comes alive during the holidays. We understand the importance of holiday displays in a community known for festivals like the Candy Cane Parade and IGNITE Art and Light Festival. Our commercial installations are designed to draw attention, create ambiance, and enhance your brand visibility during peak holiday season.",
     commercialPropertyTypes: [
-      "Resort Properties and Hospitality Venues",
-      "Broadwalk Retail and Entertainment Establishments",
-      "Office Parks and Professional Buildings",
-      "Event Venues and Community Spaces",
+      "Resorts",
+      "Retail Shops",
+      "Office Parks",
+      "Event Venues",
     ],
     commercialNearbyCities: "",
   },

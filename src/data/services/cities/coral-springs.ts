@@ -11,9 +11,9 @@ export const coralSprings: CityContent = {
   },
   hero: {
     heading:
-      "Celebrate Diversity with Holiday Lights Throughout Coral Springs",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation CORAL SPRINGS",
     subheadline:
-      "Coral Springs' incredible diversity and younger, vibrant population embrace the joy of holiday celebrations. Whether you're planning an elegant display or a fun, festive spectacle, Godly Holiday Lights creates installations that reflect your family's unique style across Coral Springs' 30+ distinctive neighborhoods.",
+      "Full-service holiday lighting for homes and businesses in Coral Springs. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Coral Springs",
@@ -24,19 +24,19 @@ export const coralSprings: CityContent = {
     residentialDescription:
       "Coral Springs ranks as Florida's most diverse city—a community where 99 out of 100 diversity scores reflect the richness of cultures, traditions, and celebrations. This diversity extends to how families celebrate the holidays. Some prefer understated elegance, others embrace vibrant color and movement. Our design team celebrates this diversity by creating completely custom displays that reflect your family's traditions and style. From the established neighborhoods surrounding Coral Square to the thirty-plus sub-communities of Heron Bay and beyond, we design installations that feel authentically right for your home.",
     residentialServiceTypes: [
-      "Homes throughout Heron Bay's 30+ distinctive sub-neighborhoods",
-      "Family residences near Coral Square and shopping areas",
-      "Properties throughout Coral Springs' diverse residential communities",
+      "Houses",
+      "Estates",
+      "Gated Communities",
     ],
     commercialHeading:
       "Holiday Displays for Coral Springs' Vibrant Business Community",
     commercialDescription:
       "Coral Springs' younger median age (36) and dynamic business environment create perfect opportunities for creative, eye-catching holiday displays. From Coral Square retail establishments to the 442-acre Commerce Park and independent retailers throughout the city, strategic holiday lighting captures attention and creates the festive atmosphere that drives holiday shopping. We design displays that match your business's personality while standing out in Coral Springs' competitive marketplace.",
     commercialPropertyTypes: [
-      "Coral Square shopping center and anchor retailers",
-      "Commerce Park office and light industrial facilities",
-      "Independent retailers and specialty shops",
-      "Restaurants, entertainment venues, and service businesses",
+      "Storefronts",
+      "Office Parks",
+      "Shopping Centers",
+      "Event Venues",
     ],
     commercialNearbyCities: "",
   },

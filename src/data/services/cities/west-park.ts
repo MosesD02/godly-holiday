@@ -10,9 +10,10 @@ export const westPark: CityContent = {
       "Professional holiday lights for West Park's growing neighborhoods. Near Hollywood Broadwalk & Gulfstream Park. Get your free quote now!",
   },
   hero: {
-    heading: "Growing Community Holiday Light Installation in West Park",
+    heading:
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation WEST PARK",
     subheadline:
-      "West Park is South Florida's newest municipality—incorporated in 2005 with a young, diverse population (median age 37.6) and a growing investment market. Our holiday installations celebrate this dynamic, emerging community while providing the professional quality that makes West Park properties shine.",
+      "Full-service holiday lighting for homes and businesses in West Park. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "West Park",
@@ -23,17 +24,17 @@ export const westPark: CityContent = {
     residentialDescription:
       "West Park's 15,000 residents represent a young, growing community with median age 37.6 and 51.5% Black population, offering diverse celebration traditions and a forward-thinking community spirit. With median home price around $475K, West Park attracts families and investors building their futures in this newer municipality. Our holiday lighting installations enhance property values while celebrating your family's unique traditions. Whether you're close to the Hollywood Beach Broadwalk (just 10 minutes away) or near Gulfstream Park's excitement, we create displays that showcase your West Park property's investment potential and personal style.",
     residentialServiceTypes: [
-      "Growing family neighborhoods with diverse cultural traditions and celebration styles",
-      "Investment properties attracting buyers with festive curb appeal and professional displays",
-      "Newer construction homes throughout West Park's suburban neighborhoods",
+      "Family Homes",
+      "New Construction",
+      "Suburban Neighborhoods",
     ],
     commercialHeading: "Business District Holiday Lighting in West Park",
     commercialDescription:
       "West Park's commercial development mirrors its residential growth—attracting retail, services, and entertainment businesses serving this dynamic community. We design holiday lighting for West Park's business districts that drive traffic, enhance visitor experience, and position local businesses competitively during peak holiday season. Our installations support West Park's continued growth and economic development.",
     commercialPropertyTypes: [
-      "Retail centers and shopping districts throughout West Park's emerging commercial corridors",
-      "Service businesses, offices, and professional practices throughout West Park",
-      "Entertainment venues and restaurants positioned near Hollywood Broadwalk and Gulfstream Park",
+      "Retail Centers",
+      "Service Businesses",
+      "Restaurants",
     ],
     commercialNearbyCities: "",
   },

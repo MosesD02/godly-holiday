@@ -11,9 +11,9 @@ export const deerfieldBeach: CityContent = {
   },
   hero: {
     heading:
-      "Illuminate Your Deerfield Beach Oceanfront with Stunning Holiday Lights",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation DEERFIELD BEACH",
     subheadline:
-      "Deerfield Beach's award-winning Blue Wave beaches and oceanfront lifestyle deserve holiday lighting that celebrates coastal living. Whether your home is beachfront, near the iconic 1000-foot pier, or in The Cove community, Godly Holiday Lights creates displays that enhance your oceanside property and withstand the unique challenges of coastal environments.",
+      "Full-service holiday lighting for homes and businesses in Deerfield Beach. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Deerfield Beach",
@@ -24,19 +24,19 @@ export const deerfieldBeach: CityContent = {
     residentialDescription:
       "Deerfield Beach's Blue Wave certification and world-class beaches attract homeowners seeking that coveted oceanfront lifestyle. These properties face unique challenges—salt spray, humid air, strong winds, and intense sun—that require expertise standard installers may lack. Our team specializes in beachfront and oceanfront installations, using marine-grade materials and salt-resistant hardware specifically designed for coastal environments. From elegant beachfront estates to homes near Deerfield Island Park and properties throughout The Cove, we create displays that celebrate your oceanside location while standing up to coastal conditions.",
     residentialServiceTypes: [
-      "Oceanfront and beachfront estates with Blue Wave beach access",
-      "Coastal properties near Deerfield Island Park and the 1000-foot fishing pier",
-      "Homes throughout The Cove and other beachside communities",
+      "Beachfront Homes",
+      "Coastal Properties",
+      "Waterfront Estates",
     ],
     commercialHeading:
       "Holiday Displays for Deerfield Beach's Oceanfront Businesses",
     commercialDescription:
       "Deerfield Beach's oceanfront hospitality district—hotels, restaurants, and entertainment venues—creates powerful opportunities for strategic holiday displays. Beachside businesses benefit enormously from eye-catching holiday lighting that attracts tourists and holiday visitors. We design displays for oceanfront hotels, beach restaurants, pier facilities, and retail establishments that create festive atmospheres while highlighting your location's scenic beauty. Our coastal expertise ensures displays withstand salt spray and sea breezes season-long.",
     commercialPropertyTypes: [
-      "Oceanfront hotels and resorts",
-      "Beach restaurants and entertainment venues",
-      "Pier-area shops and hospitality facilities",
-      "Retail establishments throughout the beachside district",
+      "Hotels & Resorts",
+      "Restaurants",
+      "Pier Shops",
+      "Retail Stores",
     ],
     commercialNearbyCities: "",
   },

@@ -11,9 +11,9 @@ export const delrayBeach: CityContent = {
   },
   hero: {
     heading:
-      "Illuminate Delray Beach's Sophisticated Homes with Premium Holiday Lights",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation DELRAY BEACH",
     subheadline:
-      "Delray Beach's vibrant arts scene, charming Atlantic Avenue, and spectacular oceanfront estates demand holiday lighting that matches the city's sophisticated character. Godly Holiday Lights creates stunning, custom displays that celebrate Delray Beach's distinctive culture and architectural elegance.",
+      "Full-service holiday lighting for homes and businesses in Delray Beach. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Delray Beach",
@@ -24,19 +24,19 @@ export const delrayBeach: CityContent = {
     residentialDescription:
       "Delray Beach's oceanfront properties range from $8 million to $100 million+ estates that represent some of South Florida's most prestigious addresses. These exceptional homes demand equally exceptional holiday lighting. Our design team understands the sophistication these properties require—elegant architectural lighting that enhances natural beauty, subtle color palettes that don't overwhelm refined aesthetics, and meticulous installation that respects high-end finishes. Whether your estate overlooks the Atlantic, sits on exclusive islands, or graces one of Delray's charming in-town neighborhoods, we create displays worthy of your home's caliber.",
     residentialServiceTypes: [
-      "Oceanfront mega-estates and luxury beachfront properties",
-      "High-end in-town residences near Atlantic Avenue and historic neighborhoods",
-      "Sophisticated estates throughout Delray Beach's most prestigious addresses",
+      "Oceanfront Estates",
+      "In-Town Homes",
+      "Luxury Residences",
     ],
     commercialHeading:
       "Holiday Displays for Delray Beach's Vibrant Business Scene",
     commercialDescription:
       "Atlantic Avenue's 95%-locally-owned business community creates a unique, artistically-vibrant district that thrives on individuality and creativity. Strategic holiday displays boost foot traffic during peak season while reinforcing each business's unique character. From boutique shops and galleries to restaurants and entertainment venues, we design displays that complement each business's personality. During the holiday season, when Delray's already vibrant atmosphere intensifies with holiday village attractions, ice skating, and community celebrations, your festive display creates the perfect backdrop for increased customer traffic and holiday spending.",
     commercialPropertyTypes: [
-      "Atlantic Avenue boutique shops, galleries, and restaurants",
-      "Old School Square and cultural/entertainment venues",
-      "Hotels, resorts, and hospitality establishments",
-      "Holiday Village and seasonal event spaces",
+      "Boutique Shops",
+      "Restaurants",
+      "Hotels",
+      "Event Spaces",
     ],
     commercialNearbyCities: "",
   },

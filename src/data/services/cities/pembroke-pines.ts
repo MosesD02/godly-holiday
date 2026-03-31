@@ -12,9 +12,9 @@ export const pembrokePines: CityContent = {
   },
   hero: {
     heading:
-      "Comprehensive Holiday Light Installation for Pembroke Pines' Diverse Communities",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation PEMBROKE PINES",
     subheadline:
-      "Godly Holiday Lights serves Broward's 2nd most populous city with professional installations tailored to Pembroke Pines' unique neighborhoods, gated communities, and family-focused character. From Pembroke Falls to Century Village, we bring holiday magic to all 171,000 residents.",
+      "Full-service holiday lighting for homes and businesses in Pembroke Pines. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Pembroke Pines",
@@ -25,19 +25,19 @@ export const pembrokePines: CityContent = {
     residentialDescription:
       "Pembroke Pines is Broward County's 2nd most populous city with 171,000 residents living in diverse neighborhoods including the gated Pembroke Falls community, Century Village's 7,700 active adult condos, Pembroke Gardens, and countless family-oriented areas. With 45% Hispanic and 22.3% Black residents, Pembroke Pines celebrates cultural diversity. Nearly 180 parks throughout the city make this a family-focused community. Our team creates holiday installations reflecting Pembroke Pines' welcoming, family-oriented character across all neighborhoods.",
     residentialServiceTypes: [
-      "Pembroke Falls Gated Community and Premium Neighborhoods",
-      "Century Village 55+ Active Adult Condominiums (7,700 units)",
-      "Pembroke Gardens and Family-Friendly Residential Areas",
+      "Houses",
+      "Gated Communities",
+      "55+ Condos",
     ],
     commercialHeading:
       "Seasonal Displays for Pembroke Pines' Growing Commercial Areas",
     commercialDescription:
       "With 171,000 residents, Pembroke Pines supports diverse commercial establishments—retail centers, office buildings, medical facilities, and service businesses. Holiday lighting creates welcoming atmosphere and drives business during peak season. We design installations for Pembroke Pines' commercial properties that appeal to the city's diverse, family-focused demographic.",
     commercialPropertyTypes: [
-      "Retail Centers and Shopping Districts",
-      "Office Parks and Professional Buildings",
-      "Medical Centers and Healthcare Facilities",
-      "Community Event Spaces and Recreation Centers",
+      "Retail Centers",
+      "Office Parks",
+      "Medical Centers",
+      "Event Spaces",
     ],
     commercialNearbyCities: "",
   },

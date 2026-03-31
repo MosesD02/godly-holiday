@@ -11,9 +11,9 @@ export const hillsboroBeach: CityContent = {
   },
   hero: {
     heading:
-      "Elegant Holiday Light Installation for Hillsboro Beach's Most Prestigious Oceanfront Estates",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation HILLSBORO BEACH",
     subheadline:
-      "Godly Holiday Lights specializes in transforming the grand architecture of Hillsboro Beach's mega-mansions and exclusive oceanfront properties into stunning seasonal displays. Our team understands the unique requirements of A1A's most distinguished residences.",
+      "Full-service holiday lighting for homes and businesses in Hillsboro Beach. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Hillsboro Beach",
@@ -24,18 +24,18 @@ export const hillsboroBeach: CityContent = {
     residentialDescription:
       "Hillsboro Beach's architectural gems deserve holiday lighting that matches their elegance and scale. From sprawling oceanfront estates to sophisticated beachfront condominiums, we design custom installations that enhance your property's natural sophistication while respecting the area's premium aesthetic. Our experience working with high-value properties ensures meticulous attention to detail, secure installation practices, and designs that complement your home's unique coastal architecture.",
     residentialServiceTypes: [
-      "Beachfront Mansions and Multi-Million Dollar Estates",
-      "Luxury Oceanfront Condominiums and Penthouses",
-      "Sophisticated Coastal Properties on Hillsboro Mile",
+      "Beachfront Mansions",
+      "Oceanfront Condos",
+      "Coastal Estates",
     ],
     commercialHeading:
       "Tailored Seasonal Displays for Hillsboro Beach's Limited Commercial Spaces",
     commercialDescription:
       "With minimal commercial development, Hillsboro Beach's few business properties receive specialized attention from our team. We understand the importance of maintaining the area's exclusive character while creating inviting seasonal ambiance. Whether for a small hospitality venue or professional establishment, we design displays that enhance without overwhelming.",
     commercialPropertyTypes: [
-      "Boutique Hotels and Hospitality Properties",
-      "Professional Offices and Service Establishments",
-      "Exclusive Clubs and Private Amenities",
+      "Boutique Hotels",
+      "Private Clubs",
+      "Office Spaces",
     ],
     commercialNearbyCities: "",
   },

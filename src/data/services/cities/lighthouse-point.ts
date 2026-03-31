@@ -12,9 +12,9 @@ export const lighthousePoint: CityContent = {
   },
   hero: {
     heading:
-      "Holiday Light Installation for Lighthouse Point's Premier Canal Homes",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation LIGHTHOUSE POINT",
     subheadline:
-      "Godly Holiday Lights brings festive radiance to Lighthouse Point's prestigious residential community, known for its scenic canals and sophisticated single-family homes. We create custom installations that reflect the area's elegant, resort-like character.",
+      "Full-service holiday lighting for homes and businesses in Lighthouse Point. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Lighthouse Point",
@@ -25,18 +25,18 @@ export const lighthousePoint: CityContent = {
     residentialDescription:
       "With 80% of Lighthouse Point's properties being single-family homes, this community represents some of South Florida's most desirable residential real estate. The area's 18+ miles of scenic canals, lush landscaping, and sophisticated architecture create the perfect backdrop for elegant holiday displays. Our team understands Lighthouse Point's professional demographic and designs installations that match the neighborhood's refined aesthetic and high standards.",
     residentialServiceTypes: [
-      "Single-Family Homes Throughout Scenic Canal Communities",
-      "Waterfront Properties with Canalside Appeal",
-      "Luxury Residences in Lighthouse Point's Prestigious Neighborhoods",
+      "Canal Homes",
+      "Waterfront Properties",
+      "Luxury Residences",
     ],
     commercialHeading:
       "Seasonal Displays for Lighthouse Point's Select Businesses",
     commercialDescription:
       "Lighthouse Point's commercial landscape is intimate and selective, featuring premier dining destinations and professional services that cater to the community's affluent residents. We design holiday lighting for these establishments that maintains the area's sophisticated character while creating inviting seasonal atmosphere for customers and patrons.",
     commercialPropertyTypes: [
-      "Cap's Place Restaurant and Waterfront Dining",
-      "Professional Service Businesses and Offices",
-      "Community Amenities and Recreation Facilities",
+      "Restaurants",
+      "Professional Offices",
+      "Community Spaces",
     ],
     commercialNearbyCities: "",
   },

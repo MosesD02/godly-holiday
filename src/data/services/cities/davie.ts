@@ -11,9 +11,9 @@ export const davie: CityContent = {
   },
   hero: {
     heading:
-      "Brighten Your Davie Estate with Expert Holiday Light Installation",
+      "RESIDENTIAL & COMMERCIAL HOLIDAY LIGHT Installation DAVIE",
     subheadline:
-      "Davie's unique character—from equestrian properties and sprawling estates to family neighborhoods—deserves holiday lighting that honors the community's distinctive charm. Godly Holiday Lights brings festive brilliance to Davie homes and businesses with designs tailored to the area's varied property types and architectural styles.",
+      "Full-service holiday lighting for homes and businesses in Davie. Designed, installed, maintained, and removed.",
   },
   recentInstallations: {
     locationName: "Davie",
@@ -24,19 +24,19 @@ export const davie: CityContent = {
     residentialDescription:
       "Davie's equestrian heritage and sprawling estates create a unique landscape where homes sit on spacious properties surrounded by mature trees and, often, beautiful barns and stable facilities. Unlike typical suburban neighborhoods, Davie properties require thoughtful lighting designs that respect open space, enhance natural surroundings, and complement the rustic elegance many Davie residents cherish. Long Lake Ranches and similar estates demand installations that highlight architectural features while maintaining the character that makes Davie special. We specialize in creating displays that fit Davie's authentic, established-property aesthetic.",
     residentialServiceTypes: [
-      "Equestrian estates and properties with barns or stable facilities",
-      "Long Lake Ranches and similar gated estate communities",
-      "Family homes on spacious Davie properties with mature landscaping",
+      "Houses",
+      "Ranches",
+      "Equestrian Estates",
     ],
     commercialHeading:
       "Holiday Displays for Davie's Diverse Commercial Properties",
     commercialDescription:
       "Davie's commercial corridor includes Sawgrass Mills and hospitality properties alongside smaller neighborhood businesses. Each requires different design approaches. We create displays for large-scale retail environments that attract high traffic, as well as smaller neighborhood establishments where holiday lighting builds community connection. Whether you operate at the mills, run a restaurant or service business, or manage office properties, we design strategic lighting that increases visibility and brings customers through your doors during peak holiday season.",
     commercialPropertyTypes: [
-      "Sawgrass Mills retail and entertainment facilities",
-      "Office parks and professional buildings",
-      "Restaurants, automotive, and service businesses",
-      "Hospitality and entertainment venues",
+      "Storefronts",
+      "Office Buildings",
+      "Plazas",
+      "Event Venues",
     ],
     commercialNearbyCities: "",
   },
