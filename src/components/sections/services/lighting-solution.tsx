@@ -13,7 +13,14 @@ interface LightingSolutionProps {
   commercialPropertyTypes?: string[];
 }
 
-export function LightingSolution({ residentialDescription, commercialDescription, residentialHeading, commercialHeading, residentialServiceTypes, commercialPropertyTypes }: LightingSolutionProps = {}) {
+export function LightingSolution({
+  residentialDescription,
+  commercialDescription,
+  residentialHeading,
+  commercialHeading,
+  residentialServiceTypes,
+  commercialPropertyTypes,
+}: LightingSolutionProps = {}) {
   return (
     <section
       id="light-installation"
@@ -52,26 +59,37 @@ export function LightingSolution({ residentialDescription, commercialDescription
             <div className="flex flex-col gap-6 sm:gap-7 lg:gap-8 flex-1">
               <h2 className="font-marlton text-[28px] sm:text-[42px] lg:text-[56px] leading-[32px] sm:leading-[48px] lg:leading-[64px] tracking-[1.68px] sm:tracking-[2.52px] lg:tracking-[3.36px] text-center lg:text-left">
                 {residentialHeading || "Residential Holiday Light"}{" "}
-                <span
-                  className="font-luminaire inline-block text-[#FFE7AF] md:-translate-x-8"
-                  style={{
-                    transform: "rotate(-8.115deg)",
-                    textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
-                    WebkitTextStrokeWidth: "2px",
-                    WebkitTextStrokeColor: "#252323",
-                    paintOrder: "stroke fill",
-                  }}
-                >
-                  Installation
-                </span>
+                {!residentialHeading && (
+                  <span
+                    className="font-luminaire inline-block text-[#FFE7AF] md:-translate-x-8"
+                    style={{
+                      transform: "rotate(-8.115deg)",
+                      textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
+                      WebkitTextStrokeWidth: "2px",
+                      WebkitTextStrokeColor: "#252323",
+                      paintOrder: "stroke fill",
+                    }}
+                  >
+                    Installation
+                  </span>
+                )}
               </h2>
               <p className="text-white text-base sm:text-lg leading-6 sm:leading-[26px] tracking-[0.16px] sm:tracking-[0.18px]">
-                {residentialDescription || "Whether it\u2019s subtle or show-stopping, our holiday light installation services bring joy to your home all season long. We handle everything, from setup to removal for houses and estates across South Florida."}
+                {residentialDescription ||
+                  "Whether it\u2019s subtle or show-stopping, our holiday light installation services bring joy to your home all season long. We handle everything, from setup to removal for houses and estates across South Florida."}
               </p>
             </div>
             <div className="flex items-center gap-1.5 sm:gap-3 lg:gap-4 flex-wrap justify-center lg:justify-start">
-              {(residentialServiceTypes || ["Houses", "Estates", "Gated Communities"]).map((type) => (
-                <Badge key={type} size="sm">{type}</Badge>
+              {(
+                residentialServiceTypes || [
+                  "Houses",
+                  "Estates",
+                  "Gated Communities",
+                ]
+              ).map((type) => (
+                <Badge key={type} size="sm">
+                  {type}
+                </Badge>
               ))}
             </div>
           </div>
@@ -93,26 +111,38 @@ export function LightingSolution({ residentialDescription, commercialDescription
             <div className="flex flex-col gap-6 sm:gap-7 lg:gap-8 flex-1">
               <h2 className="font-marlton text-[28px] sm:text-[42px] lg:text-[56px] leading-[32px] sm:leading-[48px] lg:leading-[64px] tracking-[1.68px] sm:tracking-[2.52px] lg:tracking-[3.36px] text-center lg:text-left">
                 {commercialHeading || "Commercial HOLIDAY LIGHT"}{" "}
-                <span
-                  className="font-luminaire inline-block text-[#FFE7AF] md:-translate-x-8"
-                  style={{
-                    transform: "rotate(-8.115deg)",
-                    textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
-                    WebkitTextStrokeWidth: "2px",
-                    WebkitTextStrokeColor: "#252323",
-                    paintOrder: "stroke fill",
-                  }}
-                >
-                  Installation
-                </span>
+                {!commercialHeading && (
+                  <span
+                    className="font-luminaire inline-block text-[#FFE7AF] md:-translate-x-8"
+                    style={{
+                      transform: "rotate(-8.115deg)",
+                      textShadow: "0 4px 12px rgba(0, 0, 0, 0.25)",
+                      WebkitTextStrokeWidth: "2px",
+                      WebkitTextStrokeColor: "#252323",
+                      paintOrder: "stroke fill",
+                    }}
+                  >
+                    Installation
+                  </span>
+                )}
               </h2>
               <p className="text-white text-base sm:text-lg leading-6 sm:leading-[26px] tracking-[0.16px] sm:tracking-[0.18px]">
-                {commercialDescription || "Make your business shine this season with our holiday Christmas light installation services. We create festive, professional displays that attract attention and bring in customers\u2014all installed safely and efficiently."}
+                {commercialDescription ||
+                  "Make your business shine this season with our holiday Christmas light installation services. We create festive, professional displays that attract attention and bring in customers\u2014all installed safely and efficiently."}
               </p>
             </div>
             <div className="flex items-center gap-1.5 sm:gap-3 lg:gap-4 flex-wrap justify-center lg:justify-start">
-              {(commercialPropertyTypes || ["Storefronts", "Office Buildings", "Plazas & Shopping Centers", "Community Spaces"]).map((type) => (
-                <Badge key={type} size="sm">{type}</Badge>
+              {(
+                commercialPropertyTypes || [
+                  "Storefronts",
+                  "Office Buildings",
+                  "Plazas & Shopping Centers",
+                  "Community Spaces",
+                ]
+              ).map((type) => (
+                <Badge key={type} size="sm">
+                  {type}
+                </Badge>
               ))}
             </div>
           </div>
