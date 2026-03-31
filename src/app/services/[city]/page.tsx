@@ -1,7 +1,9 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { getCityContent, getAllCitySlugs } from "@/data/services/city-content";
 import { getCityTestimonials } from "@/data/services/city-testimonials";
+import { cities } from "@/data/cities";
 import { Hero } from "@/components/sections/services/hero";
 import { RecentLightInstallation } from "@/components/sections/services/light-installation";
 import { LightingSolution } from "@/components/sections/services/lighting-solution";
@@ -20,7 +22,9 @@ export async function generateStaticParams() {
   return getAllCitySlugs().map((slug) => ({ city: slug }));
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { city } = await params;
   const content = getCityContent(city);
   if (!content) return {};
@@ -28,10 +32,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: content.meta.title,
     description: content.meta.description,
+    alternates: {
+      canonical: `https://godlyholidaylights.com/services/${city}`,
+    },
     openGraph: {
       title: content.meta.title,
       description: content.meta.description,
       url: `https://godlyholidaylights.com/services/${city}`,
+      images: "/og.png",
     },
   };
 }
@@ -54,11 +62,69 @@ export default async function CityServicePage({ params }: PageProps) {
     })),
   };
 
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Godly Holiday Lights",
+    description: content.meta.description,
+    url: `https://godlyholidaylights.com/services/${city}`,
+    telephone: "+1-954-751-4128",
+    email: "hello@godlyholidaylights.com",
+    image: "https://godlyholidaylights.com/og.png",
+    areaServed: {
+      "@type": "City",
+      name: content.name,
+    },
+    serviceType: "Holiday Light Installation",
+    priceRange: "$$",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: content.name,
+      addressRegion: "FL",
+      addressCountry: "US",
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://godlyholidaylights.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Services",
+        item: "https://godlyholidaylights.com/services",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: `${content.name} Holiday Lights`,
+        item: `https://godlyholidaylights.com/services/${city}`,
+      },
+    ],
+  };
+
   return (
     <div className="flex flex-col items-center overflow-x-visible justify-center relative">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <div className="relative z-20 w-full">
         <Hero
@@ -70,10 +136,16 @@ export default async function CityServicePage({ params }: PageProps) {
         <LightingSolution
           residentialHeading={content.lightingSolution.residentialHeading}
           commercialHeading={content.lightingSolution.commercialHeading}
-          residentialDescription={content.lightingSolution.residentialDescription}
+          residentialDescription={
+            content.lightingSolution.residentialDescription
+          }
           commercialDescription={content.lightingSolution.commercialDescription}
-          residentialServiceTypes={content.lightingSolution.residentialServiceTypes}
-          commercialPropertyTypes={content.lightingSolution.commercialPropertyTypes}
+          residentialServiceTypes={
+            content.lightingSolution.residentialServiceTypes
+          }
+          commercialPropertyTypes={
+            content.lightingSolution.commercialPropertyTypes
+          }
         />
         <WhyChooseUs items={content.whyUs} />
         <HowItWorks

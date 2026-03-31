@@ -14,10 +14,15 @@ export const metadata: Metadata = {
   title: "Holiday Light Installation Services | Godly Holiday Lights",
   description:
     "Professional holiday light installation for homes, businesses, and estates across South Florida. Custom designs, commercial-grade lights, full maintenance, and takedown included.",
+  alternates: {
+    canonical: "https://godlyholidaylights.com/services",
+  },
   openGraph: {
     title: "Holiday Light Installation Services | Godly Holiday Lights",
     description:
       "Professional holiday light installation for homes, businesses, and estates across South Florida. Custom designs, commercial-grade lights, full maintenance, and takedown included.",
+    url: "https://godlyholidaylights.com/services",
+    images: "/og.png",
   },
 };
 

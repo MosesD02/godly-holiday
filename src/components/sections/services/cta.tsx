@@ -2,6 +2,7 @@ import { QuoteButton } from "@/components/ui/quote-button";
 import Image from "next/image";
 
 import ArrowRight from "@/assets/arrow-right.svg";
+import { cn } from "@/lib/utils";
 
 interface ServicesCTAProps {
   cityName?: string;
@@ -9,7 +10,11 @@ interface ServicesCTAProps {
   subtext?: string;
 }
 
-export function ServicesCTA({ cityName, heading, subtext }: ServicesCTAProps = {}) {
+export function ServicesCTA({
+  cityName,
+  heading,
+  subtext,
+}: ServicesCTAProps = {}) {
   return (
     <section className="bg-paper-16-2 pb-16 sm:pb-20 lg:pb-[114px] space-y-12 sm:space-y-16 lg:space-y-[96px]">
       <Image
@@ -34,7 +39,8 @@ export function ServicesCTA({ cityName, heading, subtext }: ServicesCTAProps = {
               heading
             ) : (
               <>
-                BOOK YOUR {cityName ? cityName.toUpperCase() : ""}<br />
+                BOOK YOUR {cityName ? cityName.toUpperCase() : ""}
+                <br />
                 <span
                   className="absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 mt-1.5 font-luminaire text-[#FFE7AF] rotate-[-8.351deg] text-3xl sm:text-4xl lg:text-[56px] trim-text"
                   style={{
@@ -60,7 +66,12 @@ export function ServicesCTA({ cityName, heading, subtext }: ServicesCTAProps = {
               </>
             )}
           </h2>
-          <p className="max-w-[374px] font-satoshi text-lg sm:text-xl font-medium leading-6 text-center z-10 px-4 sm:px-0">
+          <p
+            className={cn(
+              "font-satoshi text-lg sm:text-xl font-medium leading-6 text-center z-10 px-4 sm:px-0",
+              cityName ? "max-w-[765px]" : "max-w-[374px]",
+            )}
+          >
             {subtext
               ? subtext
               : cityName
