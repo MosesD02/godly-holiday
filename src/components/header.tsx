@@ -15,6 +15,10 @@ export const navItems: NavItem[] = [
     href: "/services",
   },
   {
+    label: "Blog",
+    href: "/blog",
+  },
+  {
     label: "Our Work",
     href: "/#light-installation",
   },

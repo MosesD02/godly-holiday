@@ -285,6 +285,7 @@
     z-index: 2;
   }
 
+  /* Same structure as `.godly-button`: 4px border, identical shadow stack (no outer ring). Gray palette instead of red. */
   .godly-button-gray {
     display: inline-flex;
     height: 61px;
@@ -293,18 +294,17 @@
     gap: 10px;
     flex-shrink: 0;
     border-radius: 9px;
-    border: 1px solid #232222;
+    border: 4px solid #4a4543;
     background: linear-gradient(
         180deg,
-        rgba(97, 80, 62, 0.6) 0%,
-        rgba(0, 0, 0, 0) 100%
+        rgba(0, 0, 0, 0) 0%,
+        rgba(45, 43, 43, 0.55) 100%
       ),
-      linear-gradient(180deg, #323030 100%, #262424 0%),
+      linear-gradient(180deg, #4a4a4a 0%, #2e2e2e 100%),
       url(/images/textures/paper-14.webp) lightgray 50% / cover no-repeat;
     background-blend-mode: normal, hard-light, normal;
-    box-shadow: 0 -7px 5.289px 0 rgba(36, 34, 34, 0.33) inset,
-      0 -9px 5.289px 0 #343232 inset, 0 17px 34px 0 rgba(9, 9, 9, 0.24),
-      0 0 0 4px #61503e;
+    box-shadow: 0 -7px 7.3px 0 rgba(36, 34, 34, 0.33) inset,
+      0 -9px 5.289px 0 #343232 inset, 0 17px 34px 0 rgba(9, 9, 9, 0.24);
     font-family: var(--font-marlton), sans-serif;
     color: #fde4c8;
     font-size: 24px;
@@ -328,16 +328,15 @@
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0.1) 0%,
-        rgba(97, 80, 62, 0.7) 100%
+        rgba(90, 88, 88, 0.5) 100%
       ),
-      linear-gradient(180deg, #404040 100%, #323030 0%),
+      linear-gradient(180deg, #5a5a5a 0%, #3d3d3d 100%),
       url(/images/textures/paper-14.webp) lightgray 50% / cover no-repeat;
     background-blend-mode: lighten, hard-light, normal;
-    box-shadow: 0 -7px 5.289px 0 rgba(36, 34, 34, 0.33) inset,
-      0 -9px 5.289px 0 #343232 inset, 0 24px 48px 0 rgba(9, 9, 9, 0.28),
-      0 0 0 4px #61503e;
+    box-shadow: 0 -7px 7.3px 0 rgba(36, 34, 34, 0.33) inset,
+      0 -9px 5.289px 0 #3a3a3a inset, 0 24px 48px 0 rgba(9, 9, 9, 0.28);
     color: #fff6e9;
-    border-color: #404040;
+    border-color: #6b6b6b;
     cursor: pointer;
     z-index: 1;
     transition-timing-function: ease-in-out;
@@ -347,16 +346,15 @@
     background: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.18) 0%,
-        rgba(97, 80, 62, 0.8) 100%
+        rgba(45, 43, 43, 0.75) 100%
       ),
-      linear-gradient(180deg, #262424 100%, #1a1a1a 0%),
+      linear-gradient(180deg, #3d3d3d 0%, #2a2a2a 100%),
       url(/images/textures/paper-14.webp) lightgray 50% / cover no-repeat;
     background-blend-mode: multiply, hard-light, normal;
     box-shadow: 0 -3px 3.3px 0 rgba(36, 34, 34, 0.33) inset,
-      0 -7px 5.289px 0 #343232 inset, 0 8px 16px 0 rgba(9, 9, 9, 0.18),
-      0 0 0 4px #61503e;
+      0 -7px 5.289px 0 #343232 inset, 0 8px 16px 0 rgba(9, 9, 9, 0.18);
     color: #ffe7c8;
-    border-color: #1a1a1a;
+    border-color: #2a2a2a;
     z-index: 2;
   }
 

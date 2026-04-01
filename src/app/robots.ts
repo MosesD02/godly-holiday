@@ -1,4 +1,7 @@
 import type { MetadataRoute } from "next";
+import { BASE_URL } from "@/lib/constants";
+
+const base = BASE_URL.replace(/\/$/, "");
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -7,6 +10,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://godlyholidaylights.com/sitemap.xml",
+    sitemap: `${base}/sitemap.xml`,
+    host: base,
   };
 }

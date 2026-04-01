@@ -104,3 +104,9 @@ export const cities = [
     key: "weston",
   },
 ];
+
+/** Slug → uppercase label (blog, SEO, cookies). Includes `south-florida` for the all-areas blog index. */
+export const citiesMap: Record<string, string> = Object.fromEntries([
+  ...cities.map((c) => [c.key, c.name] as const),
+  ["south-florida", "SOUTH FLORIDA"] as const,
+]);
