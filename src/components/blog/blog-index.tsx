@@ -76,6 +76,8 @@ export function BlogIndex({
     ? getPaginationItems(currentPage, totalPages)
     : [];
 
+  const gridPosts = posts.length > 1 ? posts.slice(1) : [];
+
   const pageButtonClass = (isActive: boolean) =>
     [
       "font-marlton trim flex min-h-[43px] min-w-[41px] shrink-0 flex-col items-center justify-center rounded-[11px] px-3 py-2 text-sm leading-5 transition-colors md:px-4",
@@ -243,23 +245,19 @@ export function BlogIndex({
             </article>
           </div>
         )}
-        {posts.slice(1).filter((p) => p.image).length > 0 && (
+        {gridPosts.length > 0 && (
           <div className="flex flex-col gap-[40px] px-[30px] py-[30px] md:px-12 md:pt-[36px] md:pb-12">
             <h2 className="trim mx-auto w-full max-w-[1311px] font-marlton text-[36px] font-normal text-[#0E0E0E]">
               LATEST NEWS
             </h2>
             <div className="mx-auto grid max-w-[1311px] grid-cols-1 gap-[23px] sm:grid-cols-2 md:grid-cols-3">
-              {posts
-                .slice(1)
-                .filter((p): p is BlogPost & { image: string } =>
-                  Boolean(p.image),
-                )
-                .map((post) => (
-                  <div key={post.slug} className="flex flex-col gap-3">
-                    <Link
-                      href={blogPostHref(post.slug)}
-                      className="flex flex-col gap-3"
-                    >
+              {gridPosts.map((post) => (
+                <div key={post.slug} className="flex flex-col gap-3">
+                  <Link
+                    href={blogPostHref(post.slug)}
+                    className="flex flex-col gap-3"
+                  >
+                    {post.image ? (
                       <div className="aspect-4/3 w-full overflow-hidden">
                         <Image
                           src={post.image}
@@ -269,25 +267,31 @@ export function BlogIndex({
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
-                      <p className="font-satoshi text-base font-light text-[#2D2B2B]/75 md:mt-2 md:text-2xl">
-                        {post.publishedAt
-                          ? format(new Date(post.publishedAt), "MMMM d, yyyy")
-                          : ""}
-                      </p>
-                      <p
-                        className="font-marlton text-xl leading-snug font-normal text-[#0E0E0E] md:mt-1 md:text-[28px]"
-                        style={{
-                          display: "-webkit-box",
-                          WebkitLineClamp: 2,
-                          WebkitBoxOrient: "vertical",
-                          overflow: "hidden",
-                        }}
-                      >
-                        {post.title}
-                      </p>
-                    </Link>
-                  </div>
-                ))}
+                    ) : (
+                      <div
+                        className="aspect-4/3 w-full border border-[rgba(106,100,100,0.12)] bg-gradient-to-br from-[rgba(106,100,100,0.05)] to-[rgba(175,143,110,0.14)]"
+                        aria-hidden
+                      />
+                    )}
+                    <p className="font-satoshi text-base font-light text-[#2D2B2B]/75 md:mt-2 md:text-2xl">
+                      {post.publishedAt
+                        ? format(new Date(post.publishedAt), "MMMM d, yyyy")
+                        : ""}
+                    </p>
+                    <p
+                      className="font-marlton text-xl leading-snug font-normal text-[#0E0E0E] md:mt-1 md:text-[28px]"
+                      style={{
+                        display: "-webkit-box",
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: "vertical",
+                        overflow: "hidden",
+                      }}
+                    >
+                      {post.title}
+                    </p>
+                  </Link>
+                </div>
+              ))}
             </div>
           </div>
         )}

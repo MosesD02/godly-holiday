@@ -10,7 +10,8 @@
       "Bash(npx tsc:*)",
       "Bash(./node_modules/.bin/tsc.exe --noEmit --strict src/data/services/cities/boca-raton.ts src/data/services/cities/coconut-creek.ts src/data/services/cities/cooper-city.ts src/data/services/cities/coral-springs.ts src/data/services/cities/davie.ts)",
       "Bash(grep:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "mcp__Sanity__get_schema"
     ]
   }
 }
