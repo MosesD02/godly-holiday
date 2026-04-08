@@ -20,9 +20,6 @@
 # production
 /build
 
-# generated Sanity import bundle
-/data/blog-posts-import.ndjson
-
 # misc
 .DS_Store
 *.pem

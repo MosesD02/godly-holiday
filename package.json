@@ -7,9 +7,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "sanity:import-posts": "node scripts/generate-blog-posts-ndjson.mjs && node node_modules/sanity/bin/sanity datasets import -d production data/blog-posts-import.ndjson --replace",
-    "sanity:draft-all-posts": "node scripts/unpublish-posts-to-draft.mjs"
+    "lint": "eslint"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

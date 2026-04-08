@@ -124,7 +124,7 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
               "text-sm sm:text-base lg:text-lg text-center sm:text-center"
           )}
         >
-          Receive a call within 30 minutes during normal business hours.
+          Receive a call within one minute during normal business hours.
         </p>
       </div>
 
