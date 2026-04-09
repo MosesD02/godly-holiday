@@ -15,10 +15,6 @@ export const navItems: NavItem[] = [
     href: "/services",
   },
   {
-    label: "Blog",
-    href: "/blog",
-  },
-  {
     label: "Our Work",
     href: "/#light-installation",
   },
@@ -29,6 +25,10 @@ export const navItems: NavItem[] = [
   {
     label: "Why Choose Us",
     href: "/#remove-stress",
+  },
+  {
+    label: "Blog",
+    href: "/blog",
   },
 ];
 
