@@ -113,7 +113,7 @@ export function QuoteModal() {
               LET US CALL YOU!
             </h2>
             <p className="font-satoshi text-sm sm:text-base lg:text-lg font-medium text-[#2D2B2B] mt-2">
-              Receive a call within one minute during normal business hours.
+              Receive a call within 1 minute during normal business hours.
             </p>
           </div>
         </div>
