@@ -54,7 +54,10 @@ interface SanityPostDoc {
   faq?: BlogFaqItem[];
 }
 
-const POSTS_QUERY = `*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
+/** Only surface posts whose editorial date is in the past (stops early publishes leaking). */
+const PUBLISHED_WINDOW = `(!defined(publishedAt) || publishedAt <= now())`;
+
+const POSTS_QUERY = `*[_type == "post" && defined(slug.current) && ${PUBLISHED_WINDOW}] | order(publishedAt desc) {
   _id,
   title,
   "slug": slug.current,
@@ -77,7 +80,7 @@ const POSTS_QUERY = `*[_type == "post" && defined(slug.current)] | order(publish
   faq[] { question, answer }
 }`;
 
-const POST_BY_SLUG_QUERY = `*[_type == "post" && slug.current == $slug][0] {
+const POST_BY_SLUG_QUERY = `*[_type == "post" && slug.current == $slug && ${PUBLISHED_WINDOW}][0] {
   _id,
   title,
   "slug": slug.current,

@@ -87,110 +87,120 @@ export function Popup() {
           }
         }}
       >
-        <DialogContent className="bg-transparent border-none shadow-none text-black text-center max-w-[440px] sm:max-w-[440px] scale-90 sm:scale-100 min-h-[650px] sm:min-h-[675px]">
-          <div className="absolute inset-0 w-full h-full -z-10 pointer-events-none object-contain left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <DialogContent
+          className="bg-transparent border-none shadow-none text-black text-center !max-w-[min(440px,calc(100%-2rem))] !flex !h-[650px] !min-h-0 !max-h-[650px] !flex-col !gap-0 !overflow-hidden p-0 max-md:scale-90 max-md:origin-center md:scale-100 md:!h-[720px] md:!max-h-[720px]"
+        >
+          <div className="pointer-events-none absolute inset-0 -z-10 left-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 object-contain">
             <Image
               src="/images/textures/popup-bg.webp"
               alt="Popup"
-              className="w-full h-full"
+              className="h-full w-full"
               width={1440}
               height={1440}
               priority
               loading="eager"
             />
           </div>
-          <div className="w-[calc(100%-32px)] left-1/2 -translate-x-1/2 h-[1px] border-t border-dashed inset-0 absolute z-10 border-black top-1/2 -translate-y-1/2" />
-          <div className="flex flex-col gap-6">
-            <DialogHeader className="mx-auto text-black">
-              <DialogTitle className="font-marlton text-center shadow-none text-shadow-none text-4xl">
-                SOUTH FLORIDA <br />
-                <span className="text-[26px]">
-                  Holiday LIGHT SPECIAL -{" "}
-                  <span className="text-[#eb7a55]">$150 OFF</span>
-                </span>
-              </DialogTitle>
-              <DialogDescription className="font-satoshi text-center text-base font-medium text-[#0a0a0a]">
-                We&apos;re opening up limited spots for holiday light
-                installations this season.
-              </DialogDescription>
-            </DialogHeader>
+          <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col gap-0 overflow-y-auto overflow-x-hidden px-4 py-4 pt-5 sm:px-6 sm:py-6 sm:pt-6 sm:pb-6">
+            <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-3 sm:gap-4 md:gap-5">
+              <DialogHeader className="mx-auto text-black sm:text-center max-md:space-y-2">
+                <DialogTitle className="font-marlton text-center shadow-none text-shadow-none text-3xl leading-tight sm:text-3xl md:text-4xl">
+                  SOUTH FLORIDA <br />
+                  <span className="text-lg sm:text-[22px] md:text-[26px]">
+                    Holiday LIGHT SPECIAL -{" "}
+                    <span className="text-[#eb7a55]">$150 OFF</span>
+                  </span>
+                </DialogTitle>
+                <DialogDescription className="font-satoshi text-center text-base font-medium text-[#0a0a0a] sm:text-base max-md:leading-normal max-md:px-0.5">
+                  We&apos;re opening up limited spots for holiday light
+                  installations this season.
+                </DialogDescription>
+              </DialogHeader>
 
-            <p>⏳ Offer ends in:</p>
+              <div className="flex w-full min-w-0 max-w-full flex-col items-center gap-3 sm:gap-4">
+                <p className="text-base">⏳ Offer ends in:</p>
 
-            <div className="grid grid-cols-4 gap-4 max-w-xs mx-auto">
-              <div className="flex items-center flex-col gap-2">
-                <div className="bg-[#282828] inset-shadow-sm inset-shadow-white/80 text-white rounded-[12px] flex items-center justify-center font-medium font-satoshi text-[32px] text-center aspect-square size-[64px]">
-                  {timeLeft.days.toString().padStart(2, "0")}
-                </div>
-                <div className="font-satoshi text-base font-medium text-[#0a0a0a]">
-                  DAYS
-                </div>
-              </div>
-              <div className="flex items-center flex-col gap-2">
-                <div className="bg-[#282828]  inset-shadow-sm inset-shadow-white/80 text-white rounded-[12px] flex items-center justify-center font-medium font-satoshi text-[32px] text-center aspect-square size-[64px]">
-                  {timeLeft.hours.toString().padStart(2, "0")}
-                </div>
-                <div className="font-satoshi text-base font-medium text-[#0a0a0a]">
-                  HOURS
-                </div>
-              </div>
-              <div className="flex items-center flex-col gap-2">
-                <div className="bg-[#282828]  inset-shadow-sm inset-shadow-white/80 text-white rounded-[12px] flex items-center justify-center font-medium font-satoshi text-[32px] text-center aspect-square size-[64px]">
-                  {timeLeft.minutes.toString().padStart(2, "0")}
-                </div>
-                <div className="font-satoshi text-base font-medium text-[#0a0a0a]">
-                  MINUTES
-                </div>
-              </div>
-              <div className="flex items-center flex-col gap-2">
-                <div className="bg-[#282828]  inset-shadow-sm inset-shadow-white/80 text-white rounded-[12px] flex items-center justify-center font-medium font-satoshi text-[32px] text-center aspect-square size-[64px]">
-                  {timeLeft.seconds.toString().padStart(2, "0")}
-                </div>
-                <div className="font-satoshi text-base font-medium text-[#0a0a0a]">
-                  SECONDS
+                <div className="grid w-full max-w-[18.5rem] grid-cols-4 gap-1.5 sm:max-w-xs sm:gap-3 sm:mx-auto">
+                  <div className="flex flex-col items-center gap-1 sm:gap-1.5">
+                    <div className="bg-[#282828] inset-shadow-sm inset-shadow-white/80 text-white rounded-[10px] sm:rounded-[12px] flex size-14 shrink-0 items-center justify-center font-medium font-satoshi text-[24px] leading-none sm:size-[58px] sm:text-[28px] md:text-[30px]">
+                      {timeLeft.days.toString().padStart(2, "0")}
+                    </div>
+                    <div className="font-satoshi text-[10px] font-medium text-[#0a0a0a] sm:text-xs md:text-sm max-md:tracking-tight">
+                      DAYS
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center gap-1 sm:gap-1.5">
+                    <div className="bg-[#282828]  inset-shadow-sm inset-shadow-white/80 text-white rounded-[10px] sm:rounded-[12px] flex size-14 shrink-0 items-center justify-center font-medium font-satoshi text-[24px] leading-none sm:size-[58px] sm:text-[28px] md:text-[30px]">
+                      {timeLeft.hours.toString().padStart(2, "0")}
+                    </div>
+                    <div className="font-satoshi text-[10px] font-medium text-[#0a0a0a] sm:text-xs md:text-sm max-md:tracking-tight">
+                      HOURS
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center gap-1 sm:gap-1.5">
+                    <div className="bg-[#282828]  inset-shadow-sm inset-shadow-white/80 text-white rounded-[10px] sm:rounded-[12px] flex size-14 shrink-0 items-center justify-center font-medium font-satoshi text-[24px] leading-none sm:size-[58px] sm:text-[28px] md:text-[30px]">
+                      {timeLeft.minutes.toString().padStart(2, "0")}
+                    </div>
+                    <div className="font-satoshi text-[10px] font-medium text-[#0a0a0a] sm:text-xs md:text-sm max-md:tracking-tight">
+                      MINUTES
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center gap-1 sm:gap-1.5">
+                    <div className="bg-[#282828]  inset-shadow-sm inset-shadow-white/80 text-white rounded-[10px] sm:rounded-[12px] flex size-14 shrink-0 items-center justify-center font-medium font-satoshi text-[24px] leading-none sm:size-[58px] sm:text-[28px] md:text-[30px]">
+                      {timeLeft.seconds.toString().padStart(2, "0")}
+                    </div>
+                    <div className="font-satoshi text-[10px] font-medium text-[#0a0a0a] sm:text-xs md:text-sm max-md:tracking-tight">
+                      SECONDS
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="flex flex-col justify-end gap-4">
-            <div className="border rounded-[20px] border-[#ae9d8a] p-2 h-fit">
-              <div className="border rounded-[12px] border-[#ae9d8a] p-2">
-                <div className="grid grid-cols-2 items-center gap-4 mb-3">
-                  <div className="font-marlton text-[#eb7a55] text-8xl text-right">
-                    {/* if month is sep then 15% else 10% */}
-                    $150
+            <div
+              className="h-px w-full shrink-0 border-t border-dashed border-[#0a0a0a] pointer-events-none"
+              aria-hidden
+            />
+
+            <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-2.5 sm:gap-3 md:gap-4">
+              <div className="h-fit w-full min-w-0 max-w-full border rounded-2xl sm:rounded-[20px] border-[#ae9d8a] p-1.5 sm:p-2">
+                <div className="border rounded-[10px] sm:rounded-[12px] border-[#ae9d8a] p-1.5 sm:p-2">
+                  <div className="grid grid-cols-2 items-center gap-2 sm:gap-4 mb-2 sm:mb-3">
+                    <div className="font-marlton text-[#eb7a55] text-7xl leading-none text-right sm:text-7xl md:text-8xl">
+                      $150
+                    </div>
+                    <div className="flex flex-col justify-start text-left font-marlton text-xl leading-tight sm:text-xl md:text-2xl">
+                      OFF <br />{" "}
+                      <span className="text-[#ae9d8a]">
+                        NEW CLIENTS <br /> ONLY
+                      </span>
+                    </div>
                   </div>
-                  <div className="flex flex-col justify-start text-left font-marlton text-2xl">
-                    OFF <br />{" "}
-                    <span className="text-[#ae9d8a]">
-                      NEW CLIENTS <br /> ONLY
-                    </span>
-                  </div>
+                  <hr />
+                  <p className="font-satoshi text-[11px] leading-snug sm:text-xs md:text-sm font-medium text-[#0a0a0a]">
+                    All-inclusive holiday lighting: we provide the lights, handle
+                    installation, maintenance, and takedown, and even set
+                    everything on automatic timers for you. Limited spots
+                    available — offer ends October 31. Countdown’s on, don’t wait.
+                  </p>
                 </div>
-                <hr />
-                <p className="font-satoshi text-[10px] font-medium text-[#0a0a0a]">
-                  All-inclusive holiday lighting: we provide the lights, handle
-                  installation, maintenance, and takedown, and even set
-                  everything on automatic timers for you. Limited spots
-                  available — offer ends October 31. Countdown’s on, don’t wait.
-                </p>
               </div>
+              <QuoteButton className="!w-full !max-w-full !self-stretch justify-center !inline-flex max-md:!min-h-0 max-md:!h-14 max-md:!py-2 max-md:!px-3 max-md:!text-xl">
+                <span>REQUEST A QUOTE</span>
+                <Image
+                  src={ArrowRight.src}
+                  alt="Arrow Right"
+                  className="max-md:h-7 max-md:w-7"
+                  width={32}
+                  height={33}
+                />
+              </QuoteButton>
             </div>
-            <QuoteButton className="max-w-full w-full justify-center">
-              <span>REQUEST A QUOTE</span>
-              <Image
-                src={ArrowRight.src}
-                alt="Arrow Right"
-                width={32}
-                height={33}
-              />
-            </QuoteButton>
           </div>
         </DialogContent>
       </Dialog>
       {showFloatingButton && !isOpen && !isExpired && (
-        <div className="fixed right-0 sm:right-auto sm:left-0 w-fit h-fit translate-x-[75px] sm:-translate-x-[65px] top-1/2 rotate-90 sm:rotate-90 z-50 scale-70 sm:scale-100">
+        <div className="fixed right-0 sm:right-auto sm:left-0 top-1/2 z-50 h-fit w-fit -translate-y-1/2 translate-x-[75px] sm:-translate-x-[65px] rotate-90 sm:rotate-90 origin-right sm:origin-left max-md:scale-[0.8] md:scale-100">
           <GodlyButton
             onClick={() => setIsOpen(true)}
             className="rounded-t-none! sm:rounded-t-md! sm:rounded-b-none! border-0! tracking-wider!"
