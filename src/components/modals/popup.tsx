@@ -3,11 +3,13 @@
 import { useEffect, useState } from "react";
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
 } from "../ui/dialog";
+import { XIcon } from "lucide-react";
 import ArrowRight from "@/assets/arrow-right.svg";
 import Image from "next/image";
 import { QuoteButton } from "../ui/quote-button";
@@ -88,20 +90,29 @@ export function Popup() {
         }}
       >
         <DialogContent
-          className="bg-transparent border-none shadow-none text-black text-center !max-w-[min(440px,calc(100%-2rem))] !flex !h-[650px] !min-h-0 !max-h-[650px] !flex-col !gap-0 !overflow-hidden p-0 max-md:scale-90 max-md:origin-center md:scale-100 md:!h-[720px] md:!max-h-[720px]"
+          hideCloseButton
+          className="bg-transparent border-none shadow-none text-black text-center !max-w-[min(440px,calc(100%-2rem))] !flex !h-[650px] !min-h-0 !max-h-[650px] !flex-col !gap-0 !overflow-hidden !p-0 max-md:scale-90 max-md:origin-center md:scale-100 md:!h-[720px] md:!max-h-[720px]"
         >
-          <div className="pointer-events-none absolute inset-0 -z-10 left-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 object-contain">
-            <Image
-              src="/images/textures/popup-bg.webp"
-              alt="Popup"
-              className="h-full w-full"
-              width={1440}
-              height={1440}
-              priority
-              loading="eager"
-            />
-          </div>
-          <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col gap-0 overflow-y-auto overflow-x-hidden px-4 py-4 pt-5 sm:px-6 sm:py-6 sm:pt-6 sm:pb-6">
+          <div className="relative flex min-h-0 min-w-0 w-full flex-1 flex-col">
+            <div className="pointer-events-none absolute inset-0 -z-10 left-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 object-contain">
+              <Image
+                src="/images/textures/popup-bg.webp"
+                alt="Popup"
+                className="h-full w-full"
+                width={1440}
+                height={1440}
+                priority
+                loading="eager"
+              />
+            </div>
+            <DialogClose
+              type="button"
+              className="ring-offset-background focus:ring-ring text-[#0a0a0a] absolute top-3 right-12 z-[120] inline-flex size-9 items-center justify-center rounded-xs opacity-80 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden md:right-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-5"
+            >
+              <XIcon />
+              <span className="sr-only">Close</span>
+            </DialogClose>
+            <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col gap-0 overflow-y-auto overflow-x-hidden px-[16px] py-4 pt-5 sm:px-[24px] sm:py-6 sm:pt-6 sm:pb-6">
             <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-3 sm:gap-4 md:gap-5">
               <DialogHeader className="mx-auto text-black sm:text-center max-md:space-y-2">
                 <DialogTitle className="font-marlton text-center shadow-none text-shadow-none text-3xl leading-tight sm:text-3xl md:text-4xl">
@@ -196,6 +207,7 @@ export function Popup() {
                 />
               </QuoteButton>
             </div>
+          </div>
           </div>
         </DialogContent>
       </Dialog>
