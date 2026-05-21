@@ -2,12 +2,19 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
+import Script from "next/script";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Header } from "@/components/header";
 import { OsDetection } from "./os-detection";
 import { Footer } from "@/components/footer";
 import { Popup } from "@/components/modals/popup";
 import { QuoteModalProvider } from "@/hooks/use-quote-modal";
 import { QuoteModal } from "@/components/modals/quote-modal";
+import {
+  GA4_ID,
+  GOOGLE_ADS_ID,
+  GTM_ID,
+} from "@/lib/constants";
 
 const luminaire = localFont({
   src: "../fonts/Luminaire.otf",
@@ -71,27 +78,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <script>{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W9G48J8N');`}</script>
-      </head>
+      <GoogleTagManager gtmId={GTM_ID} />
       <body
         className={`antialiased ${luminaire.variable} overflow-x-clip ${marltonSans.variable} ${marltonScript.variable} ${satoshi.variable} ${inter.variable} min-h-svh flex flex-col items-center justify-center max-w-screen w-full h-full`}
       >
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-W9G48J8N"
-            height="0"
-            width="0"
-            style={{
-              display: "none",
-              visibility: "hidden",
-            }}
-          ></iframe>
-        </noscript>
         <QuoteModalProvider>
           <OsDetection />
           <Header />
@@ -101,6 +91,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <QuoteModal />
         </QuoteModalProvider>
       </body>
+      <GoogleAnalytics gaId={GA4_ID} />
+      <Script id="google-ads-config" strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('config', '${GOOGLE_ADS_ID}');`}
+      </Script>
     </html>
   );
 }
