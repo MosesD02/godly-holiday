@@ -89,9 +89,11 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
         setShowSuccessDialog(true);
         if (typeof window !== "undefined") {
           const w = window as Window & {
-            gtag?: (command: string, eventName: string, params?: Record<string, unknown>) => void;
+            dataLayer?: Record<string, unknown>[];
           };
-          w.gtag?.("event", "quote_form_submission", {
+          w.dataLayer = w.dataLayer || [];
+          w.dataLayer.push({
+            event: "quote_form_submission",
             user_email: values.email,
             user_phone: `+1${values.phone}`,
             full_name: values.name,

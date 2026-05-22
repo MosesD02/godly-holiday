@@ -2,19 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
-import Script from "next/script";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { Header } from "@/components/header";
 import { OsDetection } from "./os-detection";
 import { Footer } from "@/components/footer";
 import { Popup } from "@/components/modals/popup";
 import { QuoteModalProvider } from "@/hooks/use-quote-modal";
 import { QuoteModal } from "@/components/modals/quote-modal";
-import {
-  GA4_ID,
-  GOOGLE_ADS_ID,
-  GTM_ID,
-} from "@/lib/constants";
+import { GTM_ID } from "@/lib/constants";
 
 const luminaire = localFont({
   src: "../fonts/Luminaire.otf",
@@ -91,12 +86,6 @@ export default function RootLayout({
           <QuoteModal />
         </QuoteModalProvider>
       </body>
-      <GoogleAnalytics gaId={GA4_ID} />
-      <Script id="google-ads-config" strategy="afterInteractive">
-        {`window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('config', '${GOOGLE_ADS_ID}');`}
-      </Script>
     </html>
   );
 }
