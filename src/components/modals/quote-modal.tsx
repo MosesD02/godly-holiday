@@ -86,6 +86,17 @@ export function QuoteModal() {
         console.error("Webhook error:", errorText);
       } else {
         setShowSuccessDialog(true);
+        if (typeof window !== "undefined") {
+          const w = window as Window & {
+            gtag?: (command: string, eventName: string, params?: Record<string, unknown>) => void;
+          };
+          w.gtag?.("event", "quote_form_submission", {
+            user_email: values.email,
+            user_phone: `+1${values.phone}`,
+            full_name: values.name,
+            postal_code: values.zipCode,
+          });
+        }
         try {
           // Reset form fields and checkbox state
           form.reset();
