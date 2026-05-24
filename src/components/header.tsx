@@ -3,6 +3,8 @@ import Logo from "@/assets/logo.svg";
 import Call from "@/assets/call.svg";
 import Image from "next/image";
 import { MobileMenuButton, TicketButton } from "./header-client";
+import { CityPicker } from "./city-picker";
+import { HeaderNav } from "./header-nav";
 
 type NavItem = {
   label: string;
@@ -53,19 +55,12 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex w-full ps-6 items-center gap-6">
-            {navItems.map((item) => (
-              <Link
-                href={item.href}
-                key={item.label}
-                className="text-[#FDE4C8] font-marlton [text-box-trim:trim-both] text-base hover:text-[#FDE4C8]/80 transition-all duration-300 active:text-[#FDE4C8]/60"
-              >
-                {item.label}
-              </Link>
-            ))}
+            <HeaderNav items={navItems} variant="desktop" />
           </nav>
 
           {/* Desktop Right Section */}
-          <div className="hidden lg:flex items-center shrink-0 gap-8">
+          <div className="hidden lg:flex items-center shrink-0 gap-6">
+            <CityPicker variant="desktop" />
             <Link href="tel:+19547514128" className="flex items-center gap-3">
               <button className="flex p-3 items-center gap-2.5 hover:cursor-pointer rounded-[6px] border border-[rgba(243,202,158,0.11)] [background:rgba(0,0,0,0.23)] shadow-[0_3px_2px_0_rgba(97,80,62,0.20)_inset,_0_1px_4px_0_rgba(171,132,89,0.03)] hover:shadow-[0_3px_2px_0_rgba(97,80,62,0.20)_inset,_0_1px_4px_0_rgba(171,132,89,0.03),_0_0_20px_rgba(243,202,158,0.4)] transition-all duration-300 active:[background:rgba(0,0,0,0.08)]">
                 <Image src={Call.src} alt="Call" width={22} height={22} />
@@ -82,9 +77,7 @@ export function Header() {
           </div>
 
           {/* Mobile Menu */}
-          <MobileMenuButton>
-            <span />
-          </MobileMenuButton>
+          <MobileMenuButton />
         </div>
       </header>
     </div>

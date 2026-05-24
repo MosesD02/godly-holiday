@@ -19,7 +19,7 @@ export function RecentLightInstallation({
   return (
     <section
       id="recent-light-installation"
-      className="flex flex-col items-center justify-center py-16 md:py-24 lg:py-32 gap-8 md:gap-12 lg:gap-16"
+      className="flex flex-col items-center justify-center pb-16 md:pb-24 lg:pb-32 gap-8 md:gap-12 lg:gap-16"
     >
       <h2 className="relative text-[32px]  sm:text-[48px] lg:text-[64px] leading-[38px] sm:leading-[56px] lg:leading-[88px] max-w-fit max-h-fit tracking-[1.6px] sm:tracking-[2.4px] lg:tracking-[3.2px] font-marlton text-center mt-16 sm:mt-24 lg:mt-[144px] mb-10 sm:mb-16 lg:mb-[82px]">
         <span className="text-grain bg-white relative">

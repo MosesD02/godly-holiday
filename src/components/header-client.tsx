@@ -9,8 +9,10 @@ import { X } from "lucide-react";
 import Logo from "@/assets/logo.svg";
 import Call from "@/assets/call.svg";
 import { navItems } from "./header";
+import { CityPicker } from "./city-picker";
+import { HeaderNav } from "./header-nav";
 
-export function MobileMenuButton({ children }: { children: React.ReactNode }) {
+export function MobileMenuButton() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { openModal } = useQuoteModal();
 
@@ -45,7 +47,10 @@ export function MobileMenuButton({ children }: { children: React.ReactNode }) {
           className="fixed inset-0 bg-black/50 z-40 lg:hidden"
           onClick={() => setIsMobileMenuOpen(false)}
         >
-          <div className="absolute top-0 left-0 right-0 bg-background border-t border-[rgba(243,202,158,0.11)] shadow-lg">
+          <div
+            className="absolute top-0 left-0 right-0 bg-background border-t border-[rgba(243,202,158,0.11)] shadow-lg"
+            onClick={(e) => e.stopPropagation()}
+          >
             <nav className="px-4 py-6 flex flex-col gap-4 items-center">
               <Link href="/" className="shrink-0 mb-4">
                 <Image
@@ -56,16 +61,16 @@ export function MobileMenuButton({ children }: { children: React.ReactNode }) {
                   className="aspect-[7/4] sm:w-[70px] sm:h-[40px]"
                 />
               </Link>
-              {navItems.map((item) => (
-                <Link
-                  href={item.href}
-                  key={item.label}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block text-[#FDE4C8] font-marlton [text-box-trim:trim-both] text-base py-2 hover:text-[#FDE4C8]/80 transition-all duration-300 active:text-[#FDE4C8]/60"
-                >
-                  {item.label}
-                </Link>
-              ))}
+              <CityPicker
+                variant="mobile"
+                className="mb-2"
+                onSelect={() => setIsMobileMenuOpen(false)}
+              />
+              <HeaderNav
+                items={navItems}
+                variant="mobile"
+                onNavigate={() => setIsMobileMenuOpen(false)}
+              />
 
               <div className="flex items-center justify-between">
                 <div className="pt-8">

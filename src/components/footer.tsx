@@ -1,5 +1,6 @@
 import { cities } from "@/data/cities";
 import { navItems } from "./header";
+import { FooterNav } from "./footer-nav";
 import Link from "next/link";
 
 export function Footer() {
@@ -39,11 +40,7 @@ export function Footer() {
               Menu
             </h3>
             <ul className="text-[#312E2C] text-sm sm:text-base font-satoshi font-medium space-y-1 sm:space-y-2">
-              {navItems.map((item) => (
-                <li key={item.label}>
-                  <Link href={item.href}>{item.label}</Link>
-                </li>
-              ))}
+              <FooterNav items={navItems} />
             </ul>
           </div>
 

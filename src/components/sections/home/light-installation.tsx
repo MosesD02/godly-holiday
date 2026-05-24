@@ -4,7 +4,13 @@ import Image from "next/image";
 import { QuoteButton } from "@/components/ui/quote-button";
 import { AnimatedImagePair } from "@/components/sections/services/animated-image-pair";
 
-export function LightInstallation() {
+interface LightInstallationProps {
+  cityName?: string;
+}
+
+export function LightInstallation({
+  cityName = "South Florida",
+}: LightInstallationProps = {}) {
   return (
       <section
         id="light-installation"
@@ -94,7 +100,7 @@ export function LightInstallation() {
                 Whether it&rsquo;s subtle or show-stopping, our holiday light
                 installation services bring joy to your home all season long. We
                 handle everything, from setup to removal for houses and estates
-                across South Florida.
+                across {cityName}.
               </p>
             </div>
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 flex-wrap">

@@ -15,11 +15,20 @@ export const revalidate = 3600;
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
 
-  const cityPages = getAllCitySlugs().map((slug) => ({
+  const allCitySlugs = getAllCitySlugs();
+
+  const cityPages = allCitySlugs.map((slug) => ({
     url: url(`/services/${slug}`),
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.7,
+  }));
+
+  const cityHomePages = allCitySlugs.map((slug) => ({
+    url: url(`/${slug}`),
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
   }));
 
   let blogEntries: MetadataRoute.Sitemap = [];
@@ -84,6 +93,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    ...cityHomePages,
     ...cityPages,
     ...blogEntries,
   ];
