@@ -274,7 +274,7 @@ export function QuoteModal() {
                 {!isSubmitting && (
                   <Image
                     src={ArrowRight.src}
-                    alt="Arrow Right"
+                    alt=""
                     width={24}
                     height={25}
                     className="sm:w-8 sm:h-[33px]"

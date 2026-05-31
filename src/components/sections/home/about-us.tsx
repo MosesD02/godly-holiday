@@ -169,7 +169,7 @@ const AboutUs = () => {
       </div>
       <QuoteButton>
         <span>Get a Free Estimate</span>
-        <Image src={ArrowRight.src} alt="Arrow Right" width={32} height={32} />
+        <Image src={ArrowRight.src} alt="" width={32} height={32} />
       </QuoteButton>
       {/* <EstimateButton /> */}
     </div>

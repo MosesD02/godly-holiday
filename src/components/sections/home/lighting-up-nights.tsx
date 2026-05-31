@@ -111,7 +111,7 @@ export function LightingUpNights() {
     >
       <Image
         src="/images/home/lighting-up-nights/flakes.webp"
-        alt="Flakes"
+        alt=""
         className="absolute inset-0 left-1/2 top-0 -translate-x-1/2 pointer-events-none w-full max-w-[1440px] mix-blend-overlay opacity-20"
         width={1440}
         height={1440}

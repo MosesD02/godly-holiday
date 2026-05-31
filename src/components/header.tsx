@@ -46,7 +46,7 @@ export function Header() {
           <Link href="/" className="shrink-0">
             <Image
               src={Logo.src}
-              alt="Godly Windows"
+              alt="Godly Holiday Lights"
               width={60}
               height={34}
               className="aspect-[7/4] sm:w-[70px] sm:h-[40px]"

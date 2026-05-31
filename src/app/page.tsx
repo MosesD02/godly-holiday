@@ -17,7 +17,7 @@ export default function Home() {
       {/* Background Image - Absolute (only covers hero section) */}
       <Image
         src="/images/home/hero/hero.jpg"
-        alt="Hero"
+        alt=""
         className="absolute top-0 md:top-0 left-0 object-[50%_-200px] md:object-[50%_70%] w-full h-[min(100svh,960px)] object-cover z-0"
         width={2000}
         height={2000}

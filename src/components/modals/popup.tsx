@@ -200,7 +200,7 @@ export function Popup() {
                 <span>REQUEST A QUOTE</span>
                 <Image
                   src={ArrowRight.src}
-                  alt="Arrow Right"
+                  alt=""
                   className="max-md:h-7 max-md:w-7"
                   width={32}
                   height={33}

@@ -83,7 +83,7 @@ export function ServicesCTA({
           <span>Get a free quote</span>
           <Image
             src={ArrowRight.src}
-            alt="Arrow Right"
+            alt=""
             width={32}
             height={32}
             className="w-6 h-6 sm:w-8 sm:h-8"

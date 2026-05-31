@@ -269,7 +269,7 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
               {!isSubmitting && (
                 <Image
                   src={ArrowRight.src}
-                  alt="Arrow Right"
+                  alt=""
                   width={32}
                   height={33}
                 />
@@ -282,7 +282,7 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
       <div className="absolute flex items-center justify-center -top-[75px] sm:-top-[100px] lg:-top-[150px] -right-16 sm:-right-24 lg:-right-33 w-[180px] sm:w-[270px] lg:w-[354.512px] h-[180px] sm:h-[270px] lg:h-[353.446px] rotate-[-16deg] z-0">
         <Image
           src="/images/home/hero/tape.webp"
-          alt="Tape"
+          alt=""
           width={234.158}
           height={266.58}
           className="shrink-0 w-[120px] sm:w-[180px] lg:w-[234.158px] h-auto"
@@ -293,14 +293,14 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
         <>
           <Image
             src="/images/home/hero/hero-lights-left.webp"
-            alt="Hero Lights Left"
+            alt=""
             width={382.851}
             height={253.958}
             className="shrink-0 rotate-[-24deg] scale-x-[-1] aspect-[101/67] absolute -bottom-16 sm:-bottom-32 lg:-bottom-62 -left-8 sm:-left-26 lg:-left-52 -z-10 w-[150px] sm:w-[250px] lg:w-[382.851px]"
           />
           <Image
             src="/images/home/hero/hero-lights-right.webp"
-            alt="Hero Lights Right"
+            alt=""
             width={465.548}
             height={308.814}
             className="shrink-0 aspect-[101/67] rotate-[22deg] absolute -bottom-8 sm:-bottom-16 lg:-bottom-32 -right-8 sm:-right-16 lg:-right-32 -z-10 w-[180px] sm:w-[300px] lg:w-[465.548px]"

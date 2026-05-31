@@ -43,7 +43,7 @@ export async function generateMetadata({
       title,
       description,
       url,
-      siteName: "Godly Windows",
+      siteName: "Godly Holiday Lights",
       locale: "en_US",
       type: "website",
     },
@@ -65,7 +65,7 @@ export default async function CityHomePage({ params }: PageProps) {
     <div className="flex flex-col max-w-screen overflow-x-clip items-center justify-center relative">
       <Image
         src="/images/home/hero/hero.jpg"
-        alt="Hero"
+        alt=""
         className="absolute top-0 md:top-0 left-0 object-[50%_-200px] md:object-[50%_70%] w-full h-[min(100svh,960px)] object-cover z-0"
         width={2000}
         height={2000}

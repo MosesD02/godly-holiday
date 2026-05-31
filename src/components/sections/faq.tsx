@@ -60,7 +60,7 @@ export function FAQ() {
       </div>
       <QuoteButton className="mt-8 sm:mt-12 lg:mt-[102px] mx-4 sm:mx-6 lg:mx-0">
         <span className="text-2xl">Request a Quote</span>
-        <Image src={ArrowRight.src} alt="Arrow Right" width={32} height={33} />
+        <Image src={ArrowRight.src} alt="" width={32} height={33} />
       </QuoteButton>
     </section>
   );

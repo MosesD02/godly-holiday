@@ -58,7 +58,7 @@ export function Hero({ cityName, subheadline, heading }: HeroProps = {}) {
               <Image
                 key={index}
                 src={Star.src}
-                alt="Star"
+                alt=""
                 width={18}
                 height={18}
               />

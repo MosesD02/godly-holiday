@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     description:
       "We provide everything—premium lights, full installation, and hassle-free removal—so your South Florida home or business shines all season without the ladders or storage stress.",
     url: "https://godlyholidaylights.com/",
-    siteName: "Godly Windows",
+    siteName: "Godly Holiday Lights",
     locale: "en_US",
     type: "website",
   },

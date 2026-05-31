@@ -96,7 +96,7 @@ export function RemoveStress() {
           >
             <Image
               src={Logo.src}
-              alt="Godly Windows"
+              alt="Godly Holiday Lights"
               width={131}
               height={75}
               className="aspect-[131/75] mx-auto"
@@ -125,7 +125,7 @@ export function RemoveStress() {
               <span>REQUEST A QUOTE</span>
               <Image
                 src={ArrowRight.src}
-                alt="Arrow Right"
+                alt=""
                 width={32}
                 height={33}
               />
@@ -220,7 +220,7 @@ export function RemoveStress() {
           >
             <Image
               src={Logo.src}
-              alt="Godly Windows"
+              alt="Godly Holiday Lights"
               width={75}
               height={45}
               className="aspect-[131/75] mx-auto"
@@ -249,7 +249,7 @@ export function RemoveStress() {
               <span className="text-[10px]! sm:text-sm">REQUEST A QUOTE</span>
               <Image
                 src={ArrowRight.src}
-                alt="Arrow Right"
+                alt=""
                 width={24}
                 height={26}
               />

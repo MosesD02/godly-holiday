@@ -93,7 +93,7 @@ export function Trust({ regionName }: TrustProps = {}) {
           >
             <Image
               src={Logo.src}
-              alt="Godly Windows"
+              alt="Godly Holiday Lights"
               width={75}
               height={45}
               className="aspect-[131/75] mx-auto"
@@ -122,7 +122,7 @@ export function Trust({ regionName }: TrustProps = {}) {
               <span className="text-[10px]! sm:text-sm">REQUEST A QUOTE</span>
               <Image
                 src={ArrowRight.src}
-                alt="Arrow Right"
+                alt=""
                 width={24}
                 height={26}
               />
@@ -173,7 +173,7 @@ export function Trust({ regionName }: TrustProps = {}) {
           >
             <Image
               src={Logo.src}
-              alt="Godly Windows"
+              alt="Godly Holiday Lights"
               width={131}
               height={75}
               className="aspect-[131/75] mx-auto"
@@ -202,7 +202,7 @@ export function Trust({ regionName }: TrustProps = {}) {
               <span>REQUEST A QUOTE</span>
               <Image
                 src={ArrowRight.src}
-                alt="Arrow Right"
+                alt=""
                 width={32}
                 height={33}
               />
@@ -220,7 +220,7 @@ export function Trust({ regionName }: TrustProps = {}) {
       </div>
       <Image
         src="/images/home/lighting-up-nights/flakes.webp"
-        alt="Flakes"
+        alt=""
         className="absolute left-1/2 bottom-0 -translate-x-1/2 pointer-events-none w-full max-w-[1440px] mix-blend-overlay opacity-20"
         width={1440}
         height={1440}

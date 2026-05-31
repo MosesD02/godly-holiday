@@ -55,7 +55,7 @@ export function MobileMenuButton() {
               <Link href="/" className="shrink-0 mb-4">
                 <Image
                   src={Logo.src}
-                  alt="Godly Windows"
+                  alt="Godly Holiday Lights"
                   width={60}
                   height={34}
                   className="aspect-[7/4] sm:w-[70px] sm:h-[40px]"
@@ -103,12 +103,12 @@ export function MobileMenuButton() {
               >
                 <img
                   src={"/images/ticket-holder.png"}
-                  alt="Ticket Holder"
+                  alt="Get a free quote"
                   className="w-[125px] h-auto"
                 />
                 <img
                   src={"/images/ticket.png"}
-                  alt="Ticket"
+                  alt=""
                   className="absolute w-[110px] mt-0.5 h-auto top-1/2 left-1/2 translate-y-0.5 -translate-x-1/2 group-hover:translate-y-1 group-active:translate-y-2 transition-all duration-300"
                 />
               </button>
@@ -137,12 +137,12 @@ export function TicketButton() {
     >
       <img
         src={"/images/ticket-holder.png"}
-        alt="Ticket Holder"
+        alt="Get a free quote"
         className="w-[125px] h-auto"
       />
       <img
         src={"/images/ticket.png"}
-        alt="Ticket"
+        alt=""
         className="absolute w-[110px] mt-0.5 h-auto top-1/2 left-1/2 translate-y-0.5 -translate-x-1/2 group-hover:translate-y-1 group-active:translate-y-2 transition-all duration-300"
       />
     </button>

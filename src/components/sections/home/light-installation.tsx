@@ -53,7 +53,7 @@ export function LightInstallation({
             <span>Request a Quote</span>{" "}
             <Image
               src={ArrowRight.src}
-              alt="Arrow Right"
+              alt=""
               width={32}
               height={33}
             />
@@ -112,7 +112,7 @@ export function LightInstallation({
             <span>Request a Quote</span>{" "}
             <Image
               src={ArrowRight.src}
-              alt="Arrow Right"
+              alt=""
               width={32}
               height={33}
             />

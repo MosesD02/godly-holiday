@@ -21,7 +21,7 @@ export function Hero({
           <div>
             <Image
               src={"/google.png"}
-              alt="Google"
+              alt="Google Reviews"
               width={184}
               height={58}
               className="w-[184px] h-[58px] object-contain object-left"
@@ -32,7 +32,7 @@ export function Hero({
                   <Image
                     key={index}
                     src={Star.src}
-                    alt="Star"
+                    alt=""
                     width={16.981}
                     height={16.981}
                     className="w-3 h-3 sm:w-4 sm:h-4"
