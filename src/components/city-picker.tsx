@@ -55,7 +55,7 @@ export function CityPicker({
   const activeLabel = getActiveCityLabel(pathname);
   const displayLabel = activeLabel
     ? titleCase(activeLabel)
-    : "Pick Your City";
+    : "South Florida";
 
   const handleSelect = (slug: string) => {
     setOpen(false);

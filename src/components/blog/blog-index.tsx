@@ -7,6 +7,13 @@ function blogPostHref(slug: string) {
   return `/blog/${slug}`;
 }
 
+function toTitleCase(value: string): string {
+  return value
+    .split(" ")
+    .map((word) => word.charAt(0) + word.slice(1).toLowerCase())
+    .join(" ");
+}
+
 function buildBlogPageHref(paginationBasePath: string, pageNum: number) {
   if (pageNum <= 1) return paginationBasePath;
   const qs = new URLSearchParams({ page: String(pageNum) });
@@ -113,7 +120,7 @@ export function BlogIndex({
           </div>
           <p className="text-center font-satoshi text-xs font-light text-white/70 md:text-2xl md:font-normal">
             Expert tips on holiday lighting for your{" "}
-            {cityName ? `${cityName}` : "South Florida"} home.
+            {cityName ? toTitleCase(cityName) : "South Florida"} home.
           </p>
         </div>
       </div>
