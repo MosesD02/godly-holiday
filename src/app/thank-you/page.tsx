@@ -36,7 +36,9 @@ export default function ThankYouPage() {
       </h1>
 
       <p className="font-satoshi mt-8 max-w-2xl text-lg leading-relaxed font-medium text-[#F3CA9E] md:text-2xl">
-        Expect a call from us shortly. Looking forward to taking care of you.
+        Expect a call from us shortly.
+        <br />
+        Looking forward to taking care of you.
       </p>
 
       <GodlyButton asChild className="mt-12">
