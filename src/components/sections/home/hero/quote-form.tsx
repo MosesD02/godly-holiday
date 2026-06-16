@@ -17,6 +17,7 @@ import { CheckIcon } from "lucide-react";
 import { GodlyButton } from "@/components/ui/godly-button";
 import ArrowRight from "@/assets/arrow-right.svg";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 const formSchema = z.object({
@@ -49,8 +50,8 @@ interface QuoteFormProps {
 }
 
 export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
+  const router = useRouter();
   const [isChecked, setIsChecked] = useState(false);
-  const [showSuccessDialog, setShowSuccessDialog] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -86,7 +87,6 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
         const errorText = await response.text();
         console.error("Webhook error:", errorText);
       } else {
-        setShowSuccessDialog(true);
         if (typeof window !== "undefined") {
           const w = window as Window & {
             dataLayer?: Record<string, unknown>[];
@@ -107,6 +107,8 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
         } catch (resetError) {
           console.error("Form reset exception:", resetError);
         }
+        // Send the visitor to the confirmation page.
+        router.push("/thank-you");
       }
     } catch (error) {
       console.error("Webhook exception:", error);
@@ -306,27 +308,6 @@ export function QuoteForm({ hideImages = false, size = "lg" }: QuoteFormProps) {
             className="shrink-0 aspect-[101/67] rotate-[22deg] absolute -bottom-8 sm:-bottom-16 lg:-bottom-32 -right-8 sm:-right-16 lg:-right-32 -z-10 w-[180px] sm:w-[300px] lg:w-[465.548px]"
           />
         </>
-      )}
-
-      {showSuccessDialog && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-          <div className="w-full max-w-sm rounded-xl bg-[#f9f0df] p-6 text-center shadow-lg">
-            <h2 className="mb-4 text-3xl font-normal tracking-wide text-[#2D2B2B]">
-              THANK YOU
-            </h2>
-            <p className="mb-6 font-sans text-[#2D2B2B]">
-              I agree to receive updates from Godly
-              <br />
-              about my estimate via text message
-            </p>
-            <button
-              onClick={() => setShowSuccessDialog(false)}
-              className="trim rounded-md bg-[#2D2B2B] px-8 py-4 font-semibold text-white shadow transition-all hover:bg-[#1c1a1a]"
-            >
-              DONE
-            </button>
-          </div>
-        </div>
       )}
     </div>
   );
