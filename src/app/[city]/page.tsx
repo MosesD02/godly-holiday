@@ -73,13 +73,7 @@ export default async function CityHomePage({ params }: PageProps) {
       />
 
       <div
-        className="absolute top-0 left-0 w-full h-[min(100svh,960px)] z-10"
-        style={{
-          background: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #201E1E 79.64%)`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
+        className="absolute top-0 left-0 w-full h-[min(100svh,960px)] z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,#201E1E_62%)] md:bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,#201E1E_79.64%)]"
       ></div>
 
       <div className="relative z-20 w-full">
