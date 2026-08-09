@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import Link from "next/link";
 import { QuoteForm } from "./hero/quote-form";
+import { BUSINESS_INFO } from "@/lib/constants";
 
 export function CTA() {
   return (
@@ -38,7 +39,7 @@ export function CTA() {
         </div>
 
         <Link
-          href="tel:+19547514128"
+          href={`tel:${BUSINESS_INFO.phoneHref}`}
           className="relative max-w-fit mx-auto min-w-[280px] sm:min-w-[320px] lg:min-w-[336px] text-center text-[#2D2B2B] flex flex-col gap-1 px-4 sm:px-6 py-6 sm:py-8 hover:cursor-pointer hover:scale-105 transition-all duration-300"
         >
           <Image
@@ -62,7 +63,7 @@ export function CTA() {
               />
             </svg>
             <span className="trim-text text-lg sm:text-xl lg:text-2xl">
-              (954) 751-4128
+              {BUSINESS_INFO.phone}
             </span>
           </div>
           <p className="rotate-[-2deg] text-base sm:text-lg font-satoshi trakcing-[0.18px]">

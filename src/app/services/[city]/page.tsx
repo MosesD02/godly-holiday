@@ -60,29 +60,6 @@ export default async function CityServicePage({ params }: PageProps) {
     })),
   };
 
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "Godly Holiday Lights",
-    description: content.meta.description,
-    url: `https://godlyholidaylights.com/services/${city}`,
-    telephone: "+1-954-751-4128",
-    email: "hello@godlyholidaylights.com",
-    image: "https://godlyholidaylights.com/og.png",
-    areaServed: {
-      "@type": "City",
-      name: content.name,
-    },
-    serviceType: "Holiday Light Installation",
-    priceRange: "$$",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: content.name,
-      addressRegion: "FL",
-      addressCountry: "US",
-    },
-  };
-
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -113,12 +90,6 @@ export default async function CityServicePage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(localBusinessSchema),
-        }}
       />
       <script
         type="application/ld+json"

@@ -5,7 +5,7 @@ export const davie: CityContent = {
   nameUpper: "DAVIE",
   slug: "davie",
   meta: {
-    title: "Holiday Light Installation Davie | Godly Lights",
+    title: "Holiday Light Installation Davie | Godly Holiday Lights",
     description:
       "Holiday light installation in equestrian Davie. Expert service for estates, ranches & family homes. Serving Long Lake Ranches. Free design consultation.",
   },

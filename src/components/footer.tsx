@@ -2,6 +2,7 @@ import { cities } from "@/data/cities";
 import { navItems } from "./header";
 import { FooterNav } from "./footer-nav";
 import Link from "next/link";
+import { BUSINESS_INFO } from "@/lib/constants";
 
 export function Footer() {
   return (
@@ -44,17 +45,19 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="text-left sm:text-right">
+          <div className="text-left sm:text-right text-[#312E2C] text-sm sm:text-base font-satoshi font-medium space-y-1">
+            <p>{BUSINESS_INFO.name}</p>
+            <p>{BUSINESS_INFO.address}</p>
             <Link
-              href="tel:+19547514128"
-              className="text-[#312E2C] text-sm sm:text-base font-satoshi font-medium block sm:inline"
+              href={`tel:${BUSINESS_INFO.phoneHref}`}
+              className="block"
             >
-              954-751-4128
+              {BUSINESS_INFO.phone}
             </Link>
-            <br />
+            <p>{BUSINESS_INFO.hours}</p>
             <Link
               href="mailto:hello@godlyholidaylights.com"
-              className="text-[#312E2C] text-sm sm:text-base font-satoshi font-medium block sm:inline"
+              className="block"
             >
               hello@godlyholidaylights.com
             </Link>

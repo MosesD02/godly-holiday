@@ -5,7 +5,7 @@ export const coralSprings: CityContent = {
   nameUpper: "CORAL SPRINGS",
   slug: "coral-springs",
   meta: {
-    title: "Holiday Light Installation Coral Springs | Godly Lights",
+    title: "Holiday Light Installation Coral Springs | Godly Holiday Lights",
     description:
       "Holiday light installation for diverse Coral Springs families. Serving Heron Bay, Coral Square & 30+ neighborhoods. Free consultation & design.",
   },

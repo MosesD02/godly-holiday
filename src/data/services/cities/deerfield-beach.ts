@@ -5,7 +5,7 @@ export const deerfieldBeach: CityContent = {
   nameUpper: "DEERFIELD BEACH",
   slug: "deerfield-beach",
   meta: {
-    title: "Holiday Light Installation Deerfield Beach | Godly Lights",
+    title: "Holiday Light Installation Deerfield Beach | Godly Holiday Lights",
     description:
       "Oceanfront holiday light installation in beautiful Deerfield Beach. Serving beachfront estates & coastal properties. Free consultation for beach homes.",
   },

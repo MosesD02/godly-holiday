@@ -5,7 +5,7 @@ export const cooperCity: CityContent = {
   nameUpper: "COOPER CITY",
   slug: "cooper-city",
   meta: {
-    title: "Holiday Light Installation Cooper City | Godly Lights",
+    title: "Holiday Light Installation Cooper City | Godly Holiday Lights",
     description:
       "Expert holiday light installation in Cooper City—where homeowners demand excellence. Serving Monterra, Embassy Lakes & family neighborhoods. Free quote.",
   },

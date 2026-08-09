@@ -5,6 +5,7 @@ import Image from "next/image";
 import { MobileMenuButton, TicketButton } from "./header-client";
 import { CityPicker } from "./city-picker";
 import { HeaderNav } from "./header-nav";
+import { BUSINESS_INFO } from "@/lib/constants";
 
 type NavItem = {
   label: string;
@@ -61,14 +62,17 @@ export function Header() {
           {/* Desktop Right Section */}
           <div className="hidden lg:flex items-center shrink-0 gap-6">
             <CityPicker variant="desktop" />
-            <Link href="tel:+19547514128" className="flex items-center gap-3">
+            <Link
+              href={`tel:${BUSINESS_INFO.phoneHref}`}
+              className="flex items-center gap-3"
+            >
               <button className="flex p-3 items-center gap-2.5 hover:cursor-pointer rounded-[6px] border border-[rgba(243,202,158,0.11)] [background:rgba(0,0,0,0.23)] shadow-[0_3px_2px_0_rgba(97,80,62,0.20)_inset,_0_1px_4px_0_rgba(171,132,89,0.03)] hover:shadow-[0_3px_2px_0_rgba(97,80,62,0.20)_inset,_0_1px_4px_0_rgba(171,132,89,0.03),_0_0_20px_rgba(243,202,158,0.4)] transition-all duration-300 active:[background:rgba(0,0,0,0.08)]">
                 <Image src={Call.src} alt="Call" width={22} height={22} />
               </button>
               <div className="font-marlton text-[#F3C99D] space-y-3">
                 <p className="text-sm [text-box-trim:trim-both]">CALL US</p>
                 <div className="text-2xl hover:text-[#F3C99D]/80 transition-all duration-300 active:text-[#F3C99D]/60 [text-box-trim:trim-both]">
-                  954-751-4128
+                  {BUSINESS_INFO.phone}
                 </div>
               </div>
             </Link>

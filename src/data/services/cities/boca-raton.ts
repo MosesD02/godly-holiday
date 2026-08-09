@@ -5,7 +5,7 @@ export const bocaRaton: CityContent = {
   nameUpper: "BOCA RATON",
   slug: "boca-raton",
   meta: {
-    title: "Holiday Light Installation Boca Raton | Godly Lights",
+    title: "Holiday Light Installation Boca Raton | Godly Holiday Lights",
     description:
       "Elevate your Boca Raton estate with custom holiday light installation. Serving Mizner Park, gated communities & oceanfront properties. Free consultation today.",
   },

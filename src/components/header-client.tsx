@@ -11,6 +11,7 @@ import Call from "@/assets/call.svg";
 import { navItems } from "./header";
 import { CityPicker } from "./city-picker";
 import { HeaderNav } from "./header-nav";
+import { BUSINESS_INFO } from "@/lib/constants";
 
 export function MobileMenuButton() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -88,10 +89,10 @@ export function MobileMenuButton() {
                         CALL US
                       </p>
                       <Link
-                        href="tel:+19547514128"
+                        href={`tel:${BUSINESS_INFO.phoneHref}`}
                         className="text-xl hover:text-[#F3C99D]/80 transition-all duration-300 active:text-[#F3C99D]/60 [text-box-trim:trim-both]"
                       >
-                        954-751-4128
+                        {BUSINESS_INFO.phone}
                       </Link>
                     </div>
                   </div>

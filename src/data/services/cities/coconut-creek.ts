@@ -5,7 +5,7 @@ export const coconutCreek: CityContent = {
   nameUpper: "COCONUT CREEK",
   slug: "coconut-creek",
   meta: {
-    title: "Holiday Light Installation Coconut Creek | Godly Lights",
+    title: "Holiday Light Installation Coconut Creek | Godly Holiday Lights",
     description:
       "Professional holiday light installation in Coconut Creek's family neighborhoods. Serving Heron Bay, Regency Lakes & Winston Park. Get free estimate now.",
   },

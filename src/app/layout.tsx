@@ -9,7 +9,11 @@ import { Footer } from "@/components/footer";
 import { Popup } from "@/components/modals/popup";
 import { QuoteModalProvider } from "@/hooks/use-quote-modal";
 import { QuoteModal } from "@/components/modals/quote-modal";
-import { GTM_ID } from "@/lib/constants";
+import {
+  BUSINESS_INFO,
+  GTM_ID,
+  LOCAL_BUSINESS_SCHEMA,
+} from "@/lib/constants";
 
 const luminaire = localFont({
   src: "../fonts/Luminaire.otf",
@@ -64,6 +68,12 @@ export const metadata: Metadata = {
     images: "/og.png",
   },
   metadataBase: new URL("https://godlyholidaylights.com/"),
+  other: {
+    "business:name": BUSINESS_INFO.name,
+    "business:address": BUSINESS_INFO.address,
+    "business:phone": BUSINESS_INFO.phone,
+    "business:hours": BUSINESS_INFO.hours,
+  },
 };
 
 export default function RootLayout({
@@ -77,6 +87,12 @@ export default function RootLayout({
       <body
         className={`antialiased ${luminaire.variable} overflow-x-clip ${marltonSans.variable} ${marltonScript.variable} ${satoshi.variable} ${inter.variable} min-h-svh flex flex-col items-center justify-center max-w-screen w-full h-full`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA),
+          }}
+        />
         <QuoteModalProvider>
           <OsDetection />
           <Header />

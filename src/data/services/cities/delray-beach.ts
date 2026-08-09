@@ -5,7 +5,7 @@ export const delrayBeach: CityContent = {
   nameUpper: "DELRAY BEACH",
   slug: "delray-beach",
   meta: {
-    title: "Holiday Light Installation Delray Beach | Godly Lights",
+    title: "Holiday Light Installation Delray Beach | Godly Holiday Lights",
     description:
       "Luxury holiday light installation in Delray Beach. Serving oceanfront estates & Atlantic Avenue. Professional design & installation. Free consultation.",
   },

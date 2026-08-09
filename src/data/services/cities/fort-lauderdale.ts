@@ -5,7 +5,7 @@ export const fortLauderdale: CityContent = {
   nameUpper: "FORT LAUDERDALE",
   slug: "fort-lauderdale",
   meta: {
-    title: "Holiday Light Installation Fort Lauderdale | Godly Lights",
+    title: "Holiday Light Installation Fort Lauderdale | Godly Holiday Lights",
     description:
       "Professional holiday light installation in Fort Lauderdale. Expert service for Las Olas, Harbor Beach & yacht estates. Free design consultation.",
   },

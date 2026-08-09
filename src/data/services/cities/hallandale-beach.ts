@@ -5,7 +5,7 @@ export const hallandaleBeach: CityContent = {
   nameUpper: "HALLANDALE BEACH",
   slug: "hallandale-beach",
   meta: {
-    title: "Holiday Light Installation Hallandale Beach | Godly Lights",
+    title: "Holiday Light Installation Hallandale Beach | Godly Holiday Lights",
     description:
       "Luxury holiday light installation in Hallandale Beach. Expert service for oceanfront condos & estates. Serving Gulfstream Park area. Free consultation.",
   },
