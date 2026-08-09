@@ -3,7 +3,7 @@ export const BASE_URL =
 
 export const BUSINESS_INFO = {
   name: "Godly Holiday Lights",
-  address: "4832 NE 12th Ave, Oakland Park, FL 33334",
+  address: "4832 NE 12th Ave., Oakland Park, FL 33334",
   phone: "(954) 751-4128",
   phoneHref: "+19547514128",
   hours: "Open 24 hours",
