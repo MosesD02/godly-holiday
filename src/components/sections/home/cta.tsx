@@ -33,7 +33,7 @@ export function CTA() {
               Holiday
             </span>
           </h2>
-          <p className="text-center font-satoshi text-lg sm:text-xl font-medium leading-6 px-4 sm:px-0">
+          <p className="text-center mt-6 font-satoshi text-lg sm:text-xl font-medium leading-6 px-4 sm:px-0">
             Contact us today for your free quote
           </p>
         </div>
