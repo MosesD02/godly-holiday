@@ -2,7 +2,11 @@ import Image from "next/image";
 import { Card } from "./wrapped-up/card";
 import { wrappedUpCards } from "@/data/wrapped-up";
 
-export function WrapperUp() {
+interface WrapperUpProps {
+  cityName?: string;
+}
+
+export function WrapperUp({ cityName }: WrapperUpProps = {}) {
   return (
     <section
       id="wrapped-up"
@@ -34,7 +38,7 @@ export function WrapperUp() {
             paintOrder: "stroke fill",
           }}
         >
-          In
+          In{cityName ? ` ${cityName}` : ""}
         </span>
       </h2>
       <div className="flex flex-col items-center justify-center gap-12 sm:gap-16 lg:gap-[92px]">

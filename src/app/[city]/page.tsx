@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 
 import { getCityContent, getAllCitySlugs } from "@/data/services/city-content";
+import { getCityHomeContent } from "@/data/city-home-content";
 import { HappyCustomer } from "@/components/sections/home/happy-customer";
 import { Hero } from "@/components/sections/home/hero";
 import { LightInstallation } from "@/components/sections/home/light-installation";
@@ -30,8 +31,13 @@ export async function generateMetadata({
   const content = getCityContent(city);
   if (!content) return {};
 
-  const title = `Professional Holiday Light Installation In ${content.nameUpper}`;
-  const description = `We provide everything—premium lights, full installation, and hassle-free removal—so your ${content.name} home or business shines all season without the ladders or storage stress.`;
+  const cityHomeContent = getCityHomeContent(city);
+  const title =
+    cityHomeContent?.meta.title ??
+    `Professional Holiday Light Installation In ${content.nameUpper}`;
+  const description =
+    cityHomeContent?.meta.description ??
+    `We provide everything—premium lights, full installation, and hassle-free removal—so your ${content.name} home or business shines all season without the ladders or storage stress.`;
   const url = `https://godlyholidaylights.com/${city}`;
 
   return {
@@ -60,6 +66,7 @@ export default async function CityHomePage({ params }: PageProps) {
   const { city } = await params;
   const content = getCityContent(city);
   if (!content) notFound();
+  const cityHomeContent = getCityHomeContent(city);
 
   return (
     <div className="flex flex-col max-w-screen overflow-x-clip items-center justify-center relative">
@@ -80,12 +87,18 @@ export default async function CityHomePage({ params }: PageProps) {
         <Hero
           cityNameUpper={content.nameUpper}
           cityName={content.name}
+          headingCityName={cityHomeContent?.headingCityName}
+          description={cityHomeContent?.intro}
         />
         <LightingUpNights />
         <WeGotYouCovered />
         <HappyCustomer />
-        <LightInstallation cityName={content.name} />
-        <WrapperUp />
+        <LightInstallation
+          cityName={content.name}
+          commercialDescription={cityHomeContent?.commercialDescription}
+          residentialDescription={cityHomeContent?.residentialDescription}
+        />
+        <WrapperUp cityName={cityHomeContent?.wrappedUpCityName} />
         <AboutUs />
         <RemoveStress />
         <CTA />

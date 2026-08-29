@@ -5,12 +5,20 @@ import Image from "next/image";
 interface HeroProps {
   cityNameUpper?: string;
   cityName?: string;
+  headingCityName?: string;
+  description?: string;
 }
 
 export function Hero({
   cityNameUpper = "SOUTH FLORIDA",
   cityName = "South Florida",
+  headingCityName = cityNameUpper,
+  description,
 }: HeroProps = {}) {
+  const intro =
+    description ??
+    `We provide everything—premium lights, full installation, and hassle-free removal—so your ${cityName} home or business shines all season without the ladders or storage stress.`;
+
   return (
     <section
       id="hero"
@@ -47,12 +55,10 @@ export function Hero({
             <span className="font-luminaire text-2xl sm:text-4xl lg:text-6xl leading-normal tracking-normal text-[#FDE4C8]">
               In
             </span>{" "}
-            {cityNameUpper}
+            {headingCityName}
           </h1>
           <p className="max-w-[1030px] text-white text-base sm:text-lg lg:text-xl font-medium leading-6 sm:leading-7 lg:leading-normal">
-            We provide everything—premium lights, full installation, and
-            hassle-free removal—so your {cityName} home or business shines
-            all season without the ladders or storage stress.
+            {intro}
           </p>
         </div>
         <QuoteForm />

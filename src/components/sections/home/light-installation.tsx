@@ -6,11 +6,22 @@ import { AnimatedImagePair } from "@/components/sections/services/animated-image
 
 interface LightInstallationProps {
   cityName?: string;
+  commercialDescription?: string;
+  residentialDescription?: string;
 }
 
 export function LightInstallation({
   cityName = "South Florida",
+  commercialDescription,
+  residentialDescription,
 }: LightInstallationProps = {}) {
+  const commercialCopy =
+    commercialDescription ??
+    "As a trusted holiday lighting company, we specialize in outdoor holiday lights installation for commercial spaces; making your property festive without the stress.";
+  const residentialCopy =
+    residentialDescription ??
+    `Whether it’s subtle or show-stopping, our holiday light installation services bring joy to your home all season long. We handle everything, from setup to removal for houses and estates across ${cityName}.`;
+
   return (
       <section
         id="light-installation"
@@ -36,9 +47,7 @@ export function LightInstallation({
                 </span>
               </h2>
               <p className="text-white text-base sm:text-lg leading-6 sm:leading-[26px] tracking-[0.16px] sm:tracking-[0.18px]">
-                As a trusted holiday lighting company, we specialize in outdoor
-                holiday lights installation for commercial spaces; making your
-                property festive without the stress.
+                {commercialCopy}
               </p>
             </div>
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 flex-wrap">
@@ -97,10 +106,7 @@ export function LightInstallation({
                 </span>
               </h2>
               <p className="text-white text-base sm:text-lg leading-6 sm:leading-[26px] tracking-[0.16px] sm:tracking-[0.18px]">
-                Whether it&rsquo;s subtle or show-stopping, our holiday light
-                installation services bring joy to your home all season long. We
-                handle everything, from setup to removal for houses and estates
-                across {cityName}.
+                {residentialCopy}
               </p>
             </div>
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 flex-wrap">
