@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Marquee } from "@/components/ui/marquee";
 import { cn } from "@/lib/utils";
+import { installationPhotos } from "@/data/installation-photos";
 
 export const pin1Class =
   "absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[42.033px] h-[46.571px] object-cover";
@@ -9,165 +10,27 @@ export const pin2Class =
 export const pin3Class =
   "absolute -top-1 left-6/7 -translate-x-1/2 -translate-y-1/2 w-[42.033px] h-[46.571px] object-cover";
 
-export const images = [
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/1.webp",
-    location: "Boca Raton",
-    pinSrc: "/images/home/lighting-up-nights/pin-1.png",
-    className: "rotate-[-0.102deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/2.webp",
-    location: "Ft. Lauderdale",
-    pinSrc: "/images/home/lighting-up-nights/pin-2.png",
-    className: "rotate-[-2.494deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/3.webp",
-    location: "Delray Beach",
-    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
-    className: "rotate-[1.74deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/4.webp",
-    location: "Weston",
-    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
-    className: "rotate-[-1.212deg]",
-    imgClassName: "object-right",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/5.webp",
-    location: "Parkland",
-    pinSrc: "/images/home/lighting-up-nights/pin-1.png",
-    className: "rotate-[-0.102deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/6.webp",
-    location: "Lighthouse Point",
-    pinSrc: "/images/home/lighting-up-nights/pin-2.png",
-    className: "rotate-[-2.494deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/7.webp",
-    location: "Pompano Beach",
-    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
-    className: "rotate-[1.74deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/8.webp",
-    location: "Southwest Ranches",
-    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
-    className: "rotate-[-1.212deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/9.webp",
-    location: "Parkland",
-    pinSrc: "/images/home/lighting-up-nights/pin-1.png",
-    className: "rotate-[-0.102deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/10.webp",
-    location: "Southwest Ranches",
-    pinSrc: "/images/home/lighting-up-nights/pin-2.png",
-    className: "rotate-[-2.494deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/11.webp",
-    location: "West Palm Beach",
-    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
-    className: "rotate-[1.74deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/12.webp",
-    location: "Boca Raton",
-    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
-    className: "rotate-[-1.212deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/13.webp",
-    location: "Pompano Beach",
-    pinSrc: "/images/home/lighting-up-nights/pin-1.png",
-    className: "rotate-[-0.102deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/14.webp",
-    location: "Boca Raton",
-    pinSrc: "/images/home/lighting-up-nights/pin-2.png",
-    className: "rotate-[-2.494deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/15.webp",
-    location: "Delray Beach",
-    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
-    className: "rotate-[1.74deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/16.webp",
-    location: "Fort Lauderdale",
-    pinSrc: "/images/home/lighting-up-nights/pin-1.png",
-    className: "rotate-[-0.102deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/17.webp",
-    location: "Boca Raton",
-    pinSrc: "/images/home/lighting-up-nights/pin-2.png",
-    className: "rotate-[-2.494deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/18.webp",
-    location: "Oakland Park",
-    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
-    className: "rotate-[1.74deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/19.webp",
-    location: "Weston",
-    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
-    className: "rotate-[-1.212deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/20.webp",
-    location: "Delray Beach",
-    pinSrc: "/images/home/lighting-up-nights/pin-1.png",
-    className: "rotate-[-0.102deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/21.webp",
-    location: "Boynton Beach",
-    pinSrc: "/images/home/lighting-up-nights/pin-2.png",
-    className: "rotate-[-2.494deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/22.webp",
-    location: "Davie",
-    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
-    className: "rotate-[1.74deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/23.webp",
-    location: "Lighthouse Point",
-    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
-    className: "rotate-[-1.212deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/24.webp",
-    location: "Deerfield Beach",
-    pinSrc: "/images/home/lighting-up-nights/pin-1.png",
-    className: "rotate-[-0.102deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/25.webp",
-    location: "Aventura",
-    pinSrc: "/images/home/lighting-up-nights/pin-2.png",
-    className: "rotate-[-2.494deg]",
-  },
-  {
-    imgSrc: "/images/home/lighting-up-nights/images/26.webp",
-    location: "Parkland",
-    pinSrc: "/images/home/lighting-up-nights/pin-3.png",
-    className: "rotate-[1.74deg]",
-  },
-];
+const pinSources = [
+  "/images/home/lighting-up-nights/pin-1.png",
+  "/images/home/lighting-up-nights/pin-2.png",
+  "/images/home/lighting-up-nights/pin-3.png",
+] as const;
+
+const rotations = [
+  "rotate-[-0.102deg]",
+  "rotate-[-2.494deg]",
+  "rotate-[1.74deg]",
+  "rotate-[-1.212deg]",
+] as const;
+
+export const images = installationPhotos.map((photo, index) => ({
+  imgSrc: photo.src,
+  location: photo.location,
+  alt: photo.alt,
+  pinSrc: pinSources[index % pinSources.length],
+  className: rotations[index % rotations.length],
+  imgClassName: undefined as string | undefined,
+}));
 
 export function LightingUpNights() {
   return (
@@ -221,7 +84,7 @@ export function LightingUpNights() {
           >
             <Image
               src={image.pinSrc}
-              alt="Images"
+              alt=""
               width={1500}
               height={1500}
               className={
@@ -235,7 +98,7 @@ export function LightingUpNights() {
 
             <Image
               src={image.imgSrc}
-              alt="Images"
+              alt={image.alt}
               width={1500}
               height={1500}
               className={cn(

@@ -64,7 +64,7 @@ export function RecentLightInstallation({
 
             <Image
               src={image.imgSrc}
-              alt="Holiday light installation"
+              alt={image.alt}
               width={1500}
               height={1500}
               className={cn(

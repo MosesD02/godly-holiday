@@ -3,6 +3,10 @@ import ArrowRight from "@/assets/arrow-right.svg";
 import Image from "next/image";
 import { QuoteButton } from "@/components/ui/quote-button";
 import { AnimatedImagePair } from "@/components/sections/services/animated-image-pair";
+import {
+  commercialInstallationPhotos,
+  residentialInstallationPhotos,
+} from "@/data/installation-photos";
 
 interface LightInstallationProps {
   cityName?: string;
@@ -70,10 +74,7 @@ export function LightInstallation({
         </div>
         <div className="p-[0_5px_13px_4px] sm:p-[0_7.5px_19px_6.5px] lg:p-[0_9.925px_25.561px_8.762px] order-first lg:order-none">
           <AnimatedImagePair
-            src1="/images/home/light-installation/commercial.png"
-            src2="/images/home/light-installation/commercial-2.png"
-            alt1="Commercial"
-            alt2="Commercial Alt"
+            photos={commercialInstallationPhotos}
           />
         </div>
       </div>
@@ -81,10 +82,7 @@ export function LightInstallation({
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8 sm:gap-12 lg:gap-[156px] self-stretch">
         <div className="p-[0_5px_13px_4px] sm:p-[0_7.5px_19px_6.5px] lg:p-[0_9.925px_25.561px_8.762px] order-first lg:order-none">
           <AnimatedImagePair
-            src1="/images/home/light-installation/resident.png"
-            src2="/images/home/light-installation/residential-2.png"
-            alt1="Residential"
-            alt2="Residential Alt"
+            photos={residentialInstallationPhotos}
           />
         </div>
         <div className="flex flex-col gap-12 sm:gap-16 lg:gap-20 flex-1 max-w-[521px]">
