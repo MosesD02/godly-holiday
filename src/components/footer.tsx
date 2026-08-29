@@ -67,7 +67,7 @@ export function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
           <div className="flex items-center gap-2">
             <Link
-              href="https://www.facebook.com/godlywindows"
+              href="https://www.facebook.com/godlylights"
               target="_blank"
               rel="noopener noreferrer"
             >
