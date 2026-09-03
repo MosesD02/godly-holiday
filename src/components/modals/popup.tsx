@@ -14,9 +14,12 @@ import ArrowRight from "@/assets/arrow-right.svg";
 import Image from "next/image";
 import { QuoteButton } from "../ui/quote-button";
 import { GodlyButton } from "../ui/godly-button";
+import { usePathname } from "next/navigation";
 
 export function Popup() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const isThankYouPage = pathname === "/thank-you";
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -67,7 +70,7 @@ export function Popup() {
   }, []);
 
   useEffect(() => {
-    if (isExpired) {
+    if (isExpired || isThankYouPage) {
       return; // Don't show popup if expired
     }
 
@@ -76,12 +79,12 @@ export function Popup() {
     }, 7000);
 
     return () => clearTimeout(timeout);
-  }, [isExpired]);
+  }, [isExpired, isThankYouPage]);
 
   return (
     <>
       <Dialog
-        open={isOpen}
+        open={isOpen && !isThankYouPage}
         onOpenChange={(isOpen) => {
           setIsOpen(isOpen);
           if (!isOpen) {
@@ -211,7 +214,7 @@ export function Popup() {
           </div>
         </DialogContent>
       </Dialog>
-      {showFloatingButton && !isOpen && !isExpired && (
+      {showFloatingButton && !isOpen && !isExpired && !isThankYouPage && (
         <div className="fixed right-0 sm:right-auto sm:left-0 top-1/2 z-50 h-fit w-fit -translate-y-1/2 translate-x-[75px] sm:-translate-x-[65px] rotate-90 sm:rotate-90 origin-right sm:origin-left max-md:scale-[0.8] md:scale-100">
           <GodlyButton
             onClick={() => setIsOpen(true)}
